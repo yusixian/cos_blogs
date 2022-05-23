@@ -1,5 +1,5 @@
 ---
-title: 【第二届青训营-寒假前端场】- 「小程序技术全解」笔记
+title: 青训营 |「小程序技术全解」笔记
 link: note/front-end/bytedance-note/mini-program-develop
 catalog: true
 date: 2022-01-30 14:30:17

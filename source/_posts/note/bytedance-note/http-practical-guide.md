@@ -1,5 +1,5 @@
 ---
-title: 【第二届青训营-寒假前端场】- 「HTTP实用指南」
+title: 青训营 |「HTTP实用指南」
 link: note/front-end/bytedance-note/http-utilization-guide
 catalog: true
 date: 2022-01-22 14:30:17

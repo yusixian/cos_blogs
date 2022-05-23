@@ -1,5 +1,5 @@
 ---
-title: 【第二届青训营-寒假前端场】- 「前端必须知道的开发调试知识」
+title: 青训营 |「前端必须知道的开发调试知识」
 link: note/front-end/bytedance-note/development-and-debugging
 catalog: true
 date: 2022-01-20 14:30:17
@@ -12,7 +12,7 @@ tags:
 - 前端
 - 调试
 categories:
-- 学习笔记
+- [笔记, 青训营笔记]
 ---
 ## 前端Debug的特点
 

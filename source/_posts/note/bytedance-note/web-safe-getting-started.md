@@ -1,5 +1,5 @@
 ---
-title: 【第二届青训营-寒假前端场】- 「Web开发的安全之旅」
+title: 青训营 |「Web开发的安全之旅」
 link: note/front-end/bytedance-note/web-safe-getting-started
 catalog: true
 date: 2022-01-25 14:30:17

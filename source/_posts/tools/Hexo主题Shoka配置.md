@@ -83,7 +83,7 @@ valine:
 
 ## 搜索配置
 搜索采用algolia，我是跟着这个来的 [Algolia搜索引擎](https://cloud.tencent.com/developer/article/1957568)
-配置完后，每次搜索还需要手动一行命令
+配置完后，每次发布文章还需要手动一行命令
 ```bash
 hexo clean && hexo g -d && hexo algolia
 ```
@@ -380,7 +380,7 @@ quiz: true
   owner: 霜月琉璃
   url: https://shoka.lostyu.me
   desc: 琉璃的医学 & 编程笔记
-  image: https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg
+  image: https://fastly.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg
   color: "#e9546b"
 {% endlinks %}
 ;;;
@@ -412,7 +412,7 @@ quiz: true
   owner: cos
   url: https://ysx.cosine.ren/
   desc: 余弦的编程笔记 & 生活记录
-  image: https://cdn.jsdelivr.net/gh/yusixian/imgBed@latest/img/tx.jpg
+  image: https://fastly.jsdelivr.net/gh/yusixian/imgBed@latest/img/tx.jpg
   color: "#1e80ff"
 {% endlinks %}
 ;;;
@@ -436,31 +436,22 @@ quiz: true
 
 ## media 多媒体
 使用 media 标签，目前可选择两种类型，即 audio 和 video 。
-```raw 
-{% media audio %}
-- title: cos的2021年度歌单
-  list:
-    - https://music.163.com/playlist?id=7189274318&userid=361029804
-- title: cos的2020年度歌单
-  list:
-    - https://music.163.com/playlist?id=5400313492&userid=361029804
-{% endmedia %}
 
-{% media video %}
-- name: "测试 1"
-  url: https://cdn.kastatic.org/ka-youtube-converted/O_nY1TM2RZM.mp4/O_nY1TM2RZM.mp4#t=0
-- name: "测试 2"
-  url: https://cdn.kastatic.org/ka-youtube-converted/O_nY1TM2RZM.mp4/O_nY1TM2RZM.mp4#t=0
-{% endmedia %}
-```
+效果如下
 
 {% media audio %}
 - title: cos的2021年度歌单
   list:
-    - https://music.163.com/playlist?id=7189274318&userid=361029804
+    - https://music.163.com/playlist?id=7189274318
 - title: cos的2020年度歌单
   list:
-    - https://music.163.com/playlist?id=5400313492&userid=361029804
+    - https://music.163.com/playlist?id=5400313492
+- title: cos的2019年度歌单
+  list:
+    - https://music.163.com/playlist?id=3144460328
+- title: ❤️安利向
+  list:
+    - https://music.163.com/playlist?id=3036586237
 {% endmedia %}
 
 ## math 数学公式

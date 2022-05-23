@@ -1,5 +1,5 @@
 ---
-title: 【第二届青训营-寒假前端场】- 「构建Webpack知识体系」
+title: 青训营 |「构建Webpack知识体系」
 link: note/front-end/bytedance-note/webpack-knowledge-system
 catalog: true
 date: 2022-01-27 14:30:17

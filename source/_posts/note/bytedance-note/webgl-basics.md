@@ -1,5 +1,5 @@
 ---
-title: 【第二届青训营-寒假前端场】- 「WebGL基础」
+title: 青训营 |「WebGL基础」
 link: note/front-end/bytedance-note/webgl-basics
 catalog: true
 date: 2022-01-27 14:30:17

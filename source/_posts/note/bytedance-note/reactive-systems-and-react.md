@@ -1,5 +1,5 @@
 ---
-title: 【第二届青训营-寒假前端场】- 「响应式系统与 React」
+title: 青训营 |「响应式系统与 React」
 link: note/front-end/bytedance-note/responsive-system-and-react
 catalog: true
 date: 2022-01-21 14:30:17

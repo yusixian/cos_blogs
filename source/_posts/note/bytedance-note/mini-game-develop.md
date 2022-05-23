@@ -1,5 +1,5 @@
 ---
-title: 【第二届青训营-寒假前端场】- 「小游戏开发」笔记
+title: 青训营 |「小游戏开发」笔记
 link: note/front-end/bytedance-note/mini-game-development
 catalog: true
 date: 2022-01-29 14:30:17

@@ -1,5 +1,5 @@
 ---
-title: 【第二届青训营-寒假前端场】- 「Web 标准与前端开发」
+title: 青训营 |「Web 标准与前端开发」
 link: note/front-end/bytedance-note/web-standards-and-front-end-development
 catalog: true
 date: 2022-01-19 14:30:17

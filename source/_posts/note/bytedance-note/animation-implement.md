@@ -1,5 +1,5 @@
 ---
-title: 【第二届青训营-寒假前端场】- 「前端动画实现」
+title: 青训营 |「前端动画实现」
 link: note/front-end/bytedance-note/animation-implement
 catalog: true
 date: 2022-01-21 14:30:17

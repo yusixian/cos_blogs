@@ -1,5 +1,5 @@
 ---
-title: 【第二届青训营-寒假前端场】- 「Web多媒体入门」笔记
+title: 青训营 |「Web多媒体入门」笔记
 link: note/front-end/bytedance-note/web-multimedia-introduction
 catalog: true
 date: 2022-01-30 14:30:17

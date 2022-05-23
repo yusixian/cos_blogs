@@ -1,5 +1,5 @@
 ---
-title: 【第二届青训营-寒假前端场】- 「CSS布局」
+title: 青训营 |「CSS布局」
 link: note/front-end/bytedance-note/css-learning-layout
 catalog: true
 date: 2022-01-16 14:30:17

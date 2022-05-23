@@ -1,0 +1,10 @@
+# language
+zh-CN:
+  # items
+  post:
+    copyright:
+      # the translation you perfer
+      author: 作者
+  menu:
+    friends: 友链
+    musics: 歌单

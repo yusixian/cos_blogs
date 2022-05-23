@@ -1,5 +1,5 @@
 ---
-title: 【第二届青训营-寒假前端场】- 「Node.js 与前端开发实战」
+title: 青训营 |「Node.js 与前端开发实战」
 link: note/front-end/bytedance-note/nodejs-develop
 catalog: true
 date: 2022-01-24 14:30:17

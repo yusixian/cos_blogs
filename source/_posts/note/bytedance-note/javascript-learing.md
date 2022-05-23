@@ -1,5 +1,5 @@
 ---
-title: 【第二届青训营-寒假前端场】- 「跟着月影学 JavaScript」笔记
+title: 青训营 |「跟着月影学 JavaScript」笔记
 link: note/front-end/bytedance-note/javascript-learing
 catalog: true
 date: 2022-01-17 14:30:17

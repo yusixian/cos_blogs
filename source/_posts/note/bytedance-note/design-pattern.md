@@ -1,5 +1,5 @@
 ---
-title: 【第二届青训营-寒假前端场】- 「前端设计模式应用」笔记
+title: 青训营 |「前端设计模式应用」笔记
 link: note/front-end/bytedance-note/design-pattern
 catalog: true
 date: 2022-02-09 20:30:11
