@@ -125,7 +125,7 @@ categories:
 本地有了直接用就好了
 
 - Expires（到期时间），时间戳
-- Cahce-Control
+- Cache-Control
   - 可缓存性
     - no-cache：协商缓存验证
     - no-store：不使用任何缓存
