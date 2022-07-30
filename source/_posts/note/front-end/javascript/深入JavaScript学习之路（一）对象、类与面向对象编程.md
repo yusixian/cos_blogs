@@ -5,14 +5,16 @@ catalog: true
 subtitle: 红宝书读书笔记 第八章 p205
 date: 2022-03-14 16:50:52
 cover: img/header_img/galaxy-ngc-3190-wallpaper-for-2880x1800-60-653.jpg
-sticky: 997
+sticky: true
 tags:
 - 前端
 - JavaScript
 categories:
 - [笔记, 前端, JavaScript]
 ---
-本章将学习：理解对象创建过程、原型链及继承
+理解对象及其创建过程、ES6语法糖，原型模式、构造函数
+
+理解原型链、盗用构造函数、组合式继承以及最佳实践等
 <!-- more -->
 # 理解对象
 > ECMA-262将对象定义为**一组属性的无序集合**，每个属性或方法都有一个名称来表示，可将其想象为一张**散列表**，值可以为数据/函数

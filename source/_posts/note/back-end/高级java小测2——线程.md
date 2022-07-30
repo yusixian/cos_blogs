@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date: 2021-12-01 20:12:48
 subtitle: 课堂小测：设计并实现某火车票售票系统的放票功能
-cover: img/header_img/lml_bg.jpg
 tags:
 - 后端
 - Java

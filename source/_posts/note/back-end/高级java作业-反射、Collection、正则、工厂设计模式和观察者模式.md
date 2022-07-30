@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date: 2021-12-16 00:02:03
 subtitle: 《反射、Collection接口、正则、工厂设计模式、观察者模式》
-cover: img/header_img/lml_bg.jpg
 tags:
 - 后端
 - Java

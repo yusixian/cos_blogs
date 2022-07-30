@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date:  2020-08-08 19:52:39
 subtitle: PTA数据结构题目集 第四周——二叉搜索树&二叉平衡树，涉及知识为二叉搜索树和平衡二叉树的基本操作，所用语言为c++。
-cover: img/header_img/lml_bg.jpg
 tags:
 - c++
 - PTA

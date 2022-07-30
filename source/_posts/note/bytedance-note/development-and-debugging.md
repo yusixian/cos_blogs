@@ -5,7 +5,6 @@ catalog: true
 date: 2022-01-20 14:30:17
 subtitle: Chorme devTools的调试使用、移动端调试等
 lang: cn
-cover: img/header_img/lml_bg.jpg
 tags:
 - CSS
 - JavaScript

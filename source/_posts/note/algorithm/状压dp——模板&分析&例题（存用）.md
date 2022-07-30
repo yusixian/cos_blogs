@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date:  2020-09-05 22:39:22 
 subtitle: 状压dp，即将状态压缩成2进制来保存，是动态规划中的一种非常暴力的做法
-cover: img/header_img/lml_bg.jpg
 tags:
 - c++
 - 算法

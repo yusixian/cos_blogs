@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date: 2021-12-16 01:31:07
 subtitle: 设计模式 序列化 注册监听器 对象实例化方法 反射的作用 切面编程 套接字 同步 连接池 线程池 比较接口
-cover: img/header_img/lml_bg.jpg
 tags:
 - Java
 - 设计模式

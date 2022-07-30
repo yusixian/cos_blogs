@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date: 2021-02-03 15:53:01
 subtitle: python实现知乎热榜标题链接抓取等，本文以实战为主，仅作个人学习使用，不对概念过多阐述（好吧还是很多概念）
-cover: img/header_img/lml_bg.jpg
 tags:
 - python
 - 爬虫

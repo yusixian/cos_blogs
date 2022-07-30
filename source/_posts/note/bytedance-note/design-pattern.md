@@ -5,7 +5,6 @@ catalog: true
 date: 2022-02-09 20:30:11
 subtitle: 浏览器和js中常用的设计模式，包括单例模式、观察者模式、原型模式、代理模式、迭代器模式等
 lang: cn
-cover: img/header_img/lml_bg.jpg
 tags:
 - 前端
 - JavaScript

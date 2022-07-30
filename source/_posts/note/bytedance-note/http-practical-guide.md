@@ -5,7 +5,6 @@ catalog: true
 date: 2022-01-22 14:30:17
 subtitle: HTTP及其常见协议分析、报文结构、缓存策略分析，以及其具体的业务场景使用。 
 lang: cn
-cover: img/header_img/lml_bg.jpg
 tags:
 - 前端
 - HTTP

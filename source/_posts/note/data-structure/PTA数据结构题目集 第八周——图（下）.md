@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date:  2020-08-21 03:45:26
 subtitle: PTA数据结构题目集 第八周——图（下），涉及图的最小生成树（Kruskal算法、Prim算法），所用语言为c++。
-cover: img/header_img/lml_bg.jpg
 tags:
 - c++
 - PTA

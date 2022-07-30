@@ -4,9 +4,8 @@ link: note/front-end/bytedance-note/javascript-learing
 catalog: true
 date: 2022-01-17 14:30:17
 subtitle: 面向对象的设计、高阶函数（节流、防抖、批处理、可迭代化）
-sticky: 999
+sticky: true
 lang: cn
-cover: img/header_img/87256886_p0.jpg
 tags:
 - 前端
 - JavaScript
@@ -14,6 +13,9 @@ tags:
 categories:
 - [笔记, 青训营笔记]
 ---
+
+这节课是由月影老师讲的，干货满满，包括了面向对象的设计、组件封装、高阶函数（节流、防抖、批处理、可迭代化）
+
 # 本堂课重点内容
 
 ## 写好js的原则

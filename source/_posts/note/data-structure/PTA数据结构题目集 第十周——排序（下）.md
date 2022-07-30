@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date:  2020-08-27 21:09:12
 subtitle: PTA数据结构题目集 第十周——排序（下）练习题，涉及各种排序算法的应用、结构体的排序、表排序中的环判断等，所用语言为c++。
-cover: img/header_img/lml_bg.jpg
 tags:
 - c++
 - PTA

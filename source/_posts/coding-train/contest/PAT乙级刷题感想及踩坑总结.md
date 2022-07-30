@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date: 2021-09-11 10:58:02 
 subtitle: 《坑 点 大 赏》还有好多坑点没写，等有机会再补吧【咕咕咕】
-cover: img/header_img/lml_bg.jpg
 tags:
 - 后端
 - c++

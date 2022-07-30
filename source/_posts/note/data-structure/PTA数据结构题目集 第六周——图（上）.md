@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date:   2020-08-08 20:09:53 
 subtitle: PTA数据结构题目集 第六周 图（上），涉及知识有图的基本表示与遍历方法（DFS/BFS），所用语言为c++。
-cover: img/header_img/lml_bg.jpg
 tags:
 - c++
 - PTA

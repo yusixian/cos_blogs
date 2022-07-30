@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date: 2020-08-08 19:12:40
 subtitle: PTA数据结构题目集第一周——最大子列和在线处理算法、二分查找，涉及数据结构的这些基本操作，所用语言为c++。
-cover: img/header_img/lml_bg.jpg
 tags:
 - c++
 - PTA

@@ -5,7 +5,6 @@ catalog: true
 date: 2022-01-21 14:30:17
 subtitle: 前端动画的基本原理、分类和如何实现前端动画JS函数封装
 lang: cn
-cover: img/header_img/lml_bg.jpg
 tags:
 - 前端
 - 动画

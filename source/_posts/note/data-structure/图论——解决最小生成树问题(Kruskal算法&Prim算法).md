@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date: 2020-04-22 16:07:46  
 subtitle: ——来自算法竞赛入门经典第2版（紫书）
-cover: img/header_img/lml_bg.jpg
 tags:
 - c++
 - 数据结构

@@ -5,7 +5,6 @@ catalog: true
 date: 2022-01-30 14:30:17
 subtitle: 讲解了小程序的发展历程和技术解析，并实现了一个简易的番茄钟小程序~
 lang: cn
-cover: img/header_img/lml_bg.jpg
 tags:
 - 前端
 - 小程序

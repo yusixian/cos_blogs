@@ -5,7 +5,6 @@ catalog: true
 date: 2022-01-16 14:30:17
 subtitle: 字节青训营笔记，也算是自己进行的布局学习的梳理吧，MDN上讲的很详细,所以大多附上了MDN上的链接。
 lang: cn
-cover: img/header_img/lml_bg.jpg
 tags:
 - 前端
 - CSS

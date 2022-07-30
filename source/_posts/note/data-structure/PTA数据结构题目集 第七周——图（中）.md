@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date:   2020-08-08 20:33:20 
 subtitle: PTA数据结构题目集 第七周——图（中），涉及图的单源最短路算法（Floyed算法、Dijkstra算法），所用语言为c++。
-cover: img/header_img/lml_bg.jpg
 tags:
 - c++
 - PTA

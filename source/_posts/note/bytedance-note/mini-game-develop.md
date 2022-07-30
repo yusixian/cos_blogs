@@ -5,7 +5,6 @@ catalog: true
 date: 2022-01-29 14:30:17
 subtitle: 本节课讲了前端游戏场景下的游戏开发与普通游戏开发的差异，并且介绍了一些游戏引擎，给出了游戏开发的技能树，在最后也简单介绍了利用Cocos Creator或PixiJS进行游戏开发的步骤。
 lang: cn
-cover: img/header_img/lml_bg.jpg
 tags:
 - 前端
 - 游戏开发

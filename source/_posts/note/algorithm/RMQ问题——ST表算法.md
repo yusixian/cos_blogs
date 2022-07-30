@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date: 2020-03-21 20:41:41
 subtitle: O(nlogn)复杂度预处理，可以实现O(1)复杂度的查询。
-cover: img/header_img/lml_bg.jpg
 tags:
 - c++
 - 数据结构

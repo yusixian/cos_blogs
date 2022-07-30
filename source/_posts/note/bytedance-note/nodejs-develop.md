@@ -5,7 +5,6 @@ catalog: true
 date: 2022-01-24 14:30:17
 subtitle: 这节课从Node.js介绍起，实现了其编写Http Server的一个实战（并用Promise优化回调，还对SSR有了一定的了解），并在延伸话题里老师也给出了一些建议与拓展阅读，好欸~
 lang: cn
-cover: img/header_img/lml_bg.jpg
 tags:
 - 前端
 - JavaScript

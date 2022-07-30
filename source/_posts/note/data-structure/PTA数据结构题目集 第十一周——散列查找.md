@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date:  2020-09-05 22:39:22 
 subtitle: PTA数据结构题目集 第十一周——散列查找练习题，涉及散列查找的应用、KMP等，所用语言为c++。
-cover: img/header_img/lml_bg.jpg
 tags:
 - c++
 - PTA

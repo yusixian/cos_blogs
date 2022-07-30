@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date:  2020-08-27 00:53:56
 subtitle: PTA数据结构题目集 第九周——排序（上），涉及各种排序算法（插入排序、归并排序、堆排序等），所用语言为c++。
-cover: img/header_img/lml_bg.jpg
 tags:
 - c++
 - PTA

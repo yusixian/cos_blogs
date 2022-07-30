@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date:  2020-09-05 22:39:22 
 subtitle: PTA数据结构题目集 第三周——栽树（二叉树等），涉及知识为二叉树的遍历方法和递归判断树的同构。所用语言为c++。
-cover: img/header_img/lml_bg.jpg
 tags:
 - c++
 - PTA

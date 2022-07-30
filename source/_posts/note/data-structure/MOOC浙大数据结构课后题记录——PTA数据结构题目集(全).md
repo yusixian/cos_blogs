@@ -1,12 +1,11 @@
 ---
 title: MOOC浙大数据结构课后题记录——PTA数据结构题目集(全)
 link: MOOC浙大数据结构课后题记录——PTA数据结构题目集(全)
-# sticky: 997
+sticky: true
 catalog: true
 lang: cn
 date:  2020-07-05 00:18:16
 subtitle: 本博客是为了记录学习数据结构时做的题集，若代码有疏漏欢迎指出！ps：因为已经学过c++了所以就都用c++写了。
-cover: img/header_img/93794438_p0.jpg
 tags:
 - c++
 - PTA

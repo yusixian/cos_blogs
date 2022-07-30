@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date: 2020-08-08 19:24:56 
 subtitle: PTA数据结构题目集 第二周——线性结构，涉及知识为链表的一些基本操作如合并、反转等。所用语言为c++。
-cover: img/header_img/lml_bg.jpg
 tags:
 - c++
 - PTA

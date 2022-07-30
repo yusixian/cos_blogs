@@ -5,7 +5,6 @@ catalog: true
 date: 2022-01-30 14:30:17
 subtitle: 本节课老师科普了Web多媒体技术的基本概念，如编码格式、封装格式、多媒体元素、流媒体协议等，并阐述了Web多媒体的多种应用场景
 lang: cn
-cover: img/header_img/lml_bg.jpg
 tags:
 - 前端
 - 图像编码

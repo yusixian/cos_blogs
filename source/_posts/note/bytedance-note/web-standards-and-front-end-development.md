@@ -5,7 +5,6 @@ catalog: true
 date: 2022-01-19 14:30:17
 subtitle: 本节课主要讲了前端开发的历程、应用领域，推荐了前端的学习路线图，以及一些Web标准
 lang: cn
-cover: img/header_img/lml_bg.jpg
 tags:
 - 前端
 - JavaScript

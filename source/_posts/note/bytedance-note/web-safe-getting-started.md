@@ -5,7 +5,6 @@ catalog: true
 date: 2022-01-25 14:30:17
 subtitle: Web安全相关知识，包括Web攻击的种类、防御方式等
 lang: cn
-cover: img/header_img/lml_bg.jpg
 tags:
 - 前端
 - Web安全

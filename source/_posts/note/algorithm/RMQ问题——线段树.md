@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date: 2020-04-01 20:08:52
 subtitle: ~RMQ问题之线段树板子~
-cover: img/header_img/lml_bg.jpg
 tags:
 - c++
 - 线段树

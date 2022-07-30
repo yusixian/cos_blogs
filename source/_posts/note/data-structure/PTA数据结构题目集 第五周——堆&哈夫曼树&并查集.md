@@ -5,7 +5,6 @@ catalog: true
 lang: cn
 date: 2020-08-08 19:59:36
 subtitle: PTA数据结构题目集 第五周——堆&哈夫曼树&并查集，涉及小顶堆、并查集、哈夫曼树的基本操作，所用语言为c++。
-cover: img/header_img/lml_bg.jpg
 tags:
 - c++
 - PTA

@@ -5,7 +5,6 @@ catalog: true
 date: 2022-01-21 14:30:17
 subtitle: 本节课大致介绍了响应式编程、React及其原理，介绍了组件化、一些应用级框架
 lang: cn
-cover: img/header_img/lml_bg.jpg
 tags:
 - 前端
 - 响应式

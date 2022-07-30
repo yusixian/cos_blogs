@@ -6,7 +6,7 @@ lang: cn
 subtitle: Redux三原则、Reducer、getState、dispatch、subscribe原理及实现
 date: 2022-02-15 21:13:52
 cover: img/header_img/93604793_p0.jpg
-sticky: 998
+sticky: true
 tags:
 - 前端
 - Redux
@@ -14,11 +14,13 @@ categories:
 - [笔记, 前端, React]
 ---
 
+开新坑……记录一下学习使用Redux的历程，主要来自[Redux 中文官网](https://cn.redux.js.org/introduction/getting-started)、[Redux入门系列视频](https://app.egghead.io/courses/getting-started-with-redux)及其里面的教程里的[笔记和转录](https://github.com/tayiorbeii/egghead.io_redux_course_notes)。
+
+包括了Redux三原则、Reducer、getState、dispatch、subscribe原理及实现
+
 > 首先要明确一点，虽然 Redux 是一个很不错的管理状态工具，但还是要考虑下它是否适合你的场景。
 
 > **不要仅仅因为有人说过应该使用 Redux 而使用，而是应该花一些时间来了解使用它的潜在好处和取舍**。
-
-开新坑……记录一下学习使用Redux的历程，主要来自[Redux 中文官网](https://cn.redux.js.org/introduction/getting-started)、[Redux入门系列视频](https://app.egghead.io/courses/getting-started-with-redux)及其里面的教程里的[笔记和转录](https://github.com/tayiorbeii/egghead.io_redux_course_notes)。
 
 <!-- more -->
 
