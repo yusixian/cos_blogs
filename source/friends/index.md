@@ -20,6 +20,12 @@ date: 2022-02-21 22:12:05
   url: https://www.czqblog.vip/
   desc: 欢迎来到谦谦の超弦空间
   image: https://www.czqblog.vip/wp-content/uploads/2022/07/LLogo.jpg
+- site: 钧桐的前端日记(前端基础百炼成仙)
+  owner: 41
+  url: https://kamenrider41.github.io/Hundred-refining-into-Immortals/
+  desc: 款款独行,才不致倾溢
+  image: https://kamenrider41.github.io/Hundred-refining-into-Immortals/logo.jpg
+  color: pink
 {% endlinks %}
 
 
@@ -49,4 +55,10 @@ date: 2022-02-21 22:12:05
   url: https://www.czqblog.vip/
   desc: 欢迎来到谦谦の超弦空间
   image: https://www.czqblog.vip/wp-content/uploads/2022/07/LLogo.jpg
+- site: 钧桐的前端日记(前端基础百炼成仙)
+  owner: 41
+  url: https://kamenrider41.github.io/Hundred-refining-into-Immortals/
+  desc: 款款独行,才不致倾溢
+  image: https://kamenrider41.github.io/Hundred-refining-into-Immortals/logo.jpg
+  color: #ffc0cb
 ```

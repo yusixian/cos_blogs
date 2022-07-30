@@ -433,6 +433,93 @@ quiz: true
 ;;;id2 ②号标签卡片 2
 这里是卡片 2 的内容
 ;;;
+## collapse 折叠块
+本功能基于 markdown-it-container
+标签为：
+| 开始行 |	`+++[风格颜色] [标题文字]` |
+| 结束行 |	`+++` |
+```markdown
++++ 默认默认 这里是一段文字
+++ 下划线 ++
++++
+
++++primary 紫色
+:::info
+参考信息
+:::
+
+- 第一行
+- 第二行
++++
+
++++info  蓝色
+;;;id3 卡片 1
+这里是卡片 1 的内容
+;;;
+
+;;;id3 卡片 2
+这里是卡片 2 的内容
+;;;
++++
+
++++success 绿色
+{% links %}
+- site: 優萌初華
+  url: https://shoka.lostyu.me
+  color: "#e9546b"
+{% endlinks %}
++++
+
++++warning 黄色
+!! 警告警告警告警告警告！！{.bulr}
+[label]{.label .success}
++++
+
++++danger 红色
+[danger]{.label .danger}
++++
+```
++++ 默认默认 这里是一段文字
+++ 下划线 ++
++++
+
+
++++primary 紫色
+:::info
+参考信息
+:::
+
+- 第一行
+- 第二行
++++
+
+
++++info  蓝色
+;;;id3 卡片 1
+这里是卡片 1 的内容
+;;;
+
+;;;id3 卡片 2
+这里是卡片 2 的内容
+;;;
++++
+
++++success 绿色
+{% links %}
+- site: 優萌初華
+  url: https://shoka.lostyu.me
+  color: "#e9546b"
+{% endlinks %}
++++
+
++++warning 黄色
+!! 警告警告警告警告警告！！{.bulr}
+[label]{.label .success}
++++
+
++++danger 红色
+[danger]{.label .danger}
++++
 
 ## media 多媒体
 使用 media 标签，目前可选择两种类型，即 audio 和 video 。
