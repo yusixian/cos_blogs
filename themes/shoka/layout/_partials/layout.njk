@@ -1,0 +1,154 @@
+{% import '_macro/sidebar.njk' as sidebar with context %}
+{% import '_macro/breadcrumb.njk' as breadcrumb with context %}
+{% import '_macro/widgets.njk' as widgets with context %}
+
+<!DOCTYPE html>
+<html lang="{{ page.language if page.language else config.language }}">
+<head>
+  {{ partial('_partials/head/head.njk', {}, {cache: true}) }}
+  {{ partial('_partials/head/head_unique.njk') }}
+  <title>{% block title %}{% endblock %}{{ alternate + " = " if alternate }}{{ title }}{{ " = "+subtitle if subtitle }}</title>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          {% block header %}
+            <a href="{{ config.root }}" class="logo" rel="start">
+              {%- if alternate %}<p class="artboard">{{ alternate }}</p>{%- endif %}
+              <h1 itemprop="name headline" class="title">{{ title }}</h1>
+            </a>
+            {%- if subtitle %}
+            <p class="meta" itemprop="description">= {{ subtitle }} =</p>
+            {%- endif %}
+          {% endblock %}
+          </div>
+        </div>
+        {{ partial('_partials/header.njk', {}, {cache: true}) }}
+      </div>
+      <div id="imgs" class="pjax">
+      {%- set covers = _cover(page, 6) %}
+      {%- if covers.length == 6 %}
+        <ul>
+          {%- for image in covers %}
+          <li class="item" data-background-image="{{ image }}"></li>
+          {%- endfor %}
+        </ul>
+      {%- else %}
+          <img src="{{ covers }}">
+      {%- endif %}
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          {% block content %}{% endblock %}
+        </div>
+        <div id="sidebar">
+          {% block sidebar %}{{ sidebar.render() }}{% endblock %}
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          {{ widgets.render() }}
+        </div>
+        {{ partial('_partials/footer.njk', {}, {cache: true}) }}
+      </div>
+    </footer>
+  </div>
+
+{%- set ccIcon = '<i class="ic i-creative-commons"></i>' %}
+{%- set ccText = theme.creative_commons.license | upper %}
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '{{ _permapath(page.path) }}',
+    favicon: {
+      show: "{{ __('favicon.show') }}",
+      hide: "{{ __('favicon.hide') }}"
+    },
+    search : {
+      placeholder: "{{ __('search.placeholder') }}",
+      empty: "{{ __('search.empty') }}",
+      stats: "{{ __('search.stats') }}"
+    },
+    {%- if theme.widgets.recent_comments or page.comment !== false  %}
+    valine: {{ page.valine|safedump if page.valine else "true"  }},{%- endif %}
+    {%- if page.chart %}chart: true,{%- endif %}
+    {%- if page.math %}copy_tex: true,
+    katex: true,{%- endif %}
+    {%- if page.mermaid %}mermaid: true,{%- endif %}
+    {%- if page.audio %}audio: {{ page.audio|safedump }},{%- endif %}
+    {%- if page.audio === false %}audio: {},{%- endif %}
+    {%- if page.fancybox !== false %}fancybox: true,{%- endif %}
+    {%- if page.copyright !== false %}
+    {%- if page.copyright === true %}nocopy: true,
+    copyright: '{{ __("tips.nocopy")}}',{%- else %}
+    copyright: '{{ __("tips.copyright", ccIcon + ccText) }}',
+    {%- endif %}{%- endif %}
+    {%- if page.quiz %}quiz: {
+      choice: "{{ __('quiz.choice') }}",
+      multiple: "{{ __('quiz.multiple') }}",
+      true_false: "{{ __('quiz.true_false') }}",
+      essay: "{{ __('quiz.essay') }}",
+      gap_fill: "{{ __('quiz.gap_fill') }}",
+      mistake: "{{ __('quiz.mistake') }}"
+    },{%- endif %}
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }{%- if theme.quicklink.ignores %},
+      {{ theme.quicklink.ignores|safedump }}
+      {%- endif %}
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+{{ _vendor_js() }}
+
+{{ _js('app.js')}}
+
+{{ partial('_partials/third-party/baidu-analytics.njk', {}, {cache: true}) }}
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% macro item(name, path, parent) %}
+  {%- set path = path.split('||') %}
+  {%- set itemURL = path[0] | trim %}
+  {%- if not itemURL.startsWith('http') %}
+    {%- set itemURL = itemURL | replace('//', '/') %}
+  {%- endif %}
+  {%- set menuIcon = '<i class="ic i-' + path[1] | trim + '"></i>' %}
+  {%- set menuText = __('menu.' + name) | replace('menu.', '') %}
+  {%- if parent %}
+  <li class="item dropdown">
+    {%- if itemURL == '/' %}
+      <a href="javascript:void(0);">{{menuIcon + menuText}}</a>
+    {%- else %}
+      {{ _url(itemURL, menuIcon + menuText, {rel: 'section'}) }}
+    {%- endif %}
+    <ul class="submenu">
+  {%- else %}
+  <li class="item">
+    {{ _url(itemURL, menuIcon + menuText, {rel: 'section'}) }}
+  </li>
+  {%- endif %}
+{% endmacro %}
+
+{%- for name, value in theme.menu %}
+  {%- if value == '[object Object]' %}
+    {%- for subname, subvalue in value %}
+      {%- if subname == 'default' %}
+        {{ item(name, subvalue, true) }}
+      {%- else %}
+        {{ item(subname, subvalue) }}
+      {%- endif %}
+    {%- endfor %}
+  </ul>
+  {%- else %}
+    {{ item(name, value) }}
+  {%- endif %}
+{%- endfor %}

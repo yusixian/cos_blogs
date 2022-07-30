@@ -1,0 +1,48 @@
+<article itemscope itemtype="http://schema.org/Article" class="post block" lang="{{ post.lang or config.language }}">
+  <link itemprop="mainEntityOfPage" href="{{ post.permalink }}">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="{{ url_for(theme.statics + theme.images + '/' + theme.sidebar.avatar) }}">
+    <meta itemprop="name" content="{{ author }}">
+    <meta itemprop="description" content="{{ subtitle }}, {{ description }}">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="{{ title }}">
+  </span>
+
+  <div class="body md{%- if post.direction and post.direction.toLowerCase() === 'rtl' %} rtl{%- endif %}" itemprop="articleBody">
+    {# Gallery support #}
+    {%- if post.photos and post.photos.length %}
+      <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        {%- for photo in post.photos %}
+          <img data-src="{{ _image_url(photo, post.path) }}" itemprop="contentUrl">
+        {%- endfor %}
+      </div>
+    {%- endif %}
+
+    {{ post.content }}
+
+    {%- if post.tags and post.tags.length %}
+      <div class="tags">
+        {%- for tag in post.tags.toArray() %}
+          <a href="{{ url_for(tag.path) }}" rel="tag"><i class="ic i-tag"></i> {{ tag.name }}</a>
+        {%- endfor %}
+      </div>
+    {%- endif %}
+  </div>
+
+   <footer>
+
+    {{ partial('_partials/post/footer.njk') }}
+
+    {%- if theme.reward.enable %}
+      {{ partial('_partials/post/reward.njk', {}, {cache: true}) }}
+    {%- endif %}
+
+    {%- if theme.creative_commons.license %}
+      {{ partial('_partials/post/copyright.njk') }}
+    {%- endif %}
+  </footer>
+
+</article>

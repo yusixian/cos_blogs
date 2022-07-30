@@ -1,0 +1,44 @@
+{% extends '_partials/layout.njk' %}
+{% import '_macro/sidebar.njk' as sidebar with context %}
+{% import '_macro/comment.njk' as comment with context %}
+{% import '_macro/postmeta.njk' as postmeta with context %}
+
+{% block title %}
+{%- set page_title = page.title %}
+{%- if page.categories and page.categories.length %}
+  {%- set cat_list = '' %}
+  {%- set comma = '' %}
+  {%- for cat in page.categories.toArray() %}
+    {%- set cat_list = cat.name + comma + cat_list%}
+    {%- set comma = ' - ' %}
+  {%- endfor %}
+  {%- set page_title = page_title + ' - ' + cat_list %}
+{%- endif %}
+{{ page_title }} |
+{% endblock %}
+
+{% block header %}
+  <h1 itemprop="name headline">
+    {%- if page.link %}
+      {%- set postTitleIcon = '<i class="ic i-link-alt"></i>' %}
+      {%- set postText = page.title or page.link %}
+      {{ _url(page.link, postText + postTitleIcon, {class: 'link external', itemprop: 'url'}) }}
+    {%- else %}
+      {{- page.title }}
+    {%- endif %}
+  </h1>
+  {{postmeta.render(page, true)}}
+{% endblock %}
+
+{% block content %}
+  <div class="article wrap">
+    {{ breadcrumb.render(page, true) }}
+    {{ partial('_partials/post/post.njk', {post: page}) }}
+  </div>
+  {{ partial('_partials/post/nav.njk', {post: page}) }}
+  {{ comment.render() }}
+{% endblock %}
+
+{% block sidebar %}
+{{ sidebar.render(true) }}
+{% endblock %}
