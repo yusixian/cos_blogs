@@ -40,11 +40,11 @@ Github地址: [cos_blogs](https://github.com/yusixian/cos_blogs)
 
 在 Setting 中 进行 vercel 设置，覆盖默认设置、绑定新的域名等
 
-![vercelSetting](vercelSetting.png)
+![vercelSetting](/img/post/vercel部署Hexo博客/vercelSetting.png)
 
 部署结果可以在Deploy部分看到
 
-![vercel部署](vercel部署.png)
+![vercel部署](/img/post/vercel部署Hexo博客/vercel部署.png)
 
 每个分支/提交等部署生成url的方式在这里：[Generated URLs](https://vercel.com/docs/concepts/deployments/generated-urls)
 
