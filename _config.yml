@@ -124,7 +124,7 @@ theme: shoka
 
 markdown:
   render: # 渲染器设置
-    html: false # 过滤 HTML 标签
+    html: true # 过滤 HTML 标签
     xhtmlOut: true # 使用 '/' 来闭合单标签 （比如 <br />）。
     breaks: true # 转换段落里的 '\n' 到 <br>。
     linkify: true # 将类似 URL 的文本自动转换为链接。
