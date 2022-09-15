@@ -11,9 +11,9 @@ auto_scroll: # false
 # 是否显示页面加载动画 loading-cat
 loader:
   start: true # 当初次打开页面时，显示加载动画
-  switch: true # tab 切换到其他页面时，显示加载动画
+  switch: false # tab 切换到其他页面时，显示加载动画
 fireworks:
-  enable: true # 是否启用
+  enable: true # 是否启用s
   color: # 烟花颜色
     - "rgba(255,182,185,.9)"
     - "rgba(250,227,217,.9)"
