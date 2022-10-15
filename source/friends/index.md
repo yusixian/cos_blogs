@@ -26,6 +26,12 @@ date: 2022-02-21 22:12:05
   desc: 款款独行,才不致倾溢
   image: https://kamenrider41.github.io/Hundred-refining-into-Immortals/logo.jpg
   color: pink
+- site: Jesslyn的博客
+  owner: Jesslyn
+  url: https://jesslynwong.github.io/
+  desc: 早日成为大佬的程序媛
+  image: https://jesslynwong.github.io/image/header.png
+  color: #ffc0cb
 {% endlinks %}
 
 
