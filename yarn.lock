@@ -983,10 +983,10 @@ hexo-deployer-git@^3.0.0:
     moment "^2.18.0"
     nunjucks "^3.2.1"
 
-hexo-feed@^1.1.0:
-  version "1.1.0"
-  resolved "https://api-web-registry.metaapp.cn/hexo-feed/-/hexo-feed-1.1.0.tgz#df1c3432cd16ee65c97f78225850abfa02711247"
-  integrity sha512-+pAgvxRWZiS9ut2P2ZFjHvI+EZa9vsDK8LHS7djCENvfcNrgUd4b6y/z1n1ElLQhAWlv1jHwFNs8Qrp+nXmilw==
+hexo-feed@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/hexo-feed/-/hexo-feed-1.1.1.tgz#fc16e3473c55122a8f2243c420aeb3cb64bcb26b"
+  integrity sha512-Hrp6YZGZ93/EqGOAvKll8hQpCWKggcbexP3Xkjx00YCUeOHGSNqBLdggRGAo8c7/BPbF6X0wLgar/WD+f5hKYQ==
 
 hexo-front-matter@^3.0.0:
   version "3.0.0"
