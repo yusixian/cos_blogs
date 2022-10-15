@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@traptitech/markdown-it-spoiler": "^1.1.6",
-    "hexo": "^6.0.0",
+    "hexo": "^6.3.0",
     "hexo-algoliasearch": "^1.0.0",
     "hexo-autoprefixer": "^2.0.0",
     "hexo-deployer-git": "^3.0.0",
