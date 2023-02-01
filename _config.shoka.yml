@@ -113,12 +113,13 @@ widgets:
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  since: 2010
+  since: 2020
+  # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
   count: true
+  powered: true
 
 post:
   count: true
-
 
 # ---------------------------------------------------------------
 # Third Party Plugins & Services Settings
