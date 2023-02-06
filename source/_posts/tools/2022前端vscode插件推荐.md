@@ -10,7 +10,6 @@ tags:
 categories:
 - 工具
 ---
-
 总结了下自己的 2022 的常用前端插件以及工具推荐，虽然 vscode 自带的插件同步功能已经很齐全了，但是还是自己总结了一篇以备不时之需。原飞书文档链接：[‍2022 前端开发 vscode 常用插件及其他工具推荐](https://nf2pjr3e5t.feishu.cn/docx/ExC0dt2tlo5sfExZk9ocKHLknle)
 
 # vscode 常用插件
@@ -22,9 +21,6 @@ categories:
 拓展了vscode本身集成的Git功能，提供了很多好东西
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/896ed607cf504cf2a182d247541cd145~tplv-k3u1fbpfcp-zoom-1.image)
-
-  
-
 
 ### Auto Close Tag
 
@@ -69,9 +65,6 @@ React代码片段，如题如图
 ### ESLint
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e821b84d00164ef28e24db4a457f2478~tplv-k3u1fbpfcp-zoom-1.image)
-
-  
-
 
 ### Prettier
 
@@ -167,9 +160,6 @@ CSS module模式必备
 
 vscode的项目管理器，一键切换项目
 
-  
-
-
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bcf067868c9143fda8491a84501ccc81~tplv-k3u1fbpfcp-zoom-1.image)
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/695e0dd44e4f43ae88759a94405e0049~tplv-k3u1fbpfcp-zoom-1.image)
@@ -185,9 +175,6 @@ vscode的项目管理器，一键切换项目
 注释翻译，如图
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7ebfb335a8384ef79d9b34a828c965e4~tplv-k3u1fbpfcp-zoom-1.image)
-
-  
-
 
 ### Live Share
 
@@ -289,9 +276,6 @@ Atom 的标志性 One Dark 主题，也是VS Code安装最多的 [主题之一�
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3f6e7a6b6c884acc9863ad05ec4644fd~tplv-k3u1fbpfcp-zoom-1.image)
 
-  
-
-
 ## 刷题类
 
 ### Quokka.js
@@ -313,6 +297,13 @@ Atom 的标志性 One Dark 主题，也是VS Code安装最多的 [主题之一�
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6ee29d6a3fe143a5b07da85e6a1d27d8~tplv-k3u1fbpfcp-zoom-1.image)
 
 # 工具推荐
+
+## 浏览器插件
+
+* 翻译插件
+  * [immersive-translate 沉浸式双语网页翻译扩展（Github）](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fimmersive-translate%2Fimmersive-translate "https://github.com/immersive-translate/immersive-translate")、[介绍 - Immersive Translate](https://link.juejin.cn?target=https%3A%2F%2Fimmersive-translate.owenyoung.com%2F "https://immersive-translate.owenyoung.com/")
+  * 侧边翻译 [EdgeTranslate: A translation extension](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FEdgeTranslate%2FEdgeTranslate "https://github.com/EdgeTranslate/EdgeTranslate")
+* [VisBug - Microsoft Edge Addons](https://link.juejin.cn?target=https%3A%2F%2Fmicrosoftedge.microsoft.com%2Faddons%2Fdetail%2Fvisbug%2Fkdmdoinnkaeognnpegpkepdnggeaodkn "https://microsoftedge.microsoft.com/addons/detail/visbug/kdmdoinnkaeognnpegpkepdnggeaodkn")
 
 ## 截图&gif工具
 
