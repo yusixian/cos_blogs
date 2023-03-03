@@ -30,10 +30,10 @@ description: "关于我？"
 
 | 仓库地址  | 简介   |  博客介绍 |
 | --------- | ------ | --------- |
-| ![dance-ui](https://github-readme-stats.vercel.app/api/pin/?username=dancing-team&repo=dance-ui&layout=compact) [https://github.com/dancing-team/dance-ui](https://github.com/dancing-team/dance-ui) | 第五届字节青训营跟小伙伴一起整的项目~使用 pnpm+vite+ts+tailwind 开发的 React 组件库，采用 monorepo 组织，文档站使用 [Docusaurus](https://docusaurus.io/docs) 构建   | （在路上了在路上了） |
-| ![cos_blogs](https://github-readme-stats.vercel.app/api/pin/?username=yusixian&repo=cos_blogs&layout=compact) [https://github.com/yusixian/cos_blogs](https://github.com/yusixian/cos_blogs) | 使用Hexo + Shoka主题搭建的自己的博客~ | [Hexo + vercel 部署博客](https://ysx.cosine.ren/hexo-vercel-deploy-blog/) |
-| ![campus-community-backend](https://github-readme-stats.vercel.app/api/pin/?username=yusixian&repo=campus-community-backend&layout=compact) [https://github.com/yusixian/campus-community-backend](https://github.com/yusixian/campus-community-backend) | 使用 koa2 + Sequelize 搭建的校园社区后端，一个厉害的项目的后端！是之前百度前端训练营的项目实践  | [Campus SNS 校园社区后端接口开发（附前端地址） - 项目集锦](https://ysx.cosine.ren/campus-sns-develop) |
-| ![CS_Experiments](https://github-readme-stats.vercel.app/api/pin/?username=yusixian&repo=CS_Experiments&layout=compact) [https://github.com/yusixian/CS_Experiments](https://github.com/yusixian/CS_Experiments) | 大学期间专业课实验、课设及报告，禁止全盘照搬，仅供学习参考用！ | --- |
+| [![dance-ui](https://github-readme-stats.vercel.app/api/pin/?username=dancing-team&repo=dance-ui&layout=compact)](https://github.com/dancing-team/dance-ui) [https://github.com/dancing-team/dance-ui](https://github.com/dancing-team/dance-ui) | 第五届字节青训营跟小伙伴一起整的项目~使用 pnpm+vite+ts+tailwind 开发的 React 组件库，采用 monorepo 组织，文档站使用 [Docusaurus](https://docusaurus.io/docs) 构建   | （在路上了在路上了） |
+| [![cos_blogs](https://github-readme-stats.vercel.app/api/pin/?username=yusixian&repo=cos_blogs&layout=compact)](https://github.com/yusixian/cos_blogs) [https://github.com/yusixian/cos_blogs](https://github.com/yusixian/cos_blogs) | 使用Hexo + Shoka主题搭建的自己的博客~ | [Hexo + vercel 部署博客](https://ysx.cosine.ren/hexo-vercel-deploy-blog/) |
+| [![campus-community-backend](https://github-readme-stats.vercel.app/api/pin/?username=yusixian&repo=campus-community-backend&layout=compact)](https://github.com/yusixian/campus-community-backend) [https://github.com/yusixian/campus-community-backend](https://github.com/yusixian/campus-community-backend) | 使用 koa2 + Sequelize 搭建的校园社区后端，一个厉害的项目的后端！是之前百度前端训练营的项目实践  | [Campus SNS 校园社区后端接口开发（附前端地址） - 项目集锦](https://ysx.cosine.ren/campus-sns-develop) |
+| [![CS_Experiments](https://github-readme-stats.vercel.app/api/pin/?username=yusixian&repo=CS_Experiments&layout=compact)](https://github.com/yusixian/CS_Experiments) [https://github.com/yusixian/CS_Experiments](https://github.com/yusixian/CS_Experiments) | 大学期间专业课实验、课设及报告，禁止全盘照搬，仅供学习参考用！ | --- |
 
 
 
