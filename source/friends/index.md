@@ -31,12 +31,18 @@ date: 2022-02-21 22:12:05
   url: https://jesslynwong.github.io/
   desc: 早日成为大佬的程序媛
   image: https://jesslynwong.github.io/image/header.png
-  color: #ffc0cb
+  color: '#ffc0cb'
 - site: Revincx的小破站
   owner: Revincx
   url: https://blog.revincx.icu/
   desc: 可爱就是正义~
   image: https://cdn.jsdelivr.net/gh/Revincx/blog-assets@master/images/avatar.jpg
+- site: JohnsonXinのWorld
+  url: https://reday.asia
+  owner: JohnsonXin
+  desc: 风和日暖令人愿意永远活下去
+  image: https://p3-passport.byteimg.com/img/user-avatar/6133eb6b49b7709241a07379f7f509c0~180x180.awebp
+  color: '#0567f1'
 {% endlinks %}
 
 
@@ -58,5 +64,5 @@ date: 2022-02-21 22:12:05
   owner: cos  #昵称
   desc: WA的一声就哭了 # 站点简介
   image: https://ysx.cosine.ren/img/avatar.jpg
-  color: #ffc0cb # 图标色
+  color: '#ffc0cb' # 图标色
 ```
