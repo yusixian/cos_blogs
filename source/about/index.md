@@ -4,7 +4,7 @@ title: "About"
 date: 2022-02-09 20:39:33
 description: "关于我？"
 ---
-# ✋ 你好，这里是余弦
+## ✋ 你好，这里是余弦
 
 [![](https://img.shields.io/badge/dynamic/json?color=blue&label=Github&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dyusixian)](https://github.com/yusixian)
 [![](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fbilibili%2F10730895&query=count&color=282c34&label=%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9&labelColor=FE7398&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAD7ElEQVR4nO2dW9WrMBCFK6ESkFAJSKiESqgEHCABCZWAhEpAAhL2ecik5dDc%2FpXLBDLfWnlqy0xmJ5BMQnq5CIIgCIIgCIIgCIIgCEIBAHQAemYfrgCunD6wAKAHsEKxALgx+bCQD8%2FS9tmgVqeDr1lLigDgZvDhXso+K9TyTBQRwRJ8AHjntl0Flh5QRAQK%2FmKxPeayWx2OXpBNBKiHvi34b7T2MC4pAvW6twR%2FRwkRKPizBN8CgEcuESj4Lwm+BwBjahEk+H8EwJRKhOaCDzW8e1JLfkUUH1NgmR3XmHffHR1l+72BSs8d7w8U+JDAnZERQMcV+CtUi7dNqFqibB4J7vtrq7xKCuAasbTMXCL4T+5aVk6+2xHUrWdhruAR6HIJcOeu2UHI8zyAe2ytWfEdWz9PVvQ8YAmIQ5dDAB9LFsMVAv8oMO2zAGrC5WNIarRiAuKR9jYEd9pY08aa6uUzIHGRdkgKd8pY0yc1WjEBAqypDYoAG0QAZkQAZkQAZkQAZk4vANQenjsSzS3I%2FwcSbXU5jQBUkRtdf4Rar90v8kSv3+I3ffCCSpk8I%2Fw+lgDkdI%2Fv2rEp2CaiWm1AsDQLlDAD+dlFXLMeAaCSeLZdaSFE5VUQNot38cKuEeBgAsSuG0flVZBmEanbXfNQAsS0fgBYIn2fIu3%2FBBMHEyBmDXlFfA8IzeHb+Ems4WAChKykrVA9ZfsQTL57jXzRg4A5wC%2FA8N4ADiZAZwm2XjW75Qh2KOTfA0p4kygPw28OJcCVgn3nDnYo2EwEYRgGH0qAMyICMCMCMCMCMCMCMCMCMCMCfP3qwHDOQ4AAUekTk8FaBRihJnZdYbvtCGC7LvmkM63GjVDINPFrQgCq5ETXfmMzI90FXzPvfqt7x4rEu%2FZaEcCUxFvgz2zO+BUn6UkoaEEAsptiMSX5e8FoRYCN7cVgb4Vq7U%2FH50Pq4JNP7Qiw8UFnJwcK+tXy+Wj6PLEvPgHSHv5UgwA1IQIwwyFAyLJin9RoxYgAzAQIkPwNmf26busC+OIx5TDqo5nDT+F%2FSS%2F9CYzwb+No49zNy2evkYv0LywGGAXUvp6eSneycqOic0w20k7CNgKE7jJunSGLACTCxF27ylmQc98T5MQUH49swd+I0HPXslLKnT0N+wnkrTKi9JZL%2FL9i1SorMmdeQ4TQQ7OFMxIMzGD45w8nUL1im7efENZLJpgPSw0pfz0cdt4U3230Td%2FTvx2R6d2FrHhEWLkq5PELOMsRPHCPnAZGv1xJteL7jbJiaW3sB2nDvPC%2FosSYvjRQz4cJ6n7KO3rYQL7M+L6nVtfDVRAEQRAEQRAEQRAEIZ5%2FSAXmdfXaoQsAAAAASUVORK5CYII%3D&suffix=+%E5%85%B3%E6%B3%A8&cacheSeconds=3600)](https://space.bilibili.com/10730895)
@@ -15,8 +15,10 @@ description: "关于我？"
 
 - 是余弦(cosine)那个cos，不是cosplay那个cos
 - 热爱写代码，现在热衷于前端开发，之前也有过不少后端的经验，现在正朝着大前端的方向努力
-- Gitbook 前端学习记录：[前言及目录 - 前端学习记录](https://book.cosine.ren/)
-- 语雀知识库：[前端学习记录](https://www.yuque.com/u22563621/abmcfv) 不断完善ing...
+- Gitbook 前端学习记录：[前言及目录 - 前端学习记录](https://book.cosine.ren/) 不断完善ing... 
+- 个人博客
+  - xlog 链上版博客 👉 https://cosine.xlog.app/
+  - Hexo 博客 👉 https://ysx.cosine.ren/
 
 愿热情永存，愿热爱不灭，愿生活无憾
 
@@ -37,10 +39,11 @@ description: "关于我？"
 
 
 
-# 现在正在进行的是？
+# 🕘 现在正在进行的是
 
-- 2022/3/3 简单更新了下关于页面^_^ 要开始准备毕设惹
-- 2022/2/7 开心的打工人一枚呀（x）
+- 2023/4/5 发现 xlog 宝藏链上博客，搬家ing
+- 2023/3/3 简单更新了下关于页面^_^ 要开始准备毕设惹
+- 2023/2/7 开心的打工人一枚呀（x）
 - 2022/9/27 实习到现在都没怎么打理过博客，准备大干一场（大概
 - 2022/5/6 一眼看到shoka这个主题就爱上了，开冲！立马更换成了这个主题。
 - 2022/3/20 找暑期实习真难哇！！也有在刷题惹
@@ -51,14 +54,45 @@ description: "关于我？"
 - 2022/1/8 寒假了，在家了，开始摸鱼
 - 2021/12/25 一周三个课设，实在顶不住了（在做了，在做了，咕——） 
 
-# 前端学习成果历程
-
-- 2022.01至今 参加第五届字节青训营，利用实习空余时间折腾了个组件库 [dance-ui](https://github.com/dancing-team/dance-ui)，使用 pnpm+vite+ts+tailwind 开发的 React 组件库， 采用 monorepo 组织，文档站使用 Docusaurus 构建。
+# 📖 前端学习成果历程
+- 2023.04至今 忙实习，忙毕设，忙ing 
+- 2023.01~2023.03 参加第五届字节青训营，利用实习空余时间折腾了个组件库 [dance-ui](https://github.com/dancing-team/dance-ui)，使用 pnpm+vite+ts+tailwind 开发的 React 组件库， 采用 monorepo 组织，文档站使用 Docusaurus 构建。
 - 2022.07~2022.12 实习 学到很多东西，Next.js, tailwind, recoil, wagmi, recharts, ts, motion, floating-ui……
 - 2022.06-2022.07 实习，开发公司wiki项目等 接触了docker, jenkins, Nest.js, vue3……
 - 2022.03-2022.06 春招 投简历、找实习、背八股、提升技术~~~
 - 2022.02-2022.03 百度进阶班项目 Campus SNS校园社区后端接口系统
 - 2022.01 初学前端，参加百度前端训练营、字节前端训练营、开始系统性的学习前端，看了红宝书等
+
+## 🧰 cosine-toolbox
+
+在线地址👉https://tools.cosine.ren/
+Github👉https://github.com/yusixian/cosine-toolbox
+
+🧰余弦工具箱🧰一个使用 React + Next.js + Typescript + Tailwind 搭建的项目，集合了自己写/npm上的常用工具，亦或者从日常项目需求中抽离的工具，在这里尝试各种技术实践
+
+自己的工具项目，正在不断开发完善中
+
+### 功能
+
+#### JSON 通用工具🧰
+
+👉https://tools.cosine.ren/jsonUtil
+
+- CSV转JSON：可将CSV格式转换为json对象数组
+- JS对象转JSON: 可将JS对象转换为JSON字符串
+  
+#### Base64 通用工具🧰
+
+👉https://tools.cosine.ren/base64util
+
+- Base64 编解码工具
+- Base64 图片批量下载
+  
+#### Url 通用工具🧰
+
+👉https://tools.cosine.ren/urlUtil
+
+- 应某人要求开发的Url 编解码工具
 
 ## dance-ui 组件库开发
 
