@@ -12,7 +12,9 @@ categories:
 - [笔记, 前端]
 ---
 
-[Tailwind CSS v3.3](https://tailwindcss.com/blog/tailwindcss-v3-3) 于 2023 年 3 月 28 日发布了，这是一个棒的版本，它为我们带来了许多新的特性和改进，让我们的开发更加高效和灵活。在本文中，将介绍一些最令人兴奋的新功能，包括：
+工作中同事突然群里提了一嘴：Tailwind v3.3这个新特性不错欸，行高字号终于可以写一个类了，于是摸鱼看了下 Tailwind 更新，不说废话，直接上总结~
+
+[Tailwind CSS v3.3](https://tailwindcss.com/blog/tailwindcss-v3-3) 于 2023 年 3 月 28 日发布了，这是一个非常棒的版本，它为我们带来了许多新的特性和改进，让我们的开发更加高效和灵活。在本文中，将介绍一些最令人兴奋的新功能，包括：
 
 1. [用于深色的扩展调色板](https://tailwindcss.com/blog/tailwindcss-v3-3#extended-color-palette-for-darker-darks)：为扩展的颜色调色板，为每种颜色增加了更深的 950 色阶，现在有11种色调，eg： `bg-slate-950`
 
