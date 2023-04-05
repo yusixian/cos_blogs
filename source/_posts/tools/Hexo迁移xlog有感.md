@@ -1,5 +1,5 @@
 ---
-title: Hexo 迁移 xLog 小记
+title: Hexo 迁移 xLog 有感
 link: hexo-migration-xlog-notes
 catalog: true
 lang: cn
@@ -85,7 +85,7 @@ categories:
 
 ## 结语
 
-最后，几乎所有涉及到面向大众的 web3 文章的结语都会表达出对这个领域的投机者的不满，不厌其烦地解释 web3 不只有疯狂的投资者和韭菜。
+最后，几乎所有涉及到面向大众的 web3 文章的结语都会表达出对这个领域的投机者的不满，不厌其烦地解释 web3 不只有疯狂的投资者和韭菜。web3 是一个有趣而富有挑战的领域，它有很多潜力，也有很多问题。不要忽视了 web3 对于互联网和社会的深刻变革，也不要轻视了 web3 中那些真正有创造力和远见的人。
 
 贴一下上文搭建博客的教程中所说的部分文摘
 
@@ -96,10 +96,11 @@ categories:
 > 正如在现实中活动需要金钱，在区块链上进行活动（交易）需要手续费。Crossbell 区块链的手续费是 $CSB。你可能想问，为什么 Web2 网站不需要费用来活动？答案是你的「数据隐私」在不经意间已经被作为替代费用交易了。
 
 
-贴一些值得阅读的文章，或许可以给感兴趣的人一个了解web3的渠道
+贴一些值得阅读的文章，或许可以给感兴趣的人一个了解web3的渠道，**解释由chat生成，不保证准确**
 
-- [The Path to Web3](https://thegraph.com/blog/the-path-to-web3/)
-- [Web3 DApp 最佳编程实践指南](https://guoyu.mirror.xyz/RD-xkpoxasAU7x5MIJmiCX4gll3Cs0pAd5iM258S1Ek)
+- [What is Web3? The Decentralized Internet of the Future Explained](https://www.freecodecamp.org/news/what-is-web3/) 这篇文章详细地讲述了 web3 的发展历史和未来愿景，以及它如何解决 web2 中的一些问题，比如数据隐私、中心化和垄断。它还提供了一些 web3 的实际案例和资源，帮助读者更好地理解和参与 web3。
+- [The Path to Web3](https://thegraph.com/blog/the-path-to-web3/) 这篇文章讲述了 web3 的发展历史和未来愿景，以及它如何解决 web2 中的一些问题，比如数据隐私、中心化和垄断。它还介绍了 The Graph 这个项目，它是一个用于查询区块链网络数据的索引协议，可以让开发者和用户更容易地构建和使用去中心化应用（DApp）。它还展望了 The Graph 的未来计划，包括支持更多的区块链网络、增加社区参与和治理等。
+- [Web3 DApp 最佳编程实践指南](https://guoyu.mirror.xyz/RD-xkpoxasAU7x5MIJmiCX4gll3Cs0pAd5iM258S1Ek) 这篇文章是一份 Web3 DApp 开发的最佳实践指南，作者是著名的程序员郭宇，他分享了他在 CodeforDAO 和 Checks Finance 两个项目中遇到的问题和解决方案。他介绍了一些 Web3 DApp 开发的基本概念，比如区块链、智能合约、钱包、DApp、去中心化协议等。他还提供了一些 Web3 DApp 开发的工具和资源，比如编程语言、框架、库、测试、部署、监控等。他的目的是帮助更多的工程师转向 Web3，并为 Web3 的长远发展做出贡献。
 
 
-感谢阅读
+> 感谢你阅读这篇文章，希望你能从中获得一些有用的信息和启发。如果对我的文章有任何建议或批评，欢迎在评论区留言或者通过邮件联系我。我很乐意听取反馈和想法，祝生活愉快！
