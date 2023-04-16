@@ -162,6 +162,12 @@ valine:
 
 # bgm
 audio:
+  - title: ❤️安利向
+    list:
+      - https://music.163.com/playlist?id=3036586237
+  - title: cos的2022年度歌单
+    list:
+      - https://music.163.com/playlist?id=7872285482
   - title: cos的2021年度歌单
     list:
       - https://music.163.com/playlist?id=7189274318
@@ -171,9 +177,6 @@ audio:
   - title: cos的2019年度歌单
     list:
       - https://music.163.com/playlist?id=3144460328
-  - title: ❤️安利向
-    list:
-      - https://music.163.com/playlist?id=3036586237
 
 # Dependencies: https://github.com/amehime/hexo-renderer-multi-markdown-it
 pangu: true
