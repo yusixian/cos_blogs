@@ -27,7 +27,7 @@
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^3.0.0",
     "hexo-symbols-count-time": "^0.7.1",
-    "hexo-theme-landscape": "^0.0.3",
+    "hexo-theme-landscape": "^1.0.0",
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-mermaid": "^0.2.5"
   }
