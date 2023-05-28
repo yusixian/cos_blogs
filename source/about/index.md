@@ -15,10 +15,10 @@ description: "关于我？"
 
 - 是余弦(cosine)那个cos，不是cosplay那个cos
 - 热爱写代码，现在热衷于前端开发，之前也有过不少后端的经验，现在正朝着大前端的方向努力
-- Gitbook 前端学习记录：[前言及目录 - 前端学习记录](https://book.cosine.ren/) 不断完善ing... 
+- Gitbook 前端学习记录：[前言及目录 - 前端学习记录](https://book.cosine.ren/) 不断完善ing...
 - 个人博客
-  - xlog 链上版博客 👉 https://cosine.xlog.app/
-  - Hexo 博客 👉 https://ysx.cosine.ren/
+  - xlog 链上版博客 👉 [https://x.cosine.ren/](https://x.cosine.ren/)
+  - Hexo 博客 👉 [cosine = 余弦の博客 = WA 的一声就哭了](https://ysx.cosine.ren/)
 
 愿热情永存，愿热爱不灭，愿生活无憾
 
@@ -30,14 +30,12 @@ description: "关于我？"
 
 喜欢或者有用的话就动动小手点个 star 喵~
 
-| 仓库地址  | 简介   |  博客介绍 |
-| --------- | ------ | --------- |
-| [![dance-ui](https://github-readme-stats.vercel.app/api/pin/?username=dancing-team&repo=dance-ui&layout=compact)](https://github.com/dancing-team/dance-ui) [https://github.com/dancing-team/dance-ui](https://github.com/dancing-team/dance-ui) | 第五届字节青训营跟小伙伴一起整的项目~使用 pnpm+vite+ts+tailwind 开发的 React 组件库，采用 monorepo 组织，文档站使用 [Docusaurus](https://docusaurus.io/docs) 构建   | （在路上了在路上了） |
-| [![cos_blogs](https://github-readme-stats.vercel.app/api/pin/?username=yusixian&repo=cos_blogs&layout=compact)](https://github.com/yusixian/cos_blogs) [https://github.com/yusixian/cos_blogs](https://github.com/yusixian/cos_blogs) | 使用Hexo + Shoka主题搭建的自己的博客~ | [Hexo + vercel 部署博客](https://ysx.cosine.ren/hexo-vercel-deploy-blog/) |
-| [![campus-community-backend](https://github-readme-stats.vercel.app/api/pin/?username=yusixian&repo=campus-community-backend&layout=compact)](https://github.com/yusixian/campus-community-backend) [https://github.com/yusixian/campus-community-backend](https://github.com/yusixian/campus-community-backend) | 使用 koa2 + Sequelize 搭建的校园社区后端，一个厉害的项目的后端！是之前百度前端训练营的项目实践  | [Campus SNS 校园社区后端接口开发（附前端地址） - 项目集锦](https://ysx.cosine.ren/campus-sns-develop) |
-| [![CS_Experiments](https://github-readme-stats.vercel.app/api/pin/?username=yusixian&repo=CS_Experiments&layout=compact)](https://github.com/yusixian/CS_Experiments) [https://github.com/yusixian/CS_Experiments](https://github.com/yusixian/CS_Experiments) | 大学期间专业课实验、课设及报告，禁止全盘照搬，仅供学习参考用！ | --- |
-
-
+| 仓库地址                                                                                                                                                                                                                                                                                                 | 简介                                                                                                                                                          | 博客介绍                                                                                           |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [![dance-ui](https://github-readme-stats.vercel.app/api/pin/?username=dancing-team&repo=dance-ui&layout=compact)](https://github.com/dancing-team/dance-ui) [https://github.com/dancing-team/dance-ui](https://github.com/dancing-team/dance-ui)                                                                 | 第五届字节青训营跟小伙伴一起整的项目~使用 pnpm+vite+ts+tailwind 开发的 React 组件库，采用 monorepo 组织，文档站使用[Docusaurus](https://docusaurus.io/docs) 构建 | （在路上了在路上了）                                                                               |
+| [![cos_blogs](https://github-readme-stats.vercel.app/api/pin/?username=yusixian&repo=cos_blogs&layout=compact)](https://github.com/yusixian/cos_blogs) [https://github.com/yusixian/cos_blogs](https://github.com/yusixian/cos_blogs)                                                                            | 使用Hexo + Shoka主题搭建的自己的博客~                                                                                                                         | [Hexo + vercel 部署博客](https://ysx.cosine.ren/hexo-vercel-deploy-blog/)                             |
+| [![campus-community-backend](https://github-readme-stats.vercel.app/api/pin/?username=yusixian&repo=campus-community-backend&layout=compact)](https://github.com/yusixian/campus-community-backend) [https://github.com/yusixian/campus-community-backend](https://github.com/yusixian/campus-community-backend) | 使用 koa2 + Sequelize 搭建的校园社区后端，一个厉害的项目的后端！是之前百度前端训练营的项目实践                                                                | [Campus SNS 校园社区后端接口开发（附前端地址） - 项目集锦](https://ysx.cosine.ren/campus-sns-develop) |
+| [![CS_Experiments](https://github-readme-stats.vercel.app/api/pin/?username=yusixian&repo=CS_Experiments&layout=compact)](https://github.com/yusixian/CS_Experiments) [https://github.com/yusixian/CS_Experiments](https://github.com/yusixian/CS_Experiments)                                                   | 大学期间专业课实验、课设及报告，禁止全盘照搬，仅供学习参考用！                                                                                                | ---                                                                                                |
 
 # 🕘 现在正在进行的是
 
@@ -55,7 +53,8 @@ description: "关于我？"
 - 2021/12/25 一周三个课设，实在顶不住了（在做了，在做了，咕——） 
 
 # 📖 前端学习成果历程
-- 2023.04至今 忙实习，忙毕设，忙ing 
+
+- 2023.04至今 忙实习，忙毕设，忙ing
 - 2023.01~2023.03 参加第五届字节青训营，利用实习空余时间折腾了个组件库 [dance-ui](https://github.com/dancing-team/dance-ui)，使用 pnpm+vite+ts+tailwind 开发的 React 组件库， 采用 monorepo 组织，文档站使用 Docusaurus 构建。
 - 2022.07~2022.12 实习 学到很多东西，Next.js, tailwind, recoil, wagmi, recharts, ts, motion, floating-ui……
 - 2022.06-2022.07 实习，开发公司wiki项目等 接触了docker, jenkins, Nest.js, vue3……
@@ -80,14 +79,14 @@ Github👉https://github.com/yusixian/cosine-toolbox
 
 - CSV转JSON：可将CSV格式转换为json对象数组
 - JS对象转JSON: 可将JS对象转换为JSON字符串
-  
+
 #### Base64 通用工具🧰
 
 👉https://tools.cosine.ren/base64util
 
 - Base64 编解码工具
 - Base64 图片批量下载
-  
+
 #### Url 通用工具🧰
 
 👉https://tools.cosine.ren/urlUtil
