@@ -9,9 +9,8 @@ tags:
   - 前端
 categories:
 - [笔记, 前端]
-highlight: a11y-dark
-theme: arknights
 ---
+
 由于业务需要，开始学习RN以备后面的需求，而虽然之前有用过 RN 但是项目搭建等都是封装好的脚手架，对本身其实了解不算太多，于是打算记录一下个人从头搭建 RN 项目的一个过程。顺带进行一个资料收集。
 
 > 适合：有前端基础，有前端基本开发环境，想了解一下 Expo 搭建 RN 项目过程的人群
@@ -92,8 +91,8 @@ eg: `C:\Users\xxxx\AppData\Local\Android\Sdk`
 > Expo是一组工具、库和服务，可以通过编写JavaScript来构建本地的iOS和android应用程序。说人话，就是在React Native的基础上再封装了一层，让我们的开发更方便，更快速。
 >
 > - 做过移动端的同学在做跨平台之前肯定会担心一个点，就是各种原生功能（相机，相册，定位，蓝牙等等），使用expo的话，会比你开发一个裸的React Native真的会快很多，而且会少踩很多坑
-> - 没有做过移动端的前端那就更需要这个了，不然移动端的一些隐藏的限制和坑，会让你很头疼
->   ——[`<cite>`React Native 基于Expo开发（一）项目搭建 - 掘金`</cite>`](https://juejin.cn/post/7102802785355169806)
+> - 没有做过移动端的前端那就更需要这个了，不然移动端的一些隐藏的限制和坑，会让你很头疼\
+>   ——[<cite>React Native 基于Expo开发（一）项目搭建 - 掘金</cite>](https://juejin.cn/post/7102802785355169806)
 
 接下来将根据官网教程，搭建一个Expo的应用程序： [Create your first app - Expo Documentation](https://docs.expo.dev/tutorial/create-your-first-app/)
 
