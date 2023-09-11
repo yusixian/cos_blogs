@@ -43,6 +43,12 @@ date: 2022-02-21 22:12:05
   desc: 风和日暖令人愿意永远活下去
   image: https://p3-passport.byteimg.com/img/user-avatar/6133eb6b49b7709241a07379f7f509c0~180x180.awebp
   color: '#0567f1'
+- site: Nirvana的博客
+  owner: Nirvana
+	url: https://www.nirvana.cool/
+	desc: 阿砍的前端分享与杂记
+	image: https://www.nirvana.cool/images/avatar.jpg
+	color: '#0567f1'
 {% endlinks %}
 
 
