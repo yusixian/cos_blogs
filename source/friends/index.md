@@ -45,10 +45,10 @@ date: 2022-02-21 22:12:05
   color: '#0567f1'
 - site: Nirvana的博客
   owner: Nirvana
-	url: https://www.nirvana.cool/
-	desc: 阿砍的前端分享与杂记
-	image: https://www.nirvana.cool/images/avatar.jpg
-	color: '#0567f1'
+  url: https://www.nirvana.cool/
+  desc: 阿砍的前端分享与杂记
+  image: https://www.nirvana.cool/images/avatar.jpg
+  color: '#0567f1'
 {% endlinks %}
 
 
