@@ -50,7 +50,7 @@ GIF、Flash的出现，一度成为主流，也是在00年的前后，苹果公�
 
 **计算机动画** 是计算机图形学的分支，主要包含2D、3D动画。无论动画多么简单，始终需要定义两个基本状态，即**开始状态**和**结束状态**。没有它们，我们将无法定义**插值状态**，从而填补两者之间的空白。
 
-![1.gif](https://backblaze.cosine.ren/juejin/45af169412774ce685832db37df048dd~Tplv-K3u1fbpfcp-Watermark.png)
+![1.gif](https://backblaze.cosine.ren/juejin/45af169412774ce685832db37df048dd~Tplv-K3u1fbpfcp-Watermark.gif)
 
 快速√ 连续排列 × 彼此差异极小× 制造 “错觉”× 
 
@@ -635,8 +635,7 @@ animate({
 })
 ```
 
-![1.gif](https://backblaze.cosine.ren/juejin/Cb13be23f4e34790a350e079ed3cca1e~Tplv-K3u1fbpfcp-Watermark.png)
-
+![1.gif](https://backblaze.cosine.ren/juejin/Cb13be23f4e34790a350e079ed3cca1e~Tplv-K3u1fbpfcp-Watermark.gif)
 
 
 - 重力：h = g * t ^2^

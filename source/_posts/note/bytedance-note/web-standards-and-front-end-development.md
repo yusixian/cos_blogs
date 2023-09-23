@@ -84,7 +84,7 @@ Web技术的变迁：
 
 -   基本语言，~~这个图蚌埠住了~~ 这个图简洁明了，除了前端三大件之外，还有WebAssembly
 
-![1.gif](https://backblaze.cosine.ren/juejin/C1c15977cef94ef4abde7098d511eda0~Tplv-K3u1fbpfcp-Zoom-1.png)
+![1.gif](https://backblaze.cosine.ren/juejin/C1c15977cef94ef4abde7098d511eda0~Tplv-K3u1fbpfcp-Zoom-1.gif)
 
 -   框架
 
