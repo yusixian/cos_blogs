@@ -33,7 +33,7 @@ categories:
 
 Web技术的变迁：
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/58d7d580688b47b1a24fb357c3da429c~tplv-k3u1fbpfcp-zoom-1.image)
+![image.png](https://backblaze.cosine.ren/juejin/58d7d580688b47b1a24fb357c3da429c~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 -   只读时代，客户端相当于一个静态的页面，想更新页面只能发送网络请求，无法在不刷新的情况下更新页面
 -   体验时代，客户端实现了静态向动态的跨越，拥有了动态交互能力，在后台就可以通过js向服务器发送请求，通过修改DOM将更新的内容展示在网页中。当时的谷歌地图等都使用了这种技术。
@@ -59,7 +59,7 @@ Web技术的变迁：
 
 移动浏览器：安卓、IOS
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8e140473202645999232469856fdca3c~tplv-k3u1fbpfcp-zoom-1.image)
+![image.png](https://backblaze.cosine.ren/juejin/8e140473202645999232469856fdca3c~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 **终端和跨端**
 
@@ -84,11 +84,11 @@ Web技术的变迁：
 
 -   基本语言，~~这个图蚌埠住了~~ 这个图简洁明了，除了前端三大件之外，还有WebAssembly
 
-![1.gif](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c1c15977cef94ef4abde7098d511eda0~tplv-k3u1fbpfcp-zoom-1.image)
+![1.gif](https://backblaze.cosine.ren/juejin/C1c15977cef94ef4abde7098d511eda0~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 -   框架
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9bbc3b8479ca415f92e9207abb9dbf8b~tplv-k3u1fbpfcp-zoom-1.image)
+![image.png](https://backblaze.cosine.ren/juejin/9bbc3b8479ca415f92e9207abb9dbf8b~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ### 浏览器、网络、服务器
 
@@ -97,19 +97,19 @@ Web技术的变迁：
 -   原文：共4个章节 [Inside look at modern web browser (part 1) | Web | Google Developers](https://developers.google.com/web/updates/2018/09/inside-browser-part1)
 -   译文：[深入理解现代浏览器](https://blog.csdn.net/qiwoo_weekly/article/details/92808161)
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/17e3df475b36424fa57685a2c7a761bf~tplv-k3u1fbpfcp-zoom-1.image)
+![image.png](https://backblaze.cosine.ren/juejin/17e3df475b36424fa57685a2c7a761bf~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 **网络**
 
 [An overview of HTTP - HTTP | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/31a2adcd9c024ab9ad75926edc3e34db~tplv-k3u1fbpfcp-zoom-1.image)
+![image.png](https://backblaze.cosine.ren/juejin/31a2adcd9c024ab9ad75926edc3e34db~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ### 学习路线图
 
 [Frontend Developer Roadmap: Learn to become a modern frontend developer](https://roadmap.sh/frontend)
 
-![VZ~FCE_%F6S1B88TIKL{F35.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1bc95578bb4c449cbdec5f5ae8dd89dd~tplv-k3u1fbpfcp-zoom-1.image)
+![VZ~FCE_%F6S1B88TIKL{F35.png](https://backblaze.cosine.ren/juejin/1bc95578bb4c449cbdec5f5ae8dd89dd~Tplv-K3u1fbpfcp-Zoom-1.png))
 
 ## 关于Web标准
 
@@ -139,13 +139,13 @@ Web技术的变迁：
 
 ### W3C及Ecma会员
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d2f9b0b4e98e4eed85ba7c371639eb82~tplv-k3u1fbpfcp-zoom-1.image)
+![image.png](https://backblaze.cosine.ren/juejin/D2f9b0b4e98e4eed85ba7c371639eb82~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ### W3C规范制定流程
 
 -   [The W3C Recommendation Track Process](https://www.w3.org/2004/02/Process-20040205/tr.html)
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b86499181e2642198da7e523f2d5168e~tplv-k3u1fbpfcp-zoom-1.image)
+![image.png](https://backblaze.cosine.ren/juejin/B86499181e2642198da7e523f2d5168e~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 -   Explainer demo
 -   Find the right community/group
@@ -157,7 +157,7 @@ Web技术的变迁：
 
 Ecma TC39规范制定流程
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e2f0332cee904b2eb3b95280629b8e48~tplv-k3u1fbpfcp-zoom-1.image)
+![image.png](https://backblaze.cosine.ren/juejin/E2f0332cee904b2eb3b95280629b8e48~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 -   Championing a proposal at TC39
 -   How to write a good explainer

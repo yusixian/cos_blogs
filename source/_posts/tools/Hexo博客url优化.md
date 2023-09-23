@@ -17,7 +17,7 @@ categories:
 # 起因
 事情是这样的，今天分享面经的时候，将链接在群里一发，发现这个url转义后实在是太过于丑陋了QAQ，于是在网上搜索hexo的url优化，发现这个方法。
 
-![QQ图片20220414212434.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0cdbd6766ccc41c8854bbec9366af392~tplv-k3u1fbpfcp-watermark.image?)
+![QQ图片20220414212434.png](https://backblaze.cosine.ren/juejin/0cdbd6766ccc41c8854bbec9366af392~tplv-k3u1fbpfcp-watermark.png)
 
 Hexo生成文章时，是根据文件名生成的url，而文件名又是中文，故而url会进行转义，转义后的url如上图，显得非常冗长。
 

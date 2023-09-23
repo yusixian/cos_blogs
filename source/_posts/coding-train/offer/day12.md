@@ -77,7 +77,7 @@ var mergeTwoLists = function(l1, l2) {
 
 如下面的两个链表 **：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/09630395c9ed409cbe6b6c29278aadc3~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/09630395c9ed409cbe6b6c29278aadc3~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 在节点 c1 开始相交。
 
@@ -85,7 +85,7 @@ var mergeTwoLists = function(l1, l2) {
 
 **示例 1：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5d68825371794dd48e36c7432e2f87ab~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/5d68825371794dd48e36c7432e2f87ab~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： intersectVal = 8, listA = [4,1,8,4,5], listB = [5,0,1,8,4,5], skipA = 2, skipB = 3
@@ -97,7 +97,7 @@ var mergeTwoLists = function(l1, l2) {
 
 **示例 2：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c0ef34bea01b4cad94002457175ac1e2~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/C0ef34bea01b4cad94002457175ac1e2~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： intersectVal = 2, listA = [0,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1
@@ -109,7 +109,7 @@ var mergeTwoLists = function(l1, l2) {
 
 **示例 3：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/928e6ca68669418286a9a3738a3c8f2e~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/928e6ca68669418286a9a3738a3c8f2e~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2

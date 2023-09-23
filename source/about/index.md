@@ -146,9 +146,9 @@ Github地址：[airdrop-interface](https://github.com/ProjectTwelve/airdrop-inte
 - 博客地址：[仿Antd组件之DatePicker组件实现（简易）](https://ysx.cosine.ren/implementation-of-datepicker/)
 - CodePen在线预览链接：[DatePicker（by cos）](https://codepen.io/yusixian/pen/wvPLgWN)
 
-![日面板](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/715976c98a404bd0ba1f7765bf4485fa~tplv-k3u1fbpfcp-watermark.image?)
-![月面板](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e91c94487f0d4ff7822798f4d39f722c~tplv-k3u1fbpfcp-watermark.image?)
-![年面板](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b6ad473c7fe34cb4a34a0d83268a14db~tplv-k3u1fbpfcp-watermark.image?)
+![日面板](https://backblaze.cosine.ren/juejin/715976c98a404bd0ba1f7765bf4485fa~Tplv-K3u1fbpfcp-Watermark.png)
+![月面板](https://backblaze.cosine.ren/juejin/E91c94487f0d4ff7822798f4d39f722c~Tplv-K3u1fbpfcp-Watermark.png)
+![年面板](https://backblaze.cosine.ren/juejin/b6ad473c7fe34cb4a34a0d83268a14db~tplv-k3u1fbpfcp-watermark.png)
 {.gallery}
 
 ## Campus SNS校园社区后端

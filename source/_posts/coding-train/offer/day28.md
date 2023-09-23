@@ -35,7 +35,7 @@ day28题目：[剑指 Offer 37. 序列化二叉树](https://leetcode-cn.com/prob
 
 **示例：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/70a2e7018db1416dab0c4907d0e73893~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/70a2e7018db1416dab0c4907d0e73893~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： root = [1,2,3,null,null,4,5]

@@ -15,10 +15,10 @@ categories:
 
 # 并发编程
 - **并发** 是多线程程序在一个核的cpu上运行
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a70946937e54495499958900ad320e99~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/A70946937e54495499958900ad320e99~Tplv-K3u1fbpfcp-Watermark.png)
 
 - **并行** 是多线程程序在多个核的上运行
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d4a9265f431c442a84b7012ac324c697~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/d4a9265f431c442a84b7012ac324c697~tplv-k3u1fbpfcp-watermark.png)
 
 - Go可以充分发挥多核优势，高效运行
 一个重要概念
@@ -38,9 +38,9 @@ Go 中提倡通过 **通信共享内存** 而不是通过共享内存而实现�
 - 无缓冲通道 `make(chan int)`
 - 有缓冲通道 `make(chan int, 2)`
 这个图就非常的生动形象~
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f103155c3ea8443a98bc54595e52cbfd~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/F103155c3ea8443a98bc54595e52cbfd~Tplv-K3u1fbpfcp-Watermark.png)
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c7f6b92f7e344344a25b8fee23707079~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/c7f6b92f7e344344a25b8fee23707079~tplv-k3u1fbpfcp-watermark.png)
 
 以下是一个例子：
 - 第一个协程 作为生产者发送`0~9` 到 `src`中
@@ -126,7 +126,7 @@ func main() {
 
 ps：试了好多次都没冲突，乐。把运算稍微改复杂一点就有冲突了
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/81e6a09747944a53be508927a76745ef~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/81e6a09747944a53be508927a76745ef~tplv-k3u1fbpfcp-watermark.png)
 
 # 依赖管理
 任何大型项目开发都绕不开依赖管理，Go中的依赖主要经历了 GOPATH -> Go Vendor -> Go Module的演变 而现在主要采用Go Module的方式
@@ -194,7 +194,7 @@ require (    单元依赖
 
 ## 小测试
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/837629fe64b0400d87d21752eb2f2cef~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/837629fe64b0400d87d21752eb2f2cef~tplv-k3u1fbpfcp-watermark.png)
 
 
 1. 如果X项目依赖了A、B两个项目，且A、B分别依赖了C项目的v1.3、v1.4两个版本，依赖图如上，**最终编译**时所使用的C项目的版本为 []{.gap} ？ {.quiz}
@@ -299,7 +299,7 @@ func TestHelloTom(t *testing.T) {
    }
 }
 ```
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3c37e39ccecd494e8fac79eaa42c5a87~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/3c37e39ccecd494e8fac79eaa42c5a87~tplv-k3u1fbpfcp-watermark.png)
 
 在实际项目中，单测覆盖率
 - 一般项目的要求是50%~60%覆盖率

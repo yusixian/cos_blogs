@@ -69,7 +69,7 @@ var sumNums = function(n) {
 
 例如，给定如下二叉搜索树:  root = [6,2,8,0,4,7,9,null,null,3,5]
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bc7700522f0a4880ba8b5735e0d7fc7d~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/Bc7700522f0a4880ba8b5735e0d7fc7d~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 **示例 1:**
 
@@ -159,7 +159,7 @@ var lowestCommonAncestor = function(root, p, q) {
 
 例如，给定如下二叉树:  root = [3,5,1,6,2,0,8,null,null,7,4]
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ed3ce8239e9e460aad44bd1fedadd2de~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/Ed3ce8239e9e460aad44bd1fedadd2de~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 **示例 1:**
 

@@ -28,7 +28,7 @@ categories:
 - 指定**两个**值时，第一个值会应用于**上边和下边**的内边距，第二个值应用于**左边和右边**。
 - 指定**三个**值时，第一个值应用于**上边**，第二个值应用于**右边和左边**，第三个则应用于**下边**的内边距。
 - 指定**四个**值时，依次（顺时针方向）作为**上边**，**右边**，**下边**，和**左边**的内边距。
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/51e8ae436fdf407182f4831a9092759a~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/51e8ae436fdf407182f4831a9092759a~tplv-k3u1fbpfcp-watermark.png)
 ## margin 
 指定四个方向上的外边距。其百分比是相对于容器宽度,说明见[margin - CSS（层叠样式表） | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin)
 -   当只指定**一个**值时，该值会统一应用到**全部四个边**的外边距上。
@@ -40,11 +40,11 @@ margin collapse：[外边距重叠 - CSS（层叠样式表） | MDN (mozilla.org
 指定边框，border-width指定宽度、border-style指定类型（实线/虚线）、border-color指定边框颜色。通常直接将三者结合简写为 border ,MDN描述见[border - CSS（层叠样式表） | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border)
 - border巧用：制作三角形
     - 首先四个边框设置了不同的颜色。可以发现边角是由斜线切开的。
-    ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9e30527c58ae4a09b158bd1a888961d7~tplv-k3u1fbpfcp-watermark.image?)
+    ![image.png](https://backblaze.cosine.ren/juejin/9e30527c58ae4a09b158bd1a888961d7~tplv-k3u1fbpfcp-watermark.png)
     - 那么当容器高度和宽度为0的时候，可以看到如图
-    ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/51749d92b6bd4a1f8b7c8cac57c551e8~tplv-k3u1fbpfcp-watermark.image?)
+    ![image.png](https://backblaze.cosine.ren/juejin/51749d92b6bd4a1f8b7c8cac57c551e8~tplv-k3u1fbpfcp-watermark.png)
     - 那如果将其他的边框颜色设为透明（transport）可以发现，制造了一个红色的三角形出来。
-    ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6b3c7bf5d0084c5bb48c827cd23e73e6~tplv-k3u1fbpfcp-watermark.image?)
+    ![image.png](https://backblaze.cosine.ren/juejin/6b3c7bf5d0084c5bb48c827cd23e73e6~Tplv-K3u1fbpfcp-Watermark.png)
 
 ## box-sizing
 [box-sizing - CSS（层叠样式表） | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-sizing)
@@ -105,7 +105,7 @@ box-sizing 属性可以被用来调整这些表现:
 - 一个段落实际上是一系列行框的集合，这些行框在块的方向上排列。
 - 一个行内框（inline box）被分割到多行中时， margins, borders, 以及 padding 的设定均不会在断裂处生效。 下例中有一个 ([`<span>`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/span)) 元素，它包裹了一系列单词，占据了两行。可以看见在断裂处，`<span>` 的 border 同样发生了断裂。
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ae65b47548d540e4ac46b9e9ddb2e6d3~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/ae65b47548d540e4ac46b9e9ddb2e6d3~tplv-k3u1fbpfcp-watermark.png)
 
 ### 块级格式化上下文（Block Formatting Context）
 
@@ -144,7 +144,7 @@ box-sizing 属性可以被用来调整这些表现:
 - space-between 在主轴上两端对齐，中间穿插空间
 - space-around 在主轴上两边也加上空白，保持元素占用大小不变
 - space-evenly 两边与中间的空白大小相同
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8774e61bcdd34fa4802aeaaa87f311f5~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/8774e61bcdd34fa4802aeaaa87f311f5~Tplv-K3u1fbpfcp-Watermark.png)
 
 交叉轴的对齐方式如下（初始值为stretch）：
 - flex-start：在交叉轴开始的地方对齐
@@ -152,15 +152,15 @@ box-sizing 属性可以被用来调整这些表现:
 - center：在交叉轴上居中对齐
 - stretch：在交叉轴上，拉伸元素以适应容器
 - baseline：两边与中间的空白大小相同
-- ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/36b54bd7d27d403e883c75633d8f8c91~tplv-k3u1fbpfcp-watermark.image?)
+- ![image.png](https://backblaze.cosine.ren/juejin/36b54bd7d27d403e883c75633d8f8c91~tplv-k3u1fbpfcp-watermark.png)
 
 如果想给flex中的某个元素搞特殊，那么可以给他设置一个align-self属性，如图
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3c8cde0097674919bb6007fd308536bf~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/3c8cde0097674919bb6007fd308536bf~Tplv-K3u1fbpfcp-Watermark.png)
 
 [order](https://developer.mozilla.org/zh-CN/docs/Web/CSS/order) 可以设置元素们在布局时的顺序
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/486de4617acc4684b76d89c45bc1b083~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/486de4617acc4684b76d89c45bc1b083~tplv-k3u1fbpfcp-watermark.png)
 
 那如果网页拉伸或者缩小，flex容器中的内容会如何变呢？
 
@@ -172,7 +172,7 @@ box-sizing 属性可以被用来调整这些表现:
 
 关于flex布局，之前在codepen看到过一个演示项目，可以了解其每个属性的相应作用，强烈推荐自己多试试：[Flexbox playground (codepen.io)](https://codepen.io/enxaneta/details/adLPwv)
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d5df5c8648ad432e84b600cef93fc53a~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/d5df5c8648ad432e84b600cef93fc53a~tplv-k3u1fbpfcp-watermark.png)
 
 ## Grid布局
 
@@ -202,7 +202,8 @@ box-sizing 属性可以被用来调整这些表现:
 }
 ```
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f01af69e4f69457489dc8e5b800379b0~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/f01af69e4f69457489dc8e5b800379b0~tplv-k3u1fbpfcp-watermark.png)
+
 - 然后将A这个元素,设置从第1个网格行线开始到第3个网格行线,即占两行,列同理占两列,如图
 ```css
 .a {
@@ -221,7 +222,7 @@ box-sizing 属性可以被用来调整这些表现:
 ```
 
 如图,可以发现A占据了两行两列
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f58bea121bf0411b99891ab77bd81c80~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/f58bea121bf0411b99891ab77bd81c80~tplv-k3u1fbpfcp-watermark.png)
 - 那么再进行一些更改,将a改为2-4行/列即占据了第2、3行/列,b改为1-3行/列即占据了第1、2行/列
 ```css
 .a {
@@ -231,7 +232,7 @@ box-sizing 属性可以被用来调整这些表现:
   grid-area:1/1/3/3;
 }
 ```
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dab65647e3cf4901a04a51c506ef36dc~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/dab65647e3cf4901a04a51c506ef36dc~tplv-k3u1fbpfcp-watermark.png)
 
 ## 浮动（float）
 

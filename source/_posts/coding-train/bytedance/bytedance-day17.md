@@ -33,7 +33,7 @@ day17题目：[141. 环形链表](https://leetcode-cn.com/problems/linked-list-c
 
 **示例 1：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/194b1ae012b044ec9c443d9fba166f04~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/194b1ae012b044ec9c443d9fba166f04~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： head = [3,2,0,-4], pos = 1
@@ -43,7 +43,7 @@ day17题目：[141. 环形链表](https://leetcode-cn.com/problems/linked-list-c
 
 **示例 2：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c7e0b3ec5858499488fb3eca9d0a5ed7~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/C7e0b3ec5858499488fb3eca9d0a5ed7~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： head = [1,2], pos = 0
@@ -53,7 +53,7 @@ day17题目：[141. 环形链表](https://leetcode-cn.com/problems/linked-list-c
 
 **示例 3：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5eac2477a0684c81910ffe905f60d7d7~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/5eac2477a0684c81910ffe905f60d7d7~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： head = [1], pos = -1
@@ -72,6 +72,7 @@ day17题目：[141. 环形链表](https://leetcode-cn.com/problems/linked-list-c
 ## 思路
 快慢指针，快指针一次走两步，慢指针一次走一步，若有环则一定会遇上的，否则没有环
 ## 代码
+
 ```js
 /**
  * Definition for singly-linked list.
@@ -106,7 +107,7 @@ var hasCycle = function(head) {
 
 **示例 1：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3dc124e9ec624327a6c317cee3761d2f~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/3dc124e9ec624327a6c317cee3761d2f~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
@@ -116,7 +117,7 @@ var hasCycle = function(head) {
 
 **示例 2：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b2ebbac4b57b4255840806caa1d46ef9~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/B2ebbac4b57b4255840806caa1d46ef9~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
@@ -193,7 +194,7 @@ var lowestCommonAncestor = function(root, p, q) {
 
 **示例 1：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e7e0b18aac5140ec946a0d1f90bdd11e~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/E7e0b18aac5140ec946a0d1f90bdd11e~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： head = [1,2,3,4,5], left = 2, right = 4

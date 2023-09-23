@@ -35,7 +35,7 @@ day20题目：[剑指 Offer 07. 重建二叉树](https://leetcode-cn.com/problem
 
 **示例 1:**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7fa8a56cae82482aa01716055939f2e5~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/7fa8a56cae82482aa01716055939f2e5~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]

@@ -32,7 +32,7 @@ day14题目：[剑指 Offer 12. 矩阵中的路径](https://leetcode-cn.com/prob
 
 例如，在下面的 3×4 的矩阵中包含单词 "ABCCED"（单词中的字母已标出）。
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6ed052c945da41a4b5f5528bbaad37e1~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/6ed052c945da41a4b5f5528bbaad37e1~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 **示例 1：**
 

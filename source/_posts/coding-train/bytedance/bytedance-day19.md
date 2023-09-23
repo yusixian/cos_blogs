@@ -27,7 +27,7 @@ day19题目：[160. 相交链表](https://leetcode-cn.com/problems/intersection-
 
 图示两个链表在节点 `c1` 开始相交 **：**
 
-[![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8cdf75325fcb46ccbb7c8ae0cedef329~tplv-k3u1fbpfcp-zoom-1.image)](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160_statement.png)
+![](https://backblaze.cosine.ren/juejin/8cdf75325fcb46ccbb7c8ae0cedef329~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 题目数据 **保证** 整个链式结构中不存在环。
 
@@ -49,7 +49,7 @@ day19题目：[160. 相交链表](https://leetcode-cn.com/problems/intersection-
 
 **示例 1：**
 
-[![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/06c967f2dff445c7b02e8a61b1f48fca~tplv-k3u1fbpfcp-zoom-1.image)](https://assets.leetcode.com/uploads/2018/12/13/160_example_1.png)
+![](https://backblaze.cosine.ren/juejin/06c967f2dff445c7b02e8a61b1f48fca~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3
@@ -61,7 +61,7 @@ day19题目：[160. 相交链表](https://leetcode-cn.com/problems/intersection-
 
 **示例 2：**
 
-[![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9f1b335701854e6b816e2c877c454de4~tplv-k3u1fbpfcp-zoom-1.image)](https://assets.leetcode.com/uploads/2018/12/13/160_example_2.png)
+![](https://backblaze.cosine.ren/juejin/9f1b335701854e6b816e2c877c454de4~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： intersectVal = 2, listA = [1,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1
@@ -73,7 +73,7 @@ day19题目：[160. 相交链表](https://leetcode-cn.com/problems/intersection-
 
 **示例 3：**
 
-[![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/25631057c2ec45428562c5baef969d86~tplv-k3u1fbpfcp-zoom-1.image)](https://assets.leetcode.com/uploads/2018/12/13/160_example_3.png)
+![](https://backblaze.cosine.ren/juejin/25631057c2ec45428562c5baef969d86~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2
@@ -147,7 +147,7 @@ L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …
 
 **示例 1：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e316b5a26066492aa1c495e4d9cddf98~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/E316b5a26066492aa1c495e4d9cddf98~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： head = [1,2,3,4]
@@ -156,7 +156,7 @@ L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …
 
 **示例 2：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/076404a90c2e4eadac340d9ba9285c3d~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/076404a90c2e4eadac340d9ba9285c3d~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： head = [1,2,3,4,5]
@@ -203,7 +203,7 @@ var reorderList = function(head) {
 
 **示例 1：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a96b1a0bf3914cabb562383b7cd8a266~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/A96b1a0bf3914cabb562383b7cd8a266~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： head = [3,2,0,-4], pos = 1
@@ -213,7 +213,7 @@ var reorderList = function(head) {
 
 **示例 2：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b17258179ba14652afcc35109bcd0a3b~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/B17258179ba14652afcc35109bcd0a3b~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： head = [1,2], pos = 0
@@ -223,7 +223,7 @@ var reorderList = function(head) {
 
 **示例 3：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ddd3659d9e8246168e5f8175b4ed98c0~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/Ddd3659d9e8246168e5f8175b4ed98c0~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： head = [1], pos = -1
@@ -247,7 +247,8 @@ var reorderList = function(head) {
 推导如下，直接看官方的吧：
 
 > 如下图所示，设链表中环外部分的长度为 `a`。`slow` 指针进入环后，又走了 `b` 的距离与 `fast` 相遇。此时，假设 `fast` 指针已经走完了环的 `n` 圈，则 `fast` 走过的总距离为 `a+n(b+c)+b` 化简得 `a+(n+1)b+nc`。
-> ![fig1](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0d8cd476489a4a58b00cead81fb28ea9~tplv-k3u1fbpfcp-zoom-1.image)
+> ![fig1](https://backblaze.cosine.ren/juejin/0d8cd476489a4a58b00cead81fb28ea9~Tplv-K3u1fbpfcp-Zoom-1.png)
+> 
 > 由于快指针每次都比慢指针多走一步，故 `fast` 走过的距离是 `slow` 的两倍，而 `slow` 走过的总距离为 `a+b`，所以有 `a+(n+1)b+nc = 2(a+b)`，解得 `a = c+(n-1)(b+c)`
 > - 也就是说，从相遇点到入环点的距离 `c` 加上`n-1`圈环长（b+c），恰好等于链表头部到入环点的距离 `a`
 > - 因此，当发现 `slow` 与 `fast` 相遇时，我们再额外使用一个指针 `ptr`。起始，`ptr` 指向链表头部。随后，`ptr` 和 `slow` 每次向后移动一个位置。最终，它们会在入环点相遇。

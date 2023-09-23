@@ -52,32 +52,32 @@ categories:
     - 利用 `Sequelize ORM` 进行数据库的操作，使用 `JWT` 实现用户身份验证与信息加密，利用 `WebSocket` 实现在线用户数监测
     - 文章的**软删除**、恢复等
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/915cbdc8cc5b42848b2883a15dea1dcc~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/915cbdc8cc5b42848b2883a15dea1dcc~Tplv-K3u1fbpfcp-Watermark.png)
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/be109940ff294f33a828d05bba7b6029~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/be109940ff294f33a828d05bba7b6029~tplv-k3u1fbpfcp-watermark.png)
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/18f99c2b4a6a473ebb33c07b23e4036c~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/18f99c2b4a6a473ebb33c07b23e4036c~tplv-k3u1fbpfcp-watermark.png)
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6750bfaa8d3f4e4ebd1c041a019f4783~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/6750bfaa8d3f4e4ebd1c041a019f4783~tplv-k3u1fbpfcp-watermark.png)
 
 
 ## 前端（PC端后台管理系统）
 - 前端（PC端后台管理系统）地址：https://gitee.com/honxinn/back-manage
 - 基于 `Vue3` + `Vite` 构建
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fd5a2bf10be047edb453f81be9eaaf09~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/Fd5a2bf10be047edb453f81be9eaaf09~Tplv-K3u1fbpfcp-Watermark.png)
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e058e9a2c7fd486aa0004369c4f10772~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/E058e9a2c7fd486aa0004369c4f10772~Tplv-K3u1fbpfcp-Watermark.png)
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a320fa5f6170468c81548b1b8cfcfb68~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/a320fa5f6170468c81548b1b8cfcfb68~tplv-k3u1fbpfcp-watermark.png)
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d577025f5fee4850a88b1f85d981e818~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/d577025f5fee4850a88b1f85d981e818~tplv-k3u1fbpfcp-watermark.png)
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6ea64d60729f4d88a3a7ec2a3ebedd1f~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/6ea64d60729f4d88a3a7ec2a3ebedd1f~Tplv-K3u1fbpfcp-Watermark.png)
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1523139daaa1490f934a814175360e1f~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/1523139daaa1490f934a814175360e1f~tplv-k3u1fbpfcp-watermark.png)
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cddfac51e0a14b9684e54ed32ce29de0~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/cddfac51e0a14b9684e54ed32ce29de0~tplv-k3u1fbpfcp-watermark.png)
 
 ## 前端（移动端）
 - 前端（移动端）仓库地址：https://gitee.com/honxinn/campus-sns-campus-community
@@ -85,9 +85,9 @@ categories:
 
 | 演示 |  |
 | --- | --- |
-| ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fc24fe8a9c95491abb4edf1a3a4d0d22~tplv-k3u1fbpfcp-watermark.image?) | ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5cb2a0b56061471292a941fe33e5ce7c~tplv-k3u1fbpfcp-watermark.image?)  |
-| ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d99975dee1d340088eff1c9b6ea55ab5~tplv-k3u1fbpfcp-watermark.image?) | ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e64eaa3a6bd943c7b353e67b12a729b4~tplv-k3u1fbpfcp-watermark.image?) |
-| ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/27576fb449184ca2aa81e7ef12fb9f18~tplv-k3u1fbpfcp-watermark.image?) | ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5ef4ef2d469a4611af1b655f8a8a0f00~tplv-k3u1fbpfcp-watermark.image?)|
+| ![image.png](https://backblaze.cosine.ren/juejin/fc24fe8a9c95491abb4edf1a3a4d0d22~tplv-k3u1fbpfcp-watermark.png) | ![image.png](https://backblaze.cosine.ren/juejin/5cb2a0b56061471292a941fe33e5ce7c~Tplv-K3u1fbpfcp-Watermark.png)  |
+| ![image.png](https://backblaze.cosine.ren/juejin/d99975dee1d340088eff1c9b6ea55ab5~tplv-k3u1fbpfcp-watermark.png) | ![image.png](https://backblaze.cosine.ren/juejin/e64eaa3a6bd943c7b353e67b12a729b4~tplv-k3u1fbpfcp-watermark.png) |
+| ![image.png](https://backblaze.cosine.ren/juejin/27576fb449184ca2aa81e7ef12fb9f18~tplv-k3u1fbpfcp-watermark.png) | ![image.png](https://backblaze.cosine.ren/juejin/5ef4ef2d469a4611af1b655f8a8a0f00~tplv-k3u1fbpfcp-watermark.png)|
 
 # 开发文档
 

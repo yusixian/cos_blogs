@@ -204,7 +204,7 @@ var reverseWords = function(s) {
 
 **示例 1：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/83bf665da88c4f18b7a726d818ca51fa~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/83bf665da88c4f18b7a726d818ca51fa~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： l1 = [2,4,3], l2 = [5,6,4]
@@ -260,7 +260,7 @@ var addTwoNumbers = function(l1, l2) {
 
 
 好耶！完成！
-![小徽章.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a14ef457f04f4d85a697dc13ca164927~tplv-k3u1fbpfcp-watermark.image?)
+![小徽章.png](https://backblaze.cosine.ren/juejin/A14ef457f04f4d85a697dc13ca164927~Tplv-K3u1fbpfcp-Watermark.png)
 
 明天开始剑指offer的刷题
 

@@ -56,7 +56,7 @@ categories:
 - 前端代码组件化,可复用，可封装。
 - 状态之间的互相依赖关系，只需声明即可。
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f0fb3eaa27394eb4a07ec92c11e62d3b~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/f0fb3eaa27394eb4a07ec92c11e62d3b~tplv-k3u1fbpfcp-watermark.png)
 
 **组件化**
 

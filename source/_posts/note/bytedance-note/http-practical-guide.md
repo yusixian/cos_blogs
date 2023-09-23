@@ -16,7 +16,7 @@ categories:
 
 输入url -> browser进程处理输入信息 -> 浏览器内核向服务器发起请求 -> 浏览器内核读取响应 -> 浏览器内核进行渲染 -> browser进程页面加载完成
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9a81ba0daea2499d9ca9253dd00a85f4~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/9a81ba0daea2499d9ca9253dd00a85f4~tplv-k3u1fbpfcp-watermark.png)
 
 - Hyper Text Transfer Protocol （**HTTP**）超文本传输协议
 
@@ -28,19 +28,19 @@ categories:
 
 - **无状态**
 
-  ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/71a3574b7e6543d09c08554cafabdbbc~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/71a3574b7e6543d09c08554cafabdbbc~tplv-k3u1fbpfcp-watermark.png)
 
 ## 协议分析
 
 ### 发展历程
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c8fd8b74bdc34c1b9fd2d22fc14c7fb5~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/C8fd8b74bdc34c1b9fd2d22fc14c7fb5~Tplv-K3u1fbpfcp-Watermark.png)
 
 ### 报文结构
 
 #### HTTP/1.1
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5850baf73f724ff5bcd11fdc34d78472~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/5850baf73f724ff5bcd11fdc34d78472~tplv-k3u1fbpfcp-watermark.png)
 
 如图，可以看到请求和响应的请求头、返回的状态码、等等
 
@@ -62,7 +62,7 @@ categories:
 
 #### 状态码
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d8e8407af23e4723a0c0e392d47b1ca6~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/D8e8407af23e4723a0c0e392d47b1ca6~Tplv-K3u1fbpfcp-Watermark.png)
 
 - 200 OK - 客户端**请求成功**
 - 301 - 资源（网页等）被**永久转移**到了其它URL
@@ -141,7 +141,7 @@ categories:
 - Etag/If-None-Match：资源的**特定版本**的标识符，类似于指纹
 - Last-Modified/If-Modified-Since：**最后的修改时间**。（绝对的）
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2fa3937e36504331b968f36cc592ea69~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/2fa3937e36504331b968f36cc592ea69~tplv-k3u1fbpfcp-watermark.png)
 
 #### Cookie
 
@@ -164,7 +164,7 @@ HTTP/2概述：**更快**、更**稳定**、更**简单**
   - HTTP/2通信的最小单位，每个帧都包含**帧头**，至少也会标识出当前帧所属的数据流。
   - 1.0传输的是文本，而2中传的则是二进制数据，效率更高。并有新的压缩算法。
 
-  - ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/877080ecc022407f98696529903fbfb9~tplv-k3u1fbpfcp-watermark.image?)
+  - ![image.png](https://backblaze.cosine.ren/juejin/877080ecc022407f98696529903fbfb9~tplv-k3u1fbpfcp-watermark.png)
 
 - **消息**：与逻辑请求或响应消息对应的完整的一系列帧。
 
@@ -172,12 +172,12 @@ HTTP/2概述：**更快**、更**稳定**、更**简单**
 
   - **交错发送**，接受方**重组织**。
 
-    ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b8f4367cce8a442082ea52011ff2a9af~tplv-k3u1fbpfcp-watermark.image?)
+    ![image.png](https://backblaze.cosine.ren/juejin/b8f4367cce8a442082ea52011ff2a9af~tplv-k3u1fbpfcp-watermark.png)
 
 - HTTP/2连接都是**永久**的，而且仅需要每个来源一个连接
 - **流控制**：阻止发送方向接收方发送大量数据的机制
 - 服务器推送
-  - ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3d4e113bad5648bc8af55a2718a1479b~tplv-k3u1fbpfcp-watermark.image?)
+  - ![image.png](https://backblaze.cosine.ren/juejin/3d4e113bad5648bc8af55a2718a1479b~tplv-k3u1fbpfcp-watermark.png)
 
 
 
@@ -189,7 +189,7 @@ HTTP/2概述：**更快**、更**稳定**、更**简单**
 - 对称加密：加密和解密都是使用**同一个**密钥
 - 非对称加密：加密和解密需要使用两个不同的密钥：公钥（public key）和私钥（private key）
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1009e0f80d914907973254f7c8cc82b7~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/1009e0f80d914907973254f7c8cc82b7~tplv-k3u1fbpfcp-watermark.png)
 
 ## 常见场景分析
 
@@ -197,11 +197,11 @@ HTTP/2概述：**更快**、更**稳定**、更**简单**
 
 以 [今日头条](https://www.toutiao.com) 为例，打开网络面板查看其请求，找到css文件的请求。
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e8f6f35c47e54bb892d07ee1d4e7db2d~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/E8f6f35c47e54bb892d07ee1d4e7db2d~Tplv-K3u1fbpfcp-Watermark.png)
 
 可以看到返回的状态码为200，那么是不是真的发起了请求呢（旁边的括号就说了，**从磁盘缓存**）
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/04f6432045814362935592b3af367547~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/04f6432045814362935592b3af367547~tplv-k3u1fbpfcp-watermark.png)
 
 由上图响应头，可以看出：
 
@@ -217,7 +217,7 @@ HTTP/2概述：**更快**、更**稳定**、更**简单**
 - CDN：Content Delivery Network
 - 通过用户就近性和服务器负载的判断，CDN确保内容以一种极为高效的方式为用户的请求提供服务
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cde86baff3c44f16b7f17b22e2c5ef9c~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/cde86baff3c44f16b7f17b22e2c5ef9c~tplv-k3u1fbpfcp-watermark.png)
 
 那么缓存期那么久，怎么保证用户拿到的内容是**最新**的呢？
 
@@ -225,17 +225,17 @@ HTTP/2概述：**更快**、更**稳定**、更**简单**
 
 ### 登陆 - 跨域
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/14d0c5c682da4bc2981be6a10e7ed0e1~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/14d0c5c682da4bc2981be6a10e7ed0e1~tplv-k3u1fbpfcp-watermark.png)
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/93d61665e6c9484e8f23165d40e2e9ba~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/93d61665e6c9484e8f23165d40e2e9ba~tplv-k3u1fbpfcp-watermark.png)
 
 跨域问题，导致了请求方法为OPTION
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3a5913eec32942e4887cb1b34250882a~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/3a5913eec32942e4887cb1b34250882a~tplv-k3u1fbpfcp-watermark.png)
 
 **协议、主机名、端口**任意一者不同都会出现**跨域**问题（HTTP的默认端口号443）
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e7d485f486e840459fcd1aaf2f127db5~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/e7d485f486e840459fcd1aaf2f127db5~tplv-k3u1fbpfcp-watermark.png)
 
 #### 解决跨域问题
 
@@ -257,9 +257,9 @@ HTTP/2概述：**更快**、更**稳定**、更**简单**
 
 - Iframe 诸多不便
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8def5bc00bf34904b2f174f4ea4b3205~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/8def5bc00bf34904b2f174f4ea4b3205~Tplv-K3u1fbpfcp-Watermark.png)
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1330a016575f4d45be1b36544098b7da~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/1330a016575f4d45be1b36544098b7da~tplv-k3u1fbpfcp-watermark.png)
 
 如上图，登陆时向什么地址做了什么动作？
 
@@ -290,15 +290,15 @@ HTTP/2概述：**更快**、更**稳定**、更**简单**
   - 服务器本地不会存储
   - 返回的token唯一性，登陆时间短等
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/94072b3ee6964bfe9ccd6d1a790996da~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/94072b3ee6964bfe9ccd6d1a790996da~tplv-k3u1fbpfcp-watermark.png)
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/50f8486f6a4b450c87558ff15c5a41c8~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/50f8486f6a4b450c87558ff15c5a41c8~tplv-k3u1fbpfcp-watermark.png)
 
 
 
 - SSO：单点登录（Single Sign On）
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2131c3a1abed46419607069afb8da352~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/2131c3a1abed46419607069afb8da352~tplv-k3u1fbpfcp-watermark.png)
 
 如图，讲解的很清楚。
 
@@ -363,7 +363,7 @@ axios( {
 
 - [HTTP/2 - A Real-World Performance Test and Analysis | CSS-Tricks - CSS-Tricks](https://css-tricks.com/http2-real-world-performance-test-analysis/)
 
-  ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a15399deba94753848a5a4f8dcdb5b1~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/4a15399deba94753848a5a4f8dcdb5b1~Tplv-K3u1fbpfcp-Watermark.png)
 
 - 预解析、预连接等
 - 重试是保证稳定的有效手段，但要防止其加剧恶劣情况（比如网络连接就是断开了）。
@@ -381,7 +381,7 @@ axios( {
 - 典型场景：实时性要求高，例如**聊天室**
 - URL使用**ws://**或wss://等开头
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1ab8ceb356a8478aa0b717dae29bd5a0~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/1ab8ceb356a8478aa0b717dae29bd5a0~tplv-k3u1fbpfcp-watermark.png)
 
 ##### UDP
 
@@ -396,7 +396,7 @@ QUIC：Quick UDP Internet Connection 基于UDP
 - 类似MPTCP的Connection migration。
 - 应用暂不多
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/abd89ebdecba43f680c1e1189bce987d~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/Abd89ebdecba43f680c1e1189bce987d~Tplv-K3u1fbpfcp-Watermark.png)
 
 ## 总结感想
 

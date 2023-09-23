@@ -104,7 +104,7 @@ var reverseList = function(head) {
 
 **示例 1：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/007f0dd6a92d4301af466e05d131103a~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/007f0dd6a92d4301af466e05d131103a~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
@@ -113,7 +113,7 @@ var reverseList = function(head) {
 
 **示例 2：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/73e989a8aecd4363b7a37940188384de~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/73e989a8aecd4363b7a37940188384de~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： head = [[1,1],[2,1]]
