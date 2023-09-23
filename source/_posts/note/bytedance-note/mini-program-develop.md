@@ -103,7 +103,8 @@ categories:
 
 [代码片段](https://developers.weixin.qq.com/s/XpqAlHm87owi)
 
-![番茄钟.gif](https://backblaze.cosine.ren/juejin/B8ada35bb88143319ce17603de92c141~Tplv-K3u1fbpfcp-Watermark.png)
+![番茄钟.gif](https://backblaze.cosine.ren/juejin/B8ada35bb88143319ce17603de92c141~Tplv-K3u1fbpfcp-Watermark.gif)
+
 
 ### 编写tomatoClock.wxml（html）
 
