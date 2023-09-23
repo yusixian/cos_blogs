@@ -29,7 +29,7 @@ categories:
 
 -   另一个工具是 `goimports`，相当于 `gofmt` 加上依赖包的管理，自动增删依赖的包。
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/07f5cc789bcc4526a35da211cf843a89~tplv-k3u1fbpfcp-zoom-1.image)
+![image.png](https://backblaze.cosine.ren/juejin/07f5cc789bcc4526a35da211cf843a89~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 > js中也有类似的格式化工具 `Prettier`，可以配合ESLint进行代码格式化。 
 

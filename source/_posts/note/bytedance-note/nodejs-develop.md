@@ -47,7 +47,7 @@ categories:
 
 ## Node.js运行时结构（what）
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b4e16f59c5ba42b39cc07156fb27ef84~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/B4e16f59c5ba42b39cc07156fb27ef84~Tplv-K3u1fbpfcp-Watermark.png)
 
 - N-API：用户代码中利用npm安装的一些包
 - [V8](http://nodejs.cn/learn/the-v8-javascript-engine)：JavaScript Runtime，诊断调试工具(inspector)
@@ -68,7 +68,7 @@ categories:
 
   - 一个常见场景：**读取文件**时。当Node.js执行I/O操作时，会在响应返回后恢复操作，而**不是阻塞线程并占用额外内存等待**。（内存占用更少）
 
-    ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/68794c8de61049ed90ecc828b3436dc5~tplv-k3u1fbpfcp-watermark.image?)
+    ![image.png](https://backblaze.cosine.ren/juejin/68794c8de61049ed90ecc828b3436dc5~tplv-k3u1fbpfcp-watermark.png)
 
 - 单线程
 
@@ -144,9 +144,9 @@ categories:
 
 - 使用node启动，此时输入localhost:3000就可以看到hello
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/86eaa345e5ea499ca25569b7b2cbd9d3~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/86eaa345e5ea499ca25569b7b2cbd9d3~Tplv-K3u1fbpfcp-Watermark.png)
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7baced8533a046adb95f1acd0a92bd87~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/7baced8533a046adb95f1acd0a92bd87~tplv-k3u1fbpfcp-watermark.png)
 
 - 改为JSON版
 ```js
@@ -175,8 +175,8 @@ categories:
   });
   ```
 
-  - ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/25a3c3639d4947b290df7623d97a87bb~tplv-k3u1fbpfcp-watermark.image?)
-  - ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a752766165644b1c8bf4e1493a482c6a~tplv-k3u1fbpfcp-watermark.image?)
+  - ![image.png](https://backblaze.cosine.ren/juejin/25a3c3639d4947b290df7623d97a87bb~Tplv-K3u1fbpfcp-Watermark.png)
+  - ![image.png](https://backblaze.cosine.ren/juejin/a752766165644b1c8bf4e1493a482c6a~tplv-k3u1fbpfcp-watermark.png)
 
 
 #### Http Client
@@ -207,7 +207,7 @@ const req = http.request('http://127.0.0.1:3000', {
 req.end(body);
 ```
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2ccdb0821cb0403093a6192544066cbc~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/2ccdb0821cb0403093a6192544066cbc~tplv-k3u1fbpfcp-watermark.png)
 
 #### Promisify
 
@@ -266,7 +266,7 @@ req.end(body);
   });
   ```
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9dbdf3381e8a493983e2d317ed9c5a43~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/9dbdf3381e8a493983e2d317ed9c5a43~Tplv-K3u1fbpfcp-Watermark.png)
 
 ### 编写静态文件服务器
 
@@ -274,7 +274,7 @@ req.end(body);
 
 先编写一个简单的 index.html，放于static目录下
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4896177811004202ac15fc53ea8746ee~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/4896177811004202ac15fc53ea8746ee~tplv-k3u1fbpfcp-watermark.png)
 
 #### static_server.js
 
@@ -303,9 +303,9 @@ server.listen(port, () => {
 })
 ```
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/002356c010394791918d5d7deb0005ea~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/002356c010394791918d5d7deb0005ea~tplv-k3u1fbpfcp-watermark.png)
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6eb03ea97a7a4263835a1261bb207849~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/6eb03ea97a7a4263835a1261bb207849~tplv-k3u1fbpfcp-watermark.png)
 
 - 与高性能、可靠的服务相比，还差什么?
 
@@ -360,7 +360,7 @@ server.listen(port, () => {
 })
 ```
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/258be264f1104f669d64d5ee1883dafe~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/258be264f1104f669d64d5ee1883dafe~tplv-k3u1fbpfcp-watermark.png)
 
 - SSR难点
 
@@ -376,7 +376,7 @@ server.listen(port, () => {
   - `node -- inspect`
   - `open http://localhost:9229/json`
 
-  ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/73f242fda3c741b6abdb6a9b8cceab2e~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/73f242fda3c741b6abdb6a9b8cceab2e~tplv-k3u1fbpfcp-watermark.png)
 
 - 场景:
   - 查看console.log内容

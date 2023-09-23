@@ -29,7 +29,7 @@ categories:
 - **CPU (Central Processing Unit**)：中央处理单元，负责**逻辑计算**。
 - **GPU (Graphics Processing Unit)**：图形处理单元，负责**图形计算**。
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f97c08e4d8da45c4ae56b62f293a3be2~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/f97c08e4d8da45c4ae56b62f293a3be2~tplv-k3u1fbpfcp-watermark.png)
 
 - 如上图，现代图像的渲染如图过程
 
@@ -40,7 +40,7 @@ categories:
 
 ### The Pipeline
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c26dca222e6942149b5a70c480f401a1~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/c26dca222e6942149b5a70c480f401a1~tplv-k3u1fbpfcp-watermark.png)
 
 ### GPU
 
@@ -53,7 +53,7 @@ categories:
 
 [OpenGL, OpenGL ES, WebGL, GLSL, GLSL ES API Tables (umich.edu)](http://web.eecs.umich.edu/~sugih/courses/eecs487/common/notes/APITables.xml)
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ce125f7f2cc14fada66e2971853070d2~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/ce125f7f2cc14fada66e2971853070d2~tplv-k3u1fbpfcp-watermark.png)
 
 ## WebGL绘图步骤
 
@@ -65,7 +65,7 @@ categories:
 4. 将缓冲区数据读取到GPU
 5. GPU执行WebGL程序，输出结果
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a24f2b13adc646e28dec4623c43ee41f~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/a24f2b13adc646e28dec4623c43ee41f~tplv-k3u1fbpfcp-watermark.png)
 
 如图，针对几个单词进行解释：
 
@@ -223,7 +223,7 @@ gl.clear(gl.COLOR_BUFFER_BIT);  //清除缓冲的数据
 gl.drawArrays(gl.TRIANGLES, 0, points.length / 2);
 ```
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a2a842817cf45c1b630cd7cfc168031~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/4a2a842817cf45c1b630cd7cfc168031~tplv-k3u1fbpfcp-watermark.png)
 
 ## WebGL太复杂？其他方式
 
@@ -297,25 +297,25 @@ const triangles = earcut(points)
 
 ### 平移
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2b9bcc7942b446668eeef74d1132d637~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/2b9bcc7942b446668eeef74d1132d637~tplv-k3u1fbpfcp-watermark.png)
 
 ### 旋转
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ffd20cb1d9b54ce99cfb3bc5a4dc5758~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/ffd20cb1d9b54ce99cfb3bc5a4dc5758~tplv-k3u1fbpfcp-watermark.png)
 
 ### 缩放
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4faf8762b5434e02b5b65397216c536e~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/4faf8762b5434e02b5b65397216c536e~Tplv-K3u1fbpfcp-Watermark.png)
 
 ### 线性变换（旋转+缩放）
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b346ba1cae3a413a8532e226fe832e65~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/B346ba1cae3a413a8532e226fe832e65~Tplv-K3u1fbpfcp-Watermark.png)
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/208ec6cae5a541089c5825d472ded91f~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/208ec6cae5a541089c5825d472ded91f~tplv-k3u1fbpfcp-watermark.png)
 
 从线性变换到齐次矩阵
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d26773fa78f34969b4405ff5d4c25b9c~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/D26773fa78f34969b4405ff5d4c25b9c~Tplv-K3u1fbpfcp-Watermark.png)
 
 老师的又一个栗子：[Apply Transforms](https://code.h5jun.com/vikig/edit?js,output)
 

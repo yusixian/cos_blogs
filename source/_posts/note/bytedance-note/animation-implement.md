@@ -50,7 +50,7 @@ GIF、Flash的出现，一度成为主流，也是在00年的前后，苹果公�
 
 **计算机动画** 是计算机图形学的分支，主要包含2D、3D动画。无论动画多么简单，始终需要定义两个基本状态，即**开始状态**和**结束状态**。没有它们，我们将无法定义**插值状态**，从而填补两者之间的空白。
 
-![1.gif](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/45af169412774ce685832db37df048dd~tplv-k3u1fbpfcp-watermark.image?)
+![1.gif](https://backblaze.cosine.ren/juejin/45af169412774ce685832db37df048dd~Tplv-K3u1fbpfcp-Watermark.png)
 
 快速√ 连续排列 × 彼此差异极小× 制造 “错觉”× 
 
@@ -64,7 +64,7 @@ GIF、Flash的出现，一度成为主流，也是在00年的前后，苹果公�
 
 那么接下来，填补起始点和结束点之间的空白，尝试让动画连贯。
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6918c4fc6f814e83947dd81d18fb16e4~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/6918c4fc6f814e83947dd81d18fb16e4~tplv-k3u1fbpfcp-watermark.png)
 
 空白的补全方式有以下两种
 
@@ -306,7 +306,7 @@ animation-play-state: unset;
 
   - [`scale`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-function#scale)（缩放）注意其中心为 [`transform-origin`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-origin)（缩放）注意其中心为 [`transform-origin`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-origin) 
 
-    ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/93f99f7d68214535ac4eaf6ab1f33ff3~tplv-k3u1fbpfcp-watermark.image?)
+    ![image.png](https://backblaze.cosine.ren/juejin/93f99f7d68214535ac4eaf6ab1f33ff3~tplv-k3u1fbpfcp-watermark.png)
 
     ```css
     // 沿x轴缩小为50%
@@ -317,7 +317,7 @@ animation-play-state: unset;
 
   - [`rotate`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-function#rotate)（旋转） 将元素在不变形的情况下旋转到原点周围(如 [`transform-origin`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-origin) 属性所指定) 。 移动量由指定角度定义;如果为**正值**，则运动将为**顺时针**，如果为负值，则为逆时针 。 180°的旋转称为点反射 (*point reflection*)。
 
-    ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/592ec860492c4406b2178959b0cf4320~tplv-k3u1fbpfcp-watermark.image?)
+    ![image.png](https://backblaze.cosine.ren/juejin/592ec860492c4406b2178959b0cf4320~tplv-k3u1fbpfcp-watermark.png)
 
     ```css
     transform: rotate(30deg);
@@ -474,7 +474,7 @@ stroke-dashoffset、stroke-dasharray配合使用实现笔画效果。
 <line stroke-dasharray="180" stroke-dashoffset的值就可以实现笔画效果="0" x1="10" y1="190" x2="190" y2="190" />
 ```
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d08067ea0b1c4fd78ac56b117d8043a4~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/D08067ea0b1c4fd78ac56b117d8043a4~Tplv-K3u1fbpfcp-Watermark.png)
 
 直线这种比较简单的可以直接知道其总长度进而通过初始化dashoffset实现笔画效果，那么不规则图形？
 
@@ -635,7 +635,7 @@ animate({
 })
 ```
 
-![1.gif](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cb13be23f4e34790a350e079ed3cca1e~tplv-k3u1fbpfcp-watermark.image?)
+![1.gif](https://backblaze.cosine.ren/juejin/Cb13be23f4e34790a350e079ed3cca1e~Tplv-K3u1fbpfcp-Watermark.png)
 
 
 
@@ -658,7 +658,7 @@ const gravity = () => {
 
 ```
 
-![2.gif](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/36c45c23baed4ed98e29e0e7f45a3140~tplv-k3u1fbpfcp-watermark.image?)
+![2.gif](https://backblaze.cosine.ren/juejin/36c45c23baed4ed98e29e0e7f45a3140~tplv-k3u1fbpfcp-watermark.png)
 
 
 
@@ -683,7 +683,7 @@ const friction = () => {
 
 ```
 
-![3.gif](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/066ff6078d39479da3229092e10b5925~tplv-k3u1fbpfcp-watermark.image?)
+![3.gif](https://backblaze.cosine.ren/juejin/066ff6078d39479da3229092e10b5925~tplv-k3u1fbpfcp-watermark.png)
 
 - 平抛 （x轴匀速，y轴加速） 也就是说，y轴类似重力中的t^2^而x轴速度不变
 
@@ -710,7 +710,7 @@ const horizontalMotion = () => {
 
 
 
-![4.gif](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0f956087eb91462b9072a126934ff568~tplv-k3u1fbpfcp-watermark.image?)
+![4.gif](https://backblaze.cosine.ren/juejin/0f956087eb91462b9072a126934ff568~tplv-k3u1fbpfcp-watermark.png)
 
 其余的还有很多，再多的话就在easing返回的对象中加入新的属性，如旋转：
 
@@ -738,7 +738,7 @@ const horizontalMotion = () => {
   };
   ```
 
-  ![5.gif](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8596a1014d81410e8fbf91ec0a03a3fc~tplv-k3u1fbpfcp-watermark.image?)
+  ![5.gif](https://backblaze.cosine.ren/juejin/8596a1014d81410e8fbf91ec0a03a3fc~tplv-k3u1fbpfcp-watermark.png)
 
 - 拉弓（x轴匀速，y轴初始速度为负的匀加速）
 
@@ -765,13 +765,13 @@ const horizontalMotion = () => {
   };
   ```
 
-![6.gif](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c78ab72096e1434d9f811e606e7c4c11~tplv-k3u1fbpfcp-watermark.image?)
+![6.gif](https://backblaze.cosine.ren/juejin/c78ab72096e1434d9f811e606e7c4c11~tplv-k3u1fbpfcp-watermark.png)
 
 - 贝塞尔曲线 [cubic-bezier(0,2.11,1,.19) ✿ cubic-bezier.com](https://cubic-bezier.com/#0,2.11,1,.19)、[Animated Bézier Curves - Jason Davies](https://www.jasondavies.com/animated-bezier/) 
 
   - ps：讲到这里开始逐渐硬核起来了，tql
 
-  ![10.gif](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/abef976de60e4f549becd34b269408de~tplv-k3u1fbpfcp-watermark.image?)
+  ![10.gif](https://backblaze.cosine.ren/juejin/abef976de60e4f549becd34b269408de~tplv-k3u1fbpfcp-watermark.png)
 
   ```js
   // 贝塞尔
@@ -798,7 +798,7 @@ const horizontalMotion = () => {
   }
   ```
 
-  ![11.gif](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/65f2c703e2dd427ea0013d78d30f1f41~tplv-k3u1fbpfcp-watermark.image?)
+  ![11.gif](https://backblaze.cosine.ren/juejin/65f2c703e2dd427ea0013d78d30f1f41~tplv-k3u1fbpfcp-watermark.png)
 
 ### 复杂动画
 
@@ -808,11 +808,11 @@ const horizontalMotion = () => {
 
   
 
-  ![7.gif](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3fe64ea4171e49f1bf4dd1c4b6b06dc4~tplv-k3u1fbpfcp-watermark.image?)
+  ![7.gif](https://backblaze.cosine.ren/juejin/3fe64ea4171e49f1bf4dd1c4b6b06dc4~tplv-k3u1fbpfcp-watermark.png)
 
 自动衰减：更加复杂
 
-![8.gif](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7a7244b30a714bd481b3de84bede051c~tplv-k3u1fbpfcp-watermark.image?)
+![8.gif](https://backblaze.cosine.ren/juejin/7a7244b30a714bd481b3de84bede051c~tplv-k3u1fbpfcp-watermark.png)
 
 - 椭圆运动
 
@@ -838,7 +838,7 @@ const horizontalMotion = () => {
     
     ```
 
-![9.gif](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4808e48403684d70b74a9ff5defa419d~tplv-k3u1fbpfcp-watermark.image?)
+![9.gif](https://backblaze.cosine.ren/juejin/4808e48403684d70b74a9ff5defa419d~tplv-k3u1fbpfcp-watermark.png)
 
 ## 相关实践资源
 

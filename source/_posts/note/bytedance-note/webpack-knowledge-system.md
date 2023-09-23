@@ -29,7 +29,7 @@ categories:
 
 前端项目由什么构成? —— **资源**
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/344365689d9447139272c56e5f449266~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/344365689d9447139272c56e5f449266~tplv-k3u1fbpfcp-watermark.png)
 
 旧时代手动管理这些资源，但有以下几个对开发效率影响非常大的缺点：
 
@@ -41,7 +41,7 @@ categories:
 
 后来，出现了很多前端工程化工具，特别是Webpack
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/57b71acd81ee4932ac44cace3f6c94a5~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/57b71acd81ee4932ac44cace3f6c94a5~tplv-k3u1fbpfcp-watermark.png)
 
 Web本质上是一种前端资源**编译**、**打包**工具
 
@@ -66,7 +66,7 @@ Web本质上是一种前端资源**编译**、**打包**工具
    npm i -D webpack webpack-cli
    ```
 
-   ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e51b8a1d34ef475b80cc4d6306ad835c~tplv-k3u1fbpfcp-watermark.image?)
+   ![image.png](https://backblaze.cosine.ren/juejin/e51b8a1d34ef475b80cc4d6306ad835c~tplv-k3u1fbpfcp-watermark.png)
 
 2. 编辑配置文件webpack.config.js 
 
@@ -100,7 +100,7 @@ Web本质上是一种前端资源**编译**、**打包**工具
 
 极度简化版：
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a45521b552134b25aadb15c67b37604c~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/a45521b552134b25aadb15c67b37604c~tplv-k3u1fbpfcp-watermark.png)
 
 1. 从entry中的入口文件开始启动编译
 2. 依赖解析：根据`require` 或者 `import` 等语句找到以来资源
@@ -127,7 +127,7 @@ ps：官网文档确实，看不太懂（）
 
 配置总览：
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d9b763cad5574ed682942cf0151072b3~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/d9b763cad5574ed682942cf0151072b3~tplv-k3u1fbpfcp-watermark.png)
 
 按使用频率，主要有以下几大配置项
 
@@ -137,7 +137,7 @@ ps：官网文档确实，看不太懂（）
 
   - 如图，比如我这个项目需要加载less文件，需要导入以下loader等
 
-    ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d690d2590a604b43b0cd5a1be79684e2~tplv-k3u1fbpfcp-watermark.image?)
+    ![image.png](https://backblaze.cosine.ren/juejin/d690d2590a604b43b0cd5a1be79684e2~tplv-k3u1fbpfcp-watermark.png)
 
 - mode
 
@@ -155,7 +155,7 @@ ps：官网文档确实，看不太懂（）
 
 2. 添加module处理css文件
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d690d2590a604b43b0cd5a1be79684e2~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/d690d2590a604b43b0cd5a1be79684e2~tplv-k3u1fbpfcp-watermark.png)
 
 #### 思考题
 
@@ -349,7 +349,7 @@ module.exports = {
 - **css-loader**: 实现**css => js的转换**，将CSS包装成类似module.exports = "${css}" 的内容，包装后的内容符合JavaScript 语法
 - **style-loader**：**将css模块包进require语句**，并在运行时调用**injectStyle**等函数将内容**注入到页面的style标签**
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0786afef4d7342b2b0b435b99ef3f803~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/0786afef4d7342b2b0b435b99ef3f803~tplv-k3u1fbpfcp-watermark.png)
 
 ### 认识Loader：其他特性
 
@@ -360,7 +360,7 @@ module.exports = {
 - 分normal、pitch两种模式
 - 参考：[Webpack 原理系列七：如何编写loader (qq.com)](https://mp.weixin.qq.com/s/TPWcB4MfVrTgFtVxsShNFA)
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fef30223a8864fb58bf070778e3524b5~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/Fef30223a8864fb58bf070778e3524b5~Tplv-K3u1fbpfcp-Watermark.png)
 
 ```
 module.exports = function(source, sourceMap?, data?) {
@@ -374,7 +374,7 @@ module.exports = function(source, sourceMap?, data?) {
 
 - 站在使用角度，建议掌握这些常见Loader的**功能、配置方法**
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/01ecc31afc78422592a443c3763a48aa~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/01ecc31afc78422592a443c3763a48aa~Tplv-K3u1fbpfcp-Watermark.png)
 
 ### 思考题
 
@@ -403,11 +403,11 @@ module.exports = function(source, sourceMap?, data?) {
 心智成本高 => 可维护性低 => 生命力弱
 插件架构精髓：**对扩展开放，对修改封闭**，其实就是**开闭原则**
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/729fd73d4e2d48cfa49ff74643a69430~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/729fd73d4e2d48cfa49ff74643a69430~tplv-k3u1fbpfcp-watermark.png)
 
 甚至，Webpack本身的很多功能也是基于插件实现的
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38a9e6a208bc49cfbd3f3fd097d962a7~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/38a9e6a208bc49cfbd3f3fd097d962a7~tplv-k3u1fbpfcp-watermark.png)
 
 ### 如何编写插件
 
@@ -430,7 +430,7 @@ class SomePlugin {
 
 3. 交互：在上下文参数对象中附带了很多存在side effect的交互接口，插件可以通过这些接口改变
 
-   ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f1acd0b48add4b4d8bb32ce5342aa905~tplv-k3u1fbpfcp-watermark.image?)
+   ![image.png](https://backblaze.cosine.ren/juejin/f1acd0b48add4b4d8bb32ce5342aa905~tplv-k3u1fbpfcp-watermark.png)
 
    时机：compier.hooks.compilation
 
@@ -456,7 +456,7 @@ class SomePlugin {
 - 熟练掌握常用配置项、Loader、 插件的使用方法，能够灵活搭建集成Vue、React、 Babel、 Eslint、 Less、 Sass、 图片处理等工具的Webpack环境
 - 掌握常见脚手架工具的用法，例如: Vue-cli、 create-react- app、@angular/cli
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e58e7df7056e41ba8eae0945a2bfedf4~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/e58e7df7056e41ba8eae0945a2bfedf4~tplv-k3u1fbpfcp-watermark.png)
 
 ### 进阶：学会扩展Webpack
 

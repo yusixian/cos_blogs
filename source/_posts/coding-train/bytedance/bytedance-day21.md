@@ -100,7 +100,7 @@ var sortArray = function(nums) {
 ```
 要练习各种排序算法的话，这个题目就挺合适的，这里给一个归并排序的版本吧。
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2bd159fb46df41c193aeaa62e5dcf87e~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/2bd159fb46df41c193aeaa62e5dcf87e~tplv-k3u1fbpfcp-watermark.png)
 ## 代码
 ```javascript
 /**

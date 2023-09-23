@@ -50,7 +50,7 @@ I帧、P帧、B帧
 
 1 -> 2 -> 3 ->.....
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fcd4aa649e144a3bb7eaf6f0f8ac2ceb~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/fcd4aa649e144a3bb7eaf6f0f8ac2ceb~tplv-k3u1fbpfcp-watermark.png)
 
 > DTS（Decode Time Stamp）解码时间戳：决定bit流什么时候开始送入解码器中进行解码。
 >
@@ -62,7 +62,7 @@ I帧、P帧、B帧
 
 两个 I帧 之间的间隔，通常在2~4s
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cbe3576fcea94d15b56c58c69ce857f7~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/cbe3576fcea94d15b56c58c69ce857f7~tplv-k3u1fbpfcp-watermark.png)
 
 I帧比较多的话，视频就会比较大
 
@@ -80,25 +80,25 @@ I帧比较多的话，视频就会比较大
 
 - 首先是**空间冗余**：
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/06ef1d1a6add438a9230c3645b153833~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/06ef1d1a6add438a9230c3645b153833~tplv-k3u1fbpfcp-watermark.png)
 
 - **时间冗余**：↓只有球的位置发生了变化，其他的都没有变化
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/eca3ad131e344b9daf3f188f276aaa29~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/eca3ad131e344b9daf3f188f276aaa29~tplv-k3u1fbpfcp-watermark.png)
 
 - **编码冗余**：如图的图像，可以蓝色用1白色用0来表示（因为只有这两种颜色，艾特某哈夫曼编码方式）
 
-  ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4645bf9109fd4e92917c39544e297080~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/4645bf9109fd4e92917c39544e297080~tplv-k3u1fbpfcp-watermark.png)
 
   
 
 - **视觉冗余**
 
-  ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/06e0df32ec1d4fbc9c780cd90749b25e~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/06e0df32ec1d4fbc9c780cd90749b25e~tplv-k3u1fbpfcp-watermark.png)
 
 ### 编码数据处理流程
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/43dfe562ac5142dabfcf18a4fc1407b2~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/43dfe562ac5142dabfcf18a4fc1407b2~tplv-k3u1fbpfcp-watermark.png)
 
 通过**预测**去除空间和时间冗余 -> 变换 去除空间冗余 
 
@@ -111,9 +111,9 @@ I帧比较多的话，视频就会比较大
 
 封装格式：存储音视频、图片或者字幕信息的一种容器
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/20164c0c9cf94203966253b7592f05d2~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/20164c0c9cf94203966253b7592f05d2~Tplv-K3u1fbpfcp-Watermark.png)
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/429a385de6bc4cd189a250c9706c6d3f~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/429a385de6bc4cd189a250c9706c6d3f~tplv-k3u1fbpfcp-watermark.png)
 
 ## 多媒体元素和扩展API
 
@@ -203,7 +203,7 @@ I帧比较多的话，视频就会比较大
 
 - 主流浏览器基本支持，除了IOS的Safari
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/57817e4755fb424cbda2d1810fb702d2~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/57817e4755fb424cbda2d1810fb702d2~tplv-k3u1fbpfcp-watermark.png)
 
 1. 创建mediaSource实例
 2. 创建指向mediaSource的URL
@@ -212,23 +212,23 @@ I帧比较多的话，视频就会比较大
 5. 向sourceBuffer中加入数据
 6. 监听updateend事件
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6bb5eaa1edf54ad69934d046c3963cf6~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/6bb5eaa1edf54ad69934d046c3963cf6~tplv-k3u1fbpfcp-watermark.png)
 
 - 播放器播放流程
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/77c9b7a19ea64a7188ccb93eea57e152~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/77c9b7a19ea64a7188ccb93eea57e152~tplv-k3u1fbpfcp-watermark.png)
 
 
 
 ## 流媒体协议
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ae27e7b4cedb4a72a9648f0d8644b450~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/ae27e7b4cedb4a72a9648f0d8644b450~tplv-k3u1fbpfcp-watermark.png)
 
 HLS全称是HTTP Live Streaming,是一个由Apple公司提出的基于HTTP的媒体流传输协议，用于实时音视频流的传输。目前HLS协议被广泛的应用于**视频点播**和直播领域。
 
 # 应用场景
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d112114f71f945a399ecd45fe24b31b1~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/d112114f71f945a399ecd45fe24b31b1~tplv-k3u1fbpfcp-watermark.png)
 
 - 点播/直播 -> 视频上传 -> 视频转码 
 - 图片  -> 支持一些新的图片

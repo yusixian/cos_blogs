@@ -23,17 +23,17 @@ categories:
 
 ## 发展历程
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8351c2bbcb5447849468f92d38fdf8e2~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/8351c2bbcb5447849468f92d38fdf8e2~Tplv-K3u1fbpfcp-Watermark.png)
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b1cc1fef439a46f2b9896883a2f390f6~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/B1cc1fef439a46f2b9896883a2f390f6~Tplv-K3u1fbpfcp-Watermark.png)
 
 ## 核心数据
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d8a26b7b0fee4ea7b6284b5e65f51541~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/D8a26b7b0fee4ea7b6284b5e65f51541~Tplv-K3u1fbpfcp-Watermark.png)
 
 ## 小程序生态
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/69d41db65da44e10ba461a8dfb994d9c~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/69d41db65da44e10ba461a8dfb994d9c~tplv-k3u1fbpfcp-watermark.png)
 
 # 业务价值
 
@@ -87,11 +87,11 @@ categories:
   - 不操作DOM如何控制页面渲染？
   - Data -> 根据数据处理DOM -> 页面
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9395e25b321e44b1b78c0f9735d9a07d~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/9395e25b321e44b1b78c0f9735d9a07d~Tplv-K3u1fbpfcp-Watermark.png)
 
 ## 小程序语法
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ca88825a4bdf46fbbe95df9a0b1f77cf~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/ca88825a4bdf46fbbe95df9a0b1f77cf~tplv-k3u1fbpfcp-watermark.png)
 
 如图：比如字节小程序是TTML/JS/TTSS，而微信小程序则是WXML/JS/WXSS，对应HTML/JS/CSS
 
@@ -103,7 +103,7 @@ categories:
 
 [代码片段](https://developers.weixin.qq.com/s/XpqAlHm87owi)
 
-![番茄钟.gif](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b8ada35bb88143319ce17603de92c141~tplv-k3u1fbpfcp-watermark.image?)
+![番茄钟.gif](https://backblaze.cosine.ren/juejin/B8ada35bb88143319ce17603de92c141~Tplv-K3u1fbpfcp-Watermark.png)
 
 ### 编写tomatoClock.wxml（html）
 
@@ -243,7 +243,7 @@ page { background-color: #97ABFF; }
 
 ## 跨端框架介绍
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f1de2849950d40598918c9d0d4299aff~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/f1de2849950d40598918c9d0d4299aff~tplv-k3u1fbpfcp-watermark.png)
 
 ## 跨端框架原理
 
@@ -259,11 +259,11 @@ page { background-color: #97ABFF; }
 
 
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a563ebdd42444d7e9f722ae3e570e268~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/a563ebdd42444d7e9f722ae3e570e268~tplv-k3u1fbpfcp-watermark.png)
 
 解析 -> 生成AST语法树 ->生成页面
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/16a0e587d4f9463e8687ed7c3fddbd76~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/16a0e587d4f9463e8687ed7c3fddbd76~Tplv-K3u1fbpfcp-Watermark.png)
 
 如：
 
@@ -292,11 +292,11 @@ page { background-color: #97ABFF; }
 
 小程序中提供的动态生成的模板。
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c7eda62883404711b6b97dab0323c7ed~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/C7eda62883404711b6b97dab0323c7ed~Tplv-K3u1fbpfcp-Watermark.png)
 
 #### 运行时结构
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/001298b57b23466a94e02a31bfb1c1ba~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/001298b57b23466a94e02a31bfb1c1ba~tplv-k3u1fbpfcp-watermark.png)
 
 
 - 运行时的方案也不是完美的

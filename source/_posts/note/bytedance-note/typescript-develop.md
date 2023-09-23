@@ -28,7 +28,7 @@ categories:
 
 ## 为什么是TypeScript
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab0c1101077f402f8afd8be753442b84~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/ab0c1101077f402f8afd8be753442b84~tplv-k3u1fbpfcp-watermark.png)
 
 **动态类型**在**执行过程中**进行类型的匹配，js的弱类型会在执行时进行隐式类型转换，而在静态类型中则不然
 
@@ -49,7 +49,7 @@ TypeScript是**JS的超集**
 
 js ==> ts
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3ae63f86172341e893293665ce701678~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/3ae63f86172341e893293665ce701678~tplv-k3u1fbpfcp-watermark.png)
 
 可以看到，ts的类型定义方式：`let 变量名: 类型 = 值;`
 
@@ -536,7 +536,7 @@ type IReturnType<T extends (...args: any) => any> = T extends(...args: any ) => 
 3. 使用npm安装tsc
 4. 使用tsc运行编译得到js文件
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/56049af605644fb9907feedd9ee14fae~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/56049af605644fb9907feedd9ee14fae~tplv-k3u1fbpfcp-watermark.png)
 
 
 

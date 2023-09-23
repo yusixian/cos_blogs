@@ -100,7 +100,8 @@ var search = function(nums, target) {
 
 ## 思路
 模拟竖式乘法
-![模拟竖式乘法](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/698642a0e3724164ad93ef46326d1f8a~tplv-k3u1fbpfcp-watermark.image?)
+![模拟竖式乘法](https://backblaze.cosine.ren/juejin/698642a0e3724164ad93ef46326d1f8a~Tplv-K3u1fbpfcp-Watermark.png)
+
 - 开头先特判一下是否有哪个数有为 `0` 的情况，直接返回 `0`
 - 被乘数 `num1` 位数为 `n` ，乘数 `num2` 位数为 `m`， `num1 * num2` 的结果 `res` 最大总位数为 `n+m`
 - `num1[i] * num2[j]` 的结果 `mul`，第一位位于 `res[i+j]`，第二位位于 `res[i+j+1]`。
@@ -135,7 +136,7 @@ var multiply = function(num1, num2) {
 
 有 K 名字节君，每天下午都要推着推车给字节的同学送下午茶，字节的同学分布在不同的工区，字节的工区分布和字节君的位置分布如下。
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/842b1a582fce4013b8375fd96ccc629b~tplv-k3u1fbpfcp-zoom-1.image)
+![image.png](https://backblaze.cosine.ren/juejin/842b1a582fce4013b8375fd96ccc629b~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 在上图中，每个方框内的单位长度为 1。已知字节君的推车可以装无限份下午茶，所以不需要字节君回到初始地点补充下午茶。每个字节君只有两个动作。
 

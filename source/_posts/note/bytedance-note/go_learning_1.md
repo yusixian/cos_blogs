@@ -38,7 +38,7 @@ categories:
 ## IDE推荐
 - vscode 安装Go插件
 - [GoLand](https://www.jetbrains.com/go/) JetBrains系列的新IDE，dddd
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/85a838397c9e4ba6a6f4338cd27138f7~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/85a838397c9e4ba6a6f4338cd27138f7~tplv-k3u1fbpfcp-watermark.png)
 
 可以通过Github很方便的登录体验该课程的示例项目 [Dashboard — Gitpod](https://gitpod.io/#github.com/wangkechun/go-by-example) （真好，我哭死）
 # 基础数据类型

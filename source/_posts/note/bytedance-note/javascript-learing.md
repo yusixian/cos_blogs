@@ -60,7 +60,7 @@ btn.addEventListener('click', (e) => {
 
 - 第三版 既然是**完全的展示行为**，那么可以完全由html和css实现
 
-  将切换作为一个type为 [`checkbox`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Input/checkbox) 控件，id为 `modeCheckBox`，使用 `label` 标签的 [`for`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/label#attr-for) 控件，id为 `modeCheckBox`，使用 `label` 标签的 [`for`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/label#attr-for) 属性将其关联到这个控件，再把checkbox隐藏掉即可实现点击切换模式。![image-20220117144502775.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4575ccd15ded4293bc8e7dbf2c6e6bb0~tplv-k3u1fbpfcp-watermark.image?)
+  将切换作为一个type为 [`checkbox`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Input/checkbox) 控件，id为 `modeCheckBox`，使用 `label` 标签的 [`for`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/label#attr-for) 控件，id为 `modeCheckBox`，使用 `label` 标签的 [`for`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/label#attr-for) 属性将其关联到这个控件，再把checkbox隐藏掉即可实现点击切换模式。![image-20220117144502775.png](https://backblaze.cosine.ren/juejin/4575ccd15ded4293bc8e7dbf2c6e6bb0~tplv-k3u1fbpfcp-watermark.png)
 
   "~~只要不写代码就不会有bug~~" ，这也是各司其责的一种体现。
 
@@ -92,11 +92,11 @@ btn.addEventListener('click', (e) => {
 
 #### **重构1：插件化，解耦**
 
-- 将控制元素抽取成一个个插件（左右小箭头、底下的四个小圆点）等等![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/71de521e581e4c4e82d9f6a312d2c638~tplv-k3u1fbpfcp-watermark.image?)
+- 将控制元素抽取成一个个插件（左右小箭头、底下的四个小圆点）等等![image.png](https://backblaze.cosine.ren/juejin/71de521e581e4c4e82d9f6a312d2c638~tplv-k3u1fbpfcp-watermark.png)
 
 - 插件与组件之间通过依赖注入方式建立联系、
 
-  ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d148965ec0654ec3914515d835445368~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/d148965ec0654ec3914515d835445368~tplv-k3u1fbpfcp-watermark.png)
 
 这样的好处？组件的构造器做的工作就只是将组件们一一注册了，日后复用的时候不需要的组件直接将构造器注释掉即，无需关注其他的。
 
@@ -110,7 +110,7 @@ btn.addEventListener('click', (e) => {
 
 将通用的组件模型，抽象出来一个组件类（Component），其他组件类通过继承该类并实现其render方法。
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d7805999b1dc4c5581483ac56a72e383~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/d7805999b1dc4c5581483ac56a72e383~tplv-k3u1fbpfcp-watermark.png)
 
 ```js
 class Component{
@@ -152,7 +152,7 @@ class Component{
 
 - 函数式编程思想的基础应用
 
-  ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/948dc7f6553a40c5b6fa717ce9fafaf4~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/948dc7f6553a40c5b6fa717ce9fafaf4~tplv-k3u1fbpfcp-watermark.png)
 
 #### 应用：操作次数限制
 

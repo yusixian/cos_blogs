@@ -95,7 +95,7 @@ console.log(ans.toString().replace(/\,/g, ''))
  
 **示例 1：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c2582dda288345e1bfc0171997da14de~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/C2582dda288345e1bfc0171997da14de~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： root = [1,2,3]
@@ -108,7 +108,7 @@ console.log(ans.toString().replace(/\,/g, ''))
 
 **示例 2：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/84606833c16d4dc19afbceb9af735f99~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/84606833c16d4dc19afbceb9af735f99~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： root = [4,9,0,5,1]

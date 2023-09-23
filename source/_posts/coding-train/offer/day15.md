@@ -33,7 +33,7 @@ day15题目：[剑指 Offer 34. 二叉树中和为某一值的路径](https://le
 
 **示例 1：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3e89e063503741e184803a4ba65ad84c~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/3e89e063503741e184803a4ba65ad84c~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22
@@ -42,7 +42,7 @@ day15题目：[剑指 Offer 34. 二叉树中和为某一值的路径](https://le
 
 **示例 2：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/193e8f2bb2d3458f9ed5a24a0f6c57f3~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/193e8f2bb2d3458f9ed5a24a0f6c57f3~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： root = [1,2,3], targetSum = 5
@@ -112,13 +112,13 @@ var pathSum = function(root, target) {
 
 为了让您更好地理解问题，以下面的二叉搜索树为例：
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3dadb6015b06426a9e9fec4093e286f9~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/3dadb6015b06426a9e9fec4093e286f9~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 我们希望将这个二叉搜索树转化为双向循环链表。链表中的每个节点都有一个前驱和后继指针。对于双向循环链表，第一个节点的前驱是最后一个节点，最后一个节点的后继是第一个节点。
 
 下图展示了上面的二叉搜索树转化成的链表。“head” 表示指向链表中有最小元素的节点。
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cce9cdccc5db401fb5c6c2ed22e53bb4~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/Cce9cdccc5db401fb5c6c2ed22e53bb4~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 特别地，我们希望可以就地完成转换操作。当转化完成以后，树中节点的左指针需要指向前驱，树中节点的右指针需要指向后继。还需要返回链表中的第一个节点的指针。
 

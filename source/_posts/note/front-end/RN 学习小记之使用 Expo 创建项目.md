@@ -54,13 +54,13 @@ Android Studio 默认安装最新的 Android SDK。 使用本机代码构建 Rea
 - `Android SDK Platform 33`
 - `Intel x86 Atom_64 System Image`  或者  `Google APIs Intel x86 Atom System Image`
 
-![Pasted image 20230620141725.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/128cf0def1354e2e99164dc0380f56e9~tplv-k3u1fbpfcp-watermark.image?)
+![Pasted image 20230620141725.png](https://backblaze.cosine.ren/juejin/128cf0def1354e2e99164dc0380f56e9~tplv-k3u1fbpfcp-watermark.png)
 
 3. 接下来，选择“SDK Tools”选项卡并选中“Show Package Details”旁边的复选框。查找并展开 `Android SDK Build-Tools` 条目，然后确保选择了 `33.0.0` （**ps: 现在是 `34.0.0`了**）
 4. 配置 `ANDROID_HOME` 环境变量
    高级系统设置 - 环境变量 -  单击 New... 创建一个新的 `ANDROID_HOME` 用户变量，指向您的 Android SDK 的路径：
 
-![Pasted image 20230620141904.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/57ae0d6c666e475e9f2eb3e771c28073~tplv-k3u1fbpfcp-watermark.image?)
+![Pasted image 20230620141904.png](https://backblaze.cosine.ren/juejin/57ae0d6c666e475e9f2eb3e771c28073~Tplv-K3u1fbpfcp-Watermark.png)
 
 默认情况下，SDK 安装在以下位置：
 
@@ -72,7 +72,7 @@ eg: `C:\Users\xxxx\AppData\Local\Android\Sdk`
 
 可以在 Android Studio 设置中的**Appearance & Behavior** → **System Settings** → **Android SDK** 下找到 SDK 的实际位置。
 
-![Pasted image 20230620141558.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab6cbc95e11f424b86024a05d0e5d569~tplv-k3u1fbpfcp-watermark.image?)
+![Pasted image 20230620141558.png](https://backblaze.cosine.ren/juejin/ab6cbc95e11f424b86024a05d0e5d569~tplv-k3u1fbpfcp-watermark.png)
 
 验证环境变量已添加：
 
@@ -80,7 +80,7 @@ eg: `C:\Users\xxxx\AppData\Local\Android\Sdk`
 - 复制并粘贴 `Get-ChildItem -Path Env:\` 到 powershell
 - 验证 `ANDROID_HOME` 已添加
 
-![Pasted image 20230620142037.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dc7821c7201846eb80c1b1885a62e423~tplv-k3u1fbpfcp-watermark.image?)
+![Pasted image 20230620142037.png](https://backblaze.cosine.ren/juejin/dc7821c7201846eb80c1b1885a62e423~tplv-k3u1fbpfcp-watermark.png)
 
 ## 使用 Expo
 
@@ -125,7 +125,7 @@ npx expo start
 
 | Scan QR code                                                                                                                                                                | 启动成功                                                                                                                                                                    |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Screenshot_2023-06-20-14-37-42-694_host.exp.expon.jpg](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ef171bf33f904e0ca8bddbdbc9c25001~tplv-k3u1fbpfcp-watermark.image?) | ![Screenshot_2023-06-20-14-37-23-383_host.exp.expon.jpg](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab571910785e4c34aebec93a0d5a06b0~tplv-k3u1fbpfcp-watermark.image?) |
+| ![Screenshot_2023-06-20-14-37-42-694_host.exp.expon.jpg](https://backblaze.cosine.ren/juejin/Ef171bf33f904e0ca8bddbdbc9c25001~Tplv-K3u1fbpfcp-Watermark.png) | ![Screenshot_2023-06-20-14-37-23-383_host.exp.expon.jpg](https://backblaze.cosine.ren/juejin/ab571910785e4c34aebec93a0d5a06b0~tplv-k3u1fbpfcp-watermark.png) |
 
 ### Expo 推荐配合库
 

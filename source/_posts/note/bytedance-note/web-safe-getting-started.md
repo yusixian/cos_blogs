@@ -27,13 +27,13 @@ categories:
 
 #### 跨站脚本攻击XSS(Cross Site Scripting)
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/642c367bce854aeba444870401a60cfa~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/642c367bce854aeba444870401a60cfa~Tplv-K3u1fbpfcp-Watermark.png)
 
 注入恶意脚本，完成攻击，后果：泄露用户隐私等
 
 XSS主要利用了开发者对用户提交内容的盲目信任
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/46df16645186444fb853b329f03722a7~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/46df16645186444fb853b329f03722a7~tplv-k3u1fbpfcp-watermark.png)
 
 **特点**
 
@@ -77,7 +77,7 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 
 - 从 **URL** 上攻击，在URL上带上脚本
 
-  ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/88c27e79158645c1a293249378d971a6~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/88c27e79158645c1a293249378d971a6~Tplv-K3u1fbpfcp-Watermark.png)
 
 ##### DOM-based XSS
 
@@ -85,7 +85,7 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 
 - 恶意攻击的发起+执行，全在浏览器完成
 
-  ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f120875727634ff7abeb41a2174c616e~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/f120875727634ff7abeb41a2174c616e~tplv-k3u1fbpfcp-watermark.png)
 
 - 完成注入脚本的地方，是由浏览器来的，这是它与Reflected XSS的不同之处
 
@@ -97,7 +97,7 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 
 - 巧妙，最难防御的一种方式,攻击者非常的懂浏览器
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/337518efa2844250a0bcf70cfc76fd60~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/337518efa2844250a0bcf70cfc76fd60~Tplv-K3u1fbpfcp-Watermark.png)
 
 #### Cross-site request forgery（CSRF，跨站伪造请求）
 
@@ -107,7 +107,7 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 
 - **构造**指定HTTP **请求**，进而窃取或修改用户敏感信息
 
-  ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1d29931c3bf24265bf503f964401c6e7~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/1d29931c3bf24265bf503f964401c6e7~tplv-k3u1fbpfcp-watermark.png)
 
   一个用户访问了一个恶意的页面，这个页面向银行发送一个转账请求，ServerA为银行的服务器，发现这个请求带有用户的cookie，成功
 
@@ -117,7 +117,7 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 
 - SQL注入：通过SQL参数进行注入
 
-  ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4e0499bba56f4dc69093fb38c4fa06a8~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/4e0499bba56f4dc69093fb38c4fa06a8~tplv-k3u1fbpfcp-watermark.png)
 
   案例：读取请求字段，直接以字符串的形式拼接SQL语句
 
@@ -135,11 +135,11 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 
   那么攻击者可以传入一个userName：`any; DROP TABLE table;` ，于是被动删库跑路成就达成√
 
-- 命令行注入等![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5e3d42c1f4754e648fc9bf793c315e02~tplv-k3u1fbpfcp-watermark.image?)
+- 命令行注入等![image.png](https://backblaze.cosine.ren/juejin/5e3d42c1f4754e648fc9bf793c315e02~tplv-k3u1fbpfcp-watermark.png)
 
 - 读取+改进行流量攻击
 
-  ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/53c32ca224314a3394d709b9b08e3717~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/53c32ca224314a3394d709b9b08e3717~tplv-k3u1fbpfcp-watermark.png)
 
 #### Denial of Service（DOS）攻击
 
@@ -155,7 +155,7 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 
 - 贪婪：n次不行 ? n-1次再试试?——回溯
 
-  ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ff22b364393045b99c3139a97e5c29ba~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/Ff22b364393045b99c3139a97e5c29ba~Tplv-K3u1fbpfcp-Watermark.png)
 
 - Distributed Dos （DDOS）
 
@@ -169,7 +169,7 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 
     - 消耗大量带宽（耗尽）
 
-      ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f866aa26f1a346e08b8f646137e0189b~tplv-k3u1fbpfcp-watermark.image?)
+      ![image.png](https://backblaze.cosine.ren/juejin/f866aa26f1a346e08b8f646137e0189b~tplv-k3u1fbpfcp-watermark.png)
 
 #### 中间人攻击（传输层）
 
@@ -179,7 +179,7 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 
 - **对方身份未验证**
 
-  ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/910915a7c3484d038d381b4d0990b51c~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/910915a7c3484d038d381b4d0990b51c~tplv-k3u1fbpfcp-watermark.png)
 
 ### 假如你是一一个开发者一一防御
 
@@ -205,7 +205,7 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 
      `<a href="javascript:alert('xss')"></a>`
 
-- 自定义样式也要留意![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8e67055919de46148ce6f280d1ed61fe~tplv-k3u1fbpfcp-watermark.image?)
+- 自定义样式也要留意![image.png](https://backblaze.cosine.ren/juejin/8e67055919de46148ce6f280d1ed61fe~tplv-k3u1fbpfcp-watermark.png)
 
 ##### 同源策略（CSP）
 
@@ -235,7 +235,7 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 
 #### CSRF攻击防御
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/822df87c893e470aa6d84dfba6702e4a~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/822df87c893e470aa6d84dfba6702e4a~tplv-k3u1fbpfcp-watermark.png)
 
 - Origin + Referrer
 - 其他判断【请求来自于合法来源】的方式
@@ -243,7 +243,7 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
     - if 请求来自合法页面
     - then 服务器接受过页面请求
     - then 服务器可以标识
-- ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c328ef733885407e87d34d6cbf369a6f~tplv-k3u1fbpfcp-watermark.image?)
+- ![image.png](https://backblaze.cosine.ren/juejin/C328ef733885407e87d34d6cbf369a6f~Tplv-K3u1fbpfcp-Watermark.png)
 
 - iframe攻击：限制Origin是吧，那我同源请求
 
@@ -272,11 +272,11 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
     >
     > `Set-Cookie: SameSite=None; Secure ;`
 
-  ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/229b150da1cc42faae95e8e03b5d9d82~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/229b150da1cc42faae95e8e03b5d9d82~Tplv-K3u1fbpfcp-Watermark.png)
 
 - SameSite vs CORS（跨站资源共享）
 
-  ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8617447577294e10a51366ec5fffa691~tplv-k3u1fbpfcp-watermark.image?)
+  ![image.png](https://backblaze.cosine.ren/juejin/8617447577294e10a51366ec5fffa691~tplv-k3u1fbpfcp-watermark.png)
 
 以上这么多防御CSRF的方法，那么什么是防御CSRF的正确姿势呢？写一个中间件，专门生成这方面的防御。
 
@@ -313,7 +313,7 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 
 #### 防御DDos
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a226e027218f4859b2cc48e3a4d491e8~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/a226e027218f4859b2cc48e3a4d491e8~tplv-k3u1fbpfcp-watermark.png)
 
 #### 传输层——防御中间人
 
@@ -323,7 +323,7 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 - 完整性：MAC验证
 - 不可抵赖性：数字签名
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6543366d374e40e2b3d5f416a1a13ec6~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/6543366d374e40e2b3d5f416a1a13ec6~Tplv-K3u1fbpfcp-Watermark.png)
 
 - 拓展：数字签名
 
@@ -335,9 +335,9 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 
   - 数字签名，浏览器内置CA公钥
 
-    ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5b365d8c14274b89ac46232184765713~tplv-k3u1fbpfcp-watermark.image?)
+    ![image.png](https://backblaze.cosine.ren/juejin/5b365d8c14274b89ac46232184765713~Tplv-K3u1fbpfcp-Watermark.png)
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1e477a3d38294c1a900b170673b124d2~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/1e477a3d38294c1a900b170673b124d2~tplv-k3u1fbpfcp-watermark.png)
 
 - 当签名算法不够健壮时：被暴力破解（现在都已比较完善）
 
@@ -349,7 +349,7 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 
 静态资源被劫持篡改？对比hash
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/af0b7da8f78e4bc5b9ff452566d5d9d9~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/Af0b7da8f78e4bc5b9ff452566d5d9d9~Tplv-K3u1fbpfcp-Watermark.png)
 
 ## 尾声
 

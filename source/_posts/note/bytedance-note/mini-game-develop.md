@@ -22,13 +22,13 @@ categories:
 
 当然，能力足够强的话可以作为独立开发者。
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d2b19ef48261481ab4cbb48c14295e0f~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/D2b19ef48261481ab4cbb48c14295e0f~Tplv-K3u1fbpfcp-Watermark.png)
 
 **基本链路**
 
 立项阶段 -> 原型阶段 -> Alpha版本 -> Beta阶段 -> 运营阶段
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/93319b604a4d46df9d49cbf8f80f7969~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/93319b604a4d46df9d49cbf8f80f7969~tplv-k3u1fbpfcp-watermark.png)
 
 ## 为什么要用游戏引擎
 
@@ -97,7 +97,7 @@ categories:
 
 当然，由于缺乏迭代和运营，该游戏引擎算是比较小众的。也有一个适用于前端的库AVG.js Project。（内核是PixiJS作为渲染引擎）
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/37668e7d322248d9b0f17683d94e7e3e~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/37668e7d322248d9b0f17683d94e7e3e~tplv-k3u1fbpfcp-watermark.png)
 
 #### **RPG Maker**
 
@@ -137,7 +137,7 @@ Web游戏引擎的通用能力:
 - 3D能力仍在建设中
 - 版本迭代过快
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/50f2a6ea4fb24aa1b1e586c2f90c44db~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/50f2a6ea4fb24aa1b1e586c2f90c44db~Tplv-K3u1fbpfcp-Watermark.png)
 
 #### Laya
 
@@ -152,7 +152,7 @@ Web游戏引擎的通用能力:
 - 界面能力不友好
 - 生态很差
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9512c8eb4d534053ac9cd6e7499b3c38~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/9512c8eb4d534053ac9cd6e7499b3c38~Tplv-K3u1fbpfcp-Watermark.png)
 
 #### Egret
 
@@ -167,7 +167,7 @@ Web游戏引擎的通用能力:
 - 更新迭代遭瓶颈
 - 生态较差
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7bf568c8ee034a14a27f0d91d339c833~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/7bf568c8ee034a14a27f0d91d339c833~tplv-k3u1fbpfcp-watermark.png)
 
 可以看到上述游戏引擎的界面都是很相似的
 
@@ -175,7 +175,7 @@ Web游戏引擎的通用能力:
 
 这两个游戏引擎没有可视化界面。
 
-以CreateJS为例:![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c42808563fa241948b06a224a94303c1~tplv-k3u1fbpfcp-watermark.image?)
+以CreateJS为例:![image.png](https://backblaze.cosine.ren/juejin/C42808563fa241948b06a224a94303c1~Tplv-K3u1fbpfcp-Watermark.png)
 
 它是多个库的集合
 
@@ -189,7 +189,7 @@ Web游戏引擎的通用能力:
 
 下面介绍几种可能会经常接触的功能引擎:
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/600c9e3952394924b790c74d06c3b247~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/600c9e3952394924b790c74d06c3b247~tplv-k3u1fbpfcp-watermark.png)
 
 - Pixi.js
   - 2D渲染能力强（尤其是WebGL）
@@ -205,7 +205,7 @@ Web游戏引擎的通用能力:
 
 以Cocos引擎的架构为例子：
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a7ea1a5dd8ff42a396872d8472b06f7f~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/a7ea1a5dd8ff42a396872d8472b06f7f~tplv-k3u1fbpfcp-watermark.png)
 
 - render（渲染器）、collision（）、Physical（）
 
@@ -270,7 +270,7 @@ Web游戏引擎的通用能力:
 
 # 游戏开发的技能树
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0eefa193458c4de386328b087ebe7bf6~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/0eefa193458c4de386328b087ebe7bf6~tplv-k3u1fbpfcp-watermark.png)
 
 # PixiJS+Web开发
 
@@ -337,7 +337,7 @@ Web游戏引擎的通用能力:
 
      `app.stage.addChild(sprite);`
 
-     ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3576ca213d864276b857da604d86fe74~tplv-k3u1fbpfcp-watermark.image?)
+     ![image.png](https://backblaze.cosine.ren/juejin/3576ca213d864276b857da604d86fe74~tplv-k3u1fbpfcp-watermark.png)
 
 4. 让图片动起来
 
@@ -360,13 +360,13 @@ Q：Cocos Creator是游戏引擎吗?
 A：Cocos+界面编辑 它是一个**完整的游戏开发解决方案**，包含了轻量高效的**跨平台游戏引擎**，以及能让你更快速开发
 游戏所需要的各种**图形界面工具**。
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7f167c9df12c4eeaab85ad179a4c7686~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/7f167c9df12c4eeaab85ad179a4c7686~Tplv-K3u1fbpfcp-Watermark.png)
 
 ## 编辑器集成的能力
 
 ### Cocos的工作流
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/980f6078f6d54e45b6954cf615eccbfc~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/980f6078f6d54e45b6954cf615eccbfc~Tplv-K3u1fbpfcp-Watermark.png)
 
 下载并创建 -> 设计场景&开发 -> 预览和调试 ->  ANYSDK接入 -> 打包发布 -> Cocos Runtime
 
@@ -374,13 +374,13 @@ A：Cocos+界面编辑 它是一个**完整的游戏开发解决方案**，包�
 
 ### 创建项目
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/67121fdac5f043a1b213bdf59228178f~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/67121fdac5f043a1b213bdf59228178f~tplv-k3u1fbpfcp-watermark.png)
 
 ### 搭建场景
 
 Cocos的工作流——**数据驱动**和场景为核心、组件式开发为核心
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/02f481104d614872bea1d70292760d3b~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/02f481104d614872bea1d70292760d3b~tplv-k3u1fbpfcp-watermark.png)
 
 可以看到，不需要了解css等直接通过右侧的属性检查器就可以调整图片大小等，低代码
 
@@ -388,13 +388,13 @@ Cocos的工作流——**数据驱动**和场景为核心、组件式开发为�
 
 由节点来构成节点树，节点树影响真实的渲染层级
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/27368cab4d7e412d8419396ebf210a28~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/27368cab4d7e412d8419396ebf210a28~tplv-k3u1fbpfcp-watermark.png)
 
 ### 导入资源 + 显示资源
 
 从操作系统中的其他窗口拖拽文件到Cocos Creator窗口中的资源管理器面板上，就能够从外部导入资源。该操作会自动复制资源文件到项目资源文件夹下，并完成导入操作。然后把图片拖到层级管理器即可以生成一个cc.Sprite。
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4dd195a77f8f436084e7f9a2e88c564f~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/4dd195a77f8f436084e7f9a2e88c564f~tplv-k3u1fbpfcp-watermark.png)
 
 ### 脚本挂载
 
@@ -418,21 +418,21 @@ export default class TestComp extends cc.Component {
 
 然后在Cocos Creator中对应的节点把脚本挂载上去。
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fc5a271f557344329dba8a40efc35d9d~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/fc5a271f557344329dba8a40efc35d9d~tplv-k3u1fbpfcp-watermark.png)
 
 ### 运行调试
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ca330d4fbcc74bc288c6e07e9ee576b5~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/ca330d4fbcc74bc288c6e07e9ee576b5~tplv-k3u1fbpfcp-watermark.png)
 
 ## 游戏的上线
 
 ### 构建
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9cd3c931bd594cd98d4ca30d421b810d~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/9cd3c931bd594cd98d4ca30d421b810d~Tplv-K3u1fbpfcp-Watermark.png)
 
 构建游戏，可以选择多平台，产物即对应生成，比如Web Mobile
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6c91d97b6e864b0f94ff25c3424edff3~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/6c91d97b6e864b0f94ff25c3424edff3~tplv-k3u1fbpfcp-watermark.png)
 
 产物可以直接部署在对应的平台，比如web产物部署到服务器、小游戏产物部署到开发者平台。
 
@@ -442,7 +442,7 @@ export default class TestComp extends cc.Component {
 
 ## 游戏发布平台的差异性
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c8565eb975b4490983eb4211b1ca467b~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/c8565eb975b4490983eb4211b1ca467b~tplv-k3u1fbpfcp-watermark.png)
 
 - 游戏逻辑上，没有什么差别
 

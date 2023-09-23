@@ -35,26 +35,26 @@ Console、BreakPoint、sourceMap、代理……
 
 Chorme devTools谷歌浏览器自带的调试工具，功能非常之强大，包括现在很多浏览器也采用了这个调试工具，它既可以动态的添加/删除样式并实时的显示出来
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/94e325f9e70142a7b8e3f555ee9d78cd~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/94e325f9e70142a7b8e3f555ee9d78cd~tplv-k3u1fbpfcp-watermark.png)
 
 ### 强制状态显示
 
 可以将一些特定状态下显示的元素显示出来（比如hover、active等）
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fab92caa05ae492981e842122447f988~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/fab92caa05ae492981e842122447f988~tplv-k3u1fbpfcp-watermark.png)
 
-也可以通过右侧的样式栏强制元素状态/添加伪类等等![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e233f0153dbd4105a857af41c5521fbd~tplv-k3u1fbpfcp-watermark.image?)
+也可以通过右侧的样式栏强制元素状态/添加伪类等等![image.png](https://backblaze.cosine.ren/juejin/E233f0153dbd4105a857af41c5521fbd~Tplv-K3u1fbpfcp-Watermark.png)
 
 还可以筛选样式
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8f864d2402684b37ad6c449981b801f0~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/8f864d2402684b37ad6c449981b801f0~Tplv-K3u1fbpfcp-Watermark.png)
 
 ### 截图
 
 是的没错，可以对节点进行截图，非常的amazing啊（bushi
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/56537482cd824642adb2cfa6e8853f6a~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/56537482cd824642adb2cfa6e8853f6a~tplv-k3u1fbpfcp-watermark.png)
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d1dd335f74a540b588747691e953ff81~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/D1dd335f74a540b588747691e953ff81~Tplv-K3u1fbpfcp-Watermark.png)
 
 ### console
 
@@ -68,7 +68,7 @@ console.log('%s %o,%c%s', 'hello', {name:'我是姓名', age: 18}, 'font-size:20
 
 这里的%s是输出字符串，%o输出对象，%c输出样式（用过c/c++格式化输出的都晓得，不过这里的%c是样式嗷）
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6526a282fb864ce5a748bb1db356a222~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/6526a282fb864ce5a748bb1db356a222~tplv-k3u1fbpfcp-watermark.png)
 
 console.table可以具象化的展示一个对象数组，非常方便
 
@@ -76,17 +76,17 @@ console.table可以具象化的展示一个对象数组，非常方便
 const persons = [{id:1, name:'张三', age: 18, des: '好耶'},{id:2, name:'李四', age: 24, des: '我是李四'}, {id:3, name:'王五', age: 20, des: '这是什么'}];
 ```
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ef323dac5afd41bda639c3b7f56bee4a~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/ef323dac5afd41bda639c3b7f56bee4a~tplv-k3u1fbpfcp-watermark.png)
 
 树形结构dir
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2762569bf23e480aabdf8f8c5fa8b8e8~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/2762569bf23e480aabdf8f8c5fa8b8e8~Tplv-K3u1fbpfcp-Watermark.png)
 
 ### Soure Tab
 
 顾名思义，展示源代码中的内容，可以增加断点、进行单步调试等。
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5dfbad740c6c49f29b1a149ae40fad0a~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/5dfbad740c6c49f29b1a149ae40fad0a~tplv-k3u1fbpfcp-watermark.png)
 
 在代码中某行执行 `debugger` 或打个断点就会在执行到这行的时候暂停，之后就可以继续单步调试了，之后的调试就不做过多介绍了，直接上手试试就能明白。（后端调试多了这个很容易习惯x相当于打了个断点）
 
@@ -102,15 +102,15 @@ webpack 打包时可以多产出一个[Source Map](https://docs.google.com/docum
 
 性能面板，可以生成报告，包括
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/348524fc8aa9465ab097f7af30e81d33~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/348524fc8aa9465ab097f7af30e81d33~tplv-k3u1fbpfcp-watermark.png)
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fc744d9b92ec438692d96add9980ba7a~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/fc744d9b92ec438692d96add9980ba7a~tplv-k3u1fbpfcp-watermark.png)
 
 ### NetWork
 
 查看网络请求的面板，查看请求头/响应等等。
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/07e1c95a1b9b4e989250301f9d35d5f6~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/07e1c95a1b9b4e989250301f9d35d5f6~tplv-k3u1fbpfcp-watermark.png)
 
 ### Application
 
@@ -124,7 +124,7 @@ webpack 打包时可以多产出一个[Source Map](https://docs.google.com/docum
 
 小技巧：点击该面板下的Storage面板中的Clear Site Data就可以清除该网页的本地存储数据，无需打开浏览器设置进行清除。
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fb0e5e2661de47fba572db570fb27539~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/fb0e5e2661de47fba572db570fb27539~tplv-k3u1fbpfcp-watermark.png)
 
 ## 移动端 H5 调试
 
@@ -167,7 +167,7 @@ webpack 打包时可以多产出一个[Source Map](https://docs.google.com/docum
 
 改完代理就可以使用手机访问开发环境页面了！其他常用工具如下：
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d84f0673cabe4810b9996efe6c1e8d0a~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://backblaze.cosine.ren/juejin/D84f0673cabe4810b9996efe6c1e8d0a~Tplv-K3u1fbpfcp-Watermark.png)
 
 ## 常用开发调试技巧
 

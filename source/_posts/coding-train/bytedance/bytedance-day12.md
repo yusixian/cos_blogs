@@ -28,7 +28,7 @@ day12题目：[64. 最小路径和](https://leetcode-cn.com/problems/minimum-pat
 
 **示例 1：**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/732e95892805438d85ec5315d927cdfc~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://backblaze.cosine.ren/juejin/732e95892805438d85ec5315d927cdfc~Tplv-K3u1fbpfcp-Zoom-1.png)
 
 ```
 输入： grid = [[1,3,1],[1,5,1],[4,2,1]]
