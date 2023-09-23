@@ -6,7 +6,6 @@ lang: cn
 subtitle: Redux三原则、Reducer、getState、dispatch、subscribe原理及实现
 date: 2022-02-15 21:13:52
 cover: img/header_img/93604793_p0.jpg
-sticky: true
 tags:
 - 前端
 - Redux
