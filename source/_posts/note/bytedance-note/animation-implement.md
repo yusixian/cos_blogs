@@ -52,7 +52,7 @@ GIF、Flash的出现，一度成为主流，也是在00年的前后，苹果公�
 
 ![1.gif](https://backblaze.cosine.ren/juejin/45af169412774ce685832db37df048dd~Tplv-K3u1fbpfcp-Watermark.gif)
 
-快速√ 连续排列 × 彼此差异极小× 制造 “错觉”× 
+快速√ 连续排列 × 彼此差异极小× 制造 “错觉”×
 
 可以看到，上面这张动画只有快速，并没有制造错觉，这就不得不提到帧率这个概念了~~（打游戏的这个概念应该都熟）~~
 
@@ -304,7 +304,7 @@ animation-play-state: unset;
 
   要应用的一个或多个CSS变换函数。 变换函数按从左到右的顺序相乘，这意味着复合变换按从右到左的顺序有效地应用。
 
-  - [`scale`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-function#scale)（缩放）注意其中心为 [`transform-origin`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-origin)（缩放）注意其中心为 [`transform-origin`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-origin) 
+  - [`scale`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-function#scale)（缩放）注意其中心为 [`transform-origin`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-origin)（缩放）注意其中心为 [`transform-origin`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-origin)
 
     ![image.png](https://backblaze.cosine.ren/juejin/93f99f7d68214535ac4eaf6ab1f33ff3~tplv-k3u1fbpfcp-watermark.png)
 
@@ -429,23 +429,23 @@ css动画的优点：简单、高效、声明式的。不依赖于主线程，�
 
 缺点：不能**动态修改或定义动画**，内容不同的动画**无法实现同步**，**多个动画彼此无法堆叠**。
 适用场景：简单的h5活动/宣传页。
-推荐库:[Animate.css](https://animate.style/)、[CSShake](https://elrumordelaluz.github.io/csshake/)等。 
+推荐库:[Animate.css](https://animate.style/)、[CSShake](https://elrumordelaluz.github.io/csshake/)等。
 
 ### svg实现动画
 
 svg是基于XML的矢量图形描述语言，它可以与CSS和]S较好的配合，实现svg动画通常有三种方式:**SMIL、JS、CSS**
 
 - SMIL：同步多媒体集成语言
-  - 结论∶兼容性不理想,这里不过多讨论,当然有polyfill的方案:https://github.com/ericwilligers/svg-animation
+  - 结论∶兼容性不理想,这里不过多讨论,当然有polyfill的方案:<https://github.com/ericwilligers/svg-animation>
 - 使用JS来操作SVG动画自不必多说，目前也有很多现成的类库。例如老牌的Snap.svg以及anime.js，都能让我们快速制作SVG动画。当然,除了这些类库，HTML本身也有原生的 Web Animation 实现。使用Web 8622Animation也能让我们方便快捷地制作动画。这是老师的两个栗子：
-  - 文字形变: https://codepen.io/jiangxiang/pen/MWmdjeY
+  - 文字形变: <https://codepen.io/jiangxiang/pen/MWmdjeY>
   - Path实现写字动画: [SVG 写字动画 (codepen.io)](https://codepen.io/jiangxiang/pen/rNmgjqX)
 
 第一个动画的实现原理
 
 #### 文字溶解原理-filter
 
-[`filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) 属性将模糊或颜色偏移等图形效果应用于元素。滤镜通常用于调整图像，背景和边框的渲染。基础案例：https://codepen.io/jiangxiang/pen/XWeQGQK
+[`filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) 属性将模糊或颜色偏移等图形效果应用于元素。滤镜通常用于调整图像，背景和边框的渲染。基础案例：<https://codepen.io/jiangxiang/pen/XWeQGQK>
 
 - blur逐渐变小，在blur快没有的时候将其opacity设为0隐藏掉，就可以实现一个溶解效果
 
@@ -480,7 +480,7 @@ stroke-dashoffset、stroke-dasharray配合使用实现笔画效果。
 
 > 通过path.getTotalLength();
 
-[path路径 ](https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Paths)- [d](https://developer.mozilla.org/zh-CN/docs/Web/SVG/Attribute/d)属性定义
+[path路径](https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Paths)- [d](https://developer.mozilla.org/zh-CN/docs/Web/SVG/Attribute/d)属性定义
 大写字母跟随的是绝对坐标x,y，小写为相对坐标dx,dyM/m绘制起始点。
 
 - L/l绘制一条线段。
@@ -499,8 +499,6 @@ stroke-dashoffset、stroke-dasharray配合使用实现笔画效果。
 ### js实现动画
 
 JS可以实现复杂的动画，可以操作css、svg也可以操作canvas动画API上进行绘制。
-
-
 
 ### 如何做选择？
 
@@ -593,13 +591,13 @@ function animate({easing, draw, duration})    {
 
 - 最后返回Promise的原因：
 
-  - [ Promise](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Using_promises) 是一个对象，它代表了一个异步操作的最终完成或者失败。
+  - [Promise](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Using_promises) 是一个对象，它代表了一个异步操作的最终完成或者失败。
 
   - 动画可以是连续的，Promise支持通过then函数或await进行顺序调用，可以很容易地拿到这个动画的终态
 
 - 这个动画函数实现一个有限时间的动画封装
 
-- **RequestAnimationFrame (rAF) ** vs **SetTimeout** vs **Setlnterval**
+- **RequestAnimationFrame (rAF)** vs **SetTimeout** vs **Setlnterval**
 
   - 使用[requestAnimationFrame](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame)！为什么？
 
@@ -637,19 +635,18 @@ animate({
 
 ![1.gif](https://backblaze.cosine.ren/juejin/Cb13be23f4e34790a350e079ed3cca1e~Tplv-K3u1fbpfcp-Watermark.gif)
 
-
 - 重力：h = g * t ^2^
 
 ```js
 t^2^// 重力
 const gravity = () => {
-  const draw = (progress) => {	// 高度500
+  const draw = (progress) => { // 高度500
     ball.style.transform = `translate(0, ${500 * (progress - 1)}px)`;
   };
   animate({
     duration: 1000,
     easing(timeFraction) {
-      return timeFraction ** 2;	// t平方
+      return timeFraction ** 2; // t平方
     },
     draw,
   });
@@ -658,8 +655,6 @@ const gravity = () => {
 ```
 
 ![2.gif](https://backblaze.cosine.ren/juejin/36c45c23baed4ed98e29e0e7f45a3140~tplv-k3u1fbpfcp-watermark.png)
-
-
 
 - 摩擦力：时间变为2t - t^2^
 
@@ -706,8 +701,6 @@ const horizontalMotion = () => {
   });
 };
 ```
-
-
 
 ![4.gif](https://backblaze.cosine.ren/juejin/0f956087eb91462b9072a126934ff568~tplv-k3u1fbpfcp-watermark.png)
 
@@ -766,7 +759,7 @@ const horizontalMotion = () => {
 
 ![6.gif](https://backblaze.cosine.ren/juejin/c78ab72096e1434d9f811e606e7c4c11~tplv-k3u1fbpfcp-watermark.png)
 
-- 贝塞尔曲线 [cubic-bezier(0,2.11,1,.19) ✿ cubic-bezier.com](https://cubic-bezier.com/#0,2.11,1,.19)、[Animated Bézier Curves - Jason Davies](https://www.jasondavies.com/animated-bezier/) 
+- 贝塞尔曲线 [cubic-bezier(0,2.11,1,.19) ✿ cubic-bezier.com](https://cubic-bezier.com/#0,2.11,1,.19)、[Animated Bézier Curves - Jason Davies](https://www.jasondavies.com/animated-bezier/)
 
   - ps：讲到这里开始逐渐硬核起来了，tql
 
@@ -805,8 +798,6 @@ const horizontalMotion = () => {
 
   - 直接去看老师的例子：[JS封装动画函数 (codepen.io)](https://codepen.io/jiangxiang/pen/rNmgVKK?editors=0010)，自动衰减这里填了之前的一个坑：为什么要使用Promise，在每次执行完毕是，会将句柄再交给上面的函数判断是否有速度的衰减，直到速度为0的时候会自动结束。
 
-  
-
   ![7.gif](https://backblaze.cosine.ren/juejin/3fe64ea4171e49f1bf4dd1c4b6b06dc4~tplv-k3u1fbpfcp-watermark.png)
 
 自动衰减：更加复杂
@@ -815,7 +806,7 @@ const horizontalMotion = () => {
 
 - 椭圆运动
 
-  - 套公式即可，x = a*cos(a)，y = b * sin(a)
+  - 套公式即可，x = a*cos(a)，y = b* sin(a)
 
     ```js
     // 椭圆
@@ -857,6 +848,7 @@ const horizontalMotion = () => {
 - 3D :Cinema 4D、Blender、Autodesk Maya
 
 SVG:
+
 - Snap.SVG - 现代SVG图形的JavaScript库
 
 - Svg.js - 用于操作和动画SVG的轻量级库。
@@ -922,6 +914,7 @@ canvas:
 - 性能角度
 
   - 重点：减少重绘、重排，这是整个环节中最为耗时的两环。
+
 > 页面渲染的一般过程为JS -> CSS -> 计算样式 --> 布局 -> 绘制 -> 渲染层合并。
 >
 > 其中，**Layout(重排)和Paint(重绘)是整个环节中最为耗时的两环**，所以我们尽量避免这两个环节。从性能方面考虑，**最理想的渲染流水线是没有布局和绘制环节**的，**只需要做渲染层的合并**即可。
@@ -950,4 +943,3 @@ canvas:
 今天的课也非常的硬核，介绍了前端动画的基本原理、前端动画的分类和如何实现前端的动画，并介绍了相关资源与实践方法。让我对前端动画有了一个更深刻的了解，最后给出的资源推荐也很有帮助~
 
 > 本文引用的内容大部分来自蒋翔老师的课、MDN（CSS动画属性的介绍翻了半天MDN，上面写的非常全面并且有很生动的例子，推荐一看）
-

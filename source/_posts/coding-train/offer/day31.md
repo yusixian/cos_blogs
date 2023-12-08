@@ -24,7 +24,6 @@ day31题目：[剑指 Offer 14- II. 剪绳子 II](https://leetcode-cn.com/proble
 | [剑指 Offer 43. 1～n 整数中 1 出现的次数](https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/) | [递归](https://leetcode-cn.com/tag/recursion)、[数学](https://leetcode-cn.com/tag/math)、[动态规划](https://leetcode-cn.com/tag/dynamic-programming) | 困难 |
 | [剑指 Offer 44. 数字序列中某一位的数字](https://leetcode-cn.com/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof/) | [数学](https://leetcode-cn.com/tag/math)、[二分查找](https://leetcode-cn.com/tag/binary-search) | 中等 |
 
-
 最后一天了……被今天的数学题……按在地上摩擦，嘿嘿嘿
 
 # [剑指 Offer 14- II. 剪绳子 II](https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/)
@@ -51,7 +50,7 @@ day31题目：[剑指 Offer 14- II. 剪绳子 II](https://leetcode-cn.com/proble
 
 **提示：**
 
--   `2 <= n <= 1000`
+- `2 <= n <= 1000`
 
 注意：本题与主站 343 题相同：<https://leetcode-cn.com/problems/integer-break/>
 
@@ -62,7 +61,6 @@ day31题目：[剑指 Offer 14- II. 剪绳子 II](https://leetcode-cn.com/proble
 - 若 `n < 4`，返回 `n - 1`
 - 若 `n == 4`，返回 `4`
 - 若 `n > 4`，分成尽可能多的长度为 `3` 的小段，循环中每次长度 `n` 减去`3`，乘积`res`乘以`3`，最后返回时乘上小于等于4的最后一小段后的结果，每次乘法操作后记得 **取余**
-
 
 ```javascript
 /**
@@ -102,11 +100,12 @@ day31题目：[剑指 Offer 14- II. 剪绳子 II](https://leetcode-cn.com/proble
 
 **限制：**
 
--   `1 <= n < 2^31`
+- `1 <= n < 2^31`
 
 注意：本题与主站 233 题相同：<https://leetcode-cn.com/problems/number-of-digit-one/>
 
 ## 思路及代码
+
 题目越短，事越大，看官方题解如下，难得官方题解讲的这么清楚明白一次：
 
 [1～n 整数中 1 出现的次数 - 1～n 整数中 1 出现的次数 - 力扣（LeetCode） (leetcode-cn.com)](https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/solution/1n-zheng-shu-zhong-1-chu-xian-de-ci-shu-umaj8/)
@@ -154,7 +153,7 @@ var countDigitOne = function(n) {
 
 **限制：**
 
--   `0 <= n < 2^31`
+- `0 <= n < 2^31`
 
 注意：本题与主站 400 题相同：<https://leetcode-cn.com/problems/nth-digit/>
 
@@ -181,4 +180,3 @@ var findNthDigit = function(n) {
 完结撒花~明天开剑指offer专项计划
 
 ![image.png](https://backblaze.cosine.ren/juejin/0c32319d3217473485def70035c4b785~Tplv-K3u1fbpfcp-Watermark.png)
-

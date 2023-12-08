@@ -16,13 +16,17 @@ categories:
 
 [题目集总目录](https://blog.csdn.net/qq_45890533/article/details/107131440)
 学习指路博客 [数据结构学习笔记＜8＞ 排序](https://blog.csdn.net/qq_45890533/article/details/108246044)、[归并排序循环实现（存用）](https://blog.csdn.net/qq_45890533/article/details/108249317)
+
 # 09-排序1 排序 (25分)
+
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1289169858763866112)
 
 >一个实验各种排序算法的平台，好好玩哈，然后去论坛晒结果 —— 实在不行可以看给出的参考代码。这是基本训练，一定要做
 
 本题测试的各种排序算法的结果都在博客[数据结构学习笔记＜8＞ 排序](https://blog.csdn.net/qq_45890533/article/details/108246044)里边写了，这里仅给出插入排序的代码
+
 ## 代码
+
 ```cpp
 #include <iostream>
 #include <cstdio>
@@ -51,17 +55,25 @@ int main(){
     return 0;
 }
 ```
+
 ## 测试点
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200821183558941.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70#pic_center)
+
 # 09-排序2 Insert or Merge (25分)
 
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1289169858763866113)
 
 >2014年PAT冬季考试真题，供备考的同学练练手，选做；
+>
 ## 题目大意
+
 现在给出整数的初始序列，以及一个序列，这是一些排序方法的多次迭代的结果，你能分辨出我们使用的是哪种排序方法吗？（插入排序还是归并排序）
+
 ## 思路
+
 初始序列存在两个数组里，先进行插入排序在每次，在每次迭代后判断序列是否相同，若相同则再做一次迭代后输出，若一直判断不相同则是归并排序。归并排序卡了半天，用递归版的不好处理,得用循环版的，循环版归并排序看这儿：[归并排序循环实现（存用）](https://blog.csdn.net/qq_45890533/article/details/108249317)
+
 ## 代码
 
 ```cpp
@@ -169,14 +181,19 @@ int main(){
 ```
 
 ## 测试点
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200827002703623.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70#pic_center)
+
 # 09-排序3 Insertion or Heap Sort (25分)
 
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1289169858763866114)
 
 >2015年考研复试上机真题，供备考的同学练练手，选做。
+>
 ## 题目大意
+
 跟上题差不多，不过归并变成了堆排序
+
 ## 代码
 
 ```cpp
@@ -268,4 +285,5 @@ int main(){
 ```
 
 ## 测试点
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200827005254106.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70#pic_center)

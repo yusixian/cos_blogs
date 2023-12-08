@@ -26,7 +26,6 @@ day29题目：[剑指 Offer 19. 正则表达式匹配](https://leetcode-cn.com/p
 | [剑指 Offer 49. 丑数](https://leetcode-cn.com/problems/chou-shu-lcof/) | [哈希表](https://leetcode-cn.com/tag/hash-table)、[数学](https://leetcode-cn.com/tag/math)、[动态规划](https://leetcode-cn.com/tag/dynamic-programming) | 中等 |
 | [剑指 Offer 60. n个骰子的点数](https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/) | [数学](https://leetcode-cn.com/tag/math)、[动态规划](https://leetcode-cn.com/tag/dynamic-programming)、[概率与统计](https://leetcode-cn.com/tag/probability-and-statistics) | 中等 |
 
-
 # [剑指 Offer 19. 正则表达式匹配](https://leetcode-cn.com/problems/zheng-ze-biao-da-shi-pi-pei-lcof/)
 
 请实现一个函数用来匹配包含`'. '`和`'*'`的正则表达式。模式中的字符`'.'`表示任意一个字符，而`'*'`表示它前面的字符可以出现任意次（含0次）。在本题中，匹配是指字符串的所有字符匹配整个模式。例如，字符串`"aaa"`与模式`"a.a"`和`"ab*ac*a"`匹配，但与`"aa.a"`和`"ab*a"`均不匹配。
@@ -80,8 +79,8 @@ p = "mis*is*p*."
 输出: false
 ```
 
--   `s` 可能为空，且只包含从 `a-z` 的小写字母。
--   `p` 可能为空，且只包含从 `a-z` 的小写字母以及字符 `.` 和 `*`，无连续的 `'*'`。
+- `s` 可能为空，且只包含从 `a-z` 的小写字母。
+- `p` 可能为空，且只包含从 `a-z` 的小写字母以及字符 `.` 和 `*`，无连续的 `'*'`。
 
 注意：本题与主站 10 题相同：<https://leetcode-cn.com/problems/regular-expression-matching/>
 
@@ -95,11 +94,12 @@ p = "mis*is*p*."
 - `dp[0][0]` 是可行的，置为 `true`，其他初始置为 `false`
 
 遍历时
+
 - 若 `p` 中 第 `j` 个字符不是`*` 或 `.`，则必须在s中匹配一个相同的字母，有 `dp[i][j] = s[i] == p[j] ? dp[i-1][j-1]: false`
 - 若 `p` 中 第 `j` 个字符为`.` 一定成功匹配 `dp[i][j] = dp[i-1][j-1]`
 - 若为 `*` 则可以
-    - 不匹配字符，将该组合扔掉，不再进行匹配  `dp[i][j] |= dp[i][j-2]`
-    - 匹配 `s` 末尾的一个字符，将该字符扔掉，而该组合还可以继续进行匹配  `dp[i][j] = dp[i-1][j] | dp[i][j-2]`
+  - 不匹配字符，将该组合扔掉，不再进行匹配  `dp[i][j] |= dp[i][j-2]`
+  - 匹配 `s` 末尾的一个字符，将该字符扔掉，而该组合还可以继续进行匹配  `dp[i][j] = dp[i-1][j] | dp[i][j-2]`
 
 ```javascript
 /**
@@ -139,10 +139,10 @@ var isMatch = function(s, p) {
 解释: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 是前 10 个丑数。
 ```
 
-**说明:** 
+**说明:**
 
-1.  `1` 是丑数。
-1.  `n` **不超过**1690。
+1. `1` 是丑数。
+1. `n` **不超过**1690。
 
 注意：本题与主站 264 题相同：<https://leetcode-cn.com/problems/ugly-number-ii/>
 
@@ -198,8 +198,9 @@ var nthUglyNumber = function(n) {
 ## 思路及代码
 
 dp[i][j]表示i个骰子时，点数总和取值的概率
+
 - 如1个骰子的时候总和可能为 [1, 2, 3, 4, 5, 6]
-- 2个骰子时，为 [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] 
+- 2个骰子时，为 [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 - i个骰子时，总和个数为 `6*i-(i-1)` 化简为 `5*i+1`
 - 由于新增骰子的点数只可能为 1 至 6 ，因此概率 `dp[i-1][x]` 仅与 `dp[i][x+1]`, `dp[i][x+2]`, ... , `dp[i][x+6]` 相关。因此，遍历 `dp[i-1]` 中各点数和的概率贡献值，并将贡献值相加至 `dp[i]` 中所有相关项，即可完成的递推。。
 - 也就是说，增加骰子的个数到 `i` 个时，`i-1`个骰子的点数 `j` 会对拥有 `i` 个骰子时的点数 `j+k` 产生影响

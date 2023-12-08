@@ -134,6 +134,7 @@ public class Teacher {
 通过Class类我们就可以在程序中动态地获取成员变量、成员方法、接口、超类、构造方法等，每一个类在 JVM 中有且仅有一个 Class 实例
 
 查阅 API 可以看到 Class 有很多方法：
+
 - getName()：获得类的完整名字。
 - getFields()：获得类的public类型的属性。
 - getDeclaredFields()：获得类的所有属性。包括private 声明的和继承类
@@ -191,6 +192,7 @@ public class Main {
 # 2、自行设计一个实例,说明 Collection接口和迭代器,比较器的使用方法
 
 Collection集合是java中提供的一种容器，可以用来存储多个数据，这里以单列集合java.util.Collection为例。Collection是所有单列集合（如List）的父接口，因此在Collection中定义了单列集合(List和Set)通用的一些方法，这些方法可用于操作所有的单列集合。方法如下：
+
 - public boolean add(Obeject o)： 把给定的对象添加到当前集合中 。
 - public void clear() :清空集合中所有的元素。
 - public boolean remove(Obeject o): 把给定的对象在当前集合中删除。
@@ -201,6 +203,7 @@ Collection集合是java中提供的一种容器，可以用来存储多个数据
 
 迭代器：在程序开发中，经常需要遍历集合中的所有元素。针对这种需求，JDK专门提供了一个接口java.util.Iterator。Iterator接口主要用于迭代访问（即遍历）Collection中的元素，因此Iterator对象也被称为迭代器。public Iterator iterator(): 获取集合对应的迭代器，用来遍历集合中的元素。这个概念与c++中STL的iterator一致（
 Iterator接口的常用方法如下：
+
 - public Obeject next():返回迭代的下一个元素。
 - public boolean hasNext():如果仍有元素可以迭代，则返回 true。
 
@@ -251,7 +254,7 @@ public class Main {
 输出如图所示
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/29f19381ce1e4314b253f9aa1ee338a1.png)
 
-# 3、比较JavaScript,Python和 Java使用正则表达式的异同。
+# 3、比较JavaScript,Python和 Java使用正则表达式的异同
 
 使用Python的正则时，字符串前面加上‘r’，告诉编译器这个string是个raw string，不要转义 ‘’ 。 例如，\n 在raw string中，是两个字符，\和n， 而不会转意为换行符。由于正则表达式和 \ 会有冲突，因此，当一个字符串使用了正则表达式后，最好在前面加上’r’。
 javascript中的正则表达式和java的正则表达式基本上是相同的，区别在于分组引用和对象，方法以及Java的正则比js的多一个转义符号“\”

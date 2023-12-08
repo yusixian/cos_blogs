@@ -76,8 +76,6 @@ ReactDOM.render(
 
 [列表 & Key – React (docschina.org)](https://react.docschina.org/docs/lists-and-keys.html)
 
-
-
 ## key
 
 key 帮助 React 识别哪些元素改变了，比如被添加或删除。因此你应当给数组中的每一个元素赋予一个确定的标识。
@@ -142,7 +140,7 @@ class EssayForm extends React.Component {
 
 请注意，`this.state.value` 初始化于构造函数中，因此文本区域默认有初值。
 
-## 
+##
 
 # 状态提升
 

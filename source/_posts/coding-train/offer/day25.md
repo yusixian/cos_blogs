@@ -45,12 +45,13 @@ day25题目：[剑指 Offer 29. 顺时针打印矩阵](https://leetcode-cn.com/p
 
 **限制：**
 
--   `0 <= matrix.length <= 100`
--   `0 <= matrix[i].length <= 100`
+- `0 <= matrix.length <= 100`
+- `0 <= matrix[i].length <= 100`
 
 注意：本题与主站 54 题相同：<https://leetcode-cn.com/problems/spiral-matrix/>
 
 ## 思路及代码
+
 这不还是螺旋矩阵嘛！
 
 移步[冲刺春招-精选笔面试66题大通关day6](https://ysx.cosine.ren/cn/coding-train/leetcode/bytedance/bytedance-day6/#54)
@@ -119,14 +120,16 @@ push(5), pop() -> 5, pop() -> 3, pop() -> 2, pop() -> 1
 
 **提示：**
 
-1.  `0 <= pushed.length == popped.length <= 1000`
-1.  `0 <= pushed[i], popped[i] < 1000`
-1.  `pushed` 是 `popped` 的排列。
+1. `0 <= pushed.length == popped.length <= 1000`
+1. `0 <= pushed[i], popped[i] < 1000`
+1. `pushed` 是 `popped` 的排列。
 
 注意：本题与主站 946 题相同：<https://leetcode-cn.com/problems/validate-stack-sequences/>
 
 ## 思路及代码
+
 每次入栈后判断是否可以弹出序列。
+
 ```javascript
 // @title zhan-de-ya-ru-dan-chu-xu-lie-lcof
 /**

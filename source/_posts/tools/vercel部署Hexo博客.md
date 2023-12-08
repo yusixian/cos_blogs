@@ -26,6 +26,7 @@ Github地址: [cos_blogs](https://github.com/yusixian/cos_blogs)
 # 为什么要换成 vercel
 
 之前的时候使用 GitPage 搭博客，到现在也暴露了不少不足之处
+
 - 目录散乱，直接将public部署到了根目录，没有目录结构
 - 还需要另开一个仓库进行整体hexo源文件的备份管理，比较麻烦
 - 国内 GitPage 速度访问速度较慢，域名解析也得配置（虽然并不麻烦）
@@ -33,6 +34,7 @@ Github地址: [cos_blogs](https://github.com/yusixian/cos_blogs)
 - 仓库只能public（也不算确定，本来就是对外看的）
 
 而 vercel 的优点如下
+
 - 国内速度也很快，且能够自定义域名随便添加
 - 每次 提交、分支、合并分支都会生成url，并且有历史记录，备份回滚相当 easy
 - serverless 开发模式，比较简单，比较方便
@@ -48,17 +50,18 @@ Github地址: [cos_blogs](https://github.com/yusixian/cos_blogs)
 
 每个分支/提交等部署生成url的方式在这里：[Generated URLs](https://vercel.com/docs/concepts/deployments/generated-urls)
 
-
 # 一些教程
+
 关于 vercel+hexo 的部署方式，具体的可以看这几篇博客!
+
 - [vercel 部署静态博客](https://juejin.cn/post/7063329711341961230)
 - 用vercel部署 -> [如何使用 vercel + hexo 搭建博客](https://zhuanlan.zhihu.com/p/342790013)
 - shoka主题官方教程 -> [Hexo 主题 Shoka 使用说明](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/)
-    - [**🚀快速开始**](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/) -> [💌依赖插件](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/dependents/) -> [📌基本配置](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/config/) -> [🌈界面显示](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/display/) -> [🦄特殊功能](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/special/)
+  - [**🚀快速开始**](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/) -> [💌依赖插件](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/dependents/) -> [📌基本配置](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/config/) -> [🌈界面显示](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/display/) -> [🦄特殊功能](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/special/)
 - 关于shoka主题我自己总结的一篇配置记录: [Hexo 博客 Shoka 主题配置记录](https://ysx.cosine.ren/hexo-shoka-config/)
 
-
 ## 目录说明
+
 ```
 cos_blogs
 ├─ package.json

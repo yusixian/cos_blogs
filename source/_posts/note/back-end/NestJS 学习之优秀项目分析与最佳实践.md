@@ -62,6 +62,7 @@ src
 ```
 
 以一个用户授权模块为例，通常能看到这些文件，而他们的用途如下：
+
 - `*.module.ts` : 通常是模块文件，用于组织和管理控制器、服务、守卫等。它是Nest.js 应用程序的**基础单元**。
 - `*.service.ts` : Service 层通常用于处理模块的业务逻辑。它们通常被注入到**控制器**（controller）中，并可以访问数据库、执行计算等。
 - `*.controller.ts` : 控制器文件用于处理HTTP请求和响应。它们通常依赖于 Service 来执行业务逻辑。
@@ -71,6 +72,7 @@ src
 - `*.entity.ts` : 实体文件用于定义数据库模型。
 
 其中一些名词的简单解释如下：
+
 - **DTO（Data Transfer Object）**: 数据传输对象，用于在对象和 API 之间传输数据。
 - **Guard**: 守卫，用于实现权限控制和访问验证。
 - **Module**: 模块，NestJS 的基本组织单位，用于组织和管理控制器、服务等。
@@ -80,7 +82,9 @@ src
 - **Reflector**:  Reflector 主要用于元数据的反射和操作。在拦截器中，Reflector 可以用于获取方法或类上设置的自定义元数据，从而允许更灵活的操作。
 
 通过以上的目录结构和名词解释，我希望能为你提供一个清晰的视角，以更全面地理解 NestJS 的架构和设计理念。接下来，我们将深入探讨这些概念，并通过实际的代码示例来展示它们是如何在 NestJS 项目中应用的。
+
 ### Module
+
 1. **根模块**：每个Nest.js应用程序都有一个根模块，它是 Nest 用于构建应用程序图 （**application graph**）的起点。这个图用于解析模块与提供者（Providers）之间的关系和依赖。
 2. **组织组件**：模块是组织和管理组件（如控制器、服务等）的有效方式。通过模块，你可以将密切相关的功能组合在一起。
 3. **多模块架构**：对于大型应用程序，通常会采用多模块架构。每个模块都封装了一组特定的、密切相关的功能。
@@ -104,7 +108,7 @@ import { AppService } from './app.service';
 export class AppModule {}
 ```
 
-####  推荐阅读
+#### 推荐阅读
 
 1. [Modules | NestJS - A progressive Node.js framework](https://docs.nestjs.com/modules)
 2. [深入了解Nest的模块Module - 掘金](https://juejin.cn/post/6925605351475806216)
@@ -143,10 +147,12 @@ export class AuthService {
 }
 ```
 
-####  推荐阅读
+#### 推荐阅读
+
 1. [NestJS - Services](https://docs.nestjs.com/providers#services)
 2. [nest后端开发实战（二）——分层 - 知乎](https://zhuanlan.zhihu.com/p/448037259)
 3. [浅谈NestJS设计思想（分层、IOC、AOP） - 掘金](https://juejin.cn/post/7192528039945699386)
+
 ### Controller 层（控制器层）
 
 Controller 层主要负责处理来自客户端的请求和发送响应。控制器会使用 Service 层提供的方法来执行业务逻辑，并将结果返回给客户端。
@@ -169,7 +175,7 @@ export class UserController {
 }
 ```
 
-####  推荐阅读
+#### 推荐阅读
 
 1. [Controllers | NestJS](https://docs.nestjs.com/controllers)
 2. [nest.js-Controller基础用法 - 掘金](https://juejin.cn/post/7260697932173787173)
@@ -177,6 +183,7 @@ export class UserController {
 ### DTO（Data Transfer Object）
 
 用 po 和 dto来描述实体及其周边。po是持久化对象和数据库的表结构一一对应；dto数据传输对象则很灵活，可以在丰富的场景描述入参或返回值。下面是个user实体的例子：
+
 #### 与 Service 层和 Controller 层的关系
 
 - 在 Controller 层，DTO 用于验证来自客户端的请求数据。当客户端发送一个请求时，Nest.js 会使用 DTO 来验证请求体中的数据是否符合预期的格式和类型。
@@ -211,9 +218,9 @@ export class LoginUserDto {
   - `@IsString()`: 确保字段是字符串类型。
   - `@IsOptional()`: 表示字段是可选的。
 
-更多解释使用详见 https://github.com/typestack/class-validator#usage
+更多解释使用详见 <https://github.com/typestack/class-validator#usage>
 
-####  推荐阅读
+#### 推荐阅读
 
 1. [学习Nest.js（五）：使用管道、DTO 验证入参 - 知乎](https://zhuanlan.zhihu.com/p/381739245)
 2. [NestJS 官方文档：DTO 和验证](https://docs.nestjs.com/techniques/validation)
@@ -284,7 +291,9 @@ export class RefreshTokenEntity {
 在这个例子中，`RefreshTokenEntity` 类与数据库中的 `refresh_tokens` 表对应。它有两个字段：`address` 和 `accessToken`。`address` 字段还使用了 `class-validator` 和 `class-transformer` 库的装饰器进行了额外的验证和转换。
 
 这样，你就可以在 Service 层或 DAO 层使用这个实体类进行数据库操作。
+
 #### 推荐阅读
+
 1. [TypeORM - Entity](https://typeorm.io/#/entities)
 2. [NestJS - TypeORM](https://docs.nestjs.com/techniques/database)
 
@@ -330,6 +339,7 @@ export class AuthGuard implements CanActivate {
 在这个例子中，`AuthGuard` 实现了 `CanActivate` 接口，并定义了一个 `canActivate` 方法。这个方法会检查请求头中是否包含有效的 JWT。如果包含，该请求将被允许继续；否则，将抛出 `UnauthorizedException`。
 
 #### 推荐阅读
+
 1. [NestJS - Guards](https://docs.nestjs.com/guards)
 2. [NestJS 守卫（Guards）详解 - 掘金](https://juejin.cn/post/6844903663840784398)
 3. [NestJS 实战：使用 Guards 进行权限控制 - 知乎](https://zhuanlan.zhihu.com/p/346491300)
@@ -342,7 +352,7 @@ export class AuthGuard implements CanActivate {
 
 一个简单的 `LoggingInterceptor` ：
 
-```ts 
+```ts
 import { Injectable, NestInterceptor, ExecutionContext, CallHandler } from '@nestjs/common';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
@@ -367,11 +377,12 @@ export class LoggingInterceptor implements NestInterceptor {
 #### 转换响应数据拦截器
 
 一个简单的转换响应数据拦截器示例如下，该拦截器可以根据需要返回原始数据或包装后的数据。
+
 ##### 定义响应接口和元数据键
 
 首先，我们定义一个响应接口`IResponse`和一个元数据键`IS_RAW_DATA_KEY`。
 
-```ts 
+```ts
 import { SetMetadata } from '@nestjs/common';
   
 export interface IResponse<T> {
@@ -394,6 +405,7 @@ export const RawData = () => SetMetadata(IS_RAW_DATA_KEY, true);
 - `RawData()`: 一个装饰器，用于设置元数据键。
 
 看不懂元数据？别急，接着看。
+
 ##### 实现拦截器
 
 接下来，我们实现转换响应数据的拦截器。
@@ -425,7 +437,7 @@ export class TransformInterceptor<T> implements NestInterceptor<T, IResponse<T> 
 
 ##### 在 AppModule 中引用拦截器
 
-最后，在 AppModule 中添加拦截器。 
+最后，在 AppModule 中添加拦截器。
 
 ```ts
 import { TransformInterceptor } from '@/common';
@@ -450,6 +462,7 @@ import { AppService } from './app.service';
 })
 export class AppModule {}
 ```
+
 ##### 使用 RawData 装饰器
 
 现在，你可以在 Controller 中使用`@RawData()`装饰器来控制是否返回原始的响应数据。
@@ -472,7 +485,8 @@ export class SomeController {
 Nest.js，很神奇吧。
 
 #### 推荐阅读
-1. [NestJS 官方文档：拦截器](https://docs.nestjs.com/interceptors) 
+
+1. [NestJS 官方文档：拦截器](https://docs.nestjs.com/interceptors)
 2. [NestJS interceptors: Guide and use cases - LogRocket Blog](https://blog.logrocket.com/nestjs-interceptors-guide-use-cases/)
 
 这样，你就可以更好地理解 Interceptor 层在 NestJS 中的作用和实现方式。希望这能帮助你更深入地了解 NestJS 的架构和最佳实践。
@@ -512,6 +526,7 @@ export class RolesGuard implements CanActivate {
 ```
 
 #### 推荐阅读
+
 1. [NestJS - Reflector](https://docs.nestjs.com/guards#setting-roles-per-handler)
 2. [NestJS - Custom Decorators](https://docs.nestjs.com/custom-decorators)
 3. [NestJS 深入理解 Reflector 的使用场景](https://juejin.cn/post/6844904116339261447)
@@ -521,6 +536,7 @@ export class RolesGuard implements CanActivate {
 ## 常用 Nest 内置模块
 
 这是扒拉各种 nest 项目的 package.json 总结得出的模块简介：
+
 ### @nestjs/core
 
 - NPM: [@nestjs/core](https://www.npmjs.com/package/@nestjs/core)
@@ -528,6 +544,7 @@ export class RolesGuard implements CanActivate {
 - **简介**: 这是 NestJS 框架的核心模块，提供了框架的**基础构建块和核心功能**。
 - **使用场景**: 用于构建和初始化 NestJS 应用，几乎所有 NestJS 项目都会用到。
 - **代码示例**:
+
 ```ts
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
@@ -538,13 +555,17 @@ async function bootstrap() {
 }
 bootstrap();
 ```
+
 ``
+
 ### @nestjs/jwt
+
 - NPM: [@nestjs/jwt](https://www.npmjs.com/package/@nestjs/jwt)
 - 文档: [NestJS JWT Module](https://docs.nestjs.com/security/authentication#jwt-module)
 - **简介**: 这个模块提供了 JWT（JSON Web Tokens）的支持，用于在 NestJS 应用中实现**身份验证和授权**。
 - **使用场景**: 身份验证和授权，通常用于保护路由和资源。
 - **代码示例**:
+
 ```ts
 import { JwtService } from '@nestjs/jwt';
 
@@ -559,11 +580,13 @@ export class AuthService {
 ```
 
 ### @nestjs/config
+
 - NPM: [@nestjs/config](https://www.npmjs.com/package/@nestjs/config)
 - 文档: [NestJS Config Module](https://docs.nestjs.com/techniques/configuration)
 - **简介**: 这个模块用于**管理 NestJS 应用的配置信息**。它支持**环境变量、类型转换**等。
 - **使用场景**: 用于管理应用的配置信息，如数据库连接字符串、API 密钥等。
 - **代码示例**:
+
 ```ts
 import { ConfigService } from '@nestjs/config';
 
@@ -576,13 +599,15 @@ export class AppService {
   }
 }
 ```
- 
+
 ### @nestjs/common
+
 - NPM: [@nestjs/common](https://www.npmjs.com/package/@nestjs/common)
 - 文档: [NestJS Common Module](https://docs.nestjs.com/controllers)
-- **简介**: 这是 NestJS 的一个通用模块，提供了一系列常用的装饰器、助手函数和其他工具。如 `Injectable`, `Module`, `BadRequestException`, `Body`, `Controller`, `Get`, `Param`, `Post`, `Query` 等 
+- **简介**: 这是 NestJS 的一个通用模块，提供了一系列常用的装饰器、助手函数和其他工具。如 `Injectable`, `Module`, `BadRequestException`, `Body`, `Controller`, `Get`, `Param`, `Post`, `Query` 等
 - **使用场景**: 在 Controller 层、Service 层、Module 中都会用到，用于定义路由、依赖注入等。
 - **代码示例**:
+
 ```ts
 import { Controller, Get } from '@nestjs/common';
 
@@ -596,11 +621,13 @@ export class HelloController {
 ```
 
 ### @nestjs/axios
+
 - **NPM**: [@nestjs/axios](https://www.npmjs.com/package/@nestjs/axios)
 - **文档**: [NestJS Axios Module](https://docs.nestjs.com/techniques/http-module)
 - **简介**: 这个模块为 NestJS 提供了 Axios HTTP 客户端的封装，使得在 NestJS 应用中进行 HTTP 请求更加方便。 如 `HttpService`, `HttpModule`
 - **使用场景**: 在 Service 层进行 HTTP 请求，如调用第三方 API。
 - **代码示例**:
+
 ```ts
 import { HttpService } from '@nestjs/axios';
 
@@ -615,7 +642,8 @@ export class ApiService {
 }
 ```
 
-实际项目一般会自行重写http Service 请求添加统一的日志等，如下: 
+实际项目一般会自行重写http Service 请求添加统一的日志等，如下:
+
 ```ts
 import { HttpService } from '@nestjs/axios';
 import { catchError, Observable, tap } from 'rxjs';
@@ -651,11 +679,13 @@ export class HttpClientService {
 ```
 
 ### @nestjs/bull
+
 - **NPM**: [@nestjs/bull](https://www.npmjs.com/package/@nestjs/bull)
 - **文档**: [NestJS Bull Module](https://docs.nestjs.com/techniques/queues)
 - **简介**: 这个模块提供了 Bull 队列库的封装，用于在 NestJS 应用中处理**后台作业和消息队列**。
 - **使用场景**: 后台任务处理，如发送邮件、数据处理等。
 - **代码示例**:
+
 ```ts
 import { Processor, Process } from '@nestjs/bull';
 import { Job } from 'bull';
@@ -670,6 +700,7 @@ export class AudioProcessor {
 ```
 
 ### @nestjs/cache-manager
+
 - **NPM**: [@nestjs/cache-manager](https://www.npmjs.com/package/@nestjs/cache-manager)
 - **文档**: [NestJS Caching](https://docs.nestjs.com/techniques/caching)
 - **简介**: 这个模块提供了缓存管理功能，支持多种缓存存储方式，如内存、Redis等
@@ -700,6 +731,7 @@ export class PostsController {
 ```
 
 ### @nestjs/mongoose
+
 - **NPM**: [@nestjs/mongoose](https://www.npmjs.com/package/@nestjs/mongoose)
 - **文档**: [NestJS Mongoose Module](https://docs.nestjs.com/techniques/mongodb)
 - **简介**: 这个模块提供了 Mongoose ODM（对象文档映射）的封装，用于在 NestJS 应用中与 MongoDB 数据库进行交互。
@@ -720,6 +752,7 @@ export const CatSchema = SchemaFactory.createForClass(Cat);
 ```
 
 ### @nestjs/platform-express
+
 - **NPM**: [@nestjs/platform-express](https://www.npmjs.com/package/@nestjs/platform-express)
 - **文档**: [NestJS Overview](https://docs.nestjs.com/)
 - **简介**: 这个模块是 NestJS 框架的 Express 适配器，用于在 NestJS 应用中使用 Express.js。
@@ -749,6 +782,7 @@ export class UploadController {
 ```
 
 ### @nestjs/schedule
+
 - **NPM**: [@nestjs/schedule](https://www.npmjs.com/package/@nestjs/schedule)
 - **文档**: [NestJS Schedule Module](https://docs.nestjs.com/techniques/task-scheduling)
 - **简介**: 这个模块提供了任务调度功能，用于在 NestJS 应用中执行定时任务。
@@ -768,6 +802,7 @@ export class TasksService {
 ```
 
 ### @nestjs/swagger
+
 - **NPM**: [@nestjs/swagger](https://www.npmjs.com/package/@nestjs/swagger)
 - **文档**: [NestJS Swagger Module](https://docs.nestjs.com/recipes/swagger)
 - **简介**: 这个模块用于生成和维护 API 文档，基于 Swagger。
@@ -786,8 +821,8 @@ export class CreateUserDto {
 }
 ```
 
-
 ### @nestjs/throttler
+
 - **NPM**: [@nestjs/throttler](https://www.npmjs.com/package/@nestjs/throttler)
 - **文档**: [NestJS Throttler](https://docs.nestjs.com/security/rate-limiting)
 - **简介**: 这个模块提供了请求限制（Rate Limiting）功能，用于防止 API 被滥用。 有 `ThrottlerGuard`, `SkipThrottle` 等
@@ -804,7 +839,9 @@ export class AppGuard extends ThrottlerGuard {
 ```
 
 ## 其他包
+
 ### class-validator
+
 - **NPM**: [class-validator](https://www.npmjs.com/package/class-validator)
 - **文档**: [class-validator: Decorator-based property validation for classes.](https://github.com/typestack/class-validator#installation)
 - **简介**: 基于装饰器的属性验证库，用于在 TypeScript 和 JavaScript 类中进行数据验证。内部使用 validator.js 进行验证。
@@ -824,6 +861,7 @@ export class CreateUserDto {
 ```
 
 ### class-transformer
+
 - **NPM**: [class-transformer](https://www.npmjs.com/package/class-transformer)
 - **文档**: [class-transformer GitHub](https://github.com/typestack/class-transformer)
 - **简介**: 用于对象与类实例之间的转换，通常与 `class-validator` 配合使用。
@@ -840,6 +878,7 @@ const user = plainToClass(User, {
 ```
 
 ### cache-manager
+
 - **NPM**: [cache-manager](https://www.npmjs.com/package/cache-manager)
 - **文档**: [cache-manager GitHub](https://github.com/BryanDonovan/node-cache-manager)
 - **简介**: 一个灵活、可扩展的缓存模块，支持多种存储方式。
@@ -862,7 +901,9 @@ async function getUser(id: string) {
   return user;
 }
 ```
+
 ### hashids
+
 - **NPM**: [hashids](https://www.npmjs.com/package/hashids)
 - **文档**: [Sqids JavaScript (formerly Hashids)](https://sqids.org/javascript?hashids)
 - **简介**: 用于生成短的、唯一的非整数 ID 的库。
@@ -877,6 +918,7 @@ const id = hashids.encode(12345); // 输出一个短的唯一字符串
 ```
 
 ### ioredis
+
 - **NPM**: [ioredis](https://www.npmjs.com/package/ioredis)
 - **文档**: [ioredis GitHub](https://github.com/luin/ioredis)
 - **简介**: 一个健全、高效的 Redis 客户端。
@@ -891,6 +933,7 @@ redis.set('key', 'value');
 ```
 
 ### mongoose
+
 - **NPM**: [mongoose](https://www.npmjs.com/package/mongoose)
 - **文档**: [Mongoose Documentation](https://mongoosejs.com/)
 - **简介**: 用于 MongoDB 和 Node.js 的对象数据模型（ODM）库。
@@ -909,6 +952,7 @@ const User = mongoose.model('User', userSchema);
 ```
 
 ### nestgram
+
 - **NPM**: [nestgram](https://www.npmjs.com/package/nestgram)
 - **文档**: [About Nestgram - Nestgram](https://degreetpro.gitbook.io/nestgram/)
 - **简介**: 一个用于 NestJS 的 Telegram 机器人库。
@@ -925,6 +969,7 @@ nestgram.on('message', (msg) => {
 ```
 
 ### nestjs-throttler-storage-redis
+
 - **NPM**: [nestjs-throttler-storage-redis](https://www.npmjs.com/package/nestjs-throttler-storage-redis)
 - **文档**: [GitHub - nestjs-throttler-storage-redis](https://github.com/kkoomen/nestjs-throttler-storage-redis#readme)
 - **简介**: 用于将 NestJS 的 Throttler 模块与 Redis 集成。
@@ -946,6 +991,7 @@ export class AppModule {}
 ```
 
 ### ramda
+
 - **NPM**: [ramda](https://www.npmjs.com/package/ramda)
 - **文档**: [Ramda Documentation](https://ramdajs.com/)
 - **简介**: 一个实用的函数式编程库。
@@ -960,6 +1006,7 @@ const result = addOne(2); // 输出 3
 ```
 
 ### redis
+
 - **NPM**: [redis](https://www.npmjs.com/package/redis)
 - **文档**: [redis GitHub](https://github.com/NodeRedis/node-redis)
 - **简介**: Node.js 的 Redis 客户端。
@@ -977,6 +1024,7 @@ client.get('key', (err, reply) => {
 ```
 
 ### reflect-metadata
+
 - **NPM**: [reflect-metadata](https://www.npmjs.com/package/reflect-metadata)
 - **文档**: [Metadata Proposal - ECMAScript](https://rbuckton.github.io/reflect-metadata/)
 - **简介**: 用于元数据反射 API 的库。
@@ -996,6 +1044,7 @@ console.log(metadata); // 输出 'admin'
 ```
 
 ### rxjs
+
 - **NPM**: [rxjs](https://www.npmjs.com/package/rxjs)
 - **文档**: [RxJS Documentation](https://rxjs.dev/)
 - **简介**: 用于使用可观察对象进行响应式编程的库。

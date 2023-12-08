@@ -12,7 +12,7 @@ tags:
 categories:
 - [题目记录, 字节校园]
 ---
-day5题目：[ 7. 整数反转](https://leetcode-cn.com/problems/reverse-integer/)、[215. 数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)、[23. 合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
+day5题目：[7. 整数反转](https://leetcode-cn.com/problems/reverse-integer/)、[215. 数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)、[23. 合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
 
 学习计划链接：[冲刺春招-精选笔面试 66 题大通关](https://leetcode-cn.com/study-plan/bytedancecampus/?progress=dcmyjb3)
 
@@ -66,8 +66,6 @@ public:
 示例 1:
 输入: [3,2,1,5,6,4] 和 k = 2
 输出: 5
-
-
 
 示例 2:
 输入: [3,2,3,1,2,4,5,5,6] 和 k = 4

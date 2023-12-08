@@ -14,6 +14,7 @@ categories:
 - 工具
 ---
 # 起因
+
 今天闲逛的时候看到一个博客用的主题惊为天人:
 > 官方配置教程: [Hexo 主题 Shoka & multi-markdown-it 渲染器使用说明](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/) \
 > [**🚀快速开始**](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/) -> [💌依赖插件](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/dependents/) -> [📌基本配置](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/config/) -> [🌈界面显示](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/display/) -> [🦄特殊功能](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/special/)
@@ -21,15 +22,19 @@ categories:
 > 过程中遇到的一些问题，有看到这个博客里提到：[Hexo博客搭建：基础配置[主题:shoka]](https://blog.moehz.com/archives/hexo-shoka-build.html)
 
 这个博客主题简直就是为笔记而生~
-优点： 
+优点：
+
 - 很二次元！很戳！
 - 随机图片还都挺好看！不用自己找图了（也可以自定义图片~）
 - 可配置项多，评论好用！
 - 其他一些笔记特有的功能
 
 跟着官方的教程配置完后，还有很多拓展功能，故在此处记录一些
+
 # 基础配置
-[📌基本配置](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/config/) 
+
+[📌基本配置](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/config/)
+
 ## 图片上传及随即图库
 
 使用渣浪图库，使用一些上传工具，比如 [这里](https://pic.gimhoy.com/)
@@ -41,9 +46,11 @@ categories:
 如果想要自定义，则在 `<root>/source/_data/` 目录新建一个 `images.yml` 文件，这个文件中的图片至少 6 枚，将完全覆盖默认的图片列表。
 
 ## 添加评论功能
+
 [如何获取 LeanCloud 的 appId 和 appKey](https://valine.js.org/quickstart.html)
 
 获取后在 `_config.yml` 修改如下内容：
+
 ```yaml
 valine:
   appId: #Your_appId
@@ -82,32 +89,40 @@ valine:
 哇咔咔，评论管理终于有了!
 
 ## 搜索配置
+
 搜索采用algolia，我是跟着这个来的 [Algolia搜索引擎](https://cloud.tencent.com/developer/article/1957568)
 配置完后，每次发布文章还需要手动一行命令
+
 ```bash
 hexo clean && hexo g -d && hexo algolia
 ```
+
 # 界面显示
+
 在 [🌈界面显示](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/display/) 中提到
 
 ## 首页置顶及精选分类
 
 在文章的 Front Matter 设置 `sticky: true` ，则该文章将显示在首页最上方的 `置顶文章` 列。
 多篇文章按照发布时间倒序排列，不分页。
+
 ```yaml
 ---
 title: 置顶文章
 sticky: true
 ---
 ```
+
 在 `_config.yml` 中的 category_map 设置分类对应的目录。然后在分类对应目录下放一张 `cover.jpg` 图片，就可以将该分类放至首页下展示。
 
 # 特殊功能
+
 [🦄特殊功能](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/special/)
 
 最最最吸引我的一点，下面列举一些我认为会常用到的
 
 ## links 链接块
+
 ```
 {% links %}
 - site: #站点名称
@@ -118,7 +133,9 @@ sticky: true
   color: #颜色代码
 {% endlinks %}
 ```
+
 ## code 代码块
+
 主要有:顶部可配置标题，右上角可配置参考链接，命令行可配置提示内容等等
 
 原始md文件内容：
@@ -174,7 +191,9 @@ git add -A
 git commit -m "update"
 git push
 ```
+
 ## quiz 练习题及答案
+
 ps: 什么神仙功能
 
 需要在 Front Matter 中添加 `quiz: true` ，以正确显示题型标签。
@@ -221,10 +240,12 @@ quiz: true
 1. 编译时多态主要指运算符重载与函数重载，而运行时多态主要指虚函数。 {.quiz .true}
 
 2. 有基类 `SHAPE`，派生类 `CIRCLE`，声明如下变量：  {.quiz .multi}
+
     ```cpp
     SHAPE shape1,*p1;
     CIRCLE circle1,*q1;
     ```
+
     下列哪些项是 “派生类对象替换基类对象”。
     - `p1=&circle1;` {.correct}
     - `q1=&shape1;`
@@ -260,30 +281,36 @@ quiz: true
 | `{.options}` | ABCDE 选项 |
 | `{.correct}` | 选择题的正确选项 |
 | `>` | 答案解析 |
-| `[8.4]{.mistake}	` | 错题备注 |
-	
+| `[8.4]{.mistake} ` | 错题备注 |
+ 
 ## emoji 绘文字
 
 基于 markdown-it-emoji ，所有标签参考戳此
+
 ```raw 示例
 :kissing_heart:
 :ring:
 :notes:
 ```
+
 😘 💍 🎶
+
 ## spoiler 隐藏文字
+
 ```raw
 !!真的有这么神奇吗!!
 !!我不信!!
 !!黑幕黑幕黑幕黑幕黑幕黑幕!!： 鼠标滑过显示内容
 !!模糊模糊模糊模糊模糊模糊!!{.bulr} ： 选中文字显示内容
 ```
+
 !!真的有这么神奇吗!!
 !!我不信!!
 !!黑幕黑幕黑幕黑幕黑幕黑幕!!： 鼠标滑过显示内容
 !!模糊模糊模糊模糊模糊模糊!!{.bulr} ： 选中文字显示内容
 
 ## label 标签块
+
 ```raw
 [default]{.label}
 [primary]{.label .primary}
@@ -292,6 +319,7 @@ quiz: true
 [warning]{.label .warning}
 [:broken_heart:danger]{.label .danger}
 ```
+
 [default]{.label}
 [primary]{.label .primary}
 [info]{.label .info}
@@ -301,8 +329,8 @@ quiz: true
 
 ## note 提醒块
 
-| 开始行	 | `:::[风格颜色]` |
-| 结束行 | 	`:::` |
+| 开始行  | `:::[风格颜色]` |
+| 结束行 |  `:::` |
 
 ```raw
 :::default
@@ -333,6 +361,7 @@ quiz: true
 危险危险
 :::
 ```
+
 效果如下
 
 :::default
@@ -367,8 +396,9 @@ quiz: true
 
 标签为：
 
-| 开始行 |	`;;;[同一ID] [标签名称]` |
+| 开始行 | `;;;[同一ID] [标签名称]` |
 | 结束行 | `;;;` |
+
 ```raw
 ;;;id1 卡片 1
 这里是卡片 1 的内容
@@ -402,17 +432,19 @@ quiz: true
 这里是卡片 2 的内容
 ;;;
 ```
+
 ;;;id1 卡片 1
 这里是卡片 1 的内容
-** 加粗 **
+**加粗**
 [success]{.label .success}
 
 {% links %}
+
 - site: cos的博客
   owner: cos
-  url: https://ysx.cosine.ren/
+  url: <https://ysx.cosine.ren/>
   desc: 余弦的编程笔记 & 生活记录
-  image: https://fastly.jsdelivr.net/gh/yusixian/imgBed@latest/img/tx.jpg
+  image: <https://fastly.jsdelivr.net/gh/yusixian/imgBed@latest/img/tx.jpg>
   color: "#1e80ff"
 {% endlinks %}
 ;;;
@@ -422,6 +454,7 @@ quiz: true
 :::danger
 危险危险
 :::
+
 - 第一行
 - 第二行
 ;;;
@@ -433,11 +466,14 @@ quiz: true
 ;;;id2 ②号标签卡片 2
 这里是卡片 2 的内容
 ;;;
+
 ## collapse 折叠块
+
 本功能基于 markdown-it-container
 标签为：
-| 开始行 |	`+++[风格颜色] [标题文字]` |
-| 结束行 |	`+++` |
+| 开始行 | `+++[风格颜色] [标题文字]` |
+| 结束行 | `+++` |
+
 ```markdown
 +++ 默认默认 这里是一段文字
 ++ 下划线 ++
@@ -479,10 +515,10 @@ quiz: true
 [danger]{.label .danger}
 +++
 ```
+
 +++ 默认默认 这里是一段文字
 ++ 下划线 ++
 +++
-
 
 +++primary 紫色
 :::info
@@ -492,7 +528,6 @@ quiz: true
 - 第一行
 - 第二行
 +++
-
 
 +++info  蓝色
 ;;;id3 卡片 1
@@ -506,8 +541,9 @@ quiz: true
 
 +++success 绿色
 {% links %}
+
 - site: 優萌初華
-  url: https://shoka.lostyu.me
+  url: <https://shoka.lostyu.me>
   color: "#e9546b"
 {% endlinks %}
 +++
@@ -522,27 +558,31 @@ quiz: true
 +++
 
 ## media 多媒体
+
 使用 media 标签，目前可选择两种类型，即 audio 和 video 。
 
 效果如下
 
 {% media audio %}
+
 - title: cos的2021年度歌单
   list:
-    - https://music.163.com/playlist?id=7189274318
+  - <https://music.163.com/playlist?id=7189274318>
 - title: cos的2020年度歌单
   list:
-    - https://music.163.com/playlist?id=5400313492
+  - <https://music.163.com/playlist?id=5400313492>
 - title: cos的2019年度歌单
   list:
-    - https://music.163.com/playlist?id=3144460328
+  - <https://music.163.com/playlist?id=3144460328>
 - title: ❤️安利向
   list:
-    - https://music.163.com/playlist?id=3036586237
+  - <https://music.163.com/playlist?id=3036586237>
 {% endmedia %}
 
 ## math 数学公式
+
 在 Front Matter 中添加 math: true 以支持 [KaTex](https://katex.org/)
+
 ```raw
 ---
 title: 数学公式显示

@@ -16,17 +16,25 @@ categories:
 
 [题目集总目录](https://blog.csdn.net/qq_45890533/article/details/107131440)
 学习指路博客  [图论](https://blog.csdn.net/qq_45890533/article/details/105475331)
+
 # 07-图4 哈利·波特的考试 (25分)
+
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1284061680916697088)
 
 >是很基本的算法应用，**一定要做**。如果不会，那么看看小白专场，会详细介绍C语言的实现方法
+>
 ## 题目大意
+
 给出每两个动物之间所需魔咒长度
 哈利·波特最后应该带去考场的动物要使得最难变的动物所需总魔咒长度最小。
 输出哈利·波特最后应该带去考场的动物的编号、以及最长的变形魔咒的长度
+
 ## 思路
+
 用Floyd算法得出最短路矩阵dist(dist[i][j]表示i到j所需最短长度，在每行里找最难变(即dist[i][j]最大)的元素，在这些元素中找最小的，输出最小值的下标i和最小值
+
 ## 代码
+
 ```cpp
 #include <iostream>
 #include <cstdio>
@@ -90,22 +98,29 @@ int main(){
     return 0;
 }
 ```
+
 ## 测试点
+
 测试点如下
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200720184504862.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70)
 
-
 # 07-图5 Saving James Bond - Hard Version (30分)
+
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1284061680920891392)
 
 >有余力的话，好人做到底，如果上周已经尝试着救过007了，这周就继续给他建议吧；
 >
 ## 题目大意
+
 输出最少的跳转次数以及沿途跳转的鳄鱼的xy坐标
+
 ## 思路
+
 用Floyd算法得出最短路矩阵edge(edge[i][j]表示鳄鱼i到鳄鱼j所需最少跳转次数，初始化时能跳转则置为1，不能则置为0），同时用path存储路径。
 注意一点：如果有许多最短路径，只需输出具有最小第一跳转的路径
+
 ## 代码
+
 ```cpp
 // 07-图5 Saving James Bond - Hard Version (30分)
 #include <iostream>
@@ -241,9 +256,12 @@ int main(){
     return 0;
 }
 ```
+
 ## 测试点
+
 测试点如下
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200729190645667.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70)
+
 # 07-图6 旅游规划 (25分)
 
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1284061680920891393)
@@ -251,10 +269,15 @@ int main(){
 >Dijkstra算法的变形——姥姥只能帮你到这里了，自己动脑筋想一下怎么改造经典去解决这个问题？实在不会也不要急，再下周会讲算法的。
 
 ## 题目大意
+
 给你所有村庄之间的高速公路距离及其所需花费，计算并输出给定的两村庄之间所需最小距离及其花费，若有多条最小路径则输出花费最少的。
+
 ## 思路
+
 Dijkstra算法的变形，只需存边的时候同时存储距离及花费，多加一个cost数组，更新dist时的同时更新cost。
+
 ## 代码
+
 ```cpp
 #include <iostream>
 #include <algorithm>
@@ -319,7 +342,8 @@ int main(){
     return 0;
 }
 ```
+
 ## 测试点
+
 测试点如下
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200808183438199.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70)
-

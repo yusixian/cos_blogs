@@ -18,6 +18,7 @@ categories:
 [题目集总目录](https://blog.csdn.net/qq_45890533/article/details/107131440)
 学习指路博客 [数据结构学习笔记＜9＞ 散列查找
 ](https://blog.csdn.net/qq_45890533/article/details/108269198)
+
 # 11-散列1 电话聊天狂人 (25分)
 
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1294124786527993856)
@@ -25,7 +26,9 @@ categories:
 >一定要做。如果不知道怎么下手，可以看“小白专场”，将详细给出C语言实现的方法
 
 ## 思路
+
 散列查找，插入的时候若键值已存在改改操作就好，直接用之前的模板
+
 ## 代码
 
 ```cpp
@@ -152,14 +155,19 @@ int main() {
 ```
 
 ## 测试点
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200829162852764.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70#pic_center)
+
 # 11-散列2 Hashing (25分)
 
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1294124786527993857)
 
 >2014年考研上机复试真题，比较直白，一定要做；
+>
 ## 思路
+
 有几个坑，1不算素数，如果M为1的话要特判。这题因为没有删除操作直接输出下标，所以只要维护一个数组标记是否存过数。
+
 ## 代码
 
 ```cpp
@@ -220,8 +228,11 @@ int main() {
 }
 
 ```
+
 ## 测试点
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200829190732464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70#pic_center)
+
 # 11-散列3 QQ帐户的申请与登陆 (25分)
 
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1294124786527993858)
@@ -229,12 +240,17 @@ int main() {
 > 数据结构教材中的练习题，可以用散列，也可以用排序，有兴趣+有时间的，建议两种都试一下。选做；
 
 ## 题目大意
+
 实现QQ新帐户申请和老帐户登陆的简化版功能。主要就是判断账号存在与否以及密码是否对应
+
 ## 思路
+
 一开始用常规散列查找，移位法和平方探测法后两个样例一直错误，于是改成了用STL中map来替代…
 
 ## 代码
+
 用STL中的map做的话，非常简洁
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -267,6 +283,7 @@ int main() {
 ```
 
 ## 测试点
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200905223734281.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70#pic_center)
 
 # 11-散列4 Hashing - Hard Version (30分)
@@ -277,15 +294,18 @@ int main() {
 
 ## 题目大意
 
- - 已知散列函数H(x) = x%N 以及用线性探测法解决冲突问题
- - 先给出散列映射的结果，反求输入顺序
-	 - 当元素x被映射到H(x)位置后，发现这个位置已经有y了，则y一定是在x之前被输入的
+- 已知散列函数H(x) = x%N 以及用线性探测法解决冲突问题
+- 先给出散列映射的结果，反求输入顺序
+  - 当元素x被映射到H(x)位置后，发现这个位置已经有y了，则y一定是在x之前被输入的
 
 ## 思路
+
 拓扑排序！其实是将散列映射和拓扑排序融合在了一起~
 
 ## 代码
+
 注意有个坑，入度都为0即不确定谁先输出时，挑最小的输出，所以这里用优先队列代替小顶堆来存，并用map记录对应下标~
+
 ```cpp
 #include <iostream>
 #include <cstring>
@@ -349,17 +369,21 @@ int main() {
 ```
 
 ## 测试点
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200905223424128.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70#pic_center)
 
 # Kmp 串的模式匹配 (25分)
+
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1296272390837731328)
 
 > 大家可以把找来的各种模式匹配算法都在这里测试一下，看看效果如何。
 
 ## 思路
+
 没啥好说的，KMP就完事了
 
 ## 代码
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -422,4 +446,5 @@ int main(){
 ```
 
 ## 测试点
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200905114904982.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70#pic_center)

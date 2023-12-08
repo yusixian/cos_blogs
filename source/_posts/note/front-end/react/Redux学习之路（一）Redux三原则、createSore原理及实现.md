@@ -32,9 +32,6 @@ categories:
 > [Redux入门系列视频](https://app.egghead.io/courses/getting-started-with-redux)
 > [笔记和转录](https://github.com/tayiorbeii/egghead.io_redux_course_notes)
 
-
-
-
 # 简介
 
 什么是Redux
@@ -45,9 +42,7 @@ categories:
 >
 > Redux 除了和 React 一起用外，还支持其它界面库。它体小精悍（只有2kB，包括依赖），却有很强大的插件扩展生态。
 
-
-
-## 什么需要使用 Redux 
+## 什么需要使用 Redux
 
 首先要明确一点，虽然 Redux 是一个很不错的管理状态工具，但还是要考虑下它是否适合你的场景。**不要仅仅因为有人说过应该使用 Redux 而使用 - 应该花一些时间来了解使用它的潜在好处和取舍**。
 
@@ -85,8 +80,6 @@ Redux的第一个原则就是：**应用程序的整个状态将由一个JavaScr
 }
 ```
 
-
-
 ## 原则2：状态树只读
 
 [Redux: Describing State Changes with Actions from @dan_abramov on @eggheadio](https://app.egghead.io/lessons/react-redux-describing-state-changes-with-actions?pl=fundamentals-of-redux-course-from-dan-abramov-bd5cc867)
@@ -111,7 +104,7 @@ Action是描述更改的一个普通JS对象，它是对该数据所做的更改
 
 而Redux的第三个原则就是：要描述状态变化，必须编写一个纯函数，该纯函数采用应用的**先前状态（previous state）**和**发起的action（the action being dispatched）**，然后**返回**应用的**下一个状态（next state ）**。而这个纯函数称为**Reducer**。
 
-###  理解纯函数与非纯函数
+### 理解纯函数与非纯函数
 
 首先我们要理解什么是纯函数/非纯函数，因为Redux有时候需要我们编写纯函数。
 
@@ -130,7 +123,7 @@ function square(x) {
     return x*x;
 }
 function squareAll(items) {
-    return items.map(square);	// 注意，这里是生成了一个新的数组而非直接return items
+    return items.map(square); // 注意，这里是生成了一个新的数组而非直接return items
 }
 ```
 
@@ -138,12 +131,12 @@ function squareAll(items) {
 
 ```js
 function square(x) {
-  updateXInDatabase(x);	// 对数据库中的x也产生了影响
+  updateXInDatabase(x); // 对数据库中的x也产生了影响
   return x * x;
 }
 function squareAll(items) {
   for (let i = 0; i < items.length; i++) {
-    items[i] = square(items[i]);	// 并且直接修改了items...
+    items[i] = square(items[i]); // 并且直接修改了items...
   }
 }
 ```
@@ -168,7 +161,6 @@ function squareAll(items) {
 
 ![请添加图片描述](https://img-blog.csdnimg.cn/f822113c342e41ab9cd838fdc131528e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5L2ZY29z,size_20,color_FFFFFF,t_70,g_se,x_16)
 
-
 #### 添加Todo
 
 变化如图： 一开始的state中，todos没有内容，过滤器为显示全部。发起action之后的state中todos多了个todo，过滤视图未变化
@@ -180,14 +172,11 @@ function squareAll(items) {
 点击一个todo将其置为完成，可以看到发起这个action的时候，todos的文本没有变化，状态complete被置为完成了……
 ![请添加图片描述](https://img-blog.csdnimg.cn/54b8c98b25bc437e8ba0ada524b49667.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5L2ZY29z,size_20,color_FFFFFF,t_70,g_se,x_16)
 
-
 #### 更改过滤视图
 
 再添加一个todo后点击过滤器Active，观察前后state，可以发现，只是visibilityFilter状态由"SHOW_ALL"改变为"SHOW_ACTIVE"了，todos的内容还是没有变化的（abcd并没有被删掉）
 
-
 ![请添加图片描述](https://img-blog.csdnimg.cn/49e77e2ac6974684b4952b259a39f803.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5L2ZY29z,size_20,color_FFFFFF,t_70,g_se,x_16)
-
 
 # 编写一个带有测试的计数器Reducer
 
@@ -235,13 +224,13 @@ expect(
 
 ```
 
-如上，counter这个Reducer设置了两个可识别的type（INCREMENT、DECREMENT），分别表示计数+1，-1。在写入Reducer时，如果传入的 `state` 是未定义的，则需要返回一个表示初始状态的对象（initstate）。在这个计数器的例子中，我们返回0，因为我们的计数从 `0` 开始。如果传入的 `action` **不是Reducer所能识别的**（SOMETHING_ELSE），我们**只返回当前`state`**。 
+如上，counter这个Reducer设置了两个可识别的type（INCREMENT、DECREMENT），分别表示计数+1，-1。在写入Reducer时，如果传入的 `state` 是未定义的，则需要返回一个表示初始状态的对象（initstate）。在这个计数器的例子中，我们返回0，因为我们的计数从 `0` 开始。如果传入的 `action` **不是Reducer所能识别的**（SOMETHING_ELSE），我们**只返回当前`state`**。
 
 # 存储方法：getState()、dispatch()和subscribe()
 
 [Redux: Store Methods: getState(), dispatch(), and subscribe() | egghead.io](https://egghead.io/lessons/react-redux-store-methods-getstate-dispatch-and-subscribe)
 
-本节使用了Redux中内置的函数。我们使用ES6析构语法引入了[`createStore `](https://cn.redux.js.org/api/createstore).
+本节使用了Redux中内置的函数。我们使用ES6析构语法引入了[`createStore`](https://cn.redux.js.org/api/createstore).
 
 ```js
 const counter = (state = 0, action) => {
@@ -261,7 +250,7 @@ const { createStore } = Redux; // Redux CDN import syntax
 const store = createStore(counter);
 ```
 
-> [`createStore `](https://cn.redux.js.org/api/createstore) 创建一个 Redux [store](https://cn.redux.js.org/api/store) 来以存放应用中所有的 state。**应用中应有且仅有一个 store**。
+> [`createStore`](https://cn.redux.js.org/api/createstore) 创建一个 Redux [store](https://cn.redux.js.org/api/store) 来以存放应用中所有的 state。**应用中应有且仅有一个 store**。
 >
 > **参数**
 >
@@ -275,9 +264,9 @@ const store = createStore(counter);
 
 `createStore`所创建的`store`有3个重要方法
 
-##  getState() 获取状态
+## getState() 获取状态
 
-[`getState()` ](https://cn.redux.js.org/api/store/#getstate)检索 Redux 存储的**当前状态**。返回应用当前的 state 树。它与 store 的最后一个 reducer 返回值相同。
+[`getState()`](https://cn.redux.js.org/api/store/#getstate)检索 Redux 存储的**当前状态**。返回应用当前的 state 树。它与 store 的最后一个 reducer 返回值相同。
 
 ## dispatch() 调度，发起action
 
@@ -331,7 +320,7 @@ document.addEventListener('click', () => {
 
 上面的官网摘下来的文档看似很难理解，看看接下来的简易实现就能理解了。
 
-# 实现一个简易版的createStore~！
+# 实现一个简易版的createStore~
 
 [Redux: Implementing Store from Scratch | egghead.io](https://egghead.io/lessons/react-redux-implementing-store-from-scratch)
 
@@ -351,10 +340,9 @@ document.addEventListener('click', () => {
   - `subscribe` 传入一个listener函数作为参数，将其放入内部的listener数组，为了取消订阅事件监听器，`subscribe`需要返回一个函数， **调用这个返回的函数就可以取消监听**，这个函数内部通过[`filter()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)将listeners数组赋值为一个新的监听器数组（去除了与当前监听相同引用后返回的新监听器数组）。`subscribe`
   - 在返回`store`时，我们需要要填充初始状态。我们要分派一个假的 `action` 来让 `reducer` 返回初始值。
 
-
 ```js
-const createStore = (reducer) => {	// 返回 store，可以调用getState、dispatch、subscribe
-	let state;	
+const createStore = (reducer) => { // 返回 store，可以调用getState、dispatch、subscribe
+ let state; 
     let listeners = [];
     const getState = () => state;   // 外部可以通过调用getState获取当前state
 
@@ -467,16 +455,13 @@ reducer指定如何根据当前state和传入的action计算下一个state。 �
 
 一开始什么都不做，可以看到createStore的时候就进行了一次dispatch，通过reducer（即counter函数）将state置为初始值0后进行了一次渲染。（注意）
 
-
 ![请添加图片描述](https://img-blog.csdnimg.cn/9b113a7febad4ad2bb8341e8223b1ec2.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5L2ZY29z,size_14,color_FFFFFF,t_70,g_se,x_16)
-
 
 ### 增加计数
 
 点一下+，发现又调用了一次render
 
 ![请添加图片描述](https://img-blog.csdnimg.cn/5c0284c69db64293870f69de2bf01b12.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5L2ZY29z,size_19,color_FFFFFF,t_70,g_se,x_16)
-
 
 ### else
 
@@ -486,6 +471,7 @@ reducer指定如何根据当前state和传入的action计算下一个state。 �
 # 总结
 
 首先要明确一点，虽然 Redux 是一个很不错的管理状态工具，但还是要考虑下它是否适合你的场景。
+
 - **不要仅仅因为有人说过应该使用 Redux 而使用，而是应该花一些时间来了解使用它的潜在好处和取舍**。
 
 看完这1-8期视频，基本上了解了Redux什么时候用比较好与它的缺点，了解了Redux三原则和Redux中的Reducer、（getState、dispatch、subscribe）以及createStore的原理及实现，并且实现了一个极其简易的计数器（顺带知道了哑组件是啥）。
@@ -508,5 +494,3 @@ Redux三原则：
   - `dispatch` 函数传入一个action，通过将内部的当前state和action传入`reducer`函数（createStore的入参）来计算新的state。更新后，我们通知每个变化监听器（通过调用它们） dispatch
   - `subscribe` 传入一个listener函数作为参数，将其放入内部的listener数组，为了取消订阅事件监听器，`subscribe`需要返回一个函数， **调用这个返回的函数就可以取消监听**，这个函数内部通过[`filter()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)将listeners数组赋值为一个新的监听器数组（去除了与当前监听相同引用后返回的新监听器数组）。`subscribe`
   - 在返回`store`时，我们需要要填充初始状态。我们要分派一个假的 `action` 来让 `reducer` 返回初始值。
-
-  

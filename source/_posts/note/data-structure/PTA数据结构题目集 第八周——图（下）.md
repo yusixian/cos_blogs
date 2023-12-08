@@ -17,6 +17,7 @@ categories:
 @[TOC](目录)
 [题目集总目录](https://blog.csdn.net/qq_45890533/article/details/107131440)
 学习指路博客  [解决最小生成树问题(Kruskal算法&Prim算法)](https://blog.csdn.net/qq_45890533/article/details/105684653)、[数据结构学习笔记＜8＞ 排序](https://blog.csdn.net/qq_45890533/article/details/108246044)
+
 # 08-图7 公路村村通 (30分)
 
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1286606445168746496)
@@ -24,7 +25,9 @@ categories:
 >非常直白的最小生成树问题，但编程量略大，选做 —— 有时间就写写；
 
 ## 题目大意
+
 给你所有村庄之间的高速公路所需成本，计算村村通所需最小成本，典型的最小生成树板子题，用Kruskal算法即可
+
 ## 代码
 
 ```cpp
@@ -73,9 +76,12 @@ int main(){
     return 0;
 }
 ```
+
 ## 测试点
+
 测试点如下：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020080818560191.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70)
+
 # 08-图8 How Long Does It Take (25分)
 
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1286606445168746497)
@@ -83,9 +89,13 @@ int main(){
 >拓扑排序的变形，程序不算复杂，建议尝试；
 
 ## 题目大意
+
 给你项目的N个活动检查点（编号从0 ~ N-1）和M个活动，接下来M行每行3个整数分别是活动的开始检查点编号，结束检查点编号和持续时间，找到项目的最早完成时间。
+
 ## 思路
+
 拓扑排序的同时计算每个检查点的最早完成时间，最后整个项目的最早完成时间是所有检查点最早完成时间中最大的那个
+
 ## 代码
 
 ```cpp
@@ -157,7 +167,9 @@ int main(){
 ```
 
 ## 测试点
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200820235833692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70#pic_center)
+
 # 08-图9 关键活动 (30分)
 
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1286606445168746498)
@@ -165,7 +177,9 @@ int main(){
 >在听完课以后，这题的思路应该比较清晰了，只需要在前面一题的程序基础上增加一些内容。不过编程量还是有一些的，根据自己的时间决定，慎入。
 
 ## 题目大意
+
 与上题相似，不过除了最早完成时间之外，还要求最晚完成时间进而得出机动时间。最后输出是否能完成该任务，若能则输出关键活动（没有机动时间的活动）
+
 ## 代码
 
 ```cpp
@@ -277,5 +291,6 @@ int main(){
 ```
 
 ## 测试点
+
 疯狂WA测试点2和5……最后发现是两行代码弄反了qwq
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020082103435554.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70#pic_center)

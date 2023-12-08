@@ -22,8 +22,8 @@ categories:
 - 2012-10：微软发布了TypeScript第一个版本(0.8)
 - 2014-10：Angular 发布了基于TypeScript的2.0版本
 - 2015-04：微软发布了Visual Studio Code
-- 2016-05：@ ty pes/react发布，TypeScript 可开发React 
-- 2020-09：Vue 发布了3.0 版本，官方支持TypeScript 
+- 2016-05：@ ty pes/react发布，TypeScript 可开发React
+- 2020-09：Vue 发布了3.0 版本，官方支持TypeScript
 - 2021-11：v4.5版本发布
 
 ## 为什么是TypeScript
@@ -71,8 +71,8 @@ const bytedancer: IBytedancer = {
 }
 // 定义一个类型为IBytedancer
 interface IBytedancer {
-	/* 只读属性readonly:约束属性不可在对象初始化外赋值 */
-	readonly jobId: number;
+ /* 只读属性readonly:约束属性不可在对象初始化外赋值 */
+ readonly jobId: number;
     name: string;
     sex: 'man' | 'woman' | 'other';
     age: number;
@@ -99,7 +99,7 @@ js：
 
 ```js
 function add(x, y!) {
-	return x + y;
+ return x + y;
 }
 const mult = (x, y) =>  x * y;
 ```
@@ -108,12 +108,12 @@ ts：[函数 · TypeScript中文网](https://www.tslang.cn/docs/handbook/functio
 
 ```ts
 function add(x: number, y: number): number {
-	return x + y;
+ return x + y;
 }
 const mult: (x: number, y: number) => number = (x, y) => x * y;
 // 简化写法，定义接口IMult
 interface IMult {
-	(x: number, y: number): number ;
+ (x: number, y: number): number ;
 }
 const mult: IMult = (x, y) => x * y;
 ```
@@ -138,16 +138,16 @@ const y = getDate('string', '2018-01-10'); // y: string
 
 ```ts
 interface IGetDate {
-	(type : 'string', timestamp ?: string): string; // 这个地方返回类型改为any就可以通过了
-	(type : 'date', timestamp?: string): Date;
-	(type: 'string' | 'date', timestamp?: string): Date | string;
+ (type : 'string', timestamp ?: string): string; // 这个地方返回类型改为any就可以通过了
+ (type : 'date', timestamp?: string): Date;
+ (type: 'string' | 'date', timestamp?: string): Date | string;
 }
 /* 报错：不能将类型"(type: any, timestamp: any) => string | Date"分配给类型"IGetDate"。
-	不能将类型"string | Date" 分配给类型"string"。
-	不能将类型 "Date"分配给类型"string"。ts(2322) */
+ 不能将类型"string | Date" 分配给类型"string"。
+ 不能将类型 "Date"分配给类型"string"。ts(2322) */
 const getDate2: IGetDate = (type, timestamp) => {
-	const date = new Date( timestamp) ; 
-	return type === 'string' ? date.toLocaleString() : date;
+ const date = new Date( timestamp) ; 
+ return type === 'string' ? date.toLocaleString() : date;
 }
 ```
 
@@ -164,7 +164,7 @@ type IArr2 = Array<string | number| Record<string, number> > ;
 type IArr3 = [number, number, string, string];
 /* 接口表示 */
 interface IArr4 {
-	[key: number]: any;
+ [key: number]: any;
 }
 
 const arrl: IArr1 = [1, 2, 3, 4, 5, 6];
@@ -187,7 +187,7 @@ type IAnyType = any;
 /* 枚举类型:支持枚举值到枚举名的正、反向映射 */
 enum EnumExample {
     add = '+',
-	mult = '*',
+ mult = '*',
 }
 EnumExample['add'] === '+';
 EnumExample['+'] === 'add';
@@ -204,7 +204,7 @@ type INumArr = Array<number>;
 
 ```js
 function getRepeatArr(target) {
-	return new Array(100).fill(target); 
+ return new Array(100).fill(target); 
 }
 type IGetRepeatArr = (target: any) => any[];
 /* 不预先指定具体的类型，而在使用的时候再指定类型的一种特性 */
@@ -216,12 +216,12 @@ type IGetRepeatArrR = <T>(target: T) => T[];
 ```ts
 /*泛型接口&多泛型*/
 interface IX<T, U> {
-	key: T;
-	val: U;
+ key: T;
+ val: U;
 }
 /* 泛型类 */
 class IMan<T> {
-	instance: T;
+ instance: T;
 }
 /* 泛型别名 */
 type ITypeArr<T> = Array<T>;
@@ -262,15 +262,15 @@ getRepeatArr('123');
 ````js
 /*通过type关键字定义了IObjArr的别名类型*/
 type IObjArr = Array<{
-	key: string;
-	[objKey: string]: any;
+ key: string;
+ [objKey: string]: any;
 }>
 function keyBy<T extends IObjArr>(objArr: Array<T>) {
-	/* 未指定类型时，result类型为{} */
-	const result = objArr.reduce((res, val, key) => {
-		res[key] = val;
-		return res;
-	}, {});
+ /* 未指定类型时，result类型为{} */
+ const result = objArr.reduce((res, val, key) => {
+  res[key] = val;
+  return res;
+ }, {});
     /* 通过as关键字，断言result类型为正确类型 */
     return result as Record<string, T> ; 
 }
@@ -299,8 +299,8 @@ type IOddNumber = 1 | 3 | 5 | 7 | 9;
 为书籍列表编写类型 -> ts类型声明繁琐存在较多重复。[高级类型](https://www.tslang.cn/docs/handbook/advanced-types.html)
 
 ```ts
-const bookList = [ {	// 普通js
-	author:'xiaoming',
+const bookList = [ { // 普通js
+ author:'xiaoming',
     type:'history',
     range: '2001 -2021',
 }, {
@@ -329,13 +329,13 @@ type IBookList = Array<IHistoryBook | IStoryBook>;
 
 ```ts
 type IBookList = Array<{
-	author: string;
+ author: string;
 } & ({
-	type: 'history';
-	range: string;
+ type: 'history';
+ range: string;
 } | {
-	type: 'story';
-	theme: string;
+ type: 'story';
+ theme: string;
 })>; 
 /* 限制了author只能为string类型，而type只能'history'/'story'二选一，并且type不同可能的属性不同 */
 ```
@@ -351,7 +351,7 @@ function log(arg: IA | IB) {
     /*报错:类型"IA | IB" 上不存在属性"a”。 类型"IB"上不存在属性"a"
     结论:访问联合类型时，处于程序安全，仅能访问联合类型中的交集部分*/
 
-	if(arg.a) {
+ if(arg.a) {
         console.log(arg.a1);
     } else {
         console.log(arg.b1);
@@ -371,7 +371,7 @@ function getIsIA(arg: IA | IB): arg is IA {
 }
 function log2(arg: IA | IB) {
     /* 不存在报错了 */
-	if(getIsIA(arg) ) {
+ if(getIsIA(arg) ) {
         console.log(arg.a1);
     } else {
         console.log(arg.b1);
@@ -384,7 +384,7 @@ function log2(arg: IA | IB) {
 ```ts
 // 实现函数reverse 可将数组或字符串进行反转
 function reverse(target: string | Array<any>) {
-	/* typof 类型保护*/
+ /* typof 类型保护*/
     if (typeof target === 'string') {
        return target.split('').reverse().join('');
     }
@@ -401,9 +401,9 @@ function reverse(target: string | Array<any>) {
 // 实现函数logBook类型
 // 函数接受书本类型，并logger出相关特征
 function logBook(book: IBookItem) {
-	// 联合类型+类型保护=自动类型推断
-	if (book.type === 'history'){
-		console.log(book.range)
+ // 联合类型+类型保护=自动类型推断
+ if (book.type === 'history'){
+  console.log(book.range)
     } else{
         console.log book.theme);
     }
@@ -413,7 +413,7 @@ function logBook(book: IBookItem) {
 再来看一个case，实现一个子集不污染的合并函数merge，将sourceObj合并到targetObj中，**sourceObj必须为targetObj的子集**
 
 ```js
-function merge1(sourceObj, targetObj) {	// js中，实现复杂，这样才能不污染
+function merge1(sourceObj, targetObj) { // js中，实现复杂，这样才能不污染
     const result = { ...sourceObj };
     for(let key in targetObj) {
         const itemVal = sourceObj[key];
@@ -427,6 +427,7 @@ function merge2(sourceObj, targetObj) {// 若这两个入参的类型没问题�
 ```
 
 而一种简单的思想就是在ts中编写两个类型，进行判断，但这样又会存在实现繁琐，增加target需要source联动去除，重复维护了两份x、y
+
 ```ts
 interface ISource0bj { 
     x?: string; 
@@ -448,7 +449,7 @@ type IMerge = (source0bj: ISource0bj, target0bj: ITarget0bj) => ITargetObj;
 > TypeScript提供了从旧类型中创建新类型的一种方式——**映射类型**。 在映射类型里，新类型以相同的形式去转换旧类型里每个属性。 （直接写就行，ts内置了）
 >
 > - 关键字**keyof**，其**相当于取值对象中的所有key组成的字符串字面量**
-> - 关键字**in**，其相当于取值字符串字面量中的一种可能，**配合泛型P， 即表示每个key** 
+> - 关键字**in**，其相当于取值字符串字面量中的一种可能，**配合泛型P， 即表示每个key**
 > - 关键字 **?** ，通过**设定对象可选选项**，即可自动推导出子集类型
 
 ```ts
@@ -538,11 +539,8 @@ type IReturnType<T extends (...args: any) => any> = T extends(...args: any ) => 
 
 ![image.png](https://backblaze.cosine.ren/juejin/56049af605644fb9907feedd9ee14fae~tplv-k3u1fbpfcp-watermark.png)
 
-
-
 # 总结感想
 
 这节课老师讲了TypeScript的用处与基本语法、和JS的对比、高级类型的应用，后续也深入讲了一下类型保护与类型守卫，在最后总结了TypeScript如何在工程中进行应用。TypeScript作为JS的一个超集，他增加了类型检查的功能，可以在编译阶段就将代码中的错误暴露出来，这是js这类动态类型所不具备的，在多人合作的大型项目中，使用TS往往可以获得更好的稳定性和开发效率。
 
 > 本文引用的大部分内容来自林皇老师的课以及ts官方文档~
-

@@ -90,8 +90,6 @@ I帧比较多的话，视频就会比较大
 
   ![image.png](https://backblaze.cosine.ren/juejin/4645bf9109fd4e92917c39544e297080~tplv-k3u1fbpfcp-watermark.png)
 
-  
-
 - **视觉冗余**
 
   ![image.png](https://backblaze.cosine.ren/juejin/06e0df32ec1d4fbc9c780cd90749b25e~tplv-k3u1fbpfcp-watermark.png)
@@ -100,7 +98,7 @@ I帧比较多的话，视频就会比较大
 
 ![image.png](https://backblaze.cosine.ren/juejin/43dfe562ac5142dabfcf18a4fc1407b2~tplv-k3u1fbpfcp-watermark.png)
 
-通过**预测**去除空间和时间冗余 -> 变换 去除空间冗余 
+通过**预测**去除空间和时间冗余 -> 变换 去除空间冗余
 
 - **量化** 去除视觉冗余 ：把视觉系统看不太到了的东西去掉
 - **熵编码** 去除编码冗余：出现频率高的，编码字符所需长度小
@@ -135,18 +133,18 @@ I帧比较多的话，视频就会比较大
 
 [`<audio>`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio)  元素用于在文档中嵌入音频内容。
 
-
 ```html
 <!DOCTYPE html> 
 <html>
 <body>
     <audio src="./auido.mp3" muted autoplay controls width=600 he ight=300></audio>
     <audio muted autoplay controls width=600 height=300>
-    	<source src=" ./audio.mp3"></source>
+     <source src=" ./audio.mp3"></source>
     </audio>
 </body>
 </html>
 ```
+
 [HTMLMediaElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement)
 
 | 方法                                                         | 描述                                  |
@@ -218,8 +216,6 @@ I帧比较多的话，视频就会比较大
 
 ![image.png](https://backblaze.cosine.ren/juejin/77c9b7a19ea64a7188ccb93eea57e152~tplv-k3u1fbpfcp-watermark.png)
 
-
-
 ## 流媒体协议
 
 ![image.png](https://backblaze.cosine.ren/juejin/ae27e7b4cedb4a72a9648f0d8644b450~tplv-k3u1fbpfcp-watermark.png)
@@ -230,7 +226,7 @@ HLS全称是HTTP Live Streaming,是一个由Apple公司提出的基于HTTP的媒
 
 ![image.png](https://backblaze.cosine.ren/juejin/d112114f71f945a399ecd45fe24b31b1~tplv-k3u1fbpfcp-watermark.png)
 
-- 点播/直播 -> 视频上传 -> 视频转码 
+- 点播/直播 -> 视频上传 -> 视频转码
 - 图片  -> 支持一些新的图片
 - 云游戏 -> 不必再下繁琐的客户端等，运行在远端上，视频流来回传播（对延时要求高）
 
@@ -239,4 +235,3 @@ HLS全称是HTTP Live Streaming,是一个由Apple公司提出的基于HTTP的媒
 本节课老师科普了Web多媒体技术的基本概念，如编码格式、封装格式、多媒体元素、流媒体协议等，并阐述了Web多媒体的多种应用场景
 
 > 本文引用的大部分内容来自刘立国老师的课以及MDN
-

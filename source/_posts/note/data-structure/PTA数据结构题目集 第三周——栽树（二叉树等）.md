@@ -15,21 +15,25 @@ categories:
 
 [题目集总目录](https://blog.csdn.net/qq_45890533/article/details/107131440)
 学习指路博客 [二叉树](https://blog.csdn.net/qq_45890533/article/details/104870234)、[队列](https://blog.csdn.net/qq_45890533/article/details/104600930)
+
 # 03-树1 树的同构 (25分)
+
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1274008636207132672)
 
 >小白专场会做详细讲解，基本要求，**一定要做**
 >**题目大意:给定两棵树，请你判断它们是否是同构的。**
 >
-## 思路 
+## 思路
+
  1.二叉树的表示
   数组存储结构体，结构体含数据、左右孩子的下标（Null代表-1）
 2.建二叉树
-返回根节点下标 
+返回根节点下标
 3.同构判断
 利用递归。若R1、R2同时为空，返回true。若其中一个为空，返回false。若根节点元素就不相同，则返回false。然后进行左右子树的判断，若两个左子树都为空，则判断右子树是否同构。若两个左子树都不为空且元素相同，不用交换直接判断，否则交换判断。
 
 ## 代码
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -101,18 +105,24 @@ int main() {
 ```
 
 ## 测试点
+
 测试点如下
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705220719730.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70)
 
 # 03-树2 List Leaves (25分)
+
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1274008636207132673)
 
 >训练建树和遍历基本功，**一定要做**
 >
 ## 题目大意
+
 给定一棵树，你应该按自上而下的顺序列出所有的叶子结点，从左到右。
+
 ## 思路
+
 **按自上到下，从左往右的顺序输出叶子结点的，则需要进行层次遍历，整体代码与3-1大致相同**
+
 ```cpp
 #include <iostream>
 #include <queue>
@@ -187,14 +197,19 @@ int main() {
 
 测试点如下，一次过
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020070613123015.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70)
+
 # 03-树3 Tree Traversals Again (25分)
+
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1274008636207132674)
 
 >是2014年秋季PAT甲级考试真题，稍微要动下脑筋，想通了其实程序很基础，**建议尝试**
 
 ## 题目大意
+
 **给定push序列和pop序列即该二叉树的先序遍历和中序遍历序列，求后序遍历序列**。
+
 ## 思路
+
 可用递归实现！先将两个序列搞出来，还原一棵二叉树，再进行后序遍历。
 
 ```cpp
@@ -268,5 +283,6 @@ int main() {
 ```
 
 ## 测试点
+
 测试点如下
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200706145014478.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70)

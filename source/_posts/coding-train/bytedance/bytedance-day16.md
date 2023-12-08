@@ -16,7 +16,6 @@ categories:
 
 day16题目：[bytedance-007. 化学公式解析](https://leetcode-cn.com/problems/fF9c0W/)、[129. 求根节点到叶节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/)、[239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/)
 
-
 学习计划链接：[冲刺春招-精选笔面试 66 题大通关](https://leetcode-cn.com/study-plan/bytedancecampus/?progress=dcmyjb3)
 
 今日知识点：正则、树、dfs、滑动窗口，难度为字节の简单、中等、困难
@@ -26,9 +25,10 @@ day16题目：[bytedance-007. 化学公式解析](https://leetcode-cn.com/proble
 # [bytedance-007. 化学公式解析](https://leetcode-cn.com/problems/fF9c0W/)
 
 给定一个用字符串展示的化学公式，计算每种元素的个数。规则如下：
--   元素命名采用驼峰命名，例如 `Mg`
--   `()` 代表内部的基团，代表阴离子团
--   `[]` 代表模内部链节通过化学键的连接，并聚合
+
+- 元素命名采用驼峰命名，例如 `Mg`
+- `()` 代表内部的基团，代表阴离子团
+- `[]` 代表模内部链节通过化学键的连接，并聚合
 
 例如：H2O => H2O1 Mg(OH)2 => H2Mg1O2
 
@@ -47,13 +47,18 @@ day16题目：[bytedance-007. 化学公式解析](https://leetcode-cn.com/proble
 输入：K4[ON(SO3)2]2
 输出：K4N2O14S4
 ```
+
 ## 思路
+
 评论区大神思路，惊为天人。
+
 - 正则匹配先将所有小括号展开
 - 再将所有大括号展开
 - 然后将原子展开：`Mg4` -> `MgMgMgMg`
 - 最后就是统计词频然后排序即可
+
 ## 代码
+
 ```js
 var input = require('fs').readFileSync('/dev/stdin', 'utf8').trim().split('\n')[0]
 function replacer(match, str, k) {
@@ -86,13 +91,12 @@ console.log(ans.toString().replace(/\,/g, ''))
 
 每条从根节点到叶节点的路径都代表一个数字：
 
--   例如，从根节点到叶节点的路径 `1 -> 2 -> 3` 表示数字 `123` 。
+- 例如，从根节点到叶节点的路径 `1 -> 2 -> 3` 表示数字 `123` 。
 
 计算从根节点到叶节点生成的 **所有数字之和** 。
 
 **叶节点** 是指没有子节点的节点。
 
- 
 **示例 1：**
 
 ![](https://backblaze.cosine.ren/juejin/C2582dda288345e1bfc0171997da14de~Tplv-K3u1fbpfcp-Zoom-1.png)
@@ -122,13 +126,16 @@ console.log(ans.toString().replace(/\,/g, ''))
 
 **提示：**
 
--   树中节点的数目在范围 `[1, 1000]` 内
--   `0 <= Node.val <= 9`
--   树的深度不超过 `10`
+- 树中节点的数目在范围 `[1, 1000]` 内
+- `0 <= Node.val <= 9`
+- 树的深度不超过 `10`
 
 ## 思路
+
 一眼题，dfs就完事了，到叶子节点将 sum 加到答案中
+
 ## 代码
+
 ```js
 /**
  * Definition for a binary tree node.
@@ -161,12 +168,10 @@ var sumNumbers = function(root) {
 
 # [239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/)
 
-
 给你一个整数数组 `nums`，有一个大小为 `k` **的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口内的 `k` 个数字。滑动窗口每次只向右移动一位。
 
 返回 *滑动窗口中的最大值* 。
 
- 
 **示例 1：**
 
 ```
@@ -192,16 +197,20 @@ var sumNumbers = function(root) {
 
 **提示：**
 
--   `1 <= nums.length <= 10^5`
--   `-10^4 <= nums[i] <= 10^4`
--   `1 <= k <= nums.length`
+- `1 <= nums.length <= 10^5`
+- `-10^4 <= nums[i] <= 10^4`
+- `1 <= k <= nums.length`
 
 ## 思路
+
 队列q存储下标，其对应元素单调递减
+
 - 若滑动窗口中两个元素 `j < i` 并且 `nums[j] <= nums[i]` ，只要 `j` 还在窗口中，那么 `i` 一定也还在窗口中，所以最值一定不是 `nums[j]`，故可以将其移除
 - 滑动过程中记录，若队尾元素小于等于当前新元素，则弹出，直到为空或者队尾元素大于新元素
 - 同时若队头所存下标 `q[0]` 小于窗口左侧 `l`，则不断将队首弹出
+
 ## 代码
+
 ```js
 /**
  * @param {number[]} nums

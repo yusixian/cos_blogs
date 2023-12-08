@@ -17,6 +17,7 @@ categories:
 - 自己的CodePen在线预览链接：[DatePicker（by cos）](https://codepen.io/yusixian/pen/wvPLgWN)
 
 ## 心得
+
 - ~契机是什么才不说呢~
 - 也算是第一次用React写自己的小组件，可能封装性还不行，bug也还有不少，写的代码自己复盘的时候也很想吐槽2333
 - 不过也真的是个很有意思的事！比如点击日期选择器外关闭日期选择器这个功能就纠结了我好长时间qwq，但是写完真的很快乐！
@@ -24,11 +25,13 @@ categories:
 - 实现自己的组件是很cool的事！~虽然有时候也会感觉有点重复造轮子~
 - 在学习antd组件的实现同时也感受到了其实现的不少细节，望尘莫及ovo，以后有机会还会有优化哒，增加更多api和功能和自定义大小设置等。
 
-
 ## 组件介绍
+
 ### DatePicker组件
+
 DatePicker 组件开发
 代码及在线预览地址：[DatePicker（by cos）](https://codepen.io/yusixian/pen/wvPLgWN)
+
 1. 日、月、年选择面板的实现
 交互：
 a.日面板实现：实现点击日期选择具体日期，点击头部面部左右箭头可前往上一年/下一年、上一月/下一月
@@ -39,6 +42,7 @@ d.根据输入框输入实时变换日期
 a. 支持默认日期的设置 `defaultDate` 通过设置defaultDate为moment对象实现默认日期的设置
 b. 支持日期的获取 `onDateChange` 通过日期变化的回调函数获取当前日期，返回moment对象
 示例：
+
 ```js
 class App extends Component {
     constructor(props) {
@@ -60,8 +64,10 @@ class App extends Component {
     }
 }
 ```
+
 3. 面板展示与切换动画
 通过 `picker-panel` 中初始透明度 `opacity`为 0，变化原点`transform-origin`为左上角，初始大小为 `scale(0)` ，通过自定义属性 `data-active` 为true控制显示
+
 ```css
 .picker-panel {
     z-index: 10;
@@ -88,7 +94,9 @@ class App extends Component {
     }
 }
 ```
+
 5. 界面展示
+
 - 初始值
 
 ![初始值.png](https://backblaze.cosine.ren/juejin/7e080154069a41de9dadf3c3ace7af3e~tplv-k3u1fbpfcp-watermark.png)
@@ -111,7 +119,3 @@ class App extends Component {
 - 月面板
 
 ![月面板.png](https://backblaze.cosine.ren/juejin/E91c94487f0d4ff7822798f4d39f722c~Tplv-K3u1fbpfcp-Watermark.png)
-
-
-
-

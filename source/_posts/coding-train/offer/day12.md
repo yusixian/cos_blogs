@@ -81,8 +81,6 @@ var mergeTwoLists = function(l1, l2) {
 
 在节点 c1 开始相交。
 
- 
-
 **示例 1：**
 
 ![](https://backblaze.cosine.ren/juejin/5d68825371794dd48e36c7432e2f87ab~Tplv-K3u1fbpfcp-Zoom-1.png)
@@ -93,8 +91,6 @@ var mergeTwoLists = function(l1, l2) {
 输入解释： 相交节点的值为 8 （注意，如果两个列表相交则不能为 0）。从各自的表头开始算起，链表 A 为 [4,1,8,4,5]，链表 B 为 [5,0,1,8,4,5]。在 A 中，相交节点前有 2 个节点；在 B 中，相交节点前有 3 个节点。
 ```
 
- 
-
 **示例 2：**
 
 ![](https://backblaze.cosine.ren/juejin/C0ef34bea01b4cad94002457175ac1e2~Tplv-K3u1fbpfcp-Zoom-1.png)
@@ -104,8 +100,6 @@ var mergeTwoLists = function(l1, l2) {
 输出： Reference of the node with value = 2
 输入解释： 相交节点的值为 2 （注意，如果两个列表相交则不能为 0）。从各自的表头开始算起，链表 A 为 [0,9,1,2,4]，链表 B 为 [3,2,4]。在 A 中，相交节点前有 3 个节点；在 B 中，相交节点前有 1 个节点。
 ```
-
- 
 
 **示例 3：**
 

@@ -26,7 +26,6 @@ day20题目：[剑指 Offer 07. 重建二叉树](https://leetcode-cn.com/problem
 | [剑指 Offer 16. 数值的整数次方](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/) | [递归](https://leetcode-cn.com/tag/recursion)、[数学](https://leetcode-cn.com/tag/math) | 中等 |
 | [剑指 Offer 33. 二叉搜索树的后序遍历序列](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) | [栈](https://leetcode-cn.com/tag/stack)、[树](https://leetcode-cn.com/tag/tree)、[二叉搜索树](https://leetcode-cn.com/tag/binary-search-tree)、[递归](https://leetcode-cn.com/tag/recursion) | 中等 |
 
-
 # [剑指 Offer 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/)
 
 输入某二叉树的前序遍历和中序遍历的结果，请构建该二叉树并返回其根节点。
@@ -54,6 +53,7 @@ Output: [-1]
 `0 <= 节点个数 <= 5000`
 
 ## 思路及代码
+
 [冲刺春招-精选笔面试66题大通关day9](https://ysx.cosine.ren/cn/coding-train/leetcode/bytedance/bytedance-day9/#105) 同款题目
 因为无重复，所以找出根节点在中序遍历中的下标，算出左右子节点数量，切分递归构建即可。
 
@@ -101,13 +101,16 @@ var buildTree = function(preorder, inorder) {
 
 **提示：**
 
--   `-100.0 < x < 100.0`
--   `-2^31 <= n <= 2^31-1`
--   `-10^4 <= xn <= 10^4`
+- `-100.0 < x < 100.0`
+- `-2^31 <= n <= 2^31-1`
+- `-10^4 <= xn <= 10^4`
 
 注意：本题与主站 50 题相同：<https://leetcode-cn.com/problems/powx-n/>
+
 ## 思路及代码
+
 快速幂板子题，就是稍微注意下，踩了个坑，JS中右移符号`>>`是算术移位，需要考虑符号位，而这里应该用`>>>` 逻辑右移，详见[javascript解决问题移位运算的坑](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/solution/javascriptjie-jue-wen-ti-yi-wei-yun-suan-h4u9/)
+
 ```javascript
 /**
  * @param {number} x
@@ -160,7 +163,7 @@ var myPow = function(x, n) {
 
 **提示：**
 
-1.  `数组长度 <= 1000`
+1. `数组长度 <= 1000`
 
 ## 思路及代码
 

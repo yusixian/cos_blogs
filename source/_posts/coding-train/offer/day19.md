@@ -46,11 +46,14 @@ day19题目： [剑指 Offer 64. 求1+2+…+n](https://leetcode-cn.com/problems/
 
 **限制：**
 
--   `1 <= n <= 10000`
+- `1 <= n <= 10000`
+
 ## 思路与代码
+
 看这题的tag：脑筋急转弯就能发现不对劲……
 
 主要就是用短路运算符来代替条件判断
+
 ```javascript
 /**
  * @param {number} n
@@ -89,13 +92,15 @@ var sumNums = function(n) {
 
 **说明:**
 
--   所有节点的值都是唯一的。
--   p、q 为不同节点且均存在于给定的二叉搜索树中。
+- 所有节点的值都是唯一的。
+- p、q 为不同节点且均存在于给定的二叉搜索树中。
 
 注意：本题与主站 235 题相同：<https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/>
 
 ## 思路与代码
+
 根据之前[冲刺春招-精选笔面试66题大通关17](https://ysx.cosine.ren/cn/coding-train/leetcode/bytedance/bytedance-day17/#%E6%80%9D%E8%B7%AF-2)的经验，思路一为先从一个节点往上走将沿途的vis置为true，再从另一个结点往上走，遇到vis为true的就是最近共同祖先，返回。
+
 ```javascript
 /**
  * @param {TreeNode} root
@@ -129,7 +134,9 @@ var lowestCommonAncestor = function(root, p, q) {
     }
 };
 ```
+
 思路二则是利用二叉搜索树的性质，从根节点开始遍历，官方题解如下：
+
 - 若当前节点值大于 `p` 和 `q` 的值，说明 `p` 和 `q` 应该在当前节点的左子树，将当前节点移动到它的左子节点；
 - 若当前节点的值小于 `p` 和 `q` 的值，说明 `p` 和 `q` 应该在当前节点的右子树，将当前节点移动到它的右子节点；
 - 若等于当前节点的值不满足上述两条要求，那么说明当前节点就是「分岔点」。此时，`p` 和 `q` 要么在当前节点的不同的子树中，要么其中一个就是当前节点。
@@ -179,14 +186,17 @@ var lowestCommonAncestor = function(root, p, q) {
 
 **说明:**
 
--   所有节点的值都是唯一的。
--   p、q 为不同节点且均存在于给定的二叉树中。
+- 所有节点的值都是唯一的。
+- p、q 为不同节点且均存在于给定的二叉树中。
 
 注意：本题与主站 236 题相同：<https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/>
+
 ## 思路与代码
+
 用上题的思路1就好了。
 
 `fa`存每个结点的父节点，从上向下遍历一次初始化`fa`，再从下往上初始化 `vis`
+
 ```javascript
 var lowestCommonAncestor = function(root, p, q) {
     if(!root) return null

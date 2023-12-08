@@ -43,12 +43,14 @@ day18题目：[剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/
 
 **提示：**
 
-1.  `节点总数 <= 10000`
+1. `节点总数 <= 10000`
 
 注意：本题与主站 104 题相同：<https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/>
 
 ## 思路及代码
+
 递归，直接返回左右两边最大的深度+1
+
 ```javascript
 /**
  * @param {TreeNode} root
@@ -96,12 +98,14 @@ var maxDepth = function(root) {
 
 **限制：**
 
--   `0 <= 树的结点个数 <= 10000`
+- `0 <= 树的结点个数 <= 10000`
 
 注意：本题与主站 110 题相同：<https://leetcode-cn.com/problems/balanced-binary-tree/>
 
 ## 思路及代码
+
 先判断当前结点的左右子树高度是否满足平衡二叉树要求，然后判断左右子树是否为平衡二叉树，两条件都满足才能为平衡二叉树
+
 ```javascript
 /**
  * @param {TreeNode} root

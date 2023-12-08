@@ -57,9 +57,9 @@ day27题目：[剑指 Offer 59 - I. 滑动窗口的最大值](https://leetcode-c
 
 用一个队列q存储下标，其对应元素单调递减
 
--   若滑动窗口中两个元素 `j < i` 并且 `nums[j] <= nums[i]` ，只要 `j` 还在窗口中，那么 `i` 一定也还在窗口中，所以最值一定不是 `nums[j]`，故可以将其移除
--   滑动过程中记录，若队尾元素小于等于当前新元素，则弹出，直到为空或者队尾元素大于新元素
--   同时若队头所存下标 `q[0]` 小于窗口左侧 `l`，则不断将队首弹出
+- 若滑动窗口中两个元素 `j < i` 并且 `nums[j] <= nums[i]` ，只要 `j` 还在窗口中，那么 `i` 一定也还在窗口中，所以最值一定不是 `nums[j]`，故可以将其移除
+- 滑动过程中记录，若队尾元素小于等于当前新元素，则弹出，直到为空或者队尾元素大于新元素
+- 同时若队头所存下标 `q[0]` 小于窗口左侧 `l`，则不断将队首弹出
 
 ```javascript
 /**
@@ -116,12 +116,13 @@ var maxSlidingWindow = function(nums, k) {
 
 **限制：**
 
--   `1 <= push_back,pop_front,max_value的总操作数 <= 10000`
--   `1 <= value <= 10^5`
+- `1 <= push_back,pop_front,max_value的总操作数 <= 10000`
+- `1 <= value <= 10^5`
 
 ## 思路及代码
 
 比较类似之前的min栈：[剑指offer day1 栈与队列（简单）](https://ysx.cosine.ren/cn/coding-train/leetcode/offer/day1/#offer-30-min)
+
 ```javascript
 // @algorithm @lc id=100337 lang=javascript 
 // @title dui-lie-de-zui-da-zhi-lcof

@@ -20,12 +20,15 @@ categories:
 
 简单模拟放票、购票功能：显示客户在某时刻抢到某号码的票。
 模拟服务器放票，客户端购票功能：服务器显示某时刻放出某些票，在某时刻卖出某张票的信息；客户端显示某时刻买走某张票的信息。
+
 # 思路与代码
+
 服务器为Producer类，客户端为Customer类，均继承Thread实现多线程，然后一个Tickets类，表示余票，一个MyTime类表示时间（
 
 源代码下载在这儿：[cos_javatest2](http://cosine.ren/wp-content/uploads/2021/12/cos_javatest2.zip)
 
 MyTime类：passM函数表示过去minute分钟
+
 ```java
 public class MyTime {
     int hour;
@@ -59,6 +62,7 @@ public class MyTime {
 Tickets类：
 
 重点，total为总共预留的票数（100），time为时间，cid表示售票编号，已售出1票则为1，pid为存票编号，存了10张则为10，available表示是否还有余票，作为同步的标志。初始化均为0，Tickets为两个线程所共享的对象
+
 ```java
 import java.util.List;
 import java.util.Stack;
@@ -106,6 +110,7 @@ public class Tickets {
 
 Customer类如下：继承Thread，重载run
 假设每3分钟有一个顾客买票，与Producer类共享Tickets对象，所以Tickets内部的函数都需是同步的。
+
 ```java
 public class Custormer extends Thread{
     Tickets t = null;
@@ -124,7 +129,6 @@ public class Custormer extends Thread{
     }
 }
 ```
-
 
 Producer类如下：
 
@@ -147,8 +151,6 @@ public class Producer extends Thread {
 }
 ```
 
-
-
 主函数：new两个线程并启动，设置当前时间为20：00
 
 ```java
@@ -168,11 +170,8 @@ public class Main {
 }
 ```
 
-
-
-
-
 # 运行结果
+
 运行结果如下图
 
 ![请添加图片描述](https://img-blog.csdnimg.cn/3e252b685738407d88117e7025042de4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5L2ZY29z,size_20,color_FFFFFF,t_70,g_se,x_16)

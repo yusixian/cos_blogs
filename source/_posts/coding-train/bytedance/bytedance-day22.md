@@ -57,15 +57,16 @@ day22题目：[151. 颠倒字符串中的单词](https://leetcode-cn.com/problem
 
 **提示：**
 
--   `1 <= s.length <= 104`
--   `s` 包含英文大小写字母、数字和空格 `' '`
--   `s` 中 **至少存在一个** 单词
-
+- `1 <= s.length <= 104`
+- `s` 包含英文大小写字母、数字和空格 `' '`
+- `s` 中 **至少存在一个** 单词
 
 **进阶：** 如果字符串在你使用的编程语言中是一种可变数据类型，请尝试使用 `O(1)` 额外空间复杂度的 **原地** 解法。
 
 ## 思路
+
 不讲武德版：一行代码，先去除前后空格，再利用正则将字符串从空白处分割后反转再拼回去
+
 ```javascript
 var reverseWords = function(s) {
     return s.trim().split(/[ ]+/).reverse().join(' ').trim();
@@ -73,7 +74,9 @@ var reverseWords = function(s) {
 ```
 
 `O(1)` 额外空间复杂度的 **原地** 解法：JS字符串不可变，需要O(n)的空间将字符串转换为数组，不行，换成c++的话就是O(1)了。
+
 - 双指针进行反转
+
 ```javascript
 let reverse = function(str, s, e) {
     while(s < e) {
@@ -82,11 +85,13 @@ let reverse = function(str, s, e) {
     }
 }
 ```
+
 - 将字符串转换为数组`ans`的同时去除前后空格和多余空格 `trim2arr`
 - 反转整个数组 `reverse(ans, 0, ans.length - 1)`
 - 反转每个单词使单词内部顺序保持不变 `reverseWord(ans)`
 
 ## 代码
+
 ```javascript
 /**
  * @param {string} s
@@ -128,6 +133,7 @@ var reverseWords = function(s) {
     return ans.join('')                 // 数组转换成字符串
 };
 ```
+
 # [46. 全排列](https://leetcode-cn.com/problems/permutations/)
 
 给定一个不含重复数字的数组 `nums` ，返回其 *所有可能的全排列* 。你可以 **按任意顺序** 返回答案。
@@ -153,17 +159,16 @@ var reverseWords = function(s) {
 输出： [[1]]
 ```
 
- 
-
 **提示：**
 
--   `1 <= nums.length <= 6`
--   `-10 <= nums[i] <= 10`
--   `nums` 中的所有整数 **互不相同**
+- `1 <= nums.length <= 6`
+- `-10 <= nums[i] <= 10`
+- `nums` 中的所有整数 **互不相同**
 
 ## 思路
 
 ## 代码
+
 ```javascript
 /**
  * @param {number[]} nums
@@ -227,13 +232,17 @@ var reverseWords = function(s) {
 ```
 
 **提示：**
--   每个链表中的节点数在范围 `[1, 100]` 内
--   `0 <= Node.val <= 9`
--   题目数据保证列表表示的数字不含前导零
+
+- 每个链表中的节点数在范围 `[1, 100]` 内
+- `0 <= Node.val <= 9`
+- 题目数据保证列表表示的数字不含前导零
 
 ## 思路
+
 跟大数加没什么区别，就是换成了链表而已~
+
 ## 代码
+
 ```javascript
 /**
  * @param {ListNode} l1
@@ -257,7 +266,6 @@ var addTwoNumbers = function(l1, l2) {
     return ehead.next
 };
 ```
-
 
 好耶！完成！
 ![小徽章.png](https://backblaze.cosine.ren/juejin/A14ef457f04f4d85a697dc13ca164927~Tplv-K3u1fbpfcp-Watermark.png)

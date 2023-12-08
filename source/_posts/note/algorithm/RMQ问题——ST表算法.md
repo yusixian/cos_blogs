@@ -14,19 +14,24 @@ categories:
 ---
 
 ## ST表是什么
+
 ST表是一个用来解决区间最值问题查询的算法
 它用**O(nlogn)复杂度预处理，可以实现O(1)复杂度的查询。**
 **缺点：无法支持在线修改**
 模板题：[ST表-洛谷](https://www.luogu.com.cn/problem/P3865)
+
 ### 1.预处理
+
 用一个二维数组dp[i][j]表示下标为 i ~ i + 2^j^ - 1 的最值（最大or最小值）
 则
 ①易知边界条件dp[i][0]为a[i]，既i~i的最大值为其本身
 ②接下来是状态转移方程，如图
 
 > #### **1 << j 相当于 2^j^**
+
 ![](https://img-blog.csdnimg.cn/20200321173713916.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70)
 初始化代码
+
 ```cpp
 void init(int n) {
     for (int i = 0; i < n; i++) {
@@ -39,11 +44,17 @@ void init(int n) {
     }
 }
 ```
+
 ### 2.查询
+
 接下来就是查询，因为每次给出的查询区间长度不一定恰好为2^j，所以我们需要以下定理:（参考[大佬证明](https://blog.csdn.net/Hanks_o/article/details/77547380)）
+
 >##  **2^log(a)^>a/2**
+>
 >### log(a)表示小于等于a的2的最大几次方
+>
 >###### eg:log(4)=2,log(5)=2,log(6)=2,log(7)=2,log(8)=3,log(9)=3……
+
 若我们要查询a~b区间的最小值
 首先我们求出区间长度**len = b-a+1** 并令 **t = log(len)**
 由上述定理，**2^t^>len/2**
@@ -51,15 +62,19 @@ void init(int n) {
 a,b的最小值，即为min（a ~ (a+2^t^-1), (b-2^t^+1) ~ t）如图
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321184107899.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70)
 查询代码：
+
 ```cpp
 ll sol(int a, int b) {
     int t = (int) (log(b-a+1.0)/log(2.0));
     return max(dp[a][t], dp[b-(1<<t)+1][t]);
 }
 ```
+
 ### 3.完整代码
+
 题目：[ST表-洛谷](https://www.luogu.com.cn/problem/P3865)
 开了O2优化和快读才能ac
+
 ```cpp
 #include <iostream>
 #include <algorithm>
@@ -99,5 +114,3 @@ int main() {
     return 0;
 }
 ```
-
-

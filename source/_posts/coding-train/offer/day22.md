@@ -44,10 +44,12 @@ day22题目：[剑指 Offer 56 - I. 数组中数字出现的次数](https://leet
 
 **限制：**
 
--   `2 <= nums.length <= 10000`
+- `2 <= nums.length <= 10000`
 
 ## 思路及代码
+
 分组进行异或，将相同的数字分至一组，不同的两个数组分至不同的一组，通过mask确定分组条件。
+
 ```javascript
 /**
  * @param {number[]} nums
@@ -91,10 +93,13 @@ var singleNumbers = function(nums) {
 
 **限制：**
 
--   `1 <= nums.length <= 10000`
--   `1 <= nums[i] < 2^31`
+- `1 <= nums.length <= 10000`
+- `1 <= nums[i] < 2^31`
+
 ## 思路及代码
+
 每一位贡献加起来%3，为1则为这个数的1。
+
 ```javascript
 /**
  * @param {number[]} nums

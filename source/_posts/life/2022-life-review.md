@@ -38,11 +38,10 @@ categories:
 
 感情上……嗯这个不太好意思说，略过
 
-
-
 温馨提示：下面的回忆大多为流水账哦，可以关闭窗口了。
 
 ## 大一上
+
 入学前，怀念那个能跟家长一起逛校园的日子……
 
 ![qq_pic_merged_1650557330958.jpg](https://fastly.jsdelivr.net/gh/yusixian/imgBed/life/qq_pic_merged_1650557330958.jpg)
@@ -60,8 +59,6 @@ categories:
 - 拍一拍钟楼
 
 ![1650228694745.jpeg](https://fastly.jsdelivr.net/gh/yusixian/imgBed/life/1650228694745.jpeg)
-
-
 
 - 拍一拍晚霞
 
@@ -93,8 +90,6 @@ categories:
 
 ![mmexport1650229146146.jpg](https://fastly.jsdelivr.net/gh/yusixian/imgBed/life/mmexport1650229146146.jpg)
 
-
-
 那是大学有幸参加过得第一次院运动会，那时候谁想得到会是最后一次参加。
 
 ![mmexport1650229193757.jpg](https://fastly.jsdelivr.net/gh/yusixian/imgBed/life/mmexport1650229193757.jpg)
@@ -115,13 +110,12 @@ categories:
 
 ![mmexport1650229658285.jpg](https://fastly.jsdelivr.net/gh/yusixian/imgBed/life/mmexport1650229658285.jpg)
 
-
-
 这么幼稚的人谁啊- -
 
 ![IMG_20220418_050652_1](https://fastly.jsdelivr.net/gh/yusixian/imgBed/life/IMG_20220418_050652_1.jpg)
 
 ## 大一下
+
 在大一上之后的寒假里，我开始提前自学下学期的c++，对代码依然抱有很大的热情，写过很蠢的自我总结，也干过这种事捏。
 
 ![IMG_20220418_051426_1.jpg](https://fastly.jsdelivr.net/gh/yusixian/imgBed/life/IMG_20220418_051426_1.jpg)
@@ -151,11 +145,10 @@ c++综合案例，第一次尝试写点小游戏
 寒假开练，练了一暑假的专题之后，作出决定决定走开发路线而不是acm路线，原因有很多，如对自己不自信、当时找不到队友、对开发更感兴趣等等。现在想想，也不后悔。
 
 ## 大二上
+
 快逃，这学期全是课。还要打工，5号楼值班，虽说每个月能挣个三四百的但是还是蛮累的。
 
 ![mmexport1650230722988.jpg](https://fastly.jsdelivr.net/gh/yusixian/imgBed/life/mmexport1650230722988.jpg)
-
-
 
 选修选了桥牌的倒霉孩子(愿天堂没有桥牌考试)
 
@@ -166,8 +159,6 @@ c++综合案例，第一次尝试写点小游戏
 礼物× 砖头✓ 但是真的沉
 
 ![mmexport1650230581780.jpg](https://fastly.jsdelivr.net/gh/yusixian/imgBed/life/mmexport1650230581780.jpg)
-
-
 
 第一次自己做可乐鸡翅!还有第一次炸薯条给自己吃x很好吃(虽然糊了点)
 
@@ -183,6 +174,7 @@ c++综合案例，第一次尝试写点小游戏
 ![mmexport1650230985241.jpg](https://fastly.jsdelivr.net/gh/yusixian/imgBed/life/mmexport1650230985241.jpg)
 
 ## 大二下
+
 春天到了，花开的很漂亮
 
 ![mmexport1650231082395.jpg](https://fastly.jsdelivr.net/gh/yusixian/imgBed/life/mmexport1650231082395.jpg)
@@ -227,8 +219,6 @@ c++综合案例，第一次尝试写点小游戏
 
 ![mmexport1640286522786.jpg](https://fastly.jsdelivr.net/gh/yusixian/imgBed/life/mmexport1640286522786.jpg)
 
-
-
 ## 大三上
 
 暑假里折腾了云服务器，域名，自动打卡，用WordPress搭了简易博客，期间也试过一阵子个人网盘(感觉没意思)
@@ -255,8 +245,6 @@ c++综合案例，第一次尝试写点小游戏
 去看联动拿了张海报贴宿舍(我超 ○)
 
 ![mmexport1650232079182.jpg](https://fastly.jsdelivr.net/gh/yusixian/imgBed/life/mmexport1650232079182.jpg)
-
-
 
 ![mmexport1650232115925.jpg](https://fastly.jsdelivr.net/gh/yusixian/imgBed/life/mmexport1650232115925.jpg)
 

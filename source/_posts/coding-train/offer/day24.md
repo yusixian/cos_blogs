@@ -25,7 +25,6 @@ day24题目：[剑指 Offer 14- I. 剪绳子](https://leetcode-cn.com/problems/j
 | [剑指 Offer 57 - II. 和为s的连续正数序列](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/) | [数学](https://leetcode-cn.com/tag/math)、[双指针](https://leetcode-cn.com/tag/two-pointers)、[枚举](https://leetcode-cn.com/tag/enumeration) | 简单 |
 | [剑指 Offer 62. 圆圈中最后剩下的数字](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) | [递归](https://leetcode-cn.com/tag/recursion)、[数学](https://leetcode-cn.com/tag/math) | 简单 |
 
-
 # [剑指 Offer 14- I. 剪绳子](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/)
 
 给你一根长度为 `n` 的绳子，请把绳子剪成整数长度的 `m` 段（m、n都是整数，n>1并且m>1），每段绳子的长度记为 `k[0],k[1]...k[m-1]` 。请问 `k[0]*k[1]*...*k[m-1]` 可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。
@@ -48,17 +47,20 @@ day24题目：[剑指 Offer 14- I. 剪绳子](https://leetcode-cn.com/problems/j
 
 **提示：**
 
--   `2 <= n <= 58`
+- `2 <= n <= 58`
 
 注意：本题与主站 343 题相同：<https://leetcode-cn.com/problems/integer-break/>
 
 ## 思路及代码
+
 数学题，没做出来，看了题解的推导 [面试题14- I. 剪绳子](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/solution/mian-shi-ti-14-i-jian-sheng-zi-tan-xin-si-xiang-by/)，主要有以下几点
+
 - 将绳子以相等长度切分为多段时，所得乘积最大。
 - 尽可能将绳子以`长度3等分` 为多段时，乘积最大
-    - 若最后一段为 `2` 保留，不在拆分为 `1+1`
-    - 若最后一段为 `1` 应将一份 `3+1` 换为 `2+2`
+  - 若最后一段为 `2` 保留，不在拆分为 `1+1`
+  - 若最后一段为 `1` 应将一份 `3+1` 换为 `2+2`
 则有以下算法流程：
+
 ```javascript
 /**
  * @param {number} n
@@ -72,7 +74,6 @@ var cuttingRope = function(n) {
     return Math.pow(3, a) * 2
 };
 ```
-
 
 # [剑指 Offer 57 - II. 和为s的连续正数序列](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
 
@@ -93,12 +94,15 @@ var cuttingRope = function(n) {
 输入： target = 15
 输出： [[1,2,3,4,5],[4,5,6],[7,8]]
 ```
+
 **限制：**
 
--   `1 <= target <= 10^5`
+- `1 <= target <= 10^5`
 
 ## 思路及代码
+
 双指针。
+
 ```javascript
 /**
  * @param {number} target
@@ -122,14 +126,11 @@ var findContinuousSequence = function(target) {
 };
 ```
 
-
 # [剑指 Offer 62. 圆圈中最后剩下的数字](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)
 
 0,1,···,n-1这n个数字排成一个圆圈，从数字0开始，每次从这个圆圈里删除第m个数字（删除后从下一个数字开始计数）。求出这个圆圈里剩下的最后一个数字。
 
 例如，0、1、2、3、4这5个数字组成一个圆圈，从数字0开始每次删除第3个数字，则删除的前4个数字依次是2、0、4、1，因此最后剩下的数字是3。
-
- 
 
 **示例 1：**
 
@@ -147,11 +148,13 @@ var findContinuousSequence = function(target) {
 
 **限制：**
 
--   `1 <= n <= 10^5`
--   `1 <= m <= 10^6`
+- `1 <= n <= 10^5`
+- `1 <= m <= 10^6`
 
 ## 思路及代码
+
 约瑟夫环。
+
 ```javascript
 /**
  * @param {number} n
@@ -166,4 +169,3 @@ var lastRemaining = function(n, m) {
    return res
 };
 ```
-

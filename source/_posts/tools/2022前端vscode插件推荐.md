@@ -70,7 +70,7 @@ React代码片段，如题如图
 
 指定配置文件.prettierrc.js，方便在项目中通过自己项目的prettier配置文件进行格式化
 
-Why Prettier？ https://prettier.io/docs/en/why-prettier.html
+Why Prettier？ <https://prettier.io/docs/en/why-prettier.html>
 
 ![](https://backblaze.cosine.ren/juejin/790d631cc229421dafbd8c63b9e5bbc9~Tplv-K3u1fbpfcp-Zoom-1.png)
 ![](https://backblaze.cosine.ren/juejin/D1e5582cd0914923baddb6a3f9e1198b~Tplv-K3u1fbpfcp-Zoom-1.png)
@@ -125,7 +125,7 @@ CSS module模式必备
 
 ### Live Server
 
-比较经典的插件了：https://juejin.cn/post/7006338919767736357
+比较经典的插件了：<https://juejin.cn/post/7006338919767736357>
 
 ![](https://backblaze.cosine.ren/juejin/313f863f15a74da1b05d330c3648269a~Tplv-K3u1fbpfcp-Zoom-1.png)
 
@@ -181,7 +181,7 @@ vscode的项目管理器，一键切换项目
 
 ### Live Share
 
-多人协同，共同编辑，共享终端：https://juejin.cn/post/6844903603182764039
+多人协同，共同编辑，共享终端：<https://juejin.cn/post/6844903603182764039>
 
 ![](https://backblaze.cosine.ren/juejin/28db2cd8bc3940cea3e6d6fe56ce300d~Tplv-K3u1fbpfcp-Zoom-1.png)
 
@@ -311,13 +311,13 @@ Atom 的标志性 One Dark 主题，也是VS Code安装最多的 [主题之一�
 
 ## 截图&gif工具
 
-- Snipaste 截图工具，用过都说好：https://www.snipaste.com/
-- ScreenToGif 顾名思义，录制 gif 的好东西 ：https://www.screentogif.com/
-- OBS 大名鼎鼎的视频录制和直播推流工具，dddd： https://obsproject.com/
+* Snipaste 截图工具，用过都说好：<https://www.snipaste.com/>
+* ScreenToGif 顾名思义，录制 gif 的好东西 ：<https://www.screentogif.com/>
+* OBS 大名鼎鼎的视频录制和直播推流工具，dddd： <https://obsproject.com/>
 
 ## 实用工具
 
-- Everything 快快快快速搜索文件，dddd https://www.voidtools.com/zh-cn/downloads/
+* Everything 快快快快速搜索文件，dddd <https://www.voidtools.com/zh-cn/downloads/>
 
 # 待补充
 

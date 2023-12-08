@@ -15,11 +15,14 @@ categories:
 
 [题目集总目录](https://blog.csdn.net/qq_45890533/article/details/107131440)
 学习笔记指路博客  [线性表](https://blog.csdn.net/qq_45890533/article/details/104528176)、[堆栈](https://blog.csdn.net/qq_45890533/article/details/104546450)
+
 # 02-线性结构1 两个有序链表序列的合并 (15分)
+
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1271415149946912768)
 >这是一道C语言函数填空题，训练最基本的链表操作。如果会用C编程的话，**一定要做**；
 
 ## 代码
+
 ```cpp
 #include <stdio.h>
 #include <stdlib.h>
@@ -75,22 +78,27 @@ List Merge( List L1, List L2 ) {
     return T;
 }
 ```
+
 ## 测试点
+
 测试点如下
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200704224117440.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70)
 
 # 02-线性结构2 一元多项式的乘法与加法运算 (20分)
+
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1271415149946912769)
 
 >这是一道C语言函数填空题，训练最基本的链表操作。如果会用C编程的话，**一定要做**；
 
 ## 思路
+
  **思路:** 用带头结点的链表存储,
  **加法运算时:** 若p1和p2(加法的两链表指针)指数比较后有一方较大，则将那一方直接放到p3中(尾插)，然后较大方的指针后移，若指数相同则**合并同类项**后再插入，注意若系数为0则不将其插入直接两指针后移，最后若还有一方后边有则直接接到L3后，**最后要检查L3为不为空，若为空则插入零多项式。**
 **乘法运算时：** 先用L1中的每一项乘L2的第一项得一个多项式，再用L2中从第二项开始的每一项乘以L1一整个多项式(边乘边比较并插入),或利用加函数(但我用的时候超时了…所以没用)，**最后也要检查L3为不为空，若为空则插入零多项式**
 ps：合并同类项的时候若系数合成0了，要删掉！
 
 ## 代码
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -283,15 +291,18 @@ int main() {
 ```
 
 ## 测试点
+
 测试点如下，虽然少但却卡了我半天2333
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200704225608967.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70)
 
 # 02-线性结构3 Reversing Linked List (25分)
+
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1271415149946912770)
 
 >根据某大公司笔试题改编的2014年春季PAT真题，**不难，可以尝试；**
 >
 ## 题目大意
+
 给定一个常量K和链表L,你应该反转L上每K个元素
 例如，给定L为 1→2→3→4→5→6
 如果K=3，然后必须输出 3→2→1→6→5→4
@@ -322,9 +333,11 @@ int main() {
 68237 6 -1
 
 ## 思路
+
 用结构体存数据，用数组存储下标索引，翻转时只需翻转数组元素，可利用algorithm库中的reverse函数
 
 ## 代码
+
 ```cpp
 #include <iostream>
 #include <algorithm>
@@ -365,14 +378,20 @@ int main() {
    return 0;
 }
 ```
+
 ## 测试点
+
 测试点如下
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705001657198.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70)
+
 # 02-线性结构4 Pop Sequence (25分)
+
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1271415149946912771)
 
 >是2013年PAT春季考试真题，考察队堆栈的基本概念的掌握，**应可以一试**。
+>
 ## 题目大意
+
 给定一个可以保留最多M个数的堆栈M。放入N个数字1、2、3、...，N并随机弹出。你应该告诉给定的数字序列是否可能是堆栈的弹出序列。例如，如果M是5,N是7,我们可以从堆栈中获取1、2、3、4 、5、6、7,但不是3、2、1、7、5、6、4
 输入规格：
 每个输入文件包含一个测试用例。对于每个情况，第一行包含 3 个数字（所有数字不超过 1000）
@@ -395,11 +414,12 @@ M（堆栈的最大容量），N（放入序列的长度），以及K（要检�
 >YES
 >NO
 
+## 思路
 
-## 思路 
 处理每个序列时，先将1压入堆栈，每读入一个数x,将其与栈顶元素比较，若大于栈顶元素则压入直到x-1,若等于栈顶元素，直接弹出，若小于栈顶元素则直接false。若栈为空了，则需要压入一个数，若溢出了，则也是false
 
 ## 代码
+
 ```cpp
 #include <iostream>
 #include <cstring>
@@ -457,6 +477,8 @@ int main() {
     return 0;
 }
 ```
+
 ## 测试点
+
 测试点如下，一次过了
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705142443307.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70)

@@ -13,9 +13,9 @@ categories:
 - [笔记, 青训营笔记]
 ---
 
-#  本节课重点内容
+# 本节课重点内容
 
-##  Why WebGL / Why GPU?
+## Why WebGL / Why GPU?
 
 - WebGL是什么?
   - GPU ≠ WebGL ≠ 3D
@@ -144,7 +144,7 @@ function create3DContext(canvas, options) {
    `;
    ```
 
-2. 使用 **[`createShader()`](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLRenderingContext/createShader)** 创建着色器对象 
+2. 使用 **[`createShader()`](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLRenderingContext/createShader)** 创建着色器对象
 
 3. 使用 **[`shaderSource()`](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLRenderingContext/shaderSource)** 设置着色器的程序代码
 
@@ -163,9 +163,9 @@ function create3DContext(canvas, options) {
 
 5. 使用**[`createProgram()`](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLRenderingContext/createProgram)** 创建 [`WebGLProgram`](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLProgram) 对象
 
-6. 使用 **[`attachShader() `](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLRenderingContext/attachShader)** 往 [`WebGLProgram`](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLProgram) 添加一个片段或者顶点着色器。
+6. 使用 **[`attachShader()`](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLRenderingContext/attachShader)** 往 [`WebGLProgram`](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLProgram) 添加一个片段或者顶点着色器。
 
-7. 使用 **[`linkProgram()` ](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLRenderingContext/linkProgram)**链接给定的[`WebGLProgram`](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLProgram)，从而完成为程序的片元和顶点着色器准备GPU代码的过程。
+7. 使用 **[`linkProgram()`](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLRenderingContext/linkProgram)**链接给定的[`WebGLProgram`](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLProgram)，从而完成为程序的片元和顶点着色器准备GPU代码的过程。
 
 8. 使用 **[`useProgram()`](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLRenderingContext/useProgram)** 将定义好的[`WebGLProgram`](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLProgram) 对象添加到当前的渲染状态
 
@@ -200,7 +200,7 @@ gl.bufferData(gl.ARRAY_BUFFER, points, gl.STATIC_DRAW);
 
 ### 读取缓冲区数据到GPU（Frame Buffer to GPU）
 
-> - [getAttribLocation() ](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLRenderingContext/getAttribLocation)返回了给定[`WebGLProgram`](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLProgram)对象中某属性的下标指向位置。
+> - [getAttribLocation()](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLRenderingContext/getAttribLocation)返回了给定[`WebGLProgram`](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLProgram)对象中某属性的下标指向位置。
 >
 > - [vertexAttribPointer()](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLRenderingContext/vertexAttribPointer) 告诉显卡从当前绑定的缓冲区（bindBuffer()指定的缓冲区）中读取顶点数据。
 > - [enableVertexAttribArray()](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLRenderingContext/enableVertexAttribArray) 可以打开属性数组列表中指定索引处的通用顶点属性数组。
@@ -213,7 +213,7 @@ gl.enableVertexAttribArray(vPosition); // 激活这个变量
 
 ### 输出结果（Output）
 
-[Output](https://code.h5jun.com/kopozi/edit?js,output) 
+[Output](https://code.h5jun.com/kopozi/edit?js,output)
 
 > [drawArrays()](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLRenderingContext/drawArrays) 从向量数组中绘制图元
 
@@ -342,4 +342,3 @@ const triangles = earcut(points)
 这节课老师非常详尽的讲解了WebGL的绘图及其相关库，展示了很多有意思的WebGL小项目~
 
 > 本文引用的大部分内容来自月影老师的课和MDN！月影老师，tql!
-

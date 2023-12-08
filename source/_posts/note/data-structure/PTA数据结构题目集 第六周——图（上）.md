@@ -15,13 +15,19 @@ categories:
 
 [题目集总目录](https://blog.csdn.net/qq_45890533/article/details/107131440)
 学习指路博客 [图](https://blog.csdn.net/qq_45890533/article/details/105475331)
+
 # 06-图1 列出连通集 (25分)
+
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1281571555112456192)
 
 >非常基础的训练，**一定要做**
+>
 ## 题目大意
+
 输出图中所有连通集。先输出DFS的结果，再输出BFS的结果。
+
 ## 代码
+
 ```cpp
 #include <iostream>
 #include <cstdio>
@@ -79,16 +85,20 @@ int main(){
     return 0;
 }
 ```
+
 ## 测试点
+
 测试点如下
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200720143957974.png)
 
 # 06-图2 Saving James Bond - Easy Version (25分)
+
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1281571555116650496)
 
 >可怜的007在等着你拯救，你……看着办哈；
 
-## 代码：
+## 代码
+
 ```cpp
 #include <iostream>
 #include <cstdio>
@@ -155,15 +165,20 @@ int main(){
     return 0;
 }
 ```
+
 ## 测试点
 
 测试点如下
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200720154807443.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70)
+
 # 06-图3 六度空间 (30分)
+
 [本题链接](https://pintia.cn/problem-sets/1268384564738605056/problems/1281571555116650497)
 
 >在听完课以后，这题的思路应该比较清晰了，不过实现起来还是颇有码量的，有时间就尝试一下。
+>
 ## 题目大意
+
 给你一个社交网络图，请你对每个节点计算符合“六度空间”理论的结点占结点总数的百分比。
 
 ## 代码
@@ -219,6 +234,8 @@ int main(){
     return 0;
 }
 ```
+
 ## 测试点
+
 测试点如下
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200720162512662.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODkwNTMz,size_16,color_FFFFFF,t_70)

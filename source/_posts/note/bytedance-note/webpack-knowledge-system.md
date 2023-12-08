@@ -68,7 +68,7 @@ Web本质上是一种前端资源**编译**、**打包**工具
 
    ![image.png](https://backblaze.cosine.ren/juejin/e51b8a1d34ef475b80cc4d6306ad835c~tplv-k3u1fbpfcp-watermark.png)
 
-2. 编辑配置文件webpack.config.js 
+2. 编辑配置文件webpack.config.js
 
    ```
    module.exports = {
@@ -91,8 +91,6 @@ Web本质上是一种前端资源**编译**、**打包**工具
    ```js
    npx webpack
    ```
-
-   
 
 ### 步骤
 
@@ -178,7 +176,7 @@ ps：官网文档确实，看不太懂（）
    npm -D @babel/core @babel/preset-env babel-loader
    ```
 
-2. 声明入口 `entry `& 产物出口`output`
+2. 声明入口 `entry`& 产物出口`output`
 
 3. 添加module处理css文件
 
@@ -226,6 +224,7 @@ ps：官网文档确实，看不太懂（）
    ```
 
 2. 配置
+
 ````
 const path = require( ”path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -247,7 +246,7 @@ module.exports = {
 
 参考资料：
 
-- [HtmlWebpackPlugin ](https://webpack.js.org/plugins/html-webpack-plugin/)
+- [HtmlWebpackPlugin](https://webpack.js.org/plugins/html-webpack-plugin/)
 
 ### 使用Webpack——HMR
 
@@ -257,8 +256,8 @@ Hot Module Replacement——模块热替换（写的代码会被立刻更新到�
 
    ```js
    module.exports={
-   	// ...
-   	devServer: {
+    // ...
+    devServer: {
            hot:true; // 必需
        }
    };
@@ -272,7 +271,7 @@ Hot Module Replacement——模块热替换（写的代码会被立刻更新到�
 
 Tree-Shaking -树摇，用于删除**Dead Code**
 
-**Dead Code** 
+**Dead Code**
 
 - 代码没有被用到，不可到达
 - 代码的执行结果不会被用到
@@ -286,14 +285,15 @@ Tree-Shaking
 
 - mode: "production"
 - optimization: {usedExports: true}
+
 ```
   module.exports = {
-  	entry: "./src/ index",
-  	mode: "production",
-  	devtool: false,
-  	optimization: {
-  		usedExports: true, 
-  	},
+   entry: "./src/ index",
+   mode: "production",
+   devtool: false,
+   optimization: {
+    usedExports: true, 
+   },
   };
 ```
 
@@ -364,9 +364,9 @@ module.exports = {
 
 ```
 module.exports = function(source, sourceMap?, data?) {
-	// source 为loader的输入
-	//可能是文件内容，也可能是上一个loader处理结果
-	return source;
+ // source 为loader的输入
+ //可能是文件内容，也可能是上一个loader处理结果
+ return source;
 };
 ```
 
@@ -387,7 +387,7 @@ module.exports = function(source, sourceMap?, data?) {
 ### 什么是插件
 
 - 很多知名工具，如:
-  -  VS Code、Web Storm、Chrome、Firefox
+  - VS Code、Web Storm、Chrome、Firefox
   - Babel、Webpack、 Rollup、 Eslint
   - Vue、Redux、 Quill、 Axios
 - 等等，都设计了所谓"插件”架构，为什么?
@@ -416,8 +416,8 @@ module.exports = function(source, sourceMap?, data?) {
 ```js
 class SomePlugin {
     apply(compile) {
-    	compiler.hooks.thisCompilation.tap('SomePlugin', (compilation) => {
-    	})
+     compiler.hooks.thisCompilation.tap('SomePlugin', (compilation) => {
+     })
     }
 }
 ```
@@ -446,7 +446,7 @@ class SomePlugin {
 参考资料：
 
 - [一文吃透 Webpack 核心原理](https://mp.weixin.qq.com/s/SbJNbSVzSPSKBe2YStn2Zw)
-- [ Webpack 插件架构深度讲解](https://mp.weixin.qq.com/s/tXkGx6Ckt9ucT2o8tNM-8w)
+- [Webpack 插件架构深度讲解](https://mp.weixin.qq.com/s/tXkGx6Ckt9ucT2o8tNM-8w)
 
 ## 如何学习Webpack
 
@@ -486,4 +486,3 @@ A：网上很多面试主要围绕三种主题
 一些资源：[深入浅出 Webpack](https://webpack.wuhaolin.cn/)
 
 > 本文引用的大部分内容来自范文杰老师的课，欢迎关注老师的公众号：**Tecvan**
-

@@ -22,6 +22,7 @@ day3题目：[206. 反转链表](https://leetcode-cn.com/problems/reverse-linked
 <!-- more -->
 
 # 206. 反转链表
+
 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。
 
 >示例 1：
@@ -35,10 +36,13 @@ day3题目：[206. 反转链表](https://leetcode-cn.com/problems/reverse-linked
 > 示例 3：
 输入：head = []
 输出：[]
- 
+
 ## 思路
+
 day1做的里边就有这题的思路，也不用多说了
+
 ## 完整代码
+
 ```js
 /**
  * @param {ListNode} head
@@ -58,6 +62,7 @@ var reverseList = function(head) {
 ```
 
 # 199. 二叉树的右视图
+
 给定一个二叉树的 根节点 root，想象自己站在它的右侧，按照从顶部到底部的顺序，返回从右侧所能看到的节点值。
 > 示例1:
 输入: [1,2,3,null,5,null,4]
@@ -72,9 +77,11 @@ var reverseList = function(head) {
 输出: []
 
 ## 思路
+
 这才是简单题吧啊喂，bfs就完事了，先右后左，高度若是小于maxh则不放入答案数组
 
 ## 完整代码
+
 ```js
 /**
  * @param {TreeNode} root
@@ -97,11 +104,14 @@ var rightSideView = function(root) {
     return ans;
 };
 ```
+
 # bytedance-016. 16. 最短移动距离
+
 给定一棵 n 个节点树。节点 1 为树的根节点，对于所有其他节点 i，它们的父节点编号为 floor(i/2) (i 除以 2 的整数部分)。在每个节点 i 上有 a[i] 个房间。此外树上所有边均是边长为 1 的无向边。
 树上一共有 m 只松鼠，第 j 只松鼠的初始位置为 b[j]，它们需要通过树边各自找到一个独立的房间。请为所有松鼠规划一个移动方案，使得所有松鼠的总移动距离最短。
 
 输入：
+
 - 输入共有三行。
 - 第一行包含两个正整数 n 和 m，表示树的节点数和松鼠的个数。
 - 第二行包含 n 个自然数，其中第 i 个数表示节点 i 的房间数 a[i]。
@@ -109,7 +119,6 @@ var rightSideView = function(root) {
 输出：
 - 输出一个数，表示 m 只松鼠各自找到独立房间的最短总移动距离。
 示例：
-
 
 > 输入：
      5 4
@@ -124,12 +133,15 @@ var rightSideView = function(root) {
 对于所有数据，满足 n,m<=100000，0<=a[i]<=m, 1<=b[j]<=n。
 
 ## 思路
+
 字节，重新定义简单题！还是看评论才有的思路QAQ
 注意下标从1开始...
 读入房间数的时候，记录总房间数sum，用cnt记录未被使用房间数，读入松鼠时将其所处节点的a[b]减一，后续从最低层开始遍历，遇到松鼠将其往上走，遇到房间且还有需求时将房间往上走（但是只能解决自上而下的最短路径，等官方题解了。）
 ps:开不开快读影响很大！
 pps:测试用例好像很弱，所以估计还有bug
+
 ## 完整代码
+
 ```cpp
 #include <iostream>
 #include <cmath>
@@ -173,4 +185,5 @@ int main() {
     return 0;
 }
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/64d0c97f77624818bed3d56e5669386a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5L2ZY29z,size_20,color_FFFFFF,t_70,g_se,x_16)

@@ -95,8 +95,6 @@ categories:
 
 如图：比如字节小程序是TTML/JS/TTSS，而微信小程序则是WXML/JS/WXSS，对应HTML/JS/CSS
 
-
-
 ## 实现简易番茄时钟
 
 下面试一试在微信小程序上实现如图一个番茄钟~（不同的小程序语法上大同小异）
@@ -104,7 +102,6 @@ categories:
 [代码片段](https://developers.weixin.qq.com/s/XpqAlHm87owi)
 
 ![番茄钟.gif](https://backblaze.cosine.ren/juejin/B8ada35bb88143319ce17603de92c141~Tplv-K3u1fbpfcp-Watermark.gif)
-
 
 ### 编写tomatoClock.wxml（html）
 
@@ -126,7 +123,7 @@ categories:
 
 ```js
 // pages/apply/tomatoClock/tomatoClock.js
-const DEFAULT_TIME = 25*60;	// 25分钟
+const DEFAULT_TIME = 25*60; // 25分钟
 function formatTime(time) {
   const minutes = Math.floor(time / 60);
   const seconds = time % 60;
@@ -258,8 +255,6 @@ page { background-color: #97ABFF; }
 >
 > 和抽象语法树相对的是具体语法树（通常称作[分析树](https://zh.wikipedia.org/wiki/分析树)）。一般的，在源代码的翻译和[编译](https://zh.wikipedia.org/wiki/编译)过程中，[语法分析器](https://zh.wikipedia.org/wiki/語法分析器)创建出分析树，然后从分析树生成AST。一旦AST被创建出来，在后续的处理过程中，比如[语义分析](https://zh.wikipedia.org/wiki/语义分析)阶段，会添加一些信息。
 
-
-
 ![image.png](https://backblaze.cosine.ren/juejin/a563ebdd42444d7e9f722ae3e570e268~tplv-k3u1fbpfcp-watermark.png)
 
 解析 -> 生成AST语法树 ->生成页面
@@ -298,7 +293,6 @@ page { background-color: #97ABFF; }
 #### 运行时结构
 
 ![image.png](https://backblaze.cosine.ren/juejin/001298b57b23466a94e02a31bfb1c1ba~tplv-k3u1fbpfcp-watermark.png)
-
 
 - 运行时的方案也不是完美的
 - 在一些场景下相比原生小程序的语法性能会更差

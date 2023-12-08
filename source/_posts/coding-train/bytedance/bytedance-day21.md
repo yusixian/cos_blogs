@@ -46,12 +46,15 @@ day21题目：[69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)、[9
 
 **提示：**
 
--   `0 <= x <= 2^31 - 1`
+- `0 <= x <= 2^31 - 1`
 
 ## 思路
+
 - 二分，平分根在`0`到`x`之间，且`0`到`x`有序。
 - 当 `mid*mid <= x` 说明 `mid` 小了，在右半侧搜寻
+
 ## 代码
+
 ```javascript
 /**
  * @param {number} x
@@ -68,6 +71,7 @@ var mySqrt = function(x) {
     return r
 };
 ```
+
 # [912. 排序数组](https://leetcode-cn.com/problems/sort-an-array/)
 
 给你一个整数数组 `nums`，请你将该数组升序排列。
@@ -88,20 +92,25 @@ var mySqrt = function(x) {
 
 **提示：**
 
--   `1 <= nums.length <= 5 * 10^4`
--   `-5 * 10^4 <= nums[i] <= 5 * 10^4`
+- `1 <= nums.length <= 5 * 10^4`
+- `-5 * 10^4 <= nums[i] <= 5 * 10^4`
 
 ## 思路
+
 - 不讲武德版：直接调用排序函数
+
 ```javascript
 var sortArray = function(nums) {
     return nums.sort((a, b) => a - b);
 };
 ```
+
 要练习各种排序算法的话，这个题目就挺合适的，这里给一个归并排序的版本吧。
 
 ![image.png](https://backblaze.cosine.ren/juejin/2bd159fb46df41c193aeaa62e5dcf87e~tplv-k3u1fbpfcp-watermark.png)
+
 ## 代码
+
 ```javascript
 /**
  * @param {number[]} nums
@@ -130,6 +139,7 @@ var sortArray = function(nums) {
     return nums
 };
 ```
+
 # [887. 鸡蛋掉落](https://leetcode-cn.com/problems/super-egg-drop/)
 
 给你 `k` 枚相同的鸡蛋，并可以使用一栋从第 `1` 层到第 `n` 层共有 `n` 层楼的建筑。
@@ -167,16 +177,20 @@ var sortArray = function(nums) {
 ```
 
 **提示：**
--   `1 <= k <= 100`
--   `1 <= n <= 10^4`
+
+- `1 <= k <= 100`
+- `1 <= n <= 10^4`
 
 ## 思路
+
 - 又是一道完全没有思路的题，看了题解之后，感觉第三种解法最好理解，推荐阅读：[题目理解 + 基本解法 + 进阶解法 - 鸡蛋掉落](https://leetcode-cn.com/problems/super-egg-drop/solution/ji-ben-dong-tai-gui-hua-jie-fa-by-labuladong/)
 - 逆向思维，将问题转换为 `k` 个鸡蛋，最少掉落次数为 `f` 次，最大能测的楼层数 `n` 是多少
-    - 当 `k == 1` 即只有一个鸡蛋或 `f == 1` 即只有一次掉落机会时，最大楼层数为 `f+1`
-    - 其他时候，最大楼层数为鸡蛋碎了的情况，与鸡蛋没碎的情况下能测的最大楼层数加起来
+  - 当 `k == 1` 即只有一个鸡蛋或 `f == 1` 即只有一次掉落机会时，最大楼层数为 `f+1`
+  - 其他时候，最大楼层数为鸡蛋碎了的情况，与鸡蛋没碎的情况下能测的最大楼层数加起来
 - 当最大能测的楼层数为 `n` 时，我们就返回当前 `f`
+
 ## 代码
+
 ```javascript
 /**
  * @param {number} k

@@ -12,7 +12,7 @@ tags:
 categories:
 - [笔记, 青训营笔记]
 ---
-#  本节课重点内容
+# 本节课重点内容
 
 ## Node.js 的应用场景（why）
 
@@ -76,7 +76,7 @@ categories:
 
     ```js
     function fibonacci(num:number):number {
-    	if(num === 1 || num === 2) {
+     if(num === 1 || num === 2) {
             return 1;
         }
         return fibonacci(num-1) + fibonacci(num-2);
@@ -114,7 +114,7 @@ categories:
 - Mac, Linux推荐使用nvm。**多版本管理。**
 - Windows推荐nvm4w或是[官方安装包](https://nodejs.org/en/download/)。
 - 安装慢，安装失败的情况，设置安装源
-  - NVM_ NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node nvm install 16
+  - NVM_NODEJS_ORG_MIRROR=<https://npmmirror.com/mirrors/node> nvm install 16
 
 ### 编写Http Server + Client, 收发GET, POST请求
 
@@ -128,7 +128,7 @@ categories:
 
     >req 请求，res响应
 
-    [`server.listen`](https://nodejs.org/api/http.html#serverlisten) 说明 
+    [`server.listen`](https://nodejs.org/api/http.html#serverlisten) 说明
 
     > port 要监听的端口号，成功后的回调函数
 
@@ -139,7 +139,7 @@ categories:
     });
     const port = 3000;
     server.listen(port, () => {
-        console.log(`server listens on:${port}`);	// 监听3000端口
+        console.log(`server listens on:${port}`); // 监听3000端口
     })
 
 - 使用node启动，此时输入localhost:3000就可以看到hello
@@ -149,6 +149,7 @@ categories:
 ![image.png](https://backblaze.cosine.ren/juejin/7baced8533a046adb95f1acd0a92bd87~tplv-k3u1fbpfcp-watermark.png)
 
 - 改为JSON版
+
 ```js
   const server = http.createServer((req, res) => {
       // receive body from client
@@ -175,9 +176,8 @@ categories:
   });
   ```
 
-  - ![image.png](https://backblaze.cosine.ren/juejin/25a3c3639d4947b290df7623d97a87bb~Tplv-K3u1fbpfcp-Watermark.png)
-  - ![image.png](https://backblaze.cosine.ren/juejin/a752766165644b1c8bf4e1493a482c6a~tplv-k3u1fbpfcp-watermark.png)
-
+- ![image.png](https://backblaze.cosine.ren/juejin/25a3c3639d4947b290df7623d97a87bb~Tplv-K3u1fbpfcp-Watermark.png)
+- ![image.png](https://backblaze.cosine.ren/juejin/a752766165644b1c8bf4e1493a482c6a~tplv-k3u1fbpfcp-watermark.png)
 
 #### Http Client
 

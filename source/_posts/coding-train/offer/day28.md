@@ -44,8 +44,8 @@ day28题目：[剑指 Offer 37. 序列化二叉树](https://leetcode-cn.com/prob
 
 注意：本题与主站 297 题相同：<https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/>
 
-
 ## 思路及代码
+
 - 序列化：先序遍历二叉树，遇到空子树的时序列化成 `N,`，值序列化为值+`,`并继续递归序列化。
 
 ```javascript
@@ -59,8 +59,8 @@ function seria(root, str) {
 ```
 
 - 反序列化：将原先的序列分割开来，得到元素列表，然后从左向右遍历这个序列
-    - 当前的元素为 `N`则当前为空树
-    - 先解析这棵树的左子树，再解析它的右子树
+  - 当前的元素为 `N`则当前为空树
+  - 先解析这棵树的左子树，再解析它的右子树
 
 ```javascript
 function deseria(arr) {
@@ -150,6 +150,7 @@ var deserialize = function(data) {
 `1 <= s 的长度 <= 8`
 
 ## 思路及代码
+
 经典の字符串全排列
 
 不过注意，这里是有重复元素的全排列~所以需要用到map，之前出现过的就不必再排列

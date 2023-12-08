@@ -51,6 +51,7 @@ Android Studio 默认安装最新的 Android SDK。 使用本机代码构建 Rea
 
 1. 打开 Android Studio，单击“More Actions”按钮并选择“SDK Manager”。
 2. 从SDK Manager中选择“SDK Platforms”选项卡，然后勾选右下角“Show Package Details”旁边的框。查找并展开  `Android 13 (Tiramisu)`  条目，然后确保选中以下项目：
+
 - `Android SDK Platform 33`
 - `Intel x86 Atom_64 System Image`  或者  `Google APIs Intel x86 Atom System Image`
 

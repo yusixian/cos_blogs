@@ -26,7 +26,6 @@ day13题目：[剑指 Offer 21. 调整数组顺序使奇数位于偶数前面](h
 | [剑指 Offer 57. 和为s的两个数字](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/) | [数组](https://leetcode-cn.com/tag/array)、[双指针](https://leetcode-cn.com/tag/two-pointers)、[二分查找](https://leetcode-cn.com/tag/binary-search) | 简单 |
 | [剑指 Offer 58 - I. 翻转单词顺序](https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/) | [双指针](https://leetcode-cn.com/tag/two-pointers)、[字符串](https://leetcode-cn.com/tag/string) | 简单 |
 
-
 # [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面](https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
 
 输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有奇数在数组的前半部分，所有偶数在数组的后半部分。
@@ -41,11 +40,13 @@ day13题目：[剑指 Offer 21. 调整数组顺序使奇数位于偶数前面](h
 
 **提示：**
 
-1.  `0 <= nums.length <= 50000`
-1.  `0 <= nums[i] <= 10000`
+1. `0 <= nums.length <= 50000`
+1. `0 <= nums[i] <= 10000`
 
 ## 思路及代码
+
 双指针，左指针 `l` 若为正确的奇数则往右走，右指针 `r` 若为正确的偶数则往左走，走到两指针都不满足条件时交换这两个数即可达成目的
+
 ```javascript
 /**
  * @param {number[]} nums
@@ -65,6 +66,7 @@ var exchange = function(nums) {
     return nums
 };
 ```
+
 # [剑指 Offer 57. 和为s的两个数字](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
 
 输入一个递增排序的数组和一个数字s，在数组中查找两个数，使得它们的和正好是s。如果有多对数字的和等于s，则输出任意一对即可。
@@ -85,11 +87,13 @@ var exchange = function(nums) {
 
 **限制：**
 
--   `1 <= nums.length <= 10^5`
--   `1 <= nums[i] <= 10^6`
+- `1 <= nums.length <= 10^5`
+- `1 <= nums[i] <= 10^6`
 
 ## 思路及代码
+
 思路1：hash简单粗暴存储
+
 ```javascript
 /**
  * @param {number[]} nums
@@ -104,8 +108,10 @@ var twoSum = function(nums, target) {
     }
 };
 ```
+
 思路2：双指针
 速度非常的amazing啊。由于是排好序的数组，所以左右指针指向的值加起来若等于目标数，则找到结果，否则若小于目标数，则左指针往右走增大当前数，否则右指针往左走减小当前数。
+
 ```javascript
 /**
  * @param {number[]} nums
@@ -125,7 +131,7 @@ var twoSum = function(nums, target) {
 
 # [剑指 Offer 58 - I. 翻转单词顺序](https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/)
 
-输入一个英文句子，翻转句子中单词的顺序，但单词内字符的顺序不变。为简单起见，标点符号和普通字母一样处理。例如输入字符串"I am a student. "，则输出"student. a am I"。 
+输入一个英文句子，翻转句子中单词的顺序，但单词内字符的顺序不变。为简单起见，标点符号和普通字母一样处理。例如输入字符串"I am a student. "，则输出"student. a am I"。
 
 **示例 1：**
 
@@ -149,20 +155,23 @@ var twoSum = function(nums, target) {
 输出: "example good a"
 解释: 如果两个单词间有多余的空格，将反转后单词间的空格减少到只含一个。
 ```
+
 **说明：**
 
--   无空格字符构成一个单词。
--   输入字符串可以在前面或者后面包含多余的空格，但是反转后的字符不能包括。
--   如果两个单词间有多余的空格，将反转后单词间的空格减少到只含一个。
+- 无空格字符构成一个单词。
+- 输入字符串可以在前面或者后面包含多余的空格，但是反转后的字符不能包括。
+- 如果两个单词间有多余的空格，将反转后单词间的空格减少到只含一个。
 
 **注意：** 本题与主站 151 题相同：<https://leetcode-cn.com/problems/reverse-words-in-a-string/>
 
 **注意：** 此题对比原题有改动
 
 ## 思路及代码
+
 [冲刺春招-精选笔面试66题大通关day22](https://ysx.cosine.ren/cn/coding-train/leetcode/bytedance/bytedance-day22/#%E6%80%9D%E8%B7%AF)中的同款题目，所以题解直接搬过来。
 
 不讲武德版：一行代码，先去除前后空格，再利用正则将字符串从空白处分割后反转再拼回去
+
 ```javascript
 var reverseWords = function(s) {
     return s.trim().split(/[ ]+/g).reverse().join(' ')

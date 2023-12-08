@@ -11,7 +11,7 @@ categories:
 - 项目集锦
 ---
 
-使用 koa2 + Sequelize 搭建的校园社区后端，巧妇难为无米之炊！一个厉害的项目的后端！ 
+使用 koa2 + Sequelize 搭建的校园社区后端，巧妇难为无米之炊！一个厉害的项目的后端！
 
 # 前言及项目介绍
 
@@ -19,15 +19,17 @@ categories:
 
 个人感觉这个接口系统麻雀虽小五脏俱全（某后端爷评价），既有两个前端（PC端的后台管理系统和手机端的校园社区），又有后端完善的接口，倒挺**适合新人**初学，也确实有过学弟学妹来问我我问题，故打算完善一下写篇博客总结一下。
 
-后端项目一直运行在自己的云服务器上，可请求 http://cosine.ren:8000 尝试（~~轻点打，求求了，虽然有备份~~），哪天要是挂了我也不好说，建议大家本地运行前后端尝试~
+后端项目一直运行在自己的云服务器上，可请求 <http://cosine.ren:8000> 尝试（~~轻点打，求求了，虽然有备份~~），哪天要是挂了我也不好说，建议大家本地运行前后端尝试~
 
 个人认为**优点**是
+
 - **文档**很齐全（接口文档、开发文档、bug记录...），这在以后的我看来也是很有用的事，实习之后就不怎么写文档了
 - 基本的增删改查加上统计都有涉及到，接口规范遵循 `Restful` （老实说，当时不知道restful的概念但是自然而然的就用到了）
 - 主要参数基本都有中间件进行校验，权限控制等，代码里的注释特别多
 - 错误码有专门的说明，接口函数都有注释（实习之后愈发觉得这真的是太棒了...）
 
 **缺点**问题也很明显
+
 - **分支管理**压根没有（当时还不熟悉，加上大家开发的都是不同功能，直接在master分支开发并解决冲突）
 - 很多功能**实现简单**，毕竟工期也就快一个月
 - 当时刚学，也没有用 prettier 这类**代码格式化**工具，也没上 ts，现在的新项目基本都会使用 ts
@@ -43,14 +45,15 @@ categories:
 
 如果觉得不错的话，就 star 一个吧~也欢迎提 issue 和 pr
 
-##  后端接口
-- 接口文档：https://www.apifox.cn/apidoc/shared-9459ed60-58b2-45b8-b5a8-89a63d77357f/api-11836993
-- 仓库链接： https://github.com/yusixian/campus-community-backend
+## 后端接口
+
+- 接口文档：<https://www.apifox.cn/apidoc/shared-9459ed60-58b2-45b8-b5a8-89a63d77357f/api-11836993>
+- 仓库链接： <https://github.com/yusixian/campus-community-backend>
 - 主要技术栈： `nodejs` `koa2` `websocket` `sequelize`
-    - 使用 `PM2` 将项目部署至云服务器，配置 `Nginx` 反向代理
-    - 使用 `koa-cors` 解决跨域问题，设置了错误日志及日志分割
-    - 利用 `Sequelize ORM` 进行数据库的操作，使用 `JWT` 实现用户身份验证与信息加密，利用 `WebSocket` 实现在线用户数监测
-    - 文章的**软删除**、恢复等
+  - 使用 `PM2` 将项目部署至云服务器，配置 `Nginx` 反向代理
+  - 使用 `koa-cors` 解决跨域问题，设置了错误日志及日志分割
+  - 利用 `Sequelize ORM` 进行数据库的操作，使用 `JWT` 实现用户身份验证与信息加密，利用 `WebSocket` 实现在线用户数监测
+  - 文章的**软删除**、恢复等
 
 ![image.png](https://backblaze.cosine.ren/juejin/915cbdc8cc5b42848b2883a15dea1dcc~Tplv-K3u1fbpfcp-Watermark.png)
 
@@ -60,9 +63,9 @@ categories:
 
 ![image.png](https://backblaze.cosine.ren/juejin/6750bfaa8d3f4e4ebd1c041a019f4783~tplv-k3u1fbpfcp-watermark.png)
 
-
 ## 前端（PC端后台管理系统）
-- 前端（PC端后台管理系统）地址：https://gitee.com/honxinn/back-manage
+
+- 前端（PC端后台管理系统）地址：<https://gitee.com/honxinn/back-manage>
 - 基于 `Vue3` + `Vite` 构建
 
 ![image.png](https://backblaze.cosine.ren/juejin/Fd5a2bf10be047edb453f81be9eaaf09~Tplv-K3u1fbpfcp-Watermark.png)
@@ -80,7 +83,8 @@ categories:
 ![image.png](https://backblaze.cosine.ren/juejin/cddfac51e0a14b9684e54ed32ce29de0~tplv-k3u1fbpfcp-watermark.png)
 
 ## 前端（移动端）
-- 前端（移动端）仓库地址：https://gitee.com/honxinn/campus-sns-campus-community
+
+- 前端（移动端）仓库地址：<https://gitee.com/honxinn/campus-sns-campus-community>
 - 基于 `Vue3` + `Vite` 构建
 
 | 演示 |  |
@@ -96,6 +100,7 @@ categories:
 [bug回忆录](https://github.com/yusixian/campus-community-backend/blob/master/bug%E5%9B%9E%E5%BF%86%E5%BD%95.md) 顾名思义，搭建过程中的问题记录
 
 ### 接口功能说明
+
 - [x] 功能实现
   - [x] 数据统计
     - [x] 获取社区十大热帖
@@ -109,7 +114,7 @@ categories:
     - [x] 删除/屏蔽文章
     - [x] 获取文章总数
     - [x] 恢复被删除/屏蔽文章
-  - [x] 评论管理 comment 
+  - [x] 评论管理 comment
     - [x] 回复文章
     - [x] 回复评论
   - [x] 分区管理 partition
@@ -133,7 +138,7 @@ categories:
     - [x] 支持模糊搜索、搜索关键字联想
     - [x] 支持点赞
     - [x] 支持收藏
-    - [x] 支持发图片 
+    - [x] 支持发图片
 
 ## 目录结构
 
@@ -187,7 +192,6 @@ categories:
 - package.json npm的插件版本号等
 - 一些文档
 
-
 ## 运行方式（后端）
 
 ```bash
@@ -199,6 +203,7 @@ npm install
 ```
 
 ### 数据库的相关配置
+
 - 1.在本地打开数据库(一般都是默认打开的mysql) 如果没有打开使用cmd命令`net start mysql`
 - 2.登录数据库后建立一个数据库，比如名字叫`schoolcommunity`，当然你也可以用`navicat`等来创建
 - 3.在本项目的 `.env` 文件中更新 mysql 的相关配置

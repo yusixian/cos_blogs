@@ -65,7 +65,7 @@ export class Request {
 
 实际中使用如下：利用getInstance静态方法创建该单例对象，并测试起执行时间进行对比。
 
-> ps: 这里的测试是使用[Jest ](https://www.jestjs.cn/)进行的，其中用到了部分[expect](https://www.jestjs.cn/docs/expect)的api，可以通过文档了解其用途
+> ps: 这里的测试是使用[Jest](https://www.jestjs.cn/)进行的，其中用到了部分[expect](https://www.jestjs.cn/docs/expect)的api，可以通过文档了解其用途
 
 ```ts
 // 不预先进行请求，测试其时间。
@@ -86,7 +86,7 @@ test('should response quickly second time with class', async() => {
     const startTime = Date.now();   // 测试这一部分的时间
     const request2 = Request.getinstance();
     await request2.request('/user/1');
-    const endTime = Date.now();		//
+    const endTime = Date.now();  //
 
     const costTime = endTime-startTime;
     expect(costTime).toBeLessThan(50);
@@ -295,8 +295,6 @@ export const createProxyUser = (name:string) => {
 }
 ```
 
-
-
 ## 迭代器模式
 
 在不暴露数据类型的情况下访问集合中的数据，常用于数据结构中拥有多种数据类型（列表、
@@ -355,7 +353,7 @@ test("can iterate root element", () => {
     main.addChildren(content);
     
     const expectTags: string[] = [];
-    for(const element of body) {	// 迭代body的所有元素，需要包含main中的子元素
+    for(const element of body) { // 迭代body的所有元素，需要包含main中的子元素
         if(element) {
             expectTags.push(element.tag);
         }
@@ -375,7 +373,7 @@ test("can iterate root element", () => {
 
 ```html
 <template>
-	<button @click="count++">count is:{{ count }}</button>
+ <button @click="count++">count is:{{ count }}</button>
 </template>
 <script setup lang="ts">
 import {ref} from "vue";
@@ -393,7 +391,7 @@ const count = ref(0);
 
 ```html
 <template>
-	<button @click="count++">count is:{{ count }}</button>
+ <button @click="count++">count is:{{ count }}</button>
 </template>
 <script setup lang="ts">
 import { ref, onBeforeUpdate, onUpdated } from "vue";
@@ -408,8 +406,6 @@ onUpdated(() => {
 </script>
 ```
 
-
-
 ## 组合模式
 
 可以多个对象组合使用，也可以单个对象独立使用，常应用于前端组件，最经典的就是React的组件结构：
@@ -422,8 +418,8 @@ onUpdated(() => {
 export const Count = () => {
     const [count, setCount] = useState(0);
     return (
-    	<button onClick={() => setCount((count) => count+1)}>
-        	count is: {count}
+     <button onClick={() => setCount((count) => count+1)}>
+         count is: {count}
         </button>
     );
 };
@@ -435,15 +431,13 @@ export const Count = () => {
 function App() {
     return (
         <div className = "App">
-        	<Header />
+         <Header />
             <Count />
             <Footer />
         </div>
     );
 }
 ```
-
-
 
 # 总结感想
 

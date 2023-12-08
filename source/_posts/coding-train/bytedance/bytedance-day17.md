@@ -30,7 +30,6 @@ day17题目：[141. 环形链表](https://leetcode-cn.com/problems/linked-list-c
 
 *如果链表中存在环* ，则返回 `true` 。 否则，返回 `false` 。
 
-
 **示例 1：**
 
 ![](https://backblaze.cosine.ren/juejin/194b1ae012b044ec9c443d9fba166f04~Tplv-K3u1fbpfcp-Zoom-1.png)
@@ -63,14 +62,16 @@ day17题目：[141. 环形链表](https://leetcode-cn.com/problems/linked-list-c
 
 **提示：**
 
--   链表中节点的数目范围是 `[0, 10^4]`
--   `-10^5 <= Node.val <= 10^5`
--   `pos` 为 `-1` 或者链表中的一个 **有效索引** 。
+- 链表中节点的数目范围是 `[0, 10^4]`
+- `-10^5 <= Node.val <= 10^5`
+- `pos` 为 `-1` 或者链表中的一个 **有效索引** 。
 
 **进阶：** 你能用 `O(1)`（即，常量）内存解决此问题吗？
 
 ## 思路
+
 快慢指针，快指针一次走两步，慢指针一次走一步，若有环则一定会遇上的，否则没有环
+
 ## 代码
 
 ```js
@@ -97,13 +98,12 @@ var hasCycle = function(head) {
     return false;
 };
 ```
+
 # [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 
 给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。
 
 [百度百科](https://baike.baidu.com/item/%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/8918834?fr=aladdin)中最近公共祖先的定义为：“对于有根树 T 的两个节点 p、q，最近公共祖先表示为一个节点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（**一个节点也可以是它自己的祖先**）。”
-
- 
 
 **示例 1：**
 
@@ -134,13 +134,14 @@ var hasCycle = function(head) {
 
 **提示：**
 
--   树中节点数目在范围 `[2, 10^5]` 内。
--   `-10^9 <= Node.val <= 10^9`
--   所有 `Node.val` `互不相同` 。
--   `p != q`
--   `p` 和 `q` 均存在于给定的二叉树中。
+- 树中节点数目在范围 `[2, 10^5]` 内。
+- `-10^9 <= Node.val <= 10^9`
+- 所有 `Node.val` `互不相同` 。
+- `p != q`
+- `p` 和 `q` 均存在于给定的二叉树中。
 
 ## 思路
+
 先从一个节点往上走将沿途的vis置为true，再从另一个结点往上走，遇到vis为true的就是最近共同祖先，返回。
 
 ## 代码
@@ -210,15 +211,17 @@ var lowestCommonAncestor = function(root, p, q) {
 
 **提示：**
 
--   链表中节点数目为 `n`
--   `1 <= n <= 500`
--   `-500 <= Node.val <= 500`
--   `1 <= left <= right <= n`
+- 链表中节点数目为 `n`
+- `1 <= n <= 500`
+- `-500 <= Node.val <= 500`
+- `1 <= left <= right <= n`
 
 **进阶：**  你可以使用一趟扫描完成反转吗？
 
 ## 思路
+
 哎，先来一个反转链表的函数，day1的K组一个反转链表里边我们就写过：
+
 ```js
 var reverseList = function(s, e) {
     let prev = e.next
@@ -232,7 +235,9 @@ var reverseList = function(s, e) {
     return [e, s]
 }
 ```
+
 然后，当务之急是找到 `left` 和 `right` 对应的结点指针 `l` 和 `r`，以及 `l` 前面的 `prev`
+
 - 翻转 `let [s, e] = reverseList(l, r)`， 记得在之前先把 `r.next` 存到 `temp`
 - 为了让反转后子链表能够顺利的拼回去原链表，需将反转后的 `pre.next` 指向`s`， `e.next` 指向 `temp`
 
@@ -281,4 +286,3 @@ var reverseBetween = function(head, left, right) {
     return ehead.next
 };
 ```
-

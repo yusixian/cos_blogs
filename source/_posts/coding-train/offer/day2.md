@@ -122,7 +122,6 @@ var reverseList = function(head) {
 
 **示例 3：**
 
-
 ```
 输入： head = [[3,null],[3,0],[3,null]]
 输出： [[3,null],[3,0],[3,null]]

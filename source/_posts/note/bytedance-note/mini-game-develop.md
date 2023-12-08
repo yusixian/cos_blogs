@@ -279,7 +279,7 @@ Web游戏引擎的通用能力:
 [PixiJS](https://pixijs.com/)官网乍一看很像一个游戏引擎，但是上面也明确说了：“用最快、最灵活的2DWebGL渲染器创建精美的数字内容”(谷歌机翻)。
 
 - 它本质上还是一个**渲染引擎**，而且自称做得最好。
-- 它**不仅仅能做游戏**，还能使用这个技术去**创建任何交互式内容**，比如**APP**， 还能够在它的基础上做自己的游戏引擎。(AVG.js 和Phaserjs 的渲染引擎就是Pixi) 
+- 它**不仅仅能做游戏**，还能使用这个技术去**创建任何交互式内容**，比如**APP**， 还能够在它的基础上做自己的游戏引擎。(AVG.js 和Phaserjs 的渲染引擎就是Pixi)
 
 前置技术栈
 
@@ -345,7 +345,7 @@ Web游戏引擎的通用能力:
 
    ```js
    app.tiker.add(delta => {
-   	sprite.x += 11;
+    sprite.x += 11;
    });
    ```
 
@@ -435,8 +435,6 @@ export default class TestComp extends cc.Component {
 ![image.png](https://backblaze.cosine.ren/juejin/6c91d97b6e864b0f94ff25c3424edff3~tplv-k3u1fbpfcp-watermark.png)
 
 产物可以直接部署在对应的平台，比如web产物部署到服务器、小游戏产物部署到开发者平台。
-
-
 
 # 小游戏“小”在哪里
 

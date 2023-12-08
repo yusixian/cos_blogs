@@ -77,7 +77,7 @@ btn.addEventListener('click', (e) => {
 
 - 表现：CSS 绝对定位
   - 使用CSS的绝对定位，将图片重叠在一个位置
-  - 切换状态使用修饰符（modifier） 
+  - 切换状态使用修饰符（modifier）
     - selected
   - 轮播图切换动画使用CSS  [`transition`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition) 实现
 - 行为：JS
@@ -156,8 +156,8 @@ class Component{
 
 #### 应用：操作次数限制
 
-  - 一些异步交互
-  - 一次性的HTTP请求
+- 一些异步交互
+- 一次性的HTTP请求
 
 有这样一段代码，在每次点击时延时2s后移除该节点，但如果用户在该节点还没完全移除的时候又点了几次则会报错。
 
@@ -311,7 +311,7 @@ btn.onclick = consumer((evt) => {
 
 要弄明白函数原理，得从其中的bind函数和shift函数和call说起：
 
->  [`bind()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) 方法创建一个新的函数，在 `bind()` 被调用时，这个新函数的 `this` 被指定为 `bind()` 的第一个参数，而其余参数将作为新函数的参数，供调用时使用。
+> [`bind()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) 方法创建一个新的函数，在 `bind()` 被调用时，这个新函数的 `this` 被指定为 `bind()` 的第一个参数，而其余参数将作为新函数的参数，供调用时使用。
 
 > [`shift()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) 方法从数组中删除**第一个**元素，并返回该元素的值。此方法更改数组的长度。与之相反的则是 [`unshift()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) 插入第一个元素。
 >
@@ -367,8 +367,6 @@ switcher.onclick = toggle(
 );
 ```
 
-
-
 #### 思考
 
 为什么要使用高阶函数？
@@ -387,6 +385,7 @@ switcher.onclick = toggle(
 - 命令式 / 声明式
 - 代码风格、效率、质量的权衡。
   - 根据场景来权衡
+
 ## 总结感想
 
 太牛了！！

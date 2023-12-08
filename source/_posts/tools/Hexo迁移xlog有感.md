@@ -20,14 +20,12 @@ categories:
 
 搭建过程可以看看这篇文章👉[https://song.xlog.app/5m-zh](https://song.xlog.app/5m-zh) ，老web3人就好办了，直接一连钱包，进入仪表盘，over
 
-
 ## 起因
 
 这个想法的起因是看到了这篇文章：[https://diygod.me/xlog](https://diygod.me/xlog)，作者 diygod 介绍了 xLog 的优缺点和使用方法，而我既然是 web3 从业者自然对链上博客有着很高的兴趣，于是前来体验一番。
 还有一点就是这个博客的技术栈与我爱用的技术高度接近，都是 Next.js + Tailwind CSS + TypeScript + TanStack Query，clone了仓库发现还有prisma，赞许！
 
 > ps：我很喜欢她的签名 “写代码是热爱，写到世界充满爱！”
-
 
 ## 优点
 
@@ -37,7 +35,6 @@ categories:
 > 我不想仅仅满足自己的需要，它需要开源和足够开放，来满足更多人的需求。
 > 我不想让我珍贵的数据被中心化平台绑架，又不想麻烦维护一个数据库或服务器，它需要兼顾数据所有权和便利，所以我选择了区块链。
 > 最后，它需要使用较新的技术栈，提供一个更好的开发和维护体验。
-
 
 优点也大抵如下：
 
@@ -49,7 +46,9 @@ categories:
 - 没有摘要时，在访问文章的时候提供 AI 生成摘要（懒得写摘要星人有救了！）
 - 我爱Tailwind（振声）
 - 当我打开设置页面的时候，我看到了Google Analysis，贴心！
+
 > 将 Google Analytics 集成到你的站点中。你可以按照 [这里](https://support.google.com/analytics/answer/9539598) 的说明查找你的 Measurement ID。
+
 - 影子授权：可以授权其他人进入自己的仪表盘，更改设置 or 发布文章等
 
 ![image](https://xlog.app/_next/image?url=https%3A%2F%2Fipfs.4everland.xyz%2Fipfs%2Fbafkreigybz3zg4yole2vvuxnasfovts7zevkatnyr7c2o2flare7qa4ygm&w=3840&q=75)
@@ -57,8 +56,6 @@ categories:
 - 图片上传至 IPFS：很 web3，图床都省了，截图过来直接上传（注意隐私别泄露就好）
 - web3版**一键三连**：点赞、收藏、赞赏 ->爱它，就把它的文章铸造成 nft 收藏喵
 - ~~官方很可爱，这个作者我也很早就对她的 RSSHub 有所耳闻~~
-
-
 
 ## 不足 & 建议
 
@@ -78,7 +75,7 @@ categories:
   - 期望编辑器内能也预览目录
   - 或许插件系统出了后会有很多改善
 - 暂时不支持分类功能，只能使用标签来组织文章？
-- 暂时不支持搜索功能，可能得借助第三方服务？ 
+- 暂时不支持搜索功能，可能得借助第三方服务？
 - 文章的格式还有一些不太支持，期待一下未来的主题 & 插件系统
   - 比如 markdown 解析器的插件~
 - 有没有可能删除自己的角色呢？如我一开始选了个错误的句柄，很想删掉而不是切换角色（
@@ -95,12 +92,10 @@ categories:
 
 > 正如在现实中活动需要金钱，在区块链上进行活动（交易）需要手续费。Crossbell 区块链的手续费是 $CSB。你可能想问，为什么 Web2 网站不需要费用来活动？答案是你的「数据隐私」在不经意间已经被作为替代费用交易了。
 
-
 贴一些值得阅读的文章，或许可以给感兴趣的人一个了解web3的渠道，**解释由chat生成，不保证准确**
 
 - [What is Web3? The Decentralized Internet of the Future Explained](https://www.freecodecamp.org/news/what-is-web3/) 这篇文章详细地讲述了 web3 的发展历史和未来愿景，以及它如何解决 web2 中的一些问题，比如数据隐私、中心化和垄断。它还提供了一些 web3 的实际案例和资源，帮助读者更好地理解和参与 web3。
 - [The Path to Web3](https://thegraph.com/blog/the-path-to-web3/) 这篇文章讲述了 web3 的发展历史和未来愿景，以及它如何解决 web2 中的一些问题，比如数据隐私、中心化和垄断。它还介绍了 The Graph 这个项目，它是一个用于查询区块链网络数据的索引协议，可以让开发者和用户更容易地构建和使用去中心化应用（DApp）。它还展望了 The Graph 的未来计划，包括支持更多的区块链网络、增加社区参与和治理等。
 - [Web3 DApp 最佳编程实践指南](https://guoyu.mirror.xyz/RD-xkpoxasAU7x5MIJmiCX4gll3Cs0pAd5iM258S1Ek) 这篇文章是一份 Web3 DApp 开发的最佳实践指南，作者是著名的程序员郭宇，他分享了他在 CodeforDAO 和 Checks Finance 两个项目中遇到的问题和解决方案。他介绍了一些 Web3 DApp 开发的基本概念，比如区块链、智能合约、钱包、DApp、去中心化协议等。他还提供了一些 Web3 DApp 开发的工具和资源，比如编程语言、框架、库、测试、部署、监控等。他的目的是帮助更多的工程师转向 Web3，并为 Web3 的长远发展做出贡献。
-
 
 > 感谢你阅读这篇文章，希望你能从中获得一些有用的信息和启发。如果对我的文章有任何建议或批评，欢迎在评论区留言或者通过邮件联系我。我很乐意听取反馈和想法，祝生活愉快！

@@ -13,7 +13,7 @@ tags:
 categories:
 - [笔记, 青训营笔记]
 ---
-#  本节课重点内容
+# 本节课重点内容
 
 安全问题很常见，会危害
 
@@ -47,7 +47,7 @@ XSS主要利用了开发者对用户提交内容的盲目信任
 public async submit(ctx) {
     const {content, id} = ctx.request.body;
     await db.save({
-       content,	// 没有对content进行过滤！！
+       content, // 没有对content进行过滤！！
        id
     });
 }
@@ -125,9 +125,9 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
   public async rederForm(ctx) {
       const {username, form_id } = ctx.query;
       const result = await sql.query(`
-      	SELECT a, b, c FROM table
-      	WHERE username = ${username}
-      	AND form_id = ${form_id}
+       SELECT a, b, c FROM table
+       WHERE username = ${username}
+       AND form_id = ${form_id}
       `);
       ctx.body = renderForm(result);
   } 
@@ -149,7 +149,7 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 
 - 拓展：正则表达式——贪婪模式
 
-  - 重复匹配时，`?` /`no ?` ：满足`”一个即可“ ` /  `尽可能多`
+  - 重复匹配时，`?` /`no ?` ：满足`”一个即可“` /  `尽可能多`
 
 - 例子：ReDoS:基于正则表达式的DoS
 
@@ -224,12 +224,13 @@ xss攻击也分几大类：Store XSS、Reflected XSS、DOM-based XSS、Mutation-
 - 对eval + inline script 直接拒绝
 - 设置
   - 服务器的响应头部
+
    ```
     Content-Security-Policy: script-src 'self'; // 同源
     Content-Security-Policy: script-src 'self' https://domain.com
    ```
-	- 浏览器的响应头部
-	 ```html
+ 	- 浏览器的响应头部
+  ```html
     <meta http-equiv=" Content-Security-Policy" content="script-src self"> 
    ```
 

@@ -52,7 +52,7 @@ categories:
 
 那么我们就希望解决以上痛点：
 
--  状态更新，UI自动更新。
+- 状态更新，UI自动更新。
 - 前端代码组件化,可复用，可封装。
 - 状态之间的互相依赖关系，只需声明即可。
 
@@ -104,18 +104,18 @@ categories:
 
 > *Hook* 是 React 16.8 的新增特性。它可以让你在不编写 class 的情况下使用 state 以及其他的 React 特性。
 
-###  State Hook
+### State Hook
 
 ```react
 import React, {useState} from 'react';
 function Example() {
-	// 声明一个叫 “count” 的 state 变量。
-	const [count, setCount] = useState(0);
+ // 声明一个叫 “count” 的 state 变量。
+ const [count, setCount] = useState(0);
     return (
         <div>
-       		<p>You clicked {count} times</p>
-			<button onClick={() => setCount(count + 1)}>
-        		Click me
+         <p>You clicked {count} times</p>
+   <button onClick={() => setCount(count + 1)}>
+          Click me
             </button>
         </div>
     );
@@ -142,7 +142,7 @@ function ExampleWithManyStates() {
 }
 ```
 
-###  Effect Hook
+### Effect Hook
 
 **函数副作用**是指当调用函数时，除了**返回值**之外，还会**对主调用函数产生其他附加的影响**。例如修改全局变量（函数外的变量）或修改参数。纯函数就是指没有函数副作用的函数，这在js那一节里都有讲过。
 
@@ -264,7 +264,7 @@ const element = React.createElement(
 React本身是没有提供足够多的工程能力，如路由、页面配置等等。
 
 - [Next.js - React 应用开发框架](https://www.nextjs.cn/) 硅谷明星创业公司Vercel的 React开发框架,稳定,开发体验好，支持Unbundled Dev,sWC等,其同样有Serverless一键部署平台帮助开发者快速完成部署。口号是"Let's Make Web Faster"
--  [Modern.js - 现代 Web 工程体系 (modernjs.dev)](https://modernjs.dev/) 字节跳动Web Infra团队研发的全栈开发框架,内瓷了很多开箱即用的能力与最佳实践，可以减少很多调研选择工具的时间。
+- [Modern.js - 现代 Web 工程体系 (modernjs.dev)](https://modernjs.dev/) 字节跳动Web Infra团队研发的全栈开发框架,内瓷了很多开箱即用的能力与最佳实践，可以减少很多调研选择工具的时间。
 - [Get Started with Blitz (blitzjs.com)](https://blitzjs.com/docs/get-started)无API思想的全栈开发框架,开发过程中无需写API 调用与CRUD逻辑,适合前后端紧密小团队项目。
 
 ## 课后作业
@@ -280,4 +280,3 @@ React本身是没有提供足够多的工程能力，如路由、页面配置等
 本节课大致介绍了React及其原理，介绍了组件化、一些应用级框架
 
 > 本文引用的内容大部分来自牛岱老师的课，以及React官方文档
-

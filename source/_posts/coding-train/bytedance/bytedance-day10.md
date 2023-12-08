@@ -15,7 +15,6 @@ categories:
 
 day10题目：[94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)、[102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)、[394. 字符串解码](https://leetcode-cn.com/problems/decode-string/)
 
-
 学习计划链接：[冲刺春招-精选笔面试 66 题大通关](https://leetcode-cn.com/study-plan/bytedancecampus/?progress=dcmyjb3)
 
 今日知识点：树的遍历、字符串、栈，难度为简单、中等、中等
@@ -23,6 +22,7 @@ day10题目：[94. 二叉树的中序遍历](https://leetcode-cn.com/problems/bi
 昨日题目链接：[冲刺春招-精选笔面试 66 题大通关 day9](https://ysx.cosine.ren/cn/%E5%86%B2%E5%88%BA%E6%98%A5%E6%8B%9B-%E7%B2%BE%E9%80%89%E7%AC%94%E9%9D%A2%E8%AF%95%2066%20%E9%A2%98%E5%A4%A7%E9%80%9A%E5%85%B3%20day9/)
 <!-- more -->
 # 94. 二叉树的中序遍历
+
 给定一个二叉树的根节点 `root` ，返回它的 **中序** 遍历。
 
 **示例 1：**
@@ -40,8 +40,11 @@ day10题目：[94. 二叉树的中序遍历](https://leetcode-cn.com/problems/bi
 ```
 
 ## 思路
+
 easy题，中序遍历就是 左-根-右 ，前序就是根左右，后序就是左右根。
+
 ## 代码
+
 ```js
 /**
  * Definition for a binary tree node.
@@ -69,9 +72,11 @@ var inorderTraversal = function(root) {
 ```
 
 # 102. 二叉树的层序遍历
+
 给你二叉树的根节点 `root` ，返回其节点值的 **层序遍历** 。 （即逐层地，从左到右访问所有节点）。
 
 **示例 1：**
+
 ```
 输入： root = [3,9,20,null,null,15,7]
 输出： [[3],[9,20],[15,7]]
@@ -90,9 +95,13 @@ var inorderTraversal = function(root) {
 输入： root = []
 输出： []
 ```
+
 ### 思路
+
 比昨天的题简单，每一层的结点存至q然后用nodelist暂存当前队列中所有结点（即该层的结点）后将q置空，遍历nodelist将每一个节点的孩子节点放入q
+
 ### 代码
+
 ```js
 /**
  * Definition for a binary tree node.
@@ -128,6 +137,7 @@ var levelOrder = function(root) {
 ```
 
 # 394. 字符串解码
+
 给定一个经过编码的字符串，返回它解码后的字符串。
 
 编码规则为: `k[encoded_string]`，表示其中方括号内部的 `encoded_string` 正好重复 `k` 次。注意 `k` 保证为正整数。
@@ -166,14 +176,17 @@ var levelOrder = function(root) {
 
 **提示：**
 
--   `1 <= s.length <= 30`
--   `s` 由小写英文字母、数字和方括号 `'[]'` 组成
--   `s` 保证是一个 **有效** 的输入。
--   `s` 中所有整数的取值范围为 `[1, 300]`
+- `1 <= s.length <= 30`
+- `s` 由小写英文字母、数字和方括号 `'[]'` 组成
+- `s` 保证是一个 **有效** 的输入。
+- `s` 中所有整数的取值范围为 `[1, 300]`
 
 ## 思路
+
 遍历，若为数字则过滤出来该数字作为k，用一个栈stack存左括号，遇到右括号且栈中左括号数量不为1时出栈，当栈中只有一个左括号时，将该当前tempStr字符串递归解码后返回，重复k次后拼接至答案ans，若为其他则正常存入。
+
 ## 代码
+
 ```js
 /**
  * @param {string} s

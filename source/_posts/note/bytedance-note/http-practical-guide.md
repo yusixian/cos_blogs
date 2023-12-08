@@ -97,7 +97,7 @@ categories:
 | lf-Modified-Since | 对应服务端的Last-Modified，用来**匹配看文件是否变动**，**只能精确到1s之内** |
 |      Expires      |   缓存控制，在这个时间内不会请求，直接使用缓存，服务端时间   |
 |      Max-age      | 代表资源在**本地缓存多少秒**，**有效时间内不会请求，而是使用缓存** |
-|   If-None-Match   | 对应服务端的ETag，用来**匹配文件内容是否改变 ** **（非常精确)** |
+|   If-None-Match   | 对应服务端的ETag，用来**匹配文件内容是否改变** **（非常精确)** |
 |    **Cookie**     |             有cookie并且**同域**访问时会自动带上             |
 |      Referer      | 该页面的来源URL(适用于所有类型的请求，会**精确到详细页面地址**, csrf拦截常用到这个字段) |
 |      Origin       | 最初的请求是从哪里发起的（(只会**精确到端口**) ，Origin比Referer更尊重隐私** |
@@ -155,11 +155,12 @@ Set-Cookie - response
 | secure                       | 仅在HTTPS安全连接时，才可以发送Cookie                        |
 | HttpOnly                     | JavaScript脚本无法获得Cookie                                 |
 | SameSite=[None\|Strict\|Lax] | **None同站、跨站请求都可发送**；**Strict仅在同站发送** ；允许与顶级导航一起发送，并将与第三方网站发起的GET请求一起发送 |
+
 #### 发展
 
 HTTP/2概述：**更快**、更**稳定**、更**简单**
 
-- 帧(frame) 
+- 帧(frame)
 
   - HTTP/2通信的最小单位，每个帧都包含**帧头**，至少也会标识出当前帧所属的数据流。
   - 1.0传输的是文本，而2中传的则是二进制数据，效率更高。并有新的压缩算法。
@@ -178,8 +179,6 @@ HTTP/2概述：**更快**、更**稳定**、更**简单**
 - **流控制**：阻止发送方向接收方发送大量数据的机制
 - 服务器推送
   - ![image.png](https://backblaze.cosine.ren/juejin/3d4e113bad5648bc8af55a2718a1479b~tplv-k3u1fbpfcp-watermark.png)
-
-
 
 #### HTTPS概述
 
@@ -239,7 +238,7 @@ HTTP/2概述：**更快**、更**稳定**、更**简单**
 
 #### 解决跨域问题
 
-- [跨源资源共享（CORS）](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CORS)（ Cross-Origin Resource Sharing ） 
+- [跨源资源共享（CORS）](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CORS)（ Cross-Origin Resource Sharing ）
 
   - >`跨源资源共享` ([CORS](https://developer.mozilla.org/zh-CN/docs/Glossary/CORS))（或通俗地译为跨域资源共享）是一种基于 [HTTP](https://developer.mozilla.org/zh-CN/docs/Glossary/HTTP) 头的机制，该机制通过允许服务器标示除了它自己以外的其它[origin](https://developer.mozilla.org/zh-CN/docs/Glossary/Origin)（域，协议和端口），这样浏览器可以访问加载这些资源。跨源资源共享还通过一种机制来检查服务器是否会允许要发送的真实请求，该机制通过浏览器发起一个到服务器托管的跨源资源的"预检"请求。在预检中，浏览器发送的头中标示有HTTP方法和真实请求中会用到的头。
     >
@@ -264,7 +263,7 @@ HTTP/2概述：**更快**、更**稳定**、更**简单**
 如上图，登陆时向什么地址做了什么动作？
 
 - 使用了post方法
-- 目标域名：https://sso.toutiao.com
+- 目标域名：<https://sso.toutiao.com>
 - 目标为：path/quick_login/v2/
 
 携带了哪些信息，返回了哪些信息？
@@ -293,8 +292,6 @@ HTTP/2概述：**更快**、更**稳定**、更**简单**
 ![image.png](https://backblaze.cosine.ren/juejin/94072b3ee6964bfe9ccd6d1a790996da~tplv-k3u1fbpfcp-watermark.png)
 
 ![image.png](https://backblaze.cosine.ren/juejin/50f8486f6a4b450c87558ff15c5a41c8~tplv-k3u1fbpfcp-watermark.png)
-
-
 
 - SSO：单点登录（Single Sign On）
 
@@ -333,7 +330,7 @@ HTTP/2概述：**更快**、更**稳定**、更**简单**
 
 #### 常用的请求库: axios
 
-- [起步 | Axios 中文文档 ](https://www.axios-http.cn/docs/intro)
+- [起步 | Axios 中文文档](https://www.axios-http.cn/docs/intro)
 - 支持浏览器、nodejs环境
 - 丰富的拦截器
 
@@ -342,11 +339,11 @@ HTTP/2概述：**更快**、更**稳定**、更**简单**
 axios.defaults.baseURL = "https://api.example.com";
 //添加请求拦截器
 axios.interceptors.request.use(function (config) {
-	//在发送请求之前做些什么
-	return config;
+ //在发送请求之前做些什么
+ return config;
 }，function (error) {
-	//对请求错误做些什么
-	return Promise.reject(error );
+ //对请求错误做些什么
+ return Promise.reject(error );
 });
 
 //发送请求
@@ -400,7 +397,6 @@ QUIC：Quick UDP Internet Connection 基于UDP
 
 ## 总结感想
 
-今天讲师小姐姐声音超温柔的介绍了HTTP及其常见协议分析、报文结构、缓存策略分析，还讲解了其具体的业务场景使用。 
+今天讲师小姐姐声音超温柔的介绍了HTTP及其常见协议分析、报文结构、缓存策略分析，还讲解了其具体的业务场景使用。
 
 > 本文引用的内容大部分来自杨超男老师的课——HTTP实用指南
-

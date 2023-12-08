@@ -37,15 +37,13 @@ day19题目：[160. 相交链表](https://leetcode-cn.com/problems/intersection-
 
 **评测系统** 的输入如下（你设计的程序 **不适用** 此输入）：
 
--   `intersectVal` - 相交的起始节点的值。如果不存在相交节点，这一值为 `0`
--   `listA` - 第一个链表
--   `listB` - 第二个链表
--   `skipA` - 在 `listA` 中（从头节点开始）跳到交叉节点的节点数
--   `skipB` - 在 `listB` 中（从头节点开始）跳到交叉节点的节点数
+- `intersectVal` - 相交的起始节点的值。如果不存在相交节点，这一值为 `0`
+- `listA` - 第一个链表
+- `listB` - 第二个链表
+- `skipA` - 在 `listA` 中（从头节点开始）跳到交叉节点的节点数
+- `skipB` - 在 `listB` 中（从头节点开始）跳到交叉节点的节点数
 
 评测系统将根据这些输入创建链式数据结构，并将两个头节点 `headA` 和 `headB` 传递给你的程序。如果程序能够正确返回相交节点，那么你的解决方案将被 **视作正确答案** 。
-
- 
 
 **示例 1：**
 
@@ -85,21 +83,23 @@ day19题目：[160. 相交链表](https://leetcode-cn.com/problems/intersection-
 
 **提示：**
 
--   `listA` 中节点数目为 `m`
--   `listB` 中节点数目为 `n`
--   `1 <= m, n <= 3 * 10^4`
--   `1 <= Node.val <= 10^5`
--   `0 <= skipA <= m`
--   `0 <= skipB <= n`
--   如果 `listA` 和 `listB` 没有交点，`intersectVal` 为 `0`
--   如果 `listA` 和 `listB` 有交点，`intersectVal == listA[skipA] == listB[skipB]`
+- `listA` 中节点数目为 `m`
+- `listB` 中节点数目为 `n`
+- `1 <= m, n <= 3 * 10^4`
+- `1 <= Node.val <= 10^5`
+- `0 <= skipA <= m`
+- `0 <= skipB <= n`
+- 如果 `listA` 和 `listB` 没有交点，`intersectVal` 为 `0`
+- 如果 `listA` 和 `listB` 有交点，`intersectVal == listA[skipA] == listB[skipB]`
 
 **进阶：** 你能否设计一个时间复杂度 `O(m + n)` 、仅用 `O(1)` 内存的解决方案？
 
 ## 思路
+
 双指针，利用 `prea` 和 `preb` 作为a和b的前一个结点，当 `prea === preb` 时说明这当前节点上一个节点都是同一个结点
 
 ## 代码
+
 ```js
 /**
  * Definition for singly-linked list.
@@ -127,7 +127,6 @@ var getIntersectionNode = function(headA, headB) {
     return prea
 };
 ```
-
 
 # [143. 重排链表](https://leetcode-cn.com/problems/reorder-list/)
 
@@ -165,15 +164,18 @@ L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …
 
 **提示：**
 
--   链表的长度范围为 `[1, 5 * 10^4]`
--   `1 <= node.val <= 1000`
+- 链表的长度范围为 `[1, 5 * 10^4]`
+- `1 <= node.val <= 1000`
 
 ## 思路
+
 - 若没有结点或只有一两个结点，则无需操作。
 - 每次将最后一个结点 `nowv` 接在头结点 `head` 后面
 - 然后将倒数第二个结点 `prev` 置为最后一个节点
 - 再对递归的原本的第三个结点 `nowv.next` 以及之后的链表进行该操作
+
 ## 代码
+
 ```js
 /**
  * @param {ListNode} head
@@ -193,6 +195,7 @@ var reorderList = function(head) {
     reorderList(nowv.next)
 };
 ```
+
 # [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
 
 给定一个链表的头节点  `head` ，返回链表开始入环的第一个节点。 *如果链表无环，则返回 `null`。*
@@ -233,9 +236,9 @@ var reorderList = function(head) {
 
 **提示：**
 
--   链表中节点的数目范围在范围 `[0, 10^4]` 内
--   `-10^5 <= Node.val <= 10^5`
--   `pos` 的值为 `-1` 或者链表中的一个有效索引
+- 链表中节点的数目范围在范围 `[0, 10^4]` 内
+- `-10^5 <= Node.val <= 10^5`
+- `pos` 的值为 `-1` 或者链表中的一个有效索引
 
 **进阶：** 你是否可以使用 `O(1)` 空间解决此题？
 
@@ -248,12 +251,14 @@ var reorderList = function(head) {
 
 > 如下图所示，设链表中环外部分的长度为 `a`。`slow` 指针进入环后，又走了 `b` 的距离与 `fast` 相遇。此时，假设 `fast` 指针已经走完了环的 `n` 圈，则 `fast` 走过的总距离为 `a+n(b+c)+b` 化简得 `a+(n+1)b+nc`。
 > ![fig1](https://backblaze.cosine.ren/juejin/0d8cd476489a4a58b00cead81fb28ea9~Tplv-K3u1fbpfcp-Zoom-1.png)
-> 
+>
 > 由于快指针每次都比慢指针多走一步，故 `fast` 走过的距离是 `slow` 的两倍，而 `slow` 走过的总距离为 `a+b`，所以有 `a+(n+1)b+nc = 2(a+b)`，解得 `a = c+(n-1)(b+c)`
+>
 > - 也就是说，从相遇点到入环点的距离 `c` 加上`n-1`圈环长（b+c），恰好等于链表头部到入环点的距离 `a`
 > - 因此，当发现 `slow` 与 `fast` 相遇时，我们再额外使用一个指针 `ptr`。起始，`ptr` 指向链表头部。随后，`ptr` 和 `slow` 每次向后移动一个位置。最终，它们会在入环点相遇。
 
 ## 代码
+
 ```js
 /**
  * @param {ListNode} head

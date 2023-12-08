@@ -22,17 +22,18 @@ categories:
 
 1. [ESM 和 TypeScript 支持](https://tailwindcss.com/blog/tailwindcss-v3-3#esm-and-typescript-support)：支持 ESM 和 TypeScript 配置文件，让你可以用现代的语法和类型检查来配置 Tailwind CSS。
 
-2. [微调渐变颜色停止位置](https://tailwindcss.com/blog/tailwindcss-v3-3#fine-tune-gradient-color-stop-positions) ：让你可以精确地控制渐变效果，可以准确指定渐变颜色中每个色标的位置。如 `from-5%`、`via-35%` 和 `to-85%` 
+2. [微调渐变颜色停止位置](https://tailwindcss.com/blog/tailwindcss-v3-3#fine-tune-gradient-color-stop-positions) ：让你可以精确地控制渐变效果，可以准确指定渐变颜色中每个色标的位置。如 `from-5%`、`via-35%` 和 `to-85%`
 
 ![image](https://x.cosine.ren/_next/image?url=https%3A%2F%2Fipfs.4everland.xyz%2Fipfs%2Fbafkreih3sqnpjd57nxxzbg6a7goe546gt5pycaanaohsoolbknugssqs5u&w=3840&q=75)
 
-1. [开箱即用的 Line-clamp](https://tailwindcss.com/blog/tailwindcss-v3-3#line-clamp-out-of-the-box) ：无需插件即可截断多行文本，如 `line-clamp-3`。 
+1. [开箱即用的 Line-clamp](https://tailwindcss.com/blog/tailwindcss-v3-3#line-clamp-out-of-the-box) ：无需插件即可截断多行文本，如 `line-clamp-3`。
+
 > 我们在两年多前发布了我们的官方 line-clamp 插件，尽管它使用了一堆奇怪的已弃用的 -webkit-* 东西，但它适用于所有浏览器，而且它将永远有效，所以我们决定将它整合到框架中本身。
 
-1. [🌟字体大小及行高简写 ](https://tailwindcss.com/blog/tailwindcss-v3-3#new-line-height-shorthand-for-font-size-utilities) ：这个很有用，可以使用一个类设置字体大小和行高（不在预设中时），如 `text-lg/7`、 `text-sm/[17px]` 、 `text-[20px]/[24px]`
+1. [🌟字体大小及行高简写](https://tailwindcss.com/blog/tailwindcss-v3-3#new-line-height-shorthand-for-font-size-utilities) ：这个很有用，可以使用一个类设置字体大小和行高（不在预设中时），如 `text-lg/7`、 `text-sm/[17px]` 、 `text-[20px]/[24px]`
 ![image](https://x.cosine.ren/_next/image?url=https%3A%2F%2Fipfs.4everland.xyz%2Fipfs%2Fbafkreidwfwf7e7c2ch4acqgp6ajgs6hk6jrznddejcttwl4mq3ulc4rrbi&w=3840&q=75)
 
-1. [🌟CSS 变量的简写语法 ](https://tailwindcss.com/blog/tailwindcss-v3-3#css-variables-without-the-var)：支持 CSS 变量的简写语法，让你可以用任意值而不需要 var() 函数，使用如下：
+1. [🌟CSS 变量的简写语法](https://tailwindcss.com/blog/tailwindcss-v3-3#css-variables-without-the-var)：支持 CSS 变量的简写语法，让你可以用任意值而不需要 var() 函数，使用如下：
 **before**:  `bg-[var(--brand-color)]`
 **after**: `bg-[--brand-color]`
 
@@ -42,7 +43,7 @@ categories:
 
 ![image](https://x.cosine.ren/_next/image?url=https%3A%2F%2Fipfs.4everland.xyz%2Fipfs%2Fbafkreidqys3lkalcynkpr2wrm2opf4od6p5fhtlqqmtx4dqjevxuwg5kra&w=3840&q=75)
 
-1. [🌟新的 hyphens 实用类 ](https://tailwindcss.com/blog/tailwindcss-v3-3#new-hyphens-utilities)：用于微调断字行为。
+1. [🌟新的 hyphens 实用类](https://tailwindcss.com/blog/tailwindcss-v3-3#new-hyphens-utilities)：用于微调断字行为。
 
 听说过 &shy; HTML 实体吗？在添加对这些 hyphens-* 实用类的支持之前，我们也没听说。
 
@@ -50,15 +51,14 @@ categories:
 
 10. [🌟新的 caption-side 实用类](https://tailwindcss.com/blog/tailwindcss-v3-3#new-caption-side-utilities)：用于控制表格内标题元素对齐的实用类，可以给表格添加标题并设置位置。详见 [Caption Side
 ](https://tailwindcss.com/docs/caption-side)
+
 - `caption-bottom` 将标题元素定位在表格的顶部
 - `caption-bottom` 将标题元素定位在表格的底部。
 
-
-
- 
 以上这些只是一部分最亮眼的新特性，如果你想了解更多的细节和改进，请查看完整的[发布说明](https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.3.0)。如果你想尽快升级到 v3.3 版本，只需要从 npm 安装最新的 tailwindcss 包即可：
 
 ```bash
 npm install -D tailwindcss@latest
 ```
+
 你也可以在 [Tailwind Play](https://play.tailwindcss.com/) 上在线体验所有的新特性。
