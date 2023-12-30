@@ -1,8 +1,7 @@
 ---
 title: 2022，写给自己的一篇文章
 link: 2022-life-review
-subtitile: 凡为过往，皆为序章
-sticky: true
+subtitle: 凡为过往，皆为序章
 catalog: true
 lang: cn
 date: 2022-04-22 02:02:14
