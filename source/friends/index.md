@@ -49,6 +49,18 @@ date: 2022-02-21 22:12:05
   desc: 阿砍的前端分享与杂记
   image: https://www.nirvana.cool/images/avatar.jpg
   color: '#0567f1'
+- site:  GanSer
+  owner: GanSer
+  url: https://www.gan1ser.top/
+  image: https://pic.imgdb.cn/item/63f16cddf144a010070697c8.jpg
+  desc: 紫箫吟断，素笺恨切
+  color:  '#0EFFAB'
+- site: Magren’s Blog
+  owner: Magren
+  url: https://magren.cc
+  desc: 不为繁华易匠心
+  image: https://magren.cc/avatar.png
+  color: '#666'
 {% endlinks %}
 
 
