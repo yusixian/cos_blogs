@@ -65,7 +65,7 @@ date: 2022-02-21 22:12:05
   owner: suxi
   url: https://lovelywhite.cn/
   desc: 这一刀下去你会爱上我～
-  image: lovelywhite.cn/logo.png
+  image: https://lovelywhite.cn/logo.png
 {% endlinks %}
 
 
