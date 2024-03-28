@@ -15,6 +15,7 @@ categories:
 
 > 一篇 antfu 推荐的交互式优质性能优化博文，作者有 20 年经验，真的很多细节，试着翻译一下加一点自己的润色，强烈建议阅读英文原文，体验交互式，这里就先用截图替代了。
 > 第一次翻译，不足之处欢迎指正！
+> 本译文博客链接：<https://ysx.cosine.ren/optimizing-javascript-translate>
 > 原文链接：<https://romgrk.com/posts/optimizing-javascript> \
 > 原文作者：[romgrk](https://romgrk.com/)
 
@@ -107,8 +108,9 @@ const objects = [
 ]
 ```
 
-> [!NOTE]
-> 我使用了 “shape” 这个词来描述这个概念，但要注意，您可能也会发现 “hidden class” 或 “map” 用于描述它，这取决于引擎。
+:::info
+我使用了 “shape” 这个词来描述这个概念，但要注意，您可能也会发现 “hidden class” 或 “map” 用于描述它，这取决于引擎。
+:::
 
 例如，在运行时，如果下面的函数接收到两个具有形状 `{ x: number, y: number }` 的对象，则引擎**将推测未来的对象将具有相同的形状**，并生成针对该形状优化的机器代码。
 
@@ -175,8 +177,9 @@ for (let i = 0; i < 1000000; i++) {
 
 例如，这里是我在 React 的代码库中发现的一些[简单案例](https://github.com/facebook/react/pull/28569)，但几年前它们已经对同一问题产生了[更高的影响](https://v8.dev/blog/react-cliff)，因为它们用整数初始化了一个对象，然后存储了一个浮点数。 **是的，改变类型也会改变形状。** 是的，整数和浮点数类型隐藏在 number 后面。处理它。
 
-> [!NOTE]
-> 引擎通常可以将整数编码为值。例如，V8 表示 32 位的值，整数作为紧凑的 [Smi](https://medium.com/fhinkel/v8-internals-how-small-is-a-small-integer-e0badc18b6da)（SMall）值，但浮点数和大整数作为指针传递，就像字符串和对象一样。JSC 使用 64 位编码，[双标记](https://ktln2.org/2020/08/25/javascriptcore/)，按值传递所有数字，就像 [SpiderMonkey](https://spidermonkey.dev/) 一样，其余的作为指针传递。
+:::info
+引擎通常可以将整数编码为值。例如，V8 表示 32 位的值，整数作为紧凑的 [Smi](https://medium.com/fhinkel/v8-internals-how-small-is-a-small-integer-e0badc18b6da)（SMall）值，但浮点数和大整数作为指针传递，就像字符串和对象一样。JSC 使用 64 位编码，[双标记](https://ktln2.org/2020/08/25/javascriptcore/)，按值传递所有数字，就像 [SpiderMonkey](https://spidermonkey.dev/) 一样，其余的作为指针传递。
+:::
 
 ---
 
@@ -390,9 +393,12 @@ let r = 0; for (let i = 0; i < 100000; i++) { r += buffer[random(RAM)] }
 
 有关CPU和内存的更多详细信息，请参阅[此链接](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)。
 
-> [!Note]
-> 关于不可变数据结构 —— 不可变性对于清晰性和正确性来说是很好的，但是在性能方面，更新不可变的数据结构意味着复制容器，这将导致更多的内存 I/O 刷新缓存。你应该尽可能避免不可变的数据结构。
-> 关于 `...` 扩展运算符 —— 它非常方便，但每次使用它都要在内存中创建一个新对象。更多的内存I/O，更慢的缓存！
+:::info
+
+1. 关于不可变数据结构 —— 不可变性对于清晰性和正确性来说是很好的，但是在性能方面，更新不可变的数据结构意味着复制容器，这将导致更多的内存 I/O 刷新缓存。你应该尽可能避免不可变的数据结构。
+2. 关于 `...` 扩展运算符 —— 它非常方便，但每次使用它都要在内存中创建一个新对象。更多的内存I/O，更慢的缓存！
+
+:::
 
 ## 6.避免大型 Objects
 
@@ -603,8 +609,9 @@ const small = small.replace('#'.repeat(small.length + 1), '')
 
 有关更多详细信息，请参见 [V8 上的 string. h](https://github.com/v8/v8/blob/main/src/objects/string.h) 或 [JavaScriptCore 上的 JSString. h](https://github.com/WebKit/WebKit/blob/main/Source/JavaScriptCore/runtime/JSString.h)。
 
-> [!Note]
-> 关于字符串复杂性 —— 我快速浏览了一些东西，但还是有很多实现细节增加了字符串的复杂性。每种字符串表示法通常都有最小长度。例如，对于非常小的字符串，可能不会使用连接字符串。有时也有限制，例如避免指向子串的子串。阅读上面链接的 C++ 文件，即使只是阅读注释，也能很好地了解实现细节。
+:::info
+关于字符串复杂性 —— 我快速浏览了一些东西，但还是有很多实现细节增加了字符串的复杂性。每种字符串表示法通常都有最小长度。例如，对于非常小的字符串，可能不会使用连接字符串。有时也有限制，例如避免指向子串的子串。阅读上面链接的 C++ 文件，即使只是阅读注释，也能很好地了解实现细节。
+:::
 
 ## 9.进行专业化（ _specialization_ ）
 
@@ -676,8 +683,9 @@ for (let i = 0; i < 100; i++) {
 
 这种优化可以为你带来适度的改进，但这些改进会累积起来。它们是对更重要的优化（如 shapes 和内存 I/O ）的一个很好的补充。但要注意的是，如果你的条件发生变化，专业化可能会对你不利，所以在应用时一定要小心。
 
-> [!NOTE]
-> 分支预测和无分支预测代码 —— 从代码中移除分支可以极大地提高性能。有关分支预测器的更多详情，请阅读 stackoverflow 的经典回答：[为什么处理排序数组更快？](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array)
+:::info
+分支预测和无分支预测代码 —— 从代码中移除分支可以极大地提高性能。有关分支预测器的更多详情，请阅读 stackoverflow 的经典回答：[为什么处理排序数组更快？](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array)
+:::
 
 ## 10. 数据结构
 
