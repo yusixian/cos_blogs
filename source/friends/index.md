@@ -61,6 +61,11 @@ date: 2022-02-21 22:12:05
   desc: 不为繁华易匠心
   image: https://magren.cc/avatar.png
   color: '#666'
+- site: 一只小白喵的进阶之路~
+  owner: suxi
+  url: https://lovelywhite.cn/
+  desc: 这一刀下去你会爱上我～
+  image: lovelywhite.cn/logo.png
 {% endlinks %}
 
 
