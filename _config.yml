@@ -9,7 +9,7 @@ description: 图片迁移完毕，博客待重构~
 keywords: 前端, React, 全栈
 author: cos
 language: zh-CN # 这里只可以选 zh-CN、zh-HK、zh-TW、ja、en 这几个格式
-timezone: 'Asia/Shanghai'
+timezone: "Asia/Shanghai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -36,7 +36,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -46,21 +46,21 @@ highlight:
   enable: false
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: false
 prismjs:
   enable: false
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: ""
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
 
@@ -89,7 +89,7 @@ category_map:
   React: react
   CS基础: cs-basics
   数据结构: data-structure
-  
+
   工具: tools
 tag_map:
 
@@ -104,7 +104,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: "mtime"
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -128,15 +128,15 @@ markdown:
     xhtmlOut: true # 使用 '/' 来闭合单标签 （比如 <br />）。
     breaks: true # 转换段落里的 '\n' 到 <br>。
     linkify: true # 将类似 URL 的文本自动转换为链接。
-    typographer: 
-    quotes: '“”‘’'
+    typographer:
+    quotes: "“”‘’"
   plugins: # markdown-it 插件设置
     - plugin:
         name: markdown-it-toc-and-anchor
         enable: true
         options: # 文章目录以及锚点应用的 class 名称，shoka 主题必须设置成这样
-          tocClassName: 'toc'
-          anchorClassName: 'anchor'
+          tocClassName: "toc"
+          anchorClassName: "anchor"
     - plugin:
         name: markdown-it-multimd-table
         enable: true
@@ -159,13 +159,13 @@ minify:
   html:
     enable: true
     exclude: # 排除 hexo-feed 用到的模板文件
-      - '**/json.ejs'
-      - '**/atom.ejs'
-      - '**/rss.ejs'
+      - "**/json.ejs"
+      - "**/atom.ejs"
+      - "**/rss.ejs"
   css:
     enable: true
     exclude:
-      - '**/*.min.css'
+      - "**/*.min.css"
   js:
     enable: true
     mangle:
@@ -173,18 +173,18 @@ minify:
     output:
     compress:
     exclude:
-      - '**/*.min.js'
+      - "**/*.min.js"
 
 autoprefixer:
   exclude:
-    - '*.min.css'  
+    - "*.min.css"
 
 algolia:
-  appId: 5EERUHZMGG #Your appId
-  apiKey: ba1b4c3261de1c014238419fb69c2e37 #Your apiKey
-  adminApiKey: c859c3420b1fb4a0cf9f9ad9fb193edc #Your adminApiKey
+  appId: #Your algolia appId
+  apiKey: #Your algolia apiKey (Search api)
+  adminApiKey: #Your algolia adminApiKey
   chunkSize: 5000
-  indexName: cos_blogs #"shoka"
+  indexName: cos_blogs # algolia index name
   fields:
     - title #必须配置
     - path #必须配置
@@ -195,25 +195,25 @@ algolia:
     - tags
 
 feed:
-    limit: 20
-    order_by: "-date"
-    tag_dir: false
-    category_dir: false
-    rss:
-        enable: true
-        template: "themes/shoka/layout/_alternate/rss.ejs"
-        output: "rss.xml"
-    atom:
-        enable: true
-        template: "themes/shoka/layout/_alternate/atom.ejs"
-        output: "atom.xml"
-    jsonFeed:
-        enable: true
-        template: "themes/shoka/layout/_alternate/json.ejs"
-        output: "feed.json"
+  limit: 20
+  order_by: "-date"
+  tag_dir: false
+  category_dir: false
+  rss:
+    enable: true
+    template: "themes/shoka/layout/_alternate/rss.ejs"
+    output: "rss.xml"
+  atom:
+    enable: true
+    template: "themes/shoka/layout/_alternate/atom.ejs"
+    output: "atom.xml"
+  jsonFeed:
+    enable: true
+    template: "themes/shoka/layout/_alternate/json.ejs"
+    output: "feed.json"
 # Deployment
 # Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/yusixian/yusixian.github.io.git # or https://gitee.com/<yourAccount>/<repo>
-  branch: dev
+  repo: # or https://gitee.com/<yourAccount>/<repo>
+  branch: # branch

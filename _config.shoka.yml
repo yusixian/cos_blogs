@@ -19,7 +19,7 @@ fireworks:
     - "rgba(250,227,217,.9)"
     - "rgba(187,222,214,.9)"
     - "rgba(138,198,209,.9)"
-    
+
 open_graph:
   #twitter_id:
   #google_plus:
@@ -79,7 +79,7 @@ menu:
     tags: /tags/ || tags
   about: /about/ || user
   friends: /friends/ || heart
-# 
+#
 # Social Links
 # Usage: `Key: permalink || icon || color`
 # Key is the link label showing to end users.
@@ -106,7 +106,7 @@ sidebar:
   #position: right
   # Replace the default avatar image and set the url here.
   avatar: avatar.jpg
-  
+
 widgets:
   random_posts: true # 显示随机文章
   recent_comments: true # 显示最近评论
@@ -131,8 +131,8 @@ post:
 # https://valine.js.org/quickstart.html
 
 valine:
-  appId: RQIC7ghPyVAAUIKLlcy2A20t-gzGzoHsz #Your_appId
-  appKey: 6fcAYOOTDPSoCQRPtWJtyKYx #Your_appkey
+  appId: #Your LeanCloud appId
+  appKey: #Your LeanCloud appkey
   placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
   avatar: mp # Gravatar style : mp, identicon, monsterid, wavatar, robohash, retro
   pageSize: 10 # Pagination size
@@ -184,7 +184,6 @@ pangu: true
 # ---------------------------------------------------------------
 # analytics & SEO Settings
 # ---------------------------------------------------------------
-
 
 # Disable Baidu transformation on mobile devices.
 disable_baidu_transformation: true
