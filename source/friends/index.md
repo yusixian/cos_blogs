@@ -73,6 +73,12 @@ date: 2022-02-21 22:12:05
   image: https://www.pseudoyu.com/images/author.webp
   desc: Blockchain | Programming | Photography | Boyi
   color: '#eb2344'
+- site: Situ Note
+  owner: situ2001
+  url: https://situ2001.com
+  desc: Personal website of situ2001
+  image: https://situ2001.com/avatar.png
+  color: '#19212c'
   {% endlinks %}
 
 欢迎加友链^\_^
