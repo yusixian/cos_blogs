@@ -79,6 +79,12 @@ date: 2022-02-21 22:12:05
   desc: Personal website of situ2001
   image: https://situ2001.com/avatar.png
   color: '#19212c'
+- site: Claws 的博客
+  owner: Claws
+  url: https://claws.top
+  desc: 為せば成る
+  image: https://cdn.claws.top/img/head.jpg
+  color: #FBC1CC
   {% endlinks %}
 
 欢迎加友链^\_^
