@@ -4,14 +4,15 @@ link: nest-learn-project-1
 catalog: true
 lang: cn
 date: 2023-09-23 23:28:03
-sticky: true
+# sticky: true
 tags:
-- nestjs
-- 后端
-- node
+  - nestjs
+  - 后端
+  - node
 categories:
-- [笔记, 后端]
---- 
+  - [笔记, 后端]
+---
+
 ## 前言
 
 进入 NestJS 的世界可能会让你感到不知所措，尤其是当你面对众多的模块和概念时。本文不仅会深入分析优秀的 NestJS 项目，介绍常用的 Nest 内置模块，还会解锁一些 NestJS 的高级特性和最佳实践，来帮助你更好地理解和应用这个强大的 Node.js 框架。无论你是一个初学者还是有经验的开发者，这篇文章都将为你提供宝贵的见解和实用的技巧，让你能够更加了解 NestJS。
@@ -39,7 +40,7 @@ prisam // 数据库相关
 src
 ├─ auth // 授权登陆模块
 │   ├─ auth.controller.ts
-│   ├─ auth.guard.ts // 守卫 
+│   ├─ auth.guard.ts // 守卫
 │   ├─ auth.interface.ts // 存放局部的该模块的类型声明
 │   ├─ auth.module.ts
 │   ├─ auth.service.ts
@@ -48,7 +49,7 @@ src
 │   ├─ entities
 │   │   └─ refresh-token.entity.ts
 ├─ common // 全局通用模块
-|   ├─ configs // 全局配置 
+|   ├─ configs // 全局配置
 |   ├─ constants // 定义一些常量
 |   ├─ decorators // 全局装饰器
 |   ├─ filters // 全局过滤器
@@ -63,11 +64,11 @@ src
 
 以一个用户授权模块为例，通常能看到这些文件，而他们的用途如下：
 
-- `*.module.ts` : 通常是模块文件，用于组织和管理控制器、服务、守卫等。它是Nest.js 应用程序的**基础单元**。
+- `*.module.ts` : 通常是模块文件，用于组织和管理控制器、服务、守卫等。它是 Nest.js 应用程序的**基础单元**。
 - `*.service.ts` : Service 层通常用于处理模块的业务逻辑。它们通常被注入到**控制器**（controller）中，并可以访问数据库、执行计算等。
-- `*.controller.ts` : 控制器文件用于处理HTTP请求和响应。它们通常依赖于 Service 来执行业务逻辑。
+- `*.controller.ts` : 控制器文件用于处理 HTTP 请求和响应。它们通常依赖于 Service 来执行业务逻辑。
 - `*.guard.ts` : 守卫文件用于实现**路由保护**，例如身份验证和授权。
-- `*.interface.ts` : 接口文件用于定义局部用到的类型和数据结构，以确保代码的健壮性。（ts声明等）
+- `*.interface.ts` : 接口文件用于定义局部用到的类型和数据结构，以确保代码的健壮性。（ts 声明等）
 - `*.dto.ts` : 数据传输对象（DTO）用于验证客户端发送的数据。
 - `*.entity.ts` : 实体文件用于定义数据库模型。
 
@@ -78,23 +79,23 @@ src
 - **Module**: 模块，NestJS 的基本组织单位，用于组织和管理控制器、服务等。
 - **Service**: 服务，包含主要的业务逻辑，通常被注入到控制器中。
 - **Entity**: 实体，用于定义数据库模型，通常与 ORM（对象关系映射）一起使用。
-- **Interceptor**:  拦截器在 NestJS 中是一个用 `@Injectable()` 装饰器注释的类，并实现 `NestInterceptor` 接口。拦截器用于在函数执行之前或之后执行一些操作，例如日志记录、异常处理、数据转换等。
-- **Reflector**:  Reflector 主要用于元数据的反射和操作。在拦截器中，Reflector 可以用于获取方法或类上设置的自定义元数据，从而允许更灵活的操作。
+- **Interceptor**: 拦截器在 NestJS 中是一个用 `@Injectable()` 装饰器注释的类，并实现 `NestInterceptor` 接口。拦截器用于在函数执行之前或之后执行一些操作，例如日志记录、异常处理、数据转换等。
+- **Reflector**: Reflector 主要用于元数据的反射和操作。在拦截器中，Reflector 可以用于获取方法或类上设置的自定义元数据，从而允许更灵活的操作。
 
 通过以上的目录结构和名词解释，我希望能为你提供一个清晰的视角，以更全面地理解 NestJS 的架构和设计理念。接下来，我们将深入探讨这些概念，并通过实际的代码示例来展示它们是如何在 NestJS 项目中应用的。
 
 ### Module
 
-1. **根模块**：每个Nest.js应用程序都有一个根模块，它是 Nest 用于构建应用程序图 （**application graph**）的起点。这个图用于解析模块与提供者（Providers）之间的关系和依赖。
+1. **根模块**：每个 Nest.js 应用程序都有一个根模块，它是 Nest 用于构建应用程序图 （**application graph**）的起点。这个图用于解析模块与提供者（Providers）之间的关系和依赖。
 2. **组织组件**：模块是组织和管理组件（如控制器、服务等）的有效方式。通过模块，你可以将密切相关的功能组合在一起。
 3. **多模块架构**：对于大型应用程序，通常会采用多模块架构。每个模块都封装了一组特定的、密切相关的功能。
 
 ```ts
 // 引入Nest.js核心模块
-import { Module } from '@nestjs/common';
+import { Module } from "@nestjs/common";
 // 引入其他相关组件
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { AppController } from "./app.controller";
+import { AppService } from "./app.service";
 
 // 使用@Module装饰器定义模块
 @Module({
@@ -111,22 +112,22 @@ export class AppModule {}
 #### 推荐阅读
 
 1. [Modules | NestJS - A progressive Node.js framework](https://docs.nestjs.com/modules)
-2. [深入了解Nest的模块Module - 掘金](https://juejin.cn/post/6925605351475806216)
+2. [深入了解 Nest 的模块 Module - 掘金](https://juejin.cn/post/6925605351475806216)
 
 ### Service 层（服务层）
 
-在软件架构中，通常会有几个不同的层来组织代码和功能。这些层有助于实现关注点分离（Separation of Concerns），使得代码更易于维护和扩展。在本例中，我们主要关注以下几个层：Service层和Controller层，至于DAO层：
+在软件架构中，通常会有几个不同的层来组织代码和功能。这些层有助于实现关注点分离（Separation of Concerns），使得代码更易于维护和扩展。在本例中，我们主要关注以下几个层：Service 层和 Controller 层，至于 DAO 层：
 
-> 无论是nest还是egg，官方demo里都没有明确提到dao层，直接在service层操作数据库了。这对于简单的业务逻辑没问题，如果业务逻辑变得复杂，service层的维护将会变得非常困难。业务一开始一般都很简单，它一定会向着复杂的方向演化，如果从长远考虑，一开始就应该保留dao。
+> 无论是 nest 还是 egg，官方 demo 里都没有明确提到 dao 层，直接在 service 层操作数据库了。这对于简单的业务逻辑没问题，如果业务逻辑变得复杂，service 层的维护将会变得非常困难。业务一开始一般都很简单，它一定会向着复杂的方向演化，如果从长远考虑，一开始就应该保留 dao。
 
 Service 层主要负责**业务逻辑的实现**。这一层通常会**与数据库进行交互**，执行 CRUD（创建、读取、更新、删除）操作，以及执行其他与业务逻辑相关的任务。
 
 例如，一个名为 `UserService` 的服务可能有一个 `registerUser` 方法，该方法接收一个 `LoginUserDto` 对象，验证数据，并将新用户添加到数据库中。
 
 ```ts
-import { Injectable } from '@nestjs/common';
-import { PrismaClient } from '@prisma/client';
-import { LoginUserDto } from './dto/LoginUserDto';
+import { Injectable } from "@nestjs/common";
+import { PrismaClient } from "@prisma/client";
+import { LoginUserDto } from "./dto/LoginUserDto";
 
 @Injectable()
 export class AuthService {
@@ -150,8 +151,8 @@ export class AuthService {
 #### 推荐阅读
 
 1. [NestJS - Services](https://docs.nestjs.com/providers#services)
-2. [nest后端开发实战（二）——分层 - 知乎](https://zhuanlan.zhihu.com/p/448037259)
-3. [浅谈NestJS设计思想（分层、IOC、AOP） - 掘金](https://juejin.cn/post/7192528039945699386)
+2. [nest 后端开发实战（二）——分层 - 知乎](https://zhuanlan.zhihu.com/p/448037259)
+3. [浅谈 NestJS 设计思想（分层、IOC、AOP） - 掘金](https://juejin.cn/post/7192528039945699386)
 
 ### Controller 层（控制器层）
 
@@ -160,15 +161,15 @@ Controller 层主要负责处理来自客户端的请求和发送响应。控制
 例如，一个名为 `UserController` 的控制器可能有一个 `register` 方法，该方法接收客户端发送的 HTTP POST 请求和 `LoginUserDto` 数据。
 
 ```ts
-import { Controller, Post, Body } from '@nestjs/common';
-import { UserService } from './user.service';
-import { LoginUserDto } from './dto/LoginUserDto';
+import { Controller, Post, Body } from "@nestjs/common";
+import { UserService } from "./user.service";
+import { LoginUserDto } from "./dto/LoginUserDto";
 
-@Controller('user')
+@Controller("user")
 export class UserController {
   constructor(private readonly userService: UserService) {}
 
-  @Post('register')
+  @Post("register")
   async register(@Body() userDto: LoginUserDto) {
     return await this.userService.registerUser(userDto);
   }
@@ -178,11 +179,11 @@ export class UserController {
 #### 推荐阅读
 
 1. [Controllers | NestJS](https://docs.nestjs.com/controllers)
-2. [nest.js-Controller基础用法 - 掘金](https://juejin.cn/post/7260697932173787173)
+2. [nest.js-Controller 基础用法 - 掘金](https://juejin.cn/post/7260697932173787173)
 
 ### DTO（Data Transfer Object）
 
-用 po 和 dto来描述实体及其周边。po是持久化对象和数据库的表结构一一对应；dto数据传输对象则很灵活，可以在丰富的场景描述入参或返回值。下面是个user实体的例子：
+用 po 和 dto 来描述实体及其周边。po 是持久化对象和数据库的表结构一一对应；dto 数据传输对象则很灵活，可以在丰富的场景描述入参或返回值。下面是个 user 实体的例子：
 
 #### 与 Service 层和 Controller 层的关系
 
@@ -194,8 +195,8 @@ export class UserController {
 在这个例子中，`LoginUserDto` 是一个 DTO，它定义了用户注册时需要提交的数据格式。这个 DTO 在 Controller 层用于接收客户端的数据，并在 Service 层用于执行业务逻辑。
 
 ```ts
-// module/dto/LoginUserDto.ts 
-import { IsString, IsNotEmpty } from 'class-validator';
+// module/dto/LoginUserDto.ts
+import { IsString, IsNotEmpty } from "class-validator";
 
 export class LoginUserDto {
   @IsString()
@@ -211,6 +212,7 @@ export class LoginUserDto {
 以上代码定义了用户注册时需要提交的数据格式。使用 [class-validator](https://www.npmjs.com/package/class-validator) 库来进行数据验证。
 
 - **属性解释**
+
   - `userName`: 用户名，必须是字符串类型。
   - `password`: 密码，必须是字符串类型。
 
@@ -222,7 +224,7 @@ export class LoginUserDto {
 
 #### 推荐阅读
 
-1. [学习Nest.js（五）：使用管道、DTO 验证入参 - 知乎](https://zhuanlan.zhihu.com/p/381739245)
+1. [学习 Nest.js（五）：使用管道、DTO 验证入参 - 知乎](https://zhuanlan.zhihu.com/p/381739245)
 2. [NestJS 官方文档：DTO 和验证](https://docs.nestjs.com/techniques/validation)
 
 ### Entity（实体）
@@ -232,9 +234,9 @@ export class LoginUserDto {
 例如，一个名为 `UserEntity` 的实体可能如下所示：
 
 ```ts
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 
-@Entity('users')
+@Entity("users")
 export class UserEntity {
   @PrimaryGeneratedColumn()
   id: number;
@@ -242,7 +244,7 @@ export class UserEntity {
   @Column({ length: 500 })
   name: string;
 
-  @Column('text')
+  @Column("text")
   description: string;
 }
 ```
@@ -253,9 +255,9 @@ export class UserEntity {
 
 ```ts
 export class GameInfo {
-  id: number;
-  name: string | null;
-  description: string | null;
+  id: number;
+  name: string | null;
+  description: string | null;
 }
 ```
 
@@ -266,11 +268,11 @@ export class GameInfo {
 以下是一个名为 `RefreshTokenEntity` 的实体类示例，该实体用于存储用户的钱包地址和 JWT 访问令牌。
 
 ```ts
-import { Entity, Column, PrimaryColumn } from 'typeorm';
-import { IsString } from 'class-validator';
-import { Transform } from 'class-transformer';
+import { Entity, Column, PrimaryColumn } from "typeorm";
+import { IsString } from "class-validator";
+import { Transform } from "class-transformer";
 
-@Entity('refresh_tokens')
+@Entity("refresh_tokens")
 export class RefreshTokenEntity {
   /**
    * 用户钱包地址
@@ -283,7 +285,7 @@ export class RefreshTokenEntity {
   /**
    * Jwt Token
    */
-  @Column('text')
+  @Column("text")
   public accessToken: string;
 }
 ```
@@ -304,10 +306,15 @@ export class RefreshTokenEntity {
 例如，下面是一个名为 `AuthGuard` 的简单守卫，该守卫使用 JWT（JSON Web Token）进行身份验证：
 
 ```ts
-import { CanActivate, ExecutionContext, Injectable, UnauthorizedException } from '@nestjs/common';
-import { JwtService } from '@nestjs/jwt';
-import { Reflector } from '@nestjs/core';
-import { ConfigService } from '@nestjs/config';
+import {
+  CanActivate,
+  ExecutionContext,
+  Injectable,
+  UnauthorizedException,
+} from "@nestjs/common";
+import { JwtService } from "@nestjs/jwt";
+import { Reflector } from "@nestjs/core";
+import { ConfigService } from "@nestjs/config";
 
 @Injectable()
 export class AuthGuard implements CanActivate {
@@ -319,10 +326,10 @@ export class AuthGuard implements CanActivate {
 
   async canActivate(context: ExecutionContext): Promise<boolean> {
     const request = context.switchToHttp().getRequest();
-    const token = request.headers['authorization']?.split(' ')[1];
+    const token = request.headers["authorization"]?.split(" ")[1];
 
     if (!token) {
-      throw new UnauthorizedException('Token is missing');
+      throw new UnauthorizedException("Token is missing");
     }
 
     try {
@@ -330,7 +337,7 @@ export class AuthGuard implements CanActivate {
       request.user = decoded;
       return true;
     } catch (error) {
-      throw new UnauthorizedException('Invalid token');
+      throw new UnauthorizedException("Invalid token");
     }
   }
 }
@@ -348,31 +355,34 @@ export class AuthGuard implements CanActivate {
 
 ### Interceptor（拦截器）
 
-在 NestJS 中，拦截器（**Interceptor**） 是一个用 `@Injectable()` 装饰器注释的类，并实现 `NestInterceptor` 接口。拦截器通常用于在函数执行之前或之后执行一些操作。拦截器可以用于多种用途，例如日志记录、异常处理、数据转换等。
+在 NestJS 中，拦截器（**Interceptor**） 是一个用  `@Injectable()`  装饰器注释的类，并实现  `NestInterceptor`  接口。拦截器通常用于在函数执行之前或之后执行一些操作。拦截器可以用于多种用途，例如日志记录、异常处理、数据转换等。
 
-一个简单的 `LoggingInterceptor` ：
+一个简单的  `LoggingInterceptor` ：
 
 ```ts
-import { Injectable, NestInterceptor, ExecutionContext, CallHandler } from '@nestjs/common';
-import { Observable } from 'rxjs';
-import { tap } from 'rxjs/operators';
+import {
+  Injectable,
+  NestInterceptor,
+  ExecutionContext,
+  CallHandler,
+} from "@nestjs/common";
+import { Observable } from "rxjs";
+import { tap } from "rxjs/operators";
 
 @Injectable()
 export class LoggingInterceptor implements NestInterceptor {
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
-    console.log('Before...');
+    console.log("Before...");
 
     const now = Date.now();
     return next
       .handle()
-      .pipe(
-        tap(() => console.log(`After... ${Date.now() - now}ms`)),
-      );
+      .pipe(tap(() => console.log(`After... ${Date.now() - now}ms`)));
   }
-} 
+}
 ```
 
-由于 `handle()` 返回 RxJS `Observable` ，因此我们可以使用多种运算符来操作流。在上面的示例中，我们使用了 `tap()` 运算符，它在可观察流正常或异常终止时调用我们的匿名日志记录函数，但不会以其他方式干扰响应周期。
+由于  `handle()`  返回 RxJS `Observable` ，因此我们可以使用多种运算符来操作流。在上面的示例中，我们使用了  `tap()`  运算符，它在可观察流正常或异常终止时调用我们的匿名日志记录函数，但不会以其他方式干扰响应周期。
 
 #### 转换响应数据拦截器
 
@@ -383,20 +393,20 @@ export class LoggingInterceptor implements NestInterceptor {
 首先，我们定义一个响应接口`IResponse`和一个元数据键`IS_RAW_DATA_KEY`。
 
 ```ts
-import { SetMetadata } from '@nestjs/common';
-  
+import { SetMetadata } from "@nestjs/common";
+
 export interface IResponse<T> {
   code: number;
   message: string;
   data: T;
 }
 
-export const IS_RAW_DATA_KEY = 'is-raw-data';
+export const IS_RAW_DATA_KEY = "is-raw-data";
 
 /**
- * 控制返回数据是否通过 Response 包装
- * @constructor
- */
+ * 控制返回数据是否通过 Response 包装
+ * @constructor
+ */
 export const RawData = () => SetMetadata(IS_RAW_DATA_KEY, true);
 ```
 
@@ -412,21 +422,40 @@ export const RawData = () => SetMetadata(IS_RAW_DATA_KEY, true);
 
 ```ts
 // transform.interceptor.ts
-import { IResponse, IS_RAW_DATA_KEY } from '@/common';
-import { map, Observable } from 'rxjs';
-import { CallHandler, ExecutionContext, Injectable, NestInterceptor } from '@nestjs/common';
-import { Reflector } from '@nestjs/core';
+import { IResponse, IS_RAW_DATA_KEY } from "@/common";
+import { map, Observable } from "rxjs";
+import {
+  CallHandler,
+  ExecutionContext,
+  Injectable,
+  NestInterceptor,
+} from "@nestjs/common";
+import { Reflector } from "@nestjs/core";
 
 /**
  * 处理响应数据转化
  */
 @Injectable()
-export class TransformInterceptor<T> implements NestInterceptor<T, IResponse<T> | T> {
+export class TransformInterceptor<T>
+  implements NestInterceptor<T, IResponse<T> | T>
+{
   constructor(private reflector: Reflector) {}
 
-  intercept(context: ExecutionContext, next: CallHandler<T>): Observable<IResponse<T> | T> {
-    const isRawData = this.reflector.getAllAndOverride<boolean>(IS_RAW_DATA_KEY, [context.getHandler(), context.getClass()]);
-    return next.handle().pipe(map((data) => (isRawData ? data : { code: 200, message: 'success', data })));
+  intercept(
+    context: ExecutionContext,
+    next: CallHandler<T>
+  ): Observable<IResponse<T> | T> {
+    const isRawData = this.reflector.getAllAndOverride<boolean>(
+      IS_RAW_DATA_KEY,
+      [context.getHandler(), context.getClass()]
+    );
+    return next
+      .handle()
+      .pipe(
+        map((data) =>
+          isRawData ? data : { code: 200, message: "success", data }
+        )
+      );
   }
 }
 ```
@@ -440,11 +469,11 @@ export class TransformInterceptor<T> implements NestInterceptor<T, IResponse<T> 
 最后，在 AppModule 中添加拦截器。
 
 ```ts
-import { TransformInterceptor } from '@/common';
-import { Module } from '@nestjs/common';
-import { APP_INTERCEPTOR } from '@nestjs/core';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { TransformInterceptor } from "@/common";
+import { Module } from "@nestjs/common";
+import { APP_INTERCEPTOR } from "@nestjs/core";
+import { AppController } from "./app.controller";
+import { AppService } from "./app.service";
 
 @Module({
   imports: [
@@ -468,13 +497,13 @@ export class AppModule {}
 现在，你可以在 Controller 中使用`@RawData()`装饰器来控制是否返回原始的响应数据。
 
 ```ts
-@Controller('someResource')
+@Controller("someResource")
 export class SomeController {
   constructor(private someService: SomeService) {}
 
   @RawData()
-  @Get(':someParam')
-  someMethod(@Param('someParam') someParam: number): Promise<SomeEntity> {
+  @Get(":someParam")
+  someMethod(@Param("someParam") someParam: number): Promise<SomeEntity> {
     // Implementation details
   }
 }
@@ -498,7 +527,10 @@ Nest.js，很神奇吧。
 在上面的拦截器例子中，`Reflector` 被用于获取与当前执行上下文（`ExecutionContext`）相关的元数据。这里，它用于检查是否应返回原始数据或应将数据封装在一个响应对象中。
 
 ```ts
-const isRawData = this.reflector.getAllAndOverride<boolean>(IS_RAW_DATA_KEY, [context.getHandler(), context.getClass()]);
+const isRawData = this.reflector.getAllAndOverride<boolean>(IS_RAW_DATA_KEY, [
+  context.getHandler(),
+  context.getClass(),
+]);
 ```
 
 这行代码使用 `getAllAndOverride` 方法从当前的处理程序或类中获取 `IS_RAW_DATA_KEY` 的元数据。然后，这个元数据用于决定如何转换响应数据。
@@ -512,14 +544,14 @@ const isRawData = this.reflector.getAllAndOverride<boolean>(IS_RAW_DATA_KEY, [co
 #### 示例代码
 
 ```ts
-import { Reflector } from '@nestjs/core';
+import { Reflector } from "@nestjs/core";
 
 @Injectable()
 export class RolesGuard implements CanActivate {
   constructor(private reflector: Reflector) {}
 
   canActivate(context: ExecutionContext): boolean {
-    const roles = this.reflector.get<string[]>('roles', context.getHandler());
+    const roles = this.reflector.get<string[]>("roles", context.getHandler());
     // ... 权限检查逻辑
   }
 }
@@ -546,8 +578,8 @@ export class RolesGuard implements CanActivate {
 - **代码示例**:
 
 ```ts
-import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
+import { NestFactory } from "@nestjs/core";
+import { AppModule } from "./app.module";
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -567,7 +599,7 @@ bootstrap();
 - **代码示例**:
 
 ```ts
-import { JwtService } from '@nestjs/jwt';
+import { JwtService } from "@nestjs/jwt";
 
 @Injectable()
 export class AuthService {
@@ -588,14 +620,14 @@ export class AuthService {
 - **代码示例**:
 
 ```ts
-import { ConfigService } from '@nestjs/config';
+import { ConfigService } from "@nestjs/config";
 
 @Injectable()
 export class AppService {
   constructor(private configService: ConfigService) {}
 
   getDatabaseUrl(): string {
-    return this.configService.get<string>('DATABASE_URL');
+    return this.configService.get<string>("DATABASE_URL");
   }
 }
 ```
@@ -609,13 +641,13 @@ export class AppService {
 - **代码示例**:
 
 ```ts
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get } from "@nestjs/common";
 
-@Controller('hello')
+@Controller("hello")
 export class HelloController {
   @Get()
   sayHello(): string {
-    return 'Hello World!';
+    return "Hello World!";
   }
 }
 ```
@@ -629,7 +661,7 @@ export class HelloController {
 - **代码示例**:
 
 ```ts
-import { HttpService } from '@nestjs/axios';
+import { HttpService } from "@nestjs/axios";
 
 @Injectable()
 export class ApiService {
@@ -642,37 +674,42 @@ export class ApiService {
 }
 ```
 
-实际项目一般会自行重写http Service 请求添加统一的日志等，如下:
+实际项目一般会自行重写 http Service 请求添加统一的日志等，如下:
 
 ```ts
-import { HttpService } from '@nestjs/axios';
-import { catchError, Observable, tap } from 'rxjs';
-import { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
-import { BadRequestException, Injectable, Logger } from '@nestjs/common';
+import { HttpService } from "@nestjs/axios";
+import { catchError, Observable, tap } from "rxjs";
+import { AxiosError, AxiosRequestConfig, AxiosResponse } from "axios";
+import { BadRequestException, Injectable, Logger } from "@nestjs/common";
 
 @Injectable()
 export class HttpClientService {
   constructor(private httpService: HttpService) {}
 
   private logger: Logger = new Logger(HttpClientService.name);
-  
+
   /**
    * 重写 http Service GET 请求, 打印 Request 和 Response
    * @param url
    * @param config
    */
-  get<T = any>(url: string, config?: AxiosRequestConfig): Observable<AxiosResponse<T, any>> {
+  get<T = any>(
+    url: string,
+    config?: AxiosRequestConfig
+  ): Observable<AxiosResponse<T, any>> {
     // 打印发送请求的信息
     this.logger.log(`GET ${url}`);
     return this.httpService.get<T>(url, config).pipe(
       // 在不改变 Observable 流的情况下打印收到的响应
-      tap((response) => this.logger.log(`Response ${url} ${JSON.stringify(response.data)}`)),
+      tap((response) =>
+        this.logger.log(`Response ${url} ${JSON.stringify(response.data)}`)
+      ),
       // 捕获错误，并打印错误信息
       catchError((error: AxiosError) => {
         const errorData = JSON.stringify(error.response?.data);
         this.logger.error(`GET Error ${url} ${errorData}`);
         throw new BadRequestException([errorData]);
-      }),
+      })
     );
   }
 }
@@ -687,12 +724,12 @@ export class HttpClientService {
 - **代码示例**:
 
 ```ts
-import { Processor, Process } from '@nestjs/bull';
-import { Job } from 'bull';
+import { Processor, Process } from "@nestjs/bull";
+import { Job } from "bull";
 
-@Processor('audio')
+@Processor("audio")
 export class AudioProcessor {
-  @Process('transcode')
+  @Process("transcode")
   async transcode(job: Job<number>) {
     // Your logic here
   }
@@ -703,13 +740,18 @@ export class AudioProcessor {
 
 - **NPM**: [@nestjs/cache-manager](https://www.npmjs.com/package/@nestjs/cache-manager)
 - **文档**: [NestJS Caching](https://docs.nestjs.com/techniques/caching)
-- **简介**: 这个模块提供了缓存管理功能，支持多种缓存存储方式，如内存、Redis等
+- **简介**: 这个模块提供了缓存管理功能，支持多种缓存存储方式，如内存、Redis 等
 - **使用场景**: 数据缓存，如 **API 响应**、**数据库查询结果**、**会话缓存**等。
 - **代码示例**: 在这个示例中，我们使用了 `CacheModule` 来注册缓存，并使用 `CacheInterceptor` 拦截器来自动处理缓存逻辑。这样，当多次访问 `findAll` 方法时，结果会被缓存，从而提高响应速度。
 
 ```ts
-import { CacheModule, CacheInterceptor, Controller, UseInterceptors } from '@nestjs/common';
-import { CachingConfigService } from './caching-config.service';
+import {
+  CacheModule,
+  CacheInterceptor,
+  Controller,
+  UseInterceptors,
+} from "@nestjs/common";
+import { CachingConfigService } from "./caching-config.service";
 
 @Module({
   imports: [
@@ -720,7 +762,7 @@ import { CachingConfigService } from './caching-config.service';
 })
 export class AppModule {}
 
-@Controller('posts')
+@Controller("posts")
 export class PostsController {
   @UseInterceptors(CacheInterceptor)
   @Get()
@@ -739,8 +781,8 @@ export class PostsController {
 - **代码示例**:
 
 ```ts
-import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
+import { Schema, Prop, SchemaFactory } from "@nestjs/mongoose";
+import { Document } from "mongoose";
 
 @Schema()
 export class Cat extends Document {
@@ -760,21 +802,28 @@ export const CatSchema = SchemaFactory.createForClass(Cat);
 - **代码示例**: 在这个示例中，我们使用了 `@nestjs/platform-express` 提供的 `FileInterceptor` 来处理文件上传。这实际上是对 Express 的 `multer` 中间件的封装。
 
 ```ts
-import { Controller, Post, UploadedFile, UseInterceptors } from '@nestjs/common';
-import { FileInterceptor } from '@nestjs/platform-express';
-import { diskStorage } from 'multer';
+import {
+  Controller,
+  Post,
+  UploadedFile,
+  UseInterceptors,
+} from "@nestjs/common";
+import { FileInterceptor } from "@nestjs/platform-express";
+import { diskStorage } from "multer";
 
-@Controller('upload')
+@Controller("upload")
 export class UploadController {
   @Post()
-  @UseInterceptors(FileInterceptor('file', {
-    storage: diskStorage({
-      destination: './uploads',
-      filename: (req, file, cb) => {
-        cb(null, `${Date.now()}-${file.originalname}`);
-      },
-    }),
-  }))
+  @UseInterceptors(
+    FileInterceptor("file", {
+      storage: diskStorage({
+        destination: "./uploads",
+        filename: (req, file, cb) => {
+          cb(null, `${Date.now()}-${file.originalname}`);
+        },
+      }),
+    })
+  )
   uploadFile(@UploadedFile() file) {
     return { url: `./uploads/${file.filename}` };
   }
@@ -790,7 +839,7 @@ export class UploadController {
 - **代码示例**:
 
 ```ts
-import { Cron, CronExpression } from '@nestjs/schedule';
+import { Cron, CronExpression } from "@nestjs/schedule";
 
 @Injectable()
 export class TasksService {
@@ -810,7 +859,7 @@ export class TasksService {
 - **代码示例**:
 
 ```ts
-import { ApiProperty } from '@nestjs/swagger';
+import { ApiProperty } from "@nestjs/swagger";
 
 export class CreateUserDto {
   @ApiProperty()
@@ -830,7 +879,7 @@ export class CreateUserDto {
 - **代码示例**:
 
 ```ts
-import { ThrottlerGuard } from '@nestjs/throttler';
+import { ThrottlerGuard } from "@nestjs/throttler";
 
 @Injectable()
 export class AppGuard extends ThrottlerGuard {
@@ -849,7 +898,7 @@ export class AppGuard extends ThrottlerGuard {
 - **代码示例**:
 
 ```ts
-import { IsEmail, IsNotEmpty } from 'class-validator';
+import { IsEmail, IsNotEmpty } from "class-validator";
 
 export class CreateUserDto {
   @IsNotEmpty()
@@ -869,11 +918,11 @@ export class CreateUserDto {
 - **代码示例**:
 
 ```ts
-import { plainToClass } from 'class-transformer';
+import { plainToClass } from "class-transformer";
 
 const user = plainToClass(User, {
-  name: 'John Doe',
-  email: 'john.doe@example.com'
+  name: "John Doe",
+  email: "john.doe@example.com",
 });
 ```
 
@@ -886,9 +935,13 @@ const user = plainToClass(User, {
 - **代码示例**:
 
 ```ts
-import * as cacheManager from 'cache-manager';
+import * as cacheManager from "cache-manager";
 
-const memoryCache = cacheManager.caching({ store: 'memory', max: 100, ttl: 10 });
+const memoryCache = cacheManager.caching({
+  store: "memory",
+  max: 100,
+  ttl: 10,
+});
 
 async function getUser(id: string) {
   const cachedUser = await memoryCache.get(id);
@@ -911,7 +964,7 @@ async function getUser(id: string) {
 - **代码示例**:
 
 ```ts
-import Hashids from 'hashids';
+import Hashids from "hashids";
 
 const hashids = new Hashids();
 const id = hashids.encode(12345); // 输出一个短的唯一字符串
@@ -926,10 +979,10 @@ const id = hashids.encode(12345); // 输出一个短的唯一字符串
 - **代码示例**:
 
 ```ts
-import Redis from 'ioredis';
+import Redis from "ioredis";
 
 const redis = new Redis();
-redis.set('key', 'value');
+redis.set("key", "value");
 ```
 
 ### mongoose
@@ -941,14 +994,14 @@ redis.set('key', 'value');
 - **代码示例**:
 
 ```ts
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
   username: String,
   password: String,
 });
 
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model("User", userSchema);
 ```
 
 ### nestgram
@@ -960,10 +1013,10 @@ const User = mongoose.model('User', userSchema);
 - **代码示例**:
 
 ```ts
-import { Nestgram } from 'nestgram';
+import { Nestgram } from "nestgram";
 
-const nestgram = new Nestgram({ token: 'YOUR_BOT_TOKEN' });
-nestgram.on('message', (msg) => {
+const nestgram = new Nestgram({ token: "YOUR_BOT_TOKEN" });
+nestgram.on("message", (msg) => {
   // 处理消息
 });
 ```
@@ -977,8 +1030,8 @@ nestgram.on('message', (msg) => {
 - **代码示例**:
 
 ```ts
-import { ThrottlerModule } from '@nestjs/throttler';
-import { RedisThrottlerStorage } from 'nestjs-throttler-storage-redis';
+import { ThrottlerModule } from "@nestjs/throttler";
+import { RedisThrottlerStorage } from "nestjs-throttler-storage-redis";
 
 @Module({
   imports: [
@@ -999,7 +1052,7 @@ export class AppModule {}
 - **代码示例**:
 
 ```ts
-import * as R from 'ramda';
+import * as R from "ramda";
 
 const addOne = R.add(1);
 const result = addOne(2); // 输出 3
@@ -1014,11 +1067,11 @@ const result = addOne(2); // 输出 3
 - **代码示例**:
 
 ```ts
-import * as redis from 'redis';
+import * as redis from "redis";
 const client = redis.createClient();
 
-client.set('key', 'value');
-client.get('key', (err, reply) => {
+client.set("key", "value");
+client.get("key", (err, reply) => {
   console.log(reply); // 输出 'value'
 });
 ```
@@ -1032,14 +1085,14 @@ client.get('key', (err, reply) => {
 - **代码示例**:
 
 ```ts
-import 'reflect-metadata';
+import "reflect-metadata";
 
-@Reflect.metadata('role', 'admin')
+@Reflect.metadata("role", "admin")
 class User {
   constructor(public name: string) {}
 }
 
-const metadata = Reflect.getMetadata('role', User);
+const metadata = Reflect.getMetadata("role", User);
 console.log(metadata); // 输出 'admin'
 ```
 
@@ -1052,11 +1105,11 @@ console.log(metadata); // 输出 'admin'
 - **代码示例**:
 
 ```ts
-import { of } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { of } from "rxjs";
+import { map } from "rxjs/operators";
 
 const source$ = of(1, 2, 3);
-const result$ = source$.pipe(map(x => x * 2));
+const result$ = source$.pipe(map((x) => x * 2));
 
-result$.subscribe(x => console.log(x)); // 输出 2, 4, 6
+result$.subscribe((x) => console.log(x)); // 输出 2, 4, 6
 ```
