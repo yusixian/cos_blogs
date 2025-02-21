@@ -84,8 +84,14 @@ date: 2022-02-21 22:12:05
   url: https://claws.top
   desc: 為せば成る
   image: https://cdn.claws.top/img/head.jpg
-  color: #FBC1CC
-  {% endlinks %}
+  color: '#FBC1CC'
+- site: Auriel の小破站
+  owner: Auriel
+  url: https://www.auriel.top/
+  desc: 生活的最佳状态，是冷冷清清的风风火火
+  image: https://blog.auriel.top/img/avatar.png
+
+{% endlinks %}
 
 欢迎加友链^\_^
 在本页留言，格式如下
