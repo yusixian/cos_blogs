@@ -90,7 +90,12 @@ date: 2022-02-21 22:12:05
   url: https://www.auriel.top/
   desc: 生活的最佳状态，是冷冷清清的风风火火
   image: https://blog.auriel.top/img/avatar.png
-
+- site: 雪松的博客
+  url: https://fylsen.com/
+  owner: 雪松
+  desc: 向路灯照不亮的身影说声晚安
+  image: https://fv.fylsen.com/assets/avatar/blue.jpeg
+  color: '#ABDCFF'
 {% endlinks %}
 
 欢迎加友链^\_^
